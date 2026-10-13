@@ -1,0 +1,335 @@
+{
+  "protocol_identity": "2ab1532953c1f8b4c2dfaab8d1b3a49ddc39a32cbeeff5e5413e6ed55a631650",
+  "candidates": {
+    "control-step0": {
+      "arm": "control",
+      "step": 0,
+      "presentations": 0,
+      "weights_sha256": "d30e6273329639604b14ff4b08e52d6db2828aead67991f22308f9ecfe76f8a1",
+      "directory": "parent"
+    },
+    "control-step250": {
+      "arm": "control",
+      "step": 250,
+      "presentations": 8000,
+      "weights_sha256": "7e2039988d5636680225983c4012d53995034670697c9868672c9e29ab8be781",
+      "directory": "candidates/control-step250"
+    },
+    "control-step750": {
+      "arm": "control",
+      "step": 750,
+      "presentations": 23969,
+      "weights_sha256": "feef0ecc153ca5c713e55ec91227319d472b64f8e385cda998613feb80d5fe3e",
+      "directory": "candidates/control-step750"
+    },
+    "control-step1250": {
+      "arm": "control",
+      "step": 1250,
+      "presentations": 39969,
+      "weights_sha256": "64444633e66c677e25111be1676ea1f875c4aabb018f7dc6f8f16c9f4c2fe836",
+      "directory": "candidates/control-step1250"
+    },
+    "control-step1878": {
+      "arm": "control",
+      "step": 1878,
+      "presentations": 60003,
+      "weights_sha256": "f4a54afed286c635de6606a8f770c23ea3e84a1d972d516598a3a11515262917",
+      "directory": "candidates/control-step1878"
+    },
+    "treatment-step0": {
+      "arm": "treatment",
+      "step": 0,
+      "presentations": 0,
+      "weights_sha256": "d30e6273329639604b14ff4b08e52d6db2828aead67991f22308f9ecfe76f8a1",
+      "directory": "parent"
+    },
+    "treatment-step250": {
+      "arm": "treatment",
+      "step": 250,
+      "presentations": 8000,
+      "weights_sha256": "50639d26e727cb5f80ac3a61cb14f055f3fd3aead17ff808412dcb7adcf61379",
+      "directory": "candidates/treatment-step250"
+    },
+    "treatment-step750": {
+      "arm": "treatment",
+      "step": 750,
+      "presentations": 23969,
+      "weights_sha256": "6fbe7c4298ae8df28998da16f726dec0c30ce2c5de4c35a4b676f0669c39bbdc",
+      "directory": "candidates/treatment-step750"
+    },
+    "treatment-step1250": {
+      "arm": "treatment",
+      "step": 1250,
+      "presentations": 39969,
+      "weights_sha256": "052a5be18ff5959c14e8ce6a38c99818d70d5f28de9f27d88a76fc5d45aca28f",
+      "directory": "candidates/treatment-step1250"
+    },
+    "treatment-step1878": {
+      "arm": "treatment",
+      "step": 1878,
+      "presentations": 60003,
+      "weights_sha256": "417f2b856d0b117d9c8e532539d026654d4e28f40b34f3ddf62e0bf3660cc7b1",
+      "directory": "candidates/treatment-step1878"
+    }
+  },
+  "selection_scores": {
+    "control-step0": {
+      "raw_nll": 1.864136372404937,
+      "calibrated_nll": 0.5852267442063265,
+      "accuracy": 0.8325
+    },
+    "control-step250": {
+      "raw_nll": 2.2135052990781396,
+      "calibrated_nll": 0.5961068641427424,
+      "accuracy": 0.8333333333333334
+    },
+    "control-step750": {
+      "raw_nll": 2.1812884134233816,
+      "calibrated_nll": 0.5880997284238886,
+      "accuracy": 0.8333333333333334
+    },
+    "control-step1250": {
+      "raw_nll": 2.320994691262928,
+      "calibrated_nll": 0.585621344877961,
+      "accuracy": 0.8333333333333334
+    },
+    "control-step1878": {
+      "raw_nll": 2.3599516146290513,
+      "calibrated_nll": 0.5841171387987065,
+      "accuracy": 0.8333333333333334
+    },
+    "treatment-step0": {
+      "raw_nll": 1.864136372404937,
+      "calibrated_nll": 0.5852267442063265,
+      "accuracy": 0.8325
+    },
+    "treatment-step250": {
+      "raw_nll": 0.44116116899987495,
+      "calibrated_nll": 0.42548045268663875,
+      "accuracy": 0.8325
+    },
+    "treatment-step750": {
+      "raw_nll": 0.24330675101491048,
+      "calibrated_nll": 0.24323388405032337,
+      "accuracy": 0.9183333333333333
+    },
+    "treatment-step1250": {
+      "raw_nll": 0.1292975808401694,
+      "calibrated_nll": 0.12904224797608185,
+      "accuracy": 0.965
+    },
+    "treatment-step1878": {
+      "raw_nll": 0.11608731657439297,
+      "calibrated_nll": 0.1162332427920038,
+      "accuracy": 0.9658333333333333
+    }
+  },
+  "selection_fit_temperatures": {
+    "control-step0": {
+      "temperature": 4.757298616103788,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1200,
+      "raw_nll": 1.859015970041776,
+      "calibrated_nll": 0.5842812983237476,
+      "optimizer": "convex inverse-temperature derivative bisection"
+    },
+    "control-step250": {
+      "temperature": 5.594415802667625,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1200,
+      "raw_nll": 2.2143622250936623,
+      "calibrated_nll": 0.5963679815184515,
+      "optimizer": "convex inverse-temperature derivative bisection"
+    },
+    "control-step750": {
+      "temperature": 5.540530688078722,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1200,
+      "raw_nll": 2.170220611872304,
+      "calibrated_nll": 0.5862414534677064,
+      "optimizer": "convex inverse-temperature derivative bisection"
+    },
+    "control-step1250": {
+      "temperature": 5.9217064724546695,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1200,
+      "raw_nll": 2.3199009679652254,
+      "calibrated_nll": 0.5854439908686183,
+      "optimizer": "convex inverse-temperature derivative bisection"
+    },
+    "control-step1878": {
+      "temperature": 6.028822205615156,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1200,
+      "raw_nll": 2.358675618602703,
+      "calibrated_nll": 0.583922929630882,
+      "optimizer": "convex inverse-temperature derivative bisection"
+    },
+    "treatment-step0": {
+      "temperature": 4.757298616103788,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1200,
+      "raw_nll": 1.859015970041776,
+      "calibrated_nll": 0.5842812983237476,
+      "optimizer": "convex inverse-temperature derivative bisection"
+    },
+    "treatment-step250": {
+      "temperature": 0.7206048856494476,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1200,
+      "raw_nll": 0.45106043641991705,
+      "calibrated_nll": 0.4400928841813624,
+      "optimizer": "convex inverse-temperature derivative bisection"
+    },
+    "treatment-step750": {
+      "temperature": 1.0217206432428048,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1200,
+      "raw_nll": 0.24708120846034343,
+      "calibrated_nll": 0.24699807359760026,
+      "optimizer": "convex inverse-temperature derivative bisection"
+    },
+    "treatment-step1250": {
+      "temperature": 1.0390601205070802,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1200,
+      "raw_nll": 0.13061042407776835,
+      "calibrated_nll": 0.1304135662003839,
+      "optimizer": "convex inverse-temperature derivative bisection"
+    },
+    "treatment-step1878": {
+      "temperature": 1.0572699243865036,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1200,
+      "raw_nll": 0.1246848670700196,
+      "calibrated_nll": 0.12432320646253947,
+      "optimizer": "convex inverse-temperature derivative bisection"
+    }
+  },
+  "choices": {
+    "control": {
+      "calibrated_nll": "control-step1878",
+      "accuracy": "control-step250"
+    },
+    "treatment": {
+      "calibrated_nll": "treatment-step1878",
+      "accuracy": "treatment-step1878"
+    }
+  },
+  "calibrations": {
+    "control-step1878": {
+      "temperature": 6.034315882573097,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1200,
+      "raw_nll": 2.3635976777093046,
+      "calibrated_nll": 0.5850203834380273,
+      "optimizer": "convex inverse-temperature derivative bisection",
+      "weights": "/runs/study-v4/candidates/control-step1878/model.safetensors",
+      "weights_sha256": "f4a54afed286c635de6606a8f770c23ea3e84a1d972d516598a3a11515262917"
+    },
+    "treatment-step1878": {
+      "temperature": 1.1300427719087858,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1200,
+      "raw_nll": 0.13921620827759607,
+      "calibrated_nll": 0.13739293885632634,
+      "optimizer": "convex inverse-temperature derivative bisection",
+      "weights": "/runs/study-v4/candidates/treatment-step1878/model.safetensors",
+      "weights_sha256": "417f2b856d0b117d9c8e532539d026654d4e28f40b34f3ddf62e0bf3660cc7b1"
+    }
+  },
+  "prediction_files": {
+    "control-step0": {
+      "selection_fit": "d0cd5f608c2f023fd710e306bf96c507adb1940fa098efcfd1ba87e5323bb538",
+      "selection": "9a9f986849f9d8a7a187e45eb02467e6924a015e964ee91a159c8be0178b213b"
+    },
+    "control-step250": {
+      "selection_fit": "80292270d2d694fbc42221ac7cbfc362588543f3bbe52144d028facf088b5de8",
+      "selection": "f097073385286644da8759a7fedfcc54114714e3e3833c8f36eb89abb745079c"
+    },
+    "control-step750": {
+      "selection_fit": "da8befb3847bf51bb24107d44fd0f385145eb74dfef78cab9ced5a6780fa017c",
+      "selection": "e8a130f6d712813c7fb1566d6fd59fbdeb90ad8270bde725cfa55283a97c929c"
+    },
+    "control-step1250": {
+      "selection_fit": "d03bae5d907fbb76dd8a9f2c60d33f1583bd270faaaa73c60f60287f31e88301",
+      "selection": "58f5572601678e400cab819e0529b05843ace0889a5d1cbb03631ea1f6653d26"
+    },
+    "control-step1878": {
+      "selection_fit": "806fc5d07c8399f00ebfee57339666211406b53e99c0f5f08cab5cb09b38f785",
+      "selection": "b46c098e766acc181a9b8f912ab891577da3baf5acbc403aba05e7774bef3faf",
+      "calibration": "eb15bd1e635f0515bbbd74bb477a3635a47820174816263caed5729f30b48376"
+    },
+    "treatment-step0": {
+      "selection_fit": "d0cd5f608c2f023fd710e306bf96c507adb1940fa098efcfd1ba87e5323bb538",
+      "selection": "9a9f986849f9d8a7a187e45eb02467e6924a015e964ee91a159c8be0178b213b"
+    },
+    "treatment-step250": {
+      "selection_fit": "85a06bc553dd857219287cbc0cf78c0647bd3355db4bc407b3e8375e3e87796e",
+      "selection": "7f705ba4f7d8d91483fdaa09c42fa0c4918796e13744b67d0692fea7c9553b49"
+    },
+    "treatment-step750": {
+      "selection_fit": "9f653baf7224f76c372d5d03b362202dcd0f35a931b7281321e4d233e05406d5",
+      "selection": "4853e6a4052f8a95057692522719028b5a9a4e96f05989d714da212ddd97c18b"
+    },
+    "treatment-step1250": {
+      "selection_fit": "4f1915750b3cb1988d751252de8332c1d411e70bbf428ef853070da9206e6ad1",
+      "selection": "96c3e0e1a922857b2bc60d1a3f6f9a856e81fcf9abeb51c1c61b91b486f4003e"
+    },
+    "treatment-step1878": {
+      "selection_fit": "ff5f0691ff260c1b12345fca491163a6edbc0b1ce7af8628408a435036c126c6",
+      "selection": "182c86bd4f66780dcd61eecc7e8ec9bfd328dfe382f7f54893321bbc4e19c0d2",
+      "calibration": "ce4ba84d5f3aa37925a1623c9778e75e4dba1211123abb59d324fb647e6833cd"
+    }
+  },
+  "test_predictions_inspected": false,
+  "identity": "eacc80b38059a848a8f9565d688c43207bdd97a71c359cf35df062f5b694d050"
+}

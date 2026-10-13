@@ -1,0 +1,44 @@
+{
+  "snapshot_at_utc": "2026-10-13T05:45:50.592880+00:00",
+  "owned_resources": {
+    "app_id": "ap-0xlyzGsaz2DJXh8yTb1uFf",
+    "volume": "decision-model-lab-v3-runs",
+    "volume_id": "vo-XDiq6AZkY89H9O1c9xSQbl"
+  },
+  "metered_owned_resources_usd": "0.32294453",
+  "resources_usd": {
+    "CPU": "0.04906931",
+    "L4": "0.20748123",
+    "Memory": "0.06639399"
+  },
+  "workspace_billed_usd": "0E-8",
+  "raw_report_sha256": "254995f652c93d430c534a6b3fa77d1727b4247db84a98676f43df215009029e",
+  "scoped_rows": [
+    {
+      "object_id": "ap-0xlyzGsaz2DJXh8yTb1uFf",
+      "description": "decision-model-lab-v3-selection",
+      "environment": "main",
+      "interval_start": "2026-10-13T05:00:00",
+      "resource": "CPU",
+      "cost": "0.04906931"
+    },
+    {
+      "object_id": "ap-0xlyzGsaz2DJXh8yTb1uFf",
+      "description": "decision-model-lab-v3-selection",
+      "environment": "main",
+      "interval_start": "2026-10-13T05:00:00",
+      "resource": "L4",
+      "cost": "0.20748123"
+    },
+    {
+      "object_id": "ap-0xlyzGsaz2DJXh8yTb1uFf",
+      "description": "decision-model-lab-v3-selection",
+      "environment": "main",
+      "interval_start": "2026-10-13T05:00:00",
+      "resource": "Memory",
+      "cost": "0.06639399"
+    }
+  ],
+  "scope": "Owned app and Volume only; workspace delta is not project cost. Observed snapshot, not a final invoice.",
+  "owned_volume_rows": 0
+}

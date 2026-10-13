@@ -1,0 +1,346 @@
+{
+  "schema_version": 1,
+  "config": {
+    "schema_version": 1,
+    "seed": 17,
+    "max_attempts_per_family": 200,
+    "entities_min": 3,
+    "entities_max": 5,
+    "extra_facts_min": 4,
+    "extra_facts_max": 8,
+    "max_text_characters": 2400,
+    "train_templates": [
+      "canonical",
+      "conditional"
+    ],
+    "heldout_template": "paraphrase",
+    "train_entities": [
+      "Aman",
+      "Bella",
+      "Chen",
+      "Dalia",
+      "Evan",
+      "Farah",
+      "Gabe",
+      "Hana"
+    ],
+    "heldout_entities": [
+      "Inez",
+      "Jules",
+      "Kiran",
+      "Leila",
+      "Marco",
+      "Nia",
+      "Omar",
+      "Pia"
+    ],
+    "predicates": [
+      [
+        "verified",
+        "registered",
+        "authorized",
+        "active",
+        "trusted",
+        "ready",
+        "enabled",
+        "approved"
+      ],
+      [
+        "blue",
+        "round",
+        "quiet",
+        "warm",
+        "bright",
+        "calm",
+        "large",
+        "kind"
+      ]
+    ],
+    "relations": [
+      "supports",
+      "follows",
+      "knows"
+    ],
+    "splits": {
+      "train": {
+        "families": 6667,
+        "depths": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "motifs": [
+          "chain",
+          "conjunction",
+          "relational"
+        ],
+        "heldout_wording": false
+      },
+      "development": {
+        "families": 667,
+        "depths": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "motifs": [
+          "chain",
+          "conjunction",
+          "relational"
+        ],
+        "heldout_wording": false
+      },
+      "calibration": {
+        "families": 667,
+        "depths": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "motifs": [
+          "chain",
+          "conjunction",
+          "relational"
+        ],
+        "heldout_wording": false
+      },
+      "test_id": {
+        "families": 1000,
+        "depths": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "motifs": [
+          "chain",
+          "conjunction",
+          "relational"
+        ],
+        "heldout_wording": false
+      },
+      "test_depth": {
+        "families": 500,
+        "depths": [
+          4,
+          5
+        ],
+        "motifs": [
+          "chain",
+          "conjunction",
+          "relational"
+        ],
+        "heldout_wording": false
+      },
+      "test_wording": {
+        "families": 500,
+        "depths": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "motifs": [
+          "chain",
+          "conjunction",
+          "relational"
+        ],
+        "heldout_wording": true
+      },
+      "test_structure": {
+        "families": 500,
+        "depths": [
+          3
+        ],
+        "motifs": [
+          "diamond"
+        ],
+        "heldout_wording": false
+      }
+    }
+  },
+  "config_hash": "e4111b16cf390223bb77c121bac0c9b117efcb5cf302fc37dca20b9b3991e48f",
+  "splits": {
+    "train": {
+      "file": "train.jsonl",
+      "questions": 20001,
+      "families": 6667,
+      "sha256": "e8339498a63387dc6a0ae16274b252557f0644ea479dec23900233b2d6868345",
+      "file_sha256": "c13ab0bea98f594aac6d99553b0cdfbe6840556e4bada5bfbcfdbfe605e93eed",
+      "labels": {
+        "UNKNOWN": 6667,
+        "TRUE": 6667,
+        "FALSE": 6667
+      },
+      "proof_depths": {
+        "None": 6667,
+        "0": 3714,
+        "1": 3292,
+        "3": 3092,
+        "2": 3236
+      },
+      "motifs": {
+        "relational": 5658,
+        "chain": 7002,
+        "conjunction": 7341
+      },
+      "attempts": 8445
+    },
+    "development": {
+      "file": "development.jsonl",
+      "questions": 2001,
+      "families": 667,
+      "sha256": "7114e9c2312692fb6915676323ac8eae6b3daafadd06366bccf7879ba4732606",
+      "file_sha256": "89822945458c7652d9daa143224901ade591a6b9b3724b74bfd583b817e3cdea",
+      "labels": {
+        "FALSE": 667,
+        "UNKNOWN": 667,
+        "TRUE": 667
+      },
+      "proof_depths": {
+        "1": 316,
+        "None": 667,
+        "0": 336,
+        "3": 336,
+        "2": 346
+      },
+      "motifs": {
+        "chain": 741,
+        "relational": 534,
+        "conjunction": 726
+      },
+      "attempts": 818
+    },
+    "calibration": {
+      "file": "calibration.jsonl",
+      "questions": 2001,
+      "families": 667,
+      "sha256": "4d9927af2c63f0133fa2be66345bb2bda1ac8ced16fd3f487888379f279c616a",
+      "file_sha256": "f4fe9513ce84d49ca09f2bd3abb763c339bc87c92539a28c182538e1a758dddf",
+      "labels": {
+        "UNKNOWN": 667,
+        "FALSE": 667,
+        "TRUE": 667
+      },
+      "proof_depths": {
+        "None": 667,
+        "0": 342,
+        "2": 340,
+        "1": 358,
+        "3": 294
+      },
+      "motifs": {
+        "conjunction": 729,
+        "chain": 717,
+        "relational": 555
+      },
+      "attempts": 833
+    },
+    "test_id": {
+      "file": "test_id.jsonl",
+      "questions": 3000,
+      "families": 1000,
+      "sha256": "6396cff410f9c6ad8660506f5925218e496d0d563c5936eb1d4f89fa8f4a764b",
+      "file_sha256": "186adf70fef3ec8a42cbaab221c374838979c936fcecc43340d3c7460b6aba87",
+      "labels": {
+        "FALSE": 1000,
+        "TRUE": 1000,
+        "UNKNOWN": 1000
+      },
+      "proof_depths": {
+        "2": 510,
+        "3": 428,
+        "None": 1000,
+        "0": 526,
+        "1": 536
+      },
+      "motifs": {
+        "conjunction": 1131,
+        "relational": 822,
+        "chain": 1047
+      },
+      "attempts": 1265
+    },
+    "test_depth": {
+      "file": "test_depth.jsonl",
+      "questions": 1500,
+      "families": 500,
+      "sha256": "2466c0f4cd95a73c77cc33c0da5b14ca62fab65555500b5a0fff917023bf6ddb",
+      "file_sha256": "cf825f3f48b50c868f0b400795648e724a239356f1b25135309b19ab00b37718",
+      "labels": {
+        "TRUE": 500,
+        "UNKNOWN": 500,
+        "FALSE": 500
+      },
+      "proof_depths": {
+        "5": 498,
+        "4": 502,
+        "None": 500
+      },
+      "motifs": {
+        "conjunction": 600,
+        "relational": 333,
+        "chain": 567
+      },
+      "attempts": 753
+    },
+    "test_wording": {
+      "file": "test_wording.jsonl",
+      "questions": 1500,
+      "families": 500,
+      "sha256": "3483c22632cdf935e4041408d414e4163c0a5ee0fa6899ae84be291a7fe7fe34",
+      "file_sha256": "0d49676a5cbcf4963fc50b4dfb94c79e89a4bcb815c742d47c83bf0e9f057f0d",
+      "labels": {
+        "UNKNOWN": 500,
+        "TRUE": 500,
+        "FALSE": 500
+      },
+      "proof_depths": {
+        "None": 500,
+        "1": 208,
+        "0": 258,
+        "3": 270,
+        "2": 264
+      },
+      "motifs": {
+        "conjunction": 609,
+        "relational": 432,
+        "chain": 459
+      },
+      "attempts": 612
+    },
+    "test_structure": {
+      "file": "test_structure.jsonl",
+      "questions": 1500,
+      "families": 500,
+      "sha256": "4f29971a8a2238d9ad50ba8f6397f49c5f9fe61afac52ba94d63996245731339",
+      "file_sha256": "e242154c0c0e57120c6f529748859d4a6f1239b98f53f772f13476950acda808",
+      "labels": {
+        "FALSE": 500,
+        "UNKNOWN": 500,
+        "TRUE": 500
+      },
+      "proof_depths": {
+        "3": 1000,
+        "None": 500
+      },
+      "motifs": {
+        "diamond": 1500
+      },
+      "attempts": 628
+    }
+  },
+  "rejections": {
+    "inconsistent": 2511,
+    "Candidate does not have the requested shortest proof depth": 339,
+    "Candidate has no unknown question over an existing predicate": 3
+  },
+  "generator_version": "0.1.0",
+  "source_hash": "94c19c47e455754bf6914dc0d68deffc2230646a39d23803eb4268eca65c50ea",
+  "label_semantics": "open-world-explicit-negation",
+  "token_length_verified": false,
+  "structure_hash_semantics": "construction motif and maximum proof depth; not graph isomorphism"
+}

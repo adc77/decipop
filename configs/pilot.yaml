@@ -1,0 +1,29 @@
+model_id: HuggingFaceTB/SmolLM2-360M
+revision: f8027fd0eaeea54caa13c31d31b9fdc459c38b49
+seed: 17
+max_length: 512
+class_tokens: [A, B, C]
+class_labels: ["TRUE", "FALSE", "UNKNOWN"]
+answer_prefix: " "
+microbatch: 4
+steps: 120
+warmup_steps: 5
+examples: 32
+backbone_lr: 0.00002
+head_lr: 0.0001
+weight_decay: 0.01
+gradient_clip: 1.0
+cpu_threads: 2
+gpu: L4
+cpu_cores: 4
+memory_mib: 32768
+timeout_seconds: 600
+startup_timeout_seconds: 180
+scaledown_seconds: 2
+gpu_hourly_usd: 0.7992
+cpu_core_hourly_usd: 0.04716
+memory_gib_hourly_usd: 0.007992
+max_pilot_usd: 0.5
+required_remaining_usd: 18
+volume_name: decision-model-lab-runs
+app_name: decision-model-lab

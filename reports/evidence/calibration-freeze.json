@@ -1,0 +1,94 @@
+{
+  "evaluation_code_sha256": "99a2d5d7df4d64dcdf2e58b2c97106b1946ff22846b66cede41496db1dc0703e",
+  "baseline_freeze_sha256": "01d2320d462dd18d484a14d6f7af613fc4fce3259519a7644fb2ec9edb97b9df",
+  "protocol_identity": "b622cfa2d34eb2fb779a4692ceb69290e053d1dcd1b307da68d203bbd25f4d3e",
+  "models": {
+    "pretrained": {
+      "temperature": 20.0,
+      "calibration_questions": 2001,
+      "raw_nll": 1.1823247948216258,
+      "calibrated_nll": 1.0987248120039004,
+      "bounds": [
+        0.05,
+        20.0
+      ],
+      "weights": null,
+      "weights_sha256": null,
+      "base_revision": "f8027fd0eaeea54caa13c31d31b9fdc459c38b49",
+      "thresholds": {
+        "0.25": 0.34233235618794755,
+        "0.5": 0.3395849765728193,
+        "0.75": 0.3374954709048871,
+        "0.9": 0.33609944159338967,
+        "1.0": 0.3333333333333333
+      },
+      "load_seconds": 2.2358851050000013
+    },
+    "token": {
+      "temperature": 1.1482084913935078,
+      "calibration_questions": 2001,
+      "raw_nll": 0.10464006299468047,
+      "calibrated_nll": 0.10272242848172541,
+      "bounds": [
+        0.05,
+        20.0
+      ],
+      "weights": "/runs/study-v1/token/selected-001878/model.safetensors",
+      "weights_sha256": "84254f999060a52cb2c29f7b0e0d2ce6ecb6b0ce4df8b01bb0c13f832bd472f3",
+      "base_revision": null,
+      "thresholds": {
+        "0.25": 0.9999672958198873,
+        "0.5": 0.9805202772996837,
+        "0.75": 0.9591163957941902,
+        "0.9": 0.9316398697804704,
+        "1.0": 0.4998774641221608
+      },
+      "load_seconds": 5.589661321999998
+    },
+    "head": {
+      "temperature": 1.1674321038259294,
+      "calibration_questions": 2001,
+      "raw_nll": 0.07398701245804505,
+      "calibrated_nll": 0.07211389007222171,
+      "bounds": [
+        0.05,
+        20.0
+      ],
+      "weights": "/runs/study-v1/head/selected-001878/model.safetensors",
+      "weights_sha256": "d217c1f5bd5e9fa249df37b97e4e4d8fe05aa1e2b59334e65f31981fb1711ab3",
+      "base_revision": null,
+      "thresholds": {
+        "0.25": 0.9997005359289699,
+        "0.5": 0.9939050477043183,
+        "0.75": 0.9827261562130767,
+        "0.9": 0.9541096304933593,
+        "1.0": 0.5165694169453817
+      },
+      "load_seconds": 3.1699494869999967
+    },
+    "scratch": {
+      "temperature": 20.0,
+      "calibration_questions": 2001,
+      "raw_nll": 1.098744573219919,
+      "calibrated_nll": 1.0986123997925343,
+      "bounds": [
+        0.05,
+        20.0
+      ],
+      "weights": "/runs/study-v1/scratch/selected-001750/model.safetensors",
+      "weights_sha256": "41b35630cb98e91e32d855bc873db463318b8d81d2b8c02d559ff5cfb1d7c17a",
+      "base_revision": null,
+      "thresholds": {
+        "0.25": 0.33363717718580554,
+        "0.5": 0.3336317527693021,
+        "0.75": 0.3336290301918229,
+        "0.9": 0.3336236060402287,
+        "1.0": 0.33361003149316565
+      },
+      "load_seconds": 1.495986044999995
+    }
+  },
+  "calibration_file_sha256": "f4fe9513ce84d49ca09f2bd3abb763c339bc87c92539a28c182538e1a758dddf",
+  "test_manifest_sha256": "59a294c366791db828102517a9563347c7dd7508b5117c116391f4d5e2fdb880",
+  "identity": "b7104a02b532aae75ccb59ee882f46e5831449e86633638f7b33162bc9dd074f"
+}

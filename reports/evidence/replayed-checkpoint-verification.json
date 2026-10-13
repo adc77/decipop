@@ -1,0 +1,14 @@
+{
+  "verified": true,
+  "start_step": 1000,
+  "end_step": 1250,
+  "identical_safetensors_sha256": "a6227a656eb5231ed6d356fb1b1fec4c1bc71247d024ff1c6d082d96e28f5cab",
+  "original_orphan_preserved_locally": "artifacts/interrupted/head-selected-001250/model.safetensors",
+  "development": {
+    "nll": 0.12759549915790558,
+    "accuracy": 0.9655172228813171,
+    "questions": 2001,
+    "step": 1250,
+    "seconds": 15.524689801000022
+  }
+}

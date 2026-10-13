@@ -1,0 +1,42 @@
+{
+  "control-step0": {
+    "path": "runs/study-v4/parent/model.safetensors",
+    "sha256": "d30e6273329639604b14ff4b08e52d6db2828aead67991f22308f9ecfe76f8a1"
+  },
+  "control-step250": {
+    "path": "runs/study-v4/candidates/control-step250/model.safetensors",
+    "sha256": "7e2039988d5636680225983c4012d53995034670697c9868672c9e29ab8be781"
+  },
+  "control-step750": {
+    "path": "runs/study-v4/candidates/control-step750/model.safetensors",
+    "sha256": "feef0ecc153ca5c713e55ec91227319d472b64f8e385cda998613feb80d5fe3e"
+  },
+  "control-step1250": {
+    "path": "runs/study-v4/candidates/control-step1250/model.safetensors",
+    "sha256": "64444633e66c677e25111be1676ea1f875c4aabb018f7dc6f8f16c9f4c2fe836"
+  },
+  "control-step1878": {
+    "path": "runs/study-v4/candidates/control-step1878/model.safetensors",
+    "sha256": "f4a54afed286c635de6606a8f770c23ea3e84a1d972d516598a3a11515262917"
+  },
+  "treatment-step0": {
+    "path": "runs/study-v4/parent/model.safetensors",
+    "sha256": "d30e6273329639604b14ff4b08e52d6db2828aead67991f22308f9ecfe76f8a1"
+  },
+  "treatment-step250": {
+    "path": "runs/study-v4/candidates/treatment-step250/model.safetensors",
+    "sha256": "50639d26e727cb5f80ac3a61cb14f055f3fd3aead17ff808412dcb7adcf61379"
+  },
+  "treatment-step750": {
+    "path": "runs/study-v4/candidates/treatment-step750/model.safetensors",
+    "sha256": "6fbe7c4298ae8df28998da16f726dec0c30ce2c5de4c35a4b676f0669c39bbdc"
+  },
+  "treatment-step1250": {
+    "path": "runs/study-v4/candidates/treatment-step1250/model.safetensors",
+    "sha256": "052a5be18ff5959c14e8ce6a38c99818d70d5f28de9f27d88a76fc5d45aca28f"
+  },
+  "treatment-step1878": {
+    "path": "runs/study-v4/candidates/treatment-step1878/model.safetensors",
+    "sha256": "417f2b856d0b117d9c8e532539d026654d4e28f40b34f3ddf62e0bf3660cc7b1"
+  }
+}

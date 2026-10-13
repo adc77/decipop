@@ -1,0 +1,20 @@
+{
+  "token": {
+    "verified": true,
+    "inputs": 8,
+    "device": "cuda",
+    "artifact_identity": "b622cfa2d34eb2fb779a4692ceb69290e053d1dcd1b307da68d203bbd25f4d3e"
+  },
+  "head": {
+    "verified": true,
+    "inputs": 8,
+    "device": "cuda",
+    "artifact_identity": "b622cfa2d34eb2fb779a4692ceb69290e053d1dcd1b307da68d203bbd25f4d3e"
+  },
+  "scratch": {
+    "verified": true,
+    "inputs": 8,
+    "device": "cuda",
+    "artifact_identity": "b622cfa2d34eb2fb779a4692ceb69290e053d1dcd1b307da68d203bbd25f4d3e"
+  }
+}

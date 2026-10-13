@@ -1,0 +1,7 @@
+{
+  "diagnostic_protocol_identity": "593025f62c7668bb77c4d89e1374c749d57d889a4e9e7792699df6b22465bfc3",
+  "pilot_sha256": "548e125a890fb3ff19e04aab7d92c51ce4e1b8b6e74a074fcbcfa336b9e19e6a",
+  "projected_chunk_seconds": 961.6677826543744,
+  "diagnostic_interpretation": "Controlled diagnostics motivate the preregistered mixed-data comparison",
+  "heldout_tests_inspected": false
+}

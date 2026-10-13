@@ -1,0 +1,2 @@
+# Preserve exact generated SVG evidence, including path whitespace.
+*.svg -whitespace

@@ -1,0 +1,14 @@
+{
+  "control": {
+    "development_accuracy": 0.3313343328335832,
+    "train_questions": 20001,
+    "development_questions": 2001,
+    "heldout_test_predictions_inspected": false
+  },
+  "treatment": {
+    "development_accuracy": 0.3308345827086457,
+    "train_questions": 20001,
+    "development_questions": 2001,
+    "heldout_test_predictions_inspected": false
+  }
+}

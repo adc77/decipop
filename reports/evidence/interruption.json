@@ -1,0 +1,11 @@
+{
+  "cause": "local DNS/network disconnect; ephemeral app canceled before recovery save committed",
+  "failed_architecture": "head",
+  "failed_attempt": "attempt-2357f9e6c2ba49328845ea1b3c3b72b1",
+  "last_durable_step": 1000,
+  "last_uncommitted_logged_step": 1250,
+  "uncommitted_development_nll": 0.12759549915790558,
+  "uncommitted_development_accuracy": 0.9655172228813171,
+  "resumed_with_detach": true,
+  "training_protocol_changed": false
+}

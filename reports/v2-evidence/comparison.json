@@ -1,0 +1,48 @@
+{
+  "settings": {
+    "study": "study-v2",
+    "dataset_seed": 117,
+    "model_seed": 17,
+    "train_families": 6667,
+    "development_families": 667,
+    "calibration_families": 667,
+    "test_families": 1000,
+    "transfer_families": 500,
+    "epochs": 3,
+    "chunk_steps": 650,
+    "chunk_training_seconds": 950,
+    "training_timeout_seconds": 1150,
+    "pilot_timeout_seconds": 420,
+    "evaluation_timeout_seconds": 900,
+    "verification_timeout_seconds": 240,
+    "max_training_calls_per_arm": 4,
+    "retry_calls_reserved": 1,
+    "compute_allocation_usd": 5.0,
+    "storage_reserve_usd": 1.0,
+    "volume": "decision-model-lab-v2-runs",
+    "hf_namespace": "axondendriteplus"
+  },
+  "arms": {
+    "control": "223dc1c532c688871512c380efd163f80e457d26d3f190dffcbe5350ff2aa58f",
+    "treatment": "6315c240a0e12cce47af29f0b251681ead5b2481528afddcdc63461b48760556"
+  },
+  "v2_code_sha256": "31a556718129261a1d0916b53baa086306bb16ee06082f6e1709da43016474ef",
+  "pilot_sha256": "b63db7cae0b59ae0411470a8ab7acdb94992cc29c94a155cbc195d713a8f2335",
+  "primary_metric": "treatment minus control UNKNOWN accuracy on test_counterfactual",
+  "secondary_paired_metric": "treatment minus control raw NLL on test_counterfactual",
+  "forecast_training_calls": {
+    "control": 3,
+    "treatment": 3
+  },
+  "maximum_allocation_usd": 4.86863136,
+  "call_allocations_usd": {
+    "pilot": 0.20795488,
+    "control": 0.46012608,
+    "treatment": 0.46012608,
+    "evaluation": 0.37376608000000006,
+    "verification": 0.14577568000000002
+  },
+  "test_predictions_inspected": false,
+  "training_protocol_markdown_sha256": "9535879fe528e59914711e027f644ec95ce79987ee27f774ad94da011df9a05c",
+  "identity": "be6db15a671430027698c88f6d48068c260285b6e0cec649b5f0d3c9656648bd"
+}

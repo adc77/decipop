@@ -1,0 +1,41 @@
+{
+  "valid": true,
+  "families": 3700,
+  "unique_worlds": 10600,
+  "rows": 13600,
+  "token_audit": {
+    "calibration": {
+      "maximum_tokens": 275,
+      "questions": 1200
+    },
+    "selection": {
+      "maximum_tokens": 278,
+      "questions": 1200
+    },
+    "selection_fit": {
+      "maximum_tokens": 277,
+      "questions": 1200
+    },
+    "test_counterfactual": {
+      "maximum_tokens": 279,
+      "questions": 3000
+    },
+    "test_depth": {
+      "maximum_tokens": 349,
+      "questions": 1500
+    },
+    "test_original": {
+      "maximum_tokens": 280,
+      "questions": 3000
+    },
+    "test_single_branch": {
+      "maximum_tokens": 257,
+      "questions": 1000
+    },
+    "test_wording": {
+      "maximum_tokens": 275,
+      "questions": 1500
+    }
+  },
+  "prior_worlds_excluded": 41804
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "stage": "selection",
+    "app_id": "ap-0xlyzGsaz2DJXh8yTb1uFf",
+    "allocation_usd": 0.37376608,
+    "status": "complete",
+    "client_seconds": 262.413332041353
+  },
+  {
+    "stage": "test",
+    "app_id": "ap-0xlyzGsaz2DJXh8yTb1uFf",
+    "allocation_usd": 0.5810300799999999,
+    "status": "complete",
+    "client_seconds": 772.8605404580012
+  }
+]

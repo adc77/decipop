@@ -1,0 +1,9 @@
+{
+  "workspace": "amandogra2016",
+  "billing_cycle": "2026-10",
+  "observation_started_at_utc": "2026-10-12T18:13:55.067620+00:00",
+  "observation_finished_at_utc": "2026-10-12T18:13:57.640278+00:00",
+  "all_research_apps_already_stopped": true,
+  "temporary_volume_already_deleted": true,
+  "invoice_final": false
+}

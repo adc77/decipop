@@ -1,0 +1,1978 @@
+{
+  "protocol_identity": "593025f62c7668bb77c4d89e1374c749d57d889a4e9e7792699df6b22465bfc3",
+  "aggregate": {
+    "raw": {
+      "questions": 1600,
+      "class_counts": [
+        600,
+        200,
+        800
+      ],
+      "accuracy": 0.625,
+      "macro_f1": 0.6055555555555555,
+      "nll": 4.135015866013018,
+      "brier_sum_over_classes": 0.7499338075050693,
+      "ece": 0.3749353086637237,
+      "ece_bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.1,
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.6,
+          "upper": 0.7,
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.7,
+          "upper": 0.8,
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.9,
+          "upper": 1.0,
+          "count": 1600,
+          "confidence": 0.9999353086637237,
+          "accuracy": 0.625
+        }
+      ],
+      "confusion_matrix_actual_rows": [
+        [
+          600,
+          0,
+          0
+        ],
+        [
+          0,
+          200,
+          0
+        ],
+        [
+          400,
+          200,
+          200
+        ]
+      ],
+      "aurc": 0.30547029380437296,
+      "aurc_convention": "mean risk at retained counts 1..N; stable input order breaks confidence ties",
+      "high_confidence_wrong": 600,
+      "high_confidence_threshold": 0.9
+    },
+    "calibrated": {
+      "questions": 1600,
+      "class_counts": [
+        600,
+        200,
+        800
+      ],
+      "accuracy": 0.625,
+      "macro_f1": 0.6055555555555555,
+      "nll": 1.0631653156468064,
+      "brier_sum_over_classes": 0.6008583098265436,
+      "ece": 0.19354712051836237,
+      "ece_bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.1,
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.6,
+          "upper": 0.7,
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        },
+        {
+          "lower": 0.7,
+          "upper": 0.8,
+          "count": 159,
+          "confidence": 0.7896426763525973,
+          "accuracy": 0.6289308176100629
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "count": 1441,
+          "confidence": 0.821736438091129,
+          "accuracy": 0.6245662734212353
+        },
+        {
+          "lower": 0.9,
+          "upper": 1.0,
+          "count": 0,
+          "confidence": null,
+          "accuracy": null
+        }
+      ],
+      "confusion_matrix_actual_rows": [
+        [
+          600,
+          0,
+          0
+        ],
+        [
+          0,
+          200,
+          0
+        ],
+        [
+          400,
+          200,
+          200
+        ]
+      ],
+      "aurc": 0.3188270989171227,
+      "aurc_convention": "mean risk at retained counts 1..N; stable input order breaks confidence ties",
+      "high_confidence_wrong": 0,
+      "high_confidence_threshold": 0.9
+    },
+    "unknown_accuracy": 0.25,
+    "all_questions_in_family_correct": 0.0,
+    "families": 200,
+    "predicted_class_counts": [
+      1000,
+      400,
+      200
+    ]
+  },
+  "roles": {
+    "base_false": {
+      "raw": {
+        "questions": 200,
+        "class_counts": [
+          0,
+          200,
+          0
+        ],
+        "accuracy": 1.0,
+        "macro_f1": 0.3333333333333333,
+        "nll": 4.88610058061828e-05,
+        "brier_sum_over_classes": 4.574517399240395e-09,
+        "ece": 4.8859647662213845e-05,
+        "ece_bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 200,
+            "confidence": 0.9999511403523378,
+            "accuracy": 1.0
+          }
+        ],
+        "confusion_matrix_actual_rows": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            200,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "aurc": 0.0,
+        "aurc_convention": "mean risk at retained counts 1..N; stable input order breaks confidence ties",
+        "high_confidence_wrong": 0,
+        "high_confidence_threshold": 0.9
+      },
+      "calibrated": {
+        "questions": 200,
+        "class_counts": [
+          0,
+          200,
+          0
+        ],
+        "accuracy": 1.0,
+        "macro_f1": 0.3333333333333333,
+        "nll": 0.18905418533242077,
+        "brier_sum_over_classes": 0.044948144324832656,
+        "ece": 0.17220325645500723,
+        "ece_bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 1,
+            "confidence": 0.787051608101576,
+            "accuracy": 1.0
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 199,
+            "confidence": 0.8280014929693316,
+            "accuracy": 1.0
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          }
+        ],
+        "confusion_matrix_actual_rows": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            200,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "aurc": 0.0,
+        "aurc_convention": "mean risk at retained counts 1..N; stable input order breaks confidence ties",
+        "high_confidence_wrong": 0,
+        "high_confidence_threshold": 0.9
+      }
+    },
+    "base_true": {
+      "raw": {
+        "questions": 200,
+        "class_counts": [
+          200,
+          0,
+          0
+        ],
+        "accuracy": 1.0,
+        "macro_f1": 0.3333333333333333,
+        "nll": 7.504019238854092e-05,
+        "brier_sum_over_classes": 1.1631693793328684e-08,
+        "ece": 7.503649066564755e-05,
+        "ece_bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 200,
+            "confidence": 0.9999249635093344,
+            "accuracy": 1.0
+          }
+        ],
+        "confusion_matrix_actual_rows": [
+          [
+            200,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "aurc": 0.0,
+        "aurc_convention": "mean risk at retained counts 1..N; stable input order breaks confidence ties",
+        "high_confidence_wrong": 0,
+        "high_confidence_threshold": 0.9
+      },
+      "calibrated": {
+        "questions": 200,
+        "class_counts": [
+          200,
+          0,
+          0
+        ],
+        "accuracy": 1.0,
+        "macro_f1": 0.3333333333333333,
+        "nll": 0.2078900430559167,
+        "brier_sum_over_classes": 0.05319549669872786,
+        "ece": 0.18760410258482674,
+        "ece_bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 25,
+            "confidence": 0.7883584736295495,
+            "accuracy": 1.0
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 175,
+            "confidence": 0.8158298150988338,
+            "accuracy": 1.0
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          }
+        ],
+        "confusion_matrix_actual_rows": [
+          [
+            200,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "aurc": 0.0,
+        "aurc_convention": "mean risk at retained counts 1..N; stable input order breaks confidence ties",
+        "high_confidence_wrong": 0,
+        "high_confidence_threshold": 0.9
+      }
+    },
+    "distractor_true": {
+      "raw": {
+        "questions": 200,
+        "class_counts": [
+          200,
+          0,
+          0
+        ],
+        "accuracy": 1.0,
+        "macro_f1": 0.3333333333333333,
+        "nll": 7.549589925461391e-05,
+        "brier_sum_over_classes": 1.1486921425677824e-08,
+        "ece": 7.549224997238646e-05,
+        "ece_bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 200,
+            "confidence": 0.9999245077500276,
+            "accuracy": 1.0
+          }
+        ],
+        "confusion_matrix_actual_rows": [
+          [
+            200,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "aurc": 0.0,
+        "aurc_convention": "mean risk at retained counts 1..N; stable input order breaks confidence ties",
+        "high_confidence_wrong": 0,
+        "high_confidence_threshold": 0.9
+      },
+      "calibrated": {
+        "questions": 200,
+        "class_counts": [
+          200,
+          0,
+          0
+        ],
+        "accuracy": 1.0,
+        "macro_f1": 0.3333333333333333,
+        "nll": 0.208317583240129,
+        "brier_sum_over_classes": 0.053384215108718006,
+        "ece": 0.18794879519882118,
+        "ece_bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 30,
+            "confidence": 0.7896800867451902,
+            "accuracy": 1.0
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 170,
+            "confidence": 0.8159990491640003,
+            "accuracy": 1.0
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          }
+        ],
+        "confusion_matrix_actual_rows": [
+          [
+            200,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "aurc": 0.0,
+        "aurc_convention": "mean risk at retained counts 1..N; stable input order breaks confidence ties",
+        "high_confidence_wrong": 0,
+        "high_confidence_threshold": 0.9
+      }
+    },
+    "premise_unknown": {
+      "raw": {
+        "questions": 200,
+        "class_counts": [
+          0,
+          0,
+          200
+        ],
+        "accuracy": 1.0,
+        "macro_f1": 0.3333333333333333,
+        "nll": 4.09116115279965e-05,
+        "brier_sum_over_classes": 4.301430126267977e-09,
+        "ece": 4.091020128949019e-05,
+        "ece_bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 200,
+            "confidence": 0.9999590897987105,
+            "accuracy": 1.0
+          }
+        ],
+        "confusion_matrix_actual_rows": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            200
+          ]
+        ],
+        "aurc": 0.0,
+        "aurc_convention": "mean risk at retained counts 1..N; stable input order breaks confidence ties",
+        "high_confidence_wrong": 0,
+        "high_confidence_threshold": 0.9
+      },
+      "calibrated": {
+        "questions": 200,
+        "class_counts": [
+          0,
+          0,
+          200
+        ],
+        "accuracy": 1.0,
+        "macro_f1": 0.3333333333333333,
+        "nll": 0.18380572753140575,
+        "brier_sum_over_classes": 0.04270215444009788,
+        "ece": 0.16769786710104187,
+        "ece_bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 13,
+            "confidence": 0.78726952484614,
+            "accuracy": 1.0
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 187,
+            "confidence": 0.8354327420149295,
+            "accuracy": 1.0
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          }
+        ],
+        "confusion_matrix_actual_rows": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            200
+          ]
+        ],
+        "aurc": 0.0,
+        "aurc_convention": "mean risk at retained counts 1..N; stable input order breaks confidence ties",
+        "high_confidence_wrong": 0,
+        "high_confidence_threshold": 0.9
+      }
+    },
+    "query_unknown_false": {
+      "raw": {
+        "questions": 200,
+        "class_counts": [
+          0,
+          0,
+          200
+        ],
+        "accuracy": 0.0,
+        "macro_f1": 0.0,
+        "nll": 11.57004962243127,
+        "brier_sum_over_classes": 1.9998781867968995,
+        "ece": 0.999950379006219,
+        "ece_bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 200,
+            "confidence": 0.999950379006219,
+            "accuracy": 0.0
+          }
+        ],
+        "confusion_matrix_actual_rows": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            200,
+            0
+          ]
+        ],
+        "aurc": 1.0,
+        "aurc_convention": "mean risk at retained counts 1..N; stable input order breaks confidence ties",
+        "high_confidence_wrong": 200,
+        "high_confidence_threshold": 0.9
+      },
+      "calibrated": {
+        "questions": 200,
+        "class_counts": [
+          0,
+          0,
+          200
+        ],
+        "accuracy": 0.0,
+        "macro_f1": 0.0,
+        "nll": 2.602996656320761,
+        "brier_sum_over_classes": 1.5516528018308386,
+        "ece": 0.8279270858499924,
+        "ece_bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 200,
+            "confidence": 0.8279270858499924,
+            "accuracy": 0.0
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          }
+        ],
+        "confusion_matrix_actual_rows": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            200,
+            0
+          ]
+        ],
+        "aurc": 1.0,
+        "aurc_convention": "mean risk at retained counts 1..N; stable input order breaks confidence ties",
+        "high_confidence_wrong": 0,
+        "high_confidence_threshold": 0.9
+      }
+    },
+    "query_unknown_true": {
+      "raw": {
+        "questions": 200,
+        "class_counts": [
+          0,
+          0,
+          200
+        ],
+        "accuracy": 0.0,
+        "macro_f1": 0.0,
+        "nll": 10.754606924449341,
+        "brier_sum_over_classes": 1.999797291820384,
+        "ece": 0.999924328950692,
+        "ece_bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 200,
+            "confidence": 0.999924328950692,
+            "accuracy": 0.0
+          }
+        ],
+        "confusion_matrix_actual_rows": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            200,
+            0,
+            0
+          ]
+        ],
+        "aurc": 1.0,
+        "aurc_convention": "mean risk at retained counts 1..N; stable input order breaks confidence ties",
+        "high_confidence_wrong": 200,
+        "high_confidence_threshold": 0.9
+      },
+      "calibrated": {
+        "questions": 200,
+        "class_counts": [
+          0,
+          0,
+          200
+        ],
+        "accuracy": 0.0,
+        "macro_f1": 0.0,
+        "nll": 2.45258747377171,
+        "brier_sum_over_classes": 1.5040161872124755,
+        "ece": 0.811781287768639,
+        "ece_bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 28,
+            "confidence": 0.7899939832183624,
+            "accuracy": 0.0
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 172,
+            "confidence": 0.8153280582768236,
+            "accuracy": 0.0
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          }
+        ],
+        "confusion_matrix_actual_rows": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            200,
+            0,
+            0
+          ]
+        ],
+        "aurc": 1.0,
+        "aurc_convention": "mean risk at retained counts 1..N; stable input order breaks confidence ties",
+        "high_confidence_wrong": 0,
+        "high_confidence_threshold": 0.9
+      }
+    },
+    "renamed_true": {
+      "raw": {
+        "questions": 200,
+        "class_counts": [
+          200,
+          0,
+          0
+        ],
+        "accuracy": 1.0,
+        "macro_f1": 0.3333333333333333,
+        "nll": 7.522214617811947e-05,
+        "brier_sum_over_classes": 1.2068709486773123e-08,
+        "ece": 7.521832431567343e-05,
+        "ece_bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 200,
+            "confidence": 0.9999247816756843,
+            "accuracy": 1.0
+          }
+        ],
+        "confusion_matrix_actual_rows": [
+          [
+            200,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "aurc": 0.0,
+        "aurc_convention": "mean risk at retained counts 1..N; stable input order breaks confidence ties",
+        "high_confidence_wrong": 0,
+        "high_confidence_threshold": 0.9
+      },
+      "calibrated": {
+        "questions": 200,
+        "class_counts": [
+          200,
+          0,
+          0
+        ],
+        "accuracy": 1.0,
+        "macro_f1": 0.3333333333333333,
+        "nll": 0.2077543294006271,
+        "brier_sum_over_classes": 0.0531441633722354,
+        "ece": 0.18749061531632805,
+        "ece_bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 31,
+            "confidence": 0.7910675600588225,
+            "accuracy": 1.0
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 169,
+            "confidence": 0.8164425004432597,
+            "accuracy": 1.0
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          }
+        ],
+        "confusion_matrix_actual_rows": [
+          [
+            200,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "aurc": 0.0,
+        "aurc_convention": "mean risk at retained counts 1..N; stable input order breaks confidence ties",
+        "high_confidence_wrong": 0,
+        "high_confidence_threshold": 0.9
+      }
+    },
+    "renamed_unknown": {
+      "raw": {
+        "questions": 200,
+        "class_counts": [
+          0,
+          0,
+          200
+        ],
+        "accuracy": 0.0,
+        "macro_f1": 0.0,
+        "nll": 10.755154850368378,
+        "brier_sum_over_classes": 1.9997949373599981,
+        "ece": 0.9999232782667832,
+        "ece_bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 200,
+            "confidence": 0.9999232782667832,
+            "accuracy": 0.0
+          }
+        ],
+        "confusion_matrix_actual_rows": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            200,
+            0,
+            0
+          ]
+        ],
+        "aurc": 1.0,
+        "aurc_convention": "mean risk at retained counts 1..N; stable input order breaks confidence ties",
+        "high_confidence_wrong": 200,
+        "high_confidence_threshold": 0.9
+      },
+      "calibrated": {
+        "questions": 200,
+        "class_counts": [
+          0,
+          0,
+          200
+        ],
+        "accuracy": 0.0,
+        "macro_f1": 0.0,
+        "nll": 2.4529165265214807,
+        "brier_sum_over_classes": 1.503823315624423,
+        "ece": 0.8116132271842924,
+        "ece_bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 31,
+            "confidence": 0.7899787023848228,
+            "accuracy": 0.0
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 169,
+            "confidence": 0.8155816903131892,
+            "accuracy": 0.0
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          }
+        ],
+        "confusion_matrix_actual_rows": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            200,
+            0,
+            0
+          ]
+        ],
+        "aurc": 1.0,
+        "aurc_convention": "mean risk at retained counts 1..N; stable input order breaks confidence ties",
+        "high_confidence_wrong": 0,
+        "high_confidence_threshold": 0.9
+      }
+    }
+  },
+  "pairs": {
+    "base_true-to-query_unknown_true": {
+      "families": 200,
+      "prediction_changed_rate": 0.0,
+      "both_correct_rate": 0.0,
+      "oracle_label_changes": 200
+    },
+    "base_false-to-query_unknown_false": {
+      "families": 200,
+      "prediction_changed_rate": 0.0,
+      "both_correct_rate": 0.0,
+      "oracle_label_changes": 200
+    },
+    "base_true-to-premise_unknown": {
+      "families": 200,
+      "prediction_changed_rate": 1.0,
+      "both_correct_rate": 1.0,
+      "oracle_label_changes": 200
+    },
+    "base_true-to-renamed_true": {
+      "families": 200,
+      "prediction_changed_rate": 0.0,
+      "both_correct_rate": 1.0,
+      "oracle_label_changes": 0
+    },
+    "query_unknown_true-to-renamed_unknown": {
+      "families": 200,
+      "prediction_changed_rate": 0.0,
+      "both_correct_rate": 0.0,
+      "oracle_label_changes": 0
+    },
+    "base_true-to-distractor_true": {
+      "families": 200,
+      "prediction_changed_rate": 0.0,
+      "both_correct_rate": 1.0,
+      "oracle_label_changes": 0
+    }
+  },
+  "predictions_sha256": "17a6fabfd861b90be72f379f257b75e214132f3804d9d23b24d4d7d93f8a7c8d"
+}

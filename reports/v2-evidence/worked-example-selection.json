@@ -1,0 +1,6 @@
+{
+  "family_id": "v2-development-000001",
+  "source": "development",
+  "selection_rule": "first sorted counterfactual development family with two-step proof",
+  "selected_before_final_test_scoring": true
+}

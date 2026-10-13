@@ -1,0 +1,310 @@
+{
+  "control": {
+    "train": {
+      "questions": 20001,
+      "labels": {
+        "FALSE": 6667,
+        "TRUE": 6667,
+        "UNKNOWN": 6667
+      },
+      "proof_depths": {
+        "1": 4784,
+        "2": 4752,
+        "None": 6667,
+        "3": 3798
+      },
+      "motifs": {
+        "relational": 9252,
+        "chain": 10749
+      },
+      "unique_example_ids": true
+    },
+    "development": {
+      "questions": 2001,
+      "labels": {
+        "FALSE": 667,
+        "TRUE": 667,
+        "UNKNOWN": 667
+      },
+      "proof_depths": {
+        "2": 476,
+        "None": 667,
+        "1": 470,
+        "3": 388
+      },
+      "motifs": {
+        "relational": 876,
+        "chain": 1125
+      },
+      "unique_example_ids": true
+    },
+    "calibration": {
+      "questions": 2001,
+      "labels": {
+        "FALSE": 667,
+        "TRUE": 667,
+        "UNKNOWN": 667
+      },
+      "proof_depths": {
+        "3": 384,
+        "2": 462,
+        "None": 667,
+        "1": 488
+      },
+      "motifs": {
+        "chain": 1074,
+        "relational": 927
+      },
+      "unique_example_ids": true
+    },
+    "test_original": {
+      "questions": 3000,
+      "labels": {
+        "FALSE": 1000,
+        "TRUE": 1000,
+        "UNKNOWN": 1000
+      },
+      "proof_depths": {
+        "2": 706,
+        "1": 722,
+        "None": 1000,
+        "3": 572
+      },
+      "motifs": {
+        "relational": 1410,
+        "chain": 1590
+      },
+      "unique_example_ids": true
+    },
+    "test_counterfactual": {
+      "questions": 3000,
+      "labels": {
+        "FALSE": 1000,
+        "TRUE": 1000,
+        "UNKNOWN": 1000
+      },
+      "proof_depths": {
+        "1": 722,
+        "3": 572,
+        "2": 706,
+        "None": 1000
+      },
+      "motifs": {
+        "chain": 1590,
+        "relational": 1410
+      },
+      "unique_example_ids": true
+    },
+    "test_depth": {
+      "questions": 1500,
+      "labels": {
+        "TRUE": 500,
+        "UNKNOWN": 500,
+        "FALSE": 500
+      },
+      "proof_depths": {
+        "4": 568,
+        "None": 500,
+        "5": 432
+      },
+      "motifs": {
+        "chain": 990,
+        "relational": 510
+      },
+      "unique_example_ids": true
+    },
+    "test_wording": {
+      "questions": 1500,
+      "labels": {
+        "TRUE": 500,
+        "FALSE": 500,
+        "UNKNOWN": 500
+      },
+      "proof_depths": {
+        "2": 394,
+        "1": 324,
+        "None": 500,
+        "3": 282
+      },
+      "motifs": {
+        "chain": 813,
+        "relational": 687
+      },
+      "unique_example_ids": true
+    },
+    "test_single_branch": {
+      "questions": 1000,
+      "labels": {
+        "TRUE": 256,
+        "FALSE": 244,
+        "UNKNOWN": 500
+      },
+      "proof_depths": {
+        "2": 176,
+        "3": 148,
+        "None": 500,
+        "1": 176
+      },
+      "motifs": {
+        "chain": 364,
+        "relational": 276,
+        "conjunction": 360
+      },
+      "unique_example_ids": true
+    }
+  },
+  "treatment": {
+    "train": {
+      "questions": 20001,
+      "labels": {
+        "FALSE": 6667,
+        "TRUE": 6667,
+        "UNKNOWN": 6667
+      },
+      "proof_depths": {
+        "1": 4784,
+        "2": 4752,
+        "None": 6667,
+        "3": 3798
+      },
+      "motifs": {
+        "relational": 9252,
+        "chain": 10749
+      },
+      "unique_example_ids": true
+    },
+    "development": {
+      "questions": 2001,
+      "labels": {
+        "FALSE": 667,
+        "TRUE": 667,
+        "UNKNOWN": 667
+      },
+      "proof_depths": {
+        "2": 476,
+        "None": 667,
+        "1": 470,
+        "3": 388
+      },
+      "motifs": {
+        "relational": 876,
+        "chain": 1125
+      },
+      "unique_example_ids": true
+    },
+    "calibration": {
+      "questions": 2001,
+      "labels": {
+        "FALSE": 667,
+        "TRUE": 667,
+        "UNKNOWN": 667
+      },
+      "proof_depths": {
+        "3": 384,
+        "2": 462,
+        "None": 667,
+        "1": 488
+      },
+      "motifs": {
+        "chain": 1074,
+        "relational": 927
+      },
+      "unique_example_ids": true
+    },
+    "test_original": {
+      "questions": 3000,
+      "labels": {
+        "FALSE": 1000,
+        "TRUE": 1000,
+        "UNKNOWN": 1000
+      },
+      "proof_depths": {
+        "2": 706,
+        "1": 722,
+        "None": 1000,
+        "3": 572
+      },
+      "motifs": {
+        "relational": 1410,
+        "chain": 1590
+      },
+      "unique_example_ids": true
+    },
+    "test_counterfactual": {
+      "questions": 3000,
+      "labels": {
+        "FALSE": 1000,
+        "TRUE": 1000,
+        "UNKNOWN": 1000
+      },
+      "proof_depths": {
+        "1": 722,
+        "3": 572,
+        "2": 706,
+        "None": 1000
+      },
+      "motifs": {
+        "chain": 1590,
+        "relational": 1410
+      },
+      "unique_example_ids": true
+    },
+    "test_depth": {
+      "questions": 1500,
+      "labels": {
+        "TRUE": 500,
+        "UNKNOWN": 500,
+        "FALSE": 500
+      },
+      "proof_depths": {
+        "4": 568,
+        "None": 500,
+        "5": 432
+      },
+      "motifs": {
+        "chain": 990,
+        "relational": 510
+      },
+      "unique_example_ids": true
+    },
+    "test_wording": {
+      "questions": 1500,
+      "labels": {
+        "TRUE": 500,
+        "FALSE": 500,
+        "UNKNOWN": 500
+      },
+      "proof_depths": {
+        "2": 394,
+        "1": 324,
+        "None": 500,
+        "3": 282
+      },
+      "motifs": {
+        "chain": 813,
+        "relational": 687
+      },
+      "unique_example_ids": true
+    },
+    "test_single_branch": {
+      "questions": 1000,
+      "labels": {
+        "TRUE": 256,
+        "FALSE": 244,
+        "UNKNOWN": 500
+      },
+      "proof_depths": {
+        "2": 176,
+        "3": 148,
+        "None": 500,
+        "1": 176
+      },
+      "motifs": {
+        "chain": 364,
+        "relational": 276,
+        "conjunction": 360
+      },
+      "unique_example_ids": true
+    }
+  }
+}

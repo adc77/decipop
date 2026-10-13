@@ -1,0 +1,47 @@
+{
+  "token": {
+    "repo_id": "axondendriteplus/decision-lab-smollm2-360m-token",
+    "protocol_identity": "b622cfa2d34eb2fb779a4692ceb69290e053d1dcd1b307da68d203bbd25f4d3e",
+    "created_private_by_this_release": true,
+    "commit": "b5db649b84cef324ac59d5115ac5c730a919c0d7",
+    "url": "https://huggingface.co/axondendriteplus/decision-lab-smollm2-360m-token",
+    "artifact_manifest_sha256": "548c03a2de5ec686ac0005a8004afa0c1c93f62382f836005a6d7a320a63b4f0",
+    "remote_download_verification": {
+      "verified": true,
+      "inputs": 8,
+      "device": "cpu",
+      "artifact_identity": "b622cfa2d34eb2fb779a4692ceb69290e053d1dcd1b307da68d203bbd25f4d3e"
+    },
+    "verified_download_directory": "/Users/axon_dendrite/decision-model-lab/artifacts/hub-verification/token"
+  },
+  "head": {
+    "repo_id": "axondendriteplus/decision-lab-smollm2-360m-head",
+    "protocol_identity": "b622cfa2d34eb2fb779a4692ceb69290e053d1dcd1b307da68d203bbd25f4d3e",
+    "created_private_by_this_release": true,
+    "commit": "9bd0a31fa732ed2e746906638e7b0c349a9afeb2",
+    "url": "https://huggingface.co/axondendriteplus/decision-lab-smollm2-360m-head",
+    "artifact_manifest_sha256": "e73b59fb84202e101365c6af260aeb95d8d533caf9307bd37c5e44bc014c5152",
+    "remote_download_verification": {
+      "verified": true,
+      "inputs": 8,
+      "device": "cpu",
+      "artifact_identity": "b622cfa2d34eb2fb779a4692ceb69290e053d1dcd1b307da68d203bbd25f4d3e"
+    },
+    "verified_download_directory": "/Users/axon_dendrite/decision-model-lab/artifacts/hub-verification/head"
+  },
+  "scratch": {
+    "repo_id": "axondendriteplus/decision-lab-transformer-14m",
+    "protocol_identity": "b622cfa2d34eb2fb779a4692ceb69290e053d1dcd1b307da68d203bbd25f4d3e",
+    "created_private_by_this_release": true,
+    "commit": "f09dbc99d615ba37e143e33ae34c6fea68d61c56",
+    "url": "https://huggingface.co/axondendriteplus/decision-lab-transformer-14m",
+    "artifact_manifest_sha256": "45b02d9cb8ffd8e83a86b245dfb1299a26214b0d951e1b5da902ae9fe1b63978",
+    "remote_download_verification": {
+      "verified": true,
+      "inputs": 8,
+      "device": "cpu",
+      "artifact_identity": "b622cfa2d34eb2fb779a4692ceb69290e053d1dcd1b307da68d203bbd25f4d3e"
+    },
+    "verified_download_directory": "/Users/axon_dendrite/decision-model-lab/artifacts/hub-verification/scratch"
+  }
+}

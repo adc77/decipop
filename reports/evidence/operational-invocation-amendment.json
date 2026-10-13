@@ -1,0 +1,7 @@
+{
+  "protocol_identity": "b622cfa2d34eb2fb779a4692ceb69290e053d1dcd1b307da68d203bbd25f4d3e",
+  "additional_calls": {
+    "head": 1
+  },
+  "reason": "One extra recovery call after a local DNS disconnect and a subsequent orphan-selection collision; original nine-call cap included one spare. Hyperparameters, examples, exposure, selection, and evaluation are unchanged. The $20 compute cap and $10 reserve still apply."
+}

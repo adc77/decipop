@@ -1,0 +1,149 @@
+{
+  "splits": {
+    "train_control": {
+      "sha256": "5c60379b2b440410d3e27dde1bcdc76c70108cf4525d9b90e7c8afc306014af9",
+      "questions": 20001,
+      "families": 6667,
+      "labels": {
+        "TRUE": 6667,
+        "UNKNOWN": 6667,
+        "FALSE": 6667
+      }
+    },
+    "train_treatment": {
+      "sha256": "9d04e14c6a3fedb2811a20be0e12ad6b23da94df9941f6de560647e0406a1cda",
+      "questions": 20001,
+      "families": 6667,
+      "labels": {
+        "TRUE": 6667,
+        "UNKNOWN": 6667,
+        "FALSE": 6667
+      }
+    },
+    "selection_fit": {
+      "sha256": "63b1db74c3716822b1ce5f42be4cf22e6cd7fc8704fd89d89a785e6b448210b7",
+      "questions": 1200,
+      "families": 400,
+      "labels": {
+        "FALSE": 400,
+        "TRUE": 400,
+        "UNKNOWN": 400
+      }
+    },
+    "selection": {
+      "sha256": "90167638778cec2adf6686e6ec375961beae7b4bf441ee92f2f2054b3cf8297c",
+      "questions": 1200,
+      "families": 400,
+      "labels": {
+        "TRUE": 400,
+        "FALSE": 400,
+        "UNKNOWN": 400
+      }
+    },
+    "calibration": {
+      "sha256": "d13b8c73316b55b5f7d31054afbf144ff2e5a3819a6fdd8f9ffb02de3f9a0fed",
+      "questions": 1200,
+      "families": 400,
+      "labels": {
+        "TRUE": 400,
+        "FALSE": 400,
+        "UNKNOWN": 400
+      }
+    },
+    "test_original": {
+      "sha256": "d34886cea4b5e8c9b160fcec6daf291874b5c71ea62591e8e8da55dcfd7bc8fb",
+      "questions": 3000,
+      "families": 1000,
+      "labels": {
+        "UNKNOWN": 1000,
+        "FALSE": 1000,
+        "TRUE": 1000
+      }
+    },
+    "test_counterfactual": {
+      "sha256": "cc3b0dc97a211d469e62662213b755e66a3df972ff438fba45a3886e62b9d526",
+      "questions": 3000,
+      "families": 1000,
+      "labels": {
+        "TRUE": 1000,
+        "UNKNOWN": 1000,
+        "FALSE": 1000
+      }
+    },
+    "test_depth": {
+      "sha256": "b274add306f84ed2b22ab9769b0e34542d872211d85c3cbbb92c164def3ef27f",
+      "questions": 1500,
+      "families": 500,
+      "labels": {
+        "FALSE": 500,
+        "UNKNOWN": 500,
+        "TRUE": 500
+      }
+    },
+    "test_wording": {
+      "sha256": "6fa5c0652cb176b26e63d8a83439aaf18d8dc007714224603a4612327097bd75",
+      "questions": 1500,
+      "families": 500,
+      "labels": {
+        "UNKNOWN": 500,
+        "FALSE": 500,
+        "TRUE": 500
+      }
+    },
+    "test_single_branch": {
+      "sha256": "522d2ed9a4a83fe65a72d987d240d0b4ed4266e22a1b5f0179f47b49849eef03",
+      "questions": 1000,
+      "families": 500,
+      "labels": {
+        "UNKNOWN": 500,
+        "FALSE": 244,
+        "TRUE": 256
+      }
+    }
+  },
+  "families_sha256": "fa19afb1379e632ef795ebc593299d9b590f9a6e90126bb5508154b9ce9a5559",
+  "excluded_files": {
+    "data/pilot-v3/calibration.jsonl": "f4fe9513ce84d49ca09f2bd3abb763c339bc87c92539a28c182538e1a758dddf",
+    "data/pilot-v3/development.jsonl": "89822945458c7652d9daa143224901ade591a6b9b3724b74bfd583b817e3cdea",
+    "data/pilot-v3/test_depth.jsonl": "cf825f3f48b50c868f0b400795648e724a239356f1b25135309b19ab00b37718",
+    "data/pilot-v3/test_id.jsonl": "186adf70fef3ec8a42cbaab221c374838979c936fcecc43340d3c7460b6aba87",
+    "data/pilot-v3/test_structure.jsonl": "e242154c0c0e57120c6f529748859d4a6f1239b98f53f772f13476950acda808",
+    "data/pilot-v3/test_wording.jsonl": "0d49676a5cbcf4963fc50b4dfb94c79e89a4bcb815c742d47c83bf0e9f057f0d",
+    "data/pilot-v3/train.jsonl": "c13ab0bea98f594aac6d99553b0cdfbe6840556e4bada5bfbcfdbfe605e93eed",
+    "runs/study-v1/test-inputs/flip_fact.jsonl": "39a111e0f7015b136e27dfde6cabd1fdf552da13c7e1aae530c0bb30afaff6d6",
+    "runs/study-v1/test-inputs/irrelevant.jsonl": "55e6a60998b45824fac24cb0c9c492681abe4d942d98e99ae0a393f3b116f219",
+    "runs/study-v1/test-inputs/paraphrase.jsonl": "2154fb016240bcf20e180ac326f3bbf7159eaba23b46487931974fce1c2b7b34",
+    "runs/study-v1/test-inputs/remove_premise.jsonl": "8037087ba59e2c8b713b3bff36a51d3dfe8d139d8ad2a76d11814d034df7cf44",
+    "runs/study-v1/test-inputs/rename.jsonl": "2d3667dabc9a8b16d1b7ff79ff2adffb66fcee57d93a5029d86cb4bdb25668a4",
+    "runs/study-v1/test-inputs/reorder.jsonl": "0fff378ade8b86d534a6103009583bb8313e3caa997dc61a4392f63867f42f0e",
+    "data/v2/control/calibration.jsonl": "5ad9e1723e2070062e82765b94f136fe53b7bae91529a5d6e416a7c13393dcf2",
+    "data/v2/control/development.jsonl": "8026630042839f44202aace250199fddd028f0dd45c918a0abe52b5d80f31c5c",
+    "data/v2/control/families.jsonl": "1c86773e9e19c4249ef346c62b5d6d6bfea64ff1a7a4e3df61aba65bd8b5c52f",
+    "data/v2/control/test_counterfactual.jsonl": "ca2d60dbc0966fec12a220396d3ce875bfd4aeec1b2563b2ebc82372774deae8",
+    "data/v2/control/test_depth.jsonl": "5d31d7c04f19000181fa826852e3f047b15adc022741ec53f0bbd878b18ceb9f",
+    "data/v2/control/test_original.jsonl": "dc4170ac42d7a6d38a86b050a1ff5f7321db5069077449ad89c3a3f22528833c",
+    "data/v2/control/test_single_branch.jsonl": "8ed6d94e46a89cb80e40f7deea315dbc8c6a485abff5803e1ac309481da65f17",
+    "data/v2/control/test_wording.jsonl": "0fca87f3888ac1e814736668ea4bb8522aca882b554311498468661b7f8818ab",
+    "data/v2/control/train.jsonl": "0f31d55ae347693dd21745ae07893dadb1e286fc888743ac9b25c5014eacb608",
+    "data/v2/treatment/calibration.jsonl": "5ad9e1723e2070062e82765b94f136fe53b7bae91529a5d6e416a7c13393dcf2",
+    "data/v2/treatment/development.jsonl": "8026630042839f44202aace250199fddd028f0dd45c918a0abe52b5d80f31c5c",
+    "data/v2/treatment/families.jsonl": "1c86773e9e19c4249ef346c62b5d6d6bfea64ff1a7a4e3df61aba65bd8b5c52f",
+    "data/v2/treatment/test_counterfactual.jsonl": "ca2d60dbc0966fec12a220396d3ce875bfd4aeec1b2563b2ebc82372774deae8",
+    "data/v2/treatment/test_depth.jsonl": "5d31d7c04f19000181fa826852e3f047b15adc022741ec53f0bbd878b18ceb9f",
+    "data/v2/treatment/test_original.jsonl": "dc4170ac42d7a6d38a86b050a1ff5f7321db5069077449ad89c3a3f22528833c",
+    "data/v2/treatment/test_single_branch.jsonl": "8ed6d94e46a89cb80e40f7deea315dbc8c6a485abff5803e1ac309481da65f17",
+    "data/v2/treatment/test_wording.jsonl": "0fca87f3888ac1e814736668ea4bb8522aca882b554311498468661b7f8818ab",
+    "data/v2/treatment/train.jsonl": "c008a0a7906ba56be85230907fc9de1d4177f4a9c8256bf2beb093a6fb5426c8",
+    "data/v2/families.jsonl": "1c86773e9e19c4249ef346c62b5d6d6bfea64ff1a7a4e3df61aba65bd8b5c52f",
+    "runs/study-v3/data/families.jsonl": "d939fbd5c98a4326547d8fead7b0a56ec3d6f208ccb1633602557d610904ae69",
+    "runs/study-v4/diagnostic/families.jsonl": "3904ebe4d5c2d8161f6276dc02466348ce09a6f19fdcf8531b6cad64adf333ed"
+  },
+  "excluded_worlds": 53204,
+  "fresh_worlds": 30601,
+  "rejections": {
+    "Both a statement and its explicit negation are derivable": 12497,
+    "No original-style UNKNOWN query": 1075,
+    "Parent does not have its requested proof": 532,
+    "Candidate does not have the requested shortest proof depth": 22
+  }
+}

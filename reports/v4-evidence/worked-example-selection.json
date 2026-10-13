@@ -1,0 +1,8 @@
+{
+  "family_id": "v4-test-000000",
+  "selection_rule": "lexicographically first paired primary-test family",
+  "chosen_before_test_inference": true,
+  "descriptive_only": true,
+  "recorded_utc": "2026-10-13T08:05:13.070521+00:00",
+  "training_protocol_identity": "2ab1532953c1f8b4c2dfaab8d1b3a49ddc39a32cbeeff5e5413e6ed55a631650"
+}

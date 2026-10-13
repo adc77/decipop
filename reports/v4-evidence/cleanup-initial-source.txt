@@ -1,0 +1,83 @@
+import json
+import subprocess
+from datetime import UTC, datetime
+from pathlib import Path
+
+import modal
+from huggingface_hub import HfApi
+
+from decision_lab.publication import atomic_json, release_inventory
+
+
+def cli(arguments):
+    return subprocess.run(
+        ["uv", "run", "--extra", "cloud", "modal", *arguments, "--profile", "amandogra2016"],
+        capture_output=True,
+        text=True,
+    )
+
+
+def main():
+    root = Path("runs/study-v4")
+    if (root / "cleanup.json").exists():
+        raise FileExistsError("Cleanup was already recorded")
+    ownership = json.loads((root / "modal-ownership.json").read_text())
+    audit = json.loads((root / "final-audit.json").read_text())
+    receipt = json.loads((root / "huggingface-release.json").read_text())
+    if not audit["valid"] or set(receipt) != {"control", "treatment"}:
+        raise ValueError("Retention/audit/publication is incomplete")
+    api = HfApi()
+    for arm, release in receipt.items():
+        verification = release["remote_download_verification"]
+        if not verification["verified"] or verification["inputs"] != 8:
+            raise ValueError("Independent Hub verification is incomplete")
+        info = api.model_info(release["repo_id"], revision=release["commit"])
+        if not info.private or info.sha != release["commit"]:
+            raise ValueError("Private model revision changed")
+        release_inventory(Path("artifacts/v4-releases") / arm)
+    if ownership["volume"] != "decision-model-lab-v4-runs":
+        raise ValueError("Unexpected owned Volume name")
+    volume = modal.Volume.from_name(ownership["volume"], create_if_missing=False)
+    volume.hydrate()
+    if volume.object_id != ownership["volume_id"]:
+        raise ValueError("Owned Volume ID differs")
+    stops = []
+    for app_id in ownership["app_ids"]:
+        if not app_id.startswith("ap-"):
+            raise ValueError("Invalid owned app ID")
+        result = cli(["app", "stop", app_id])
+        message = result.stdout + result.stderr
+        if result.returncode != 0 and "already stopped" not in message.lower():
+            raise RuntimeError(f"Owned app stop failed: {app_id}: {message}")
+        stops.append({"app_id": app_id, "exit_code": result.returncode, "message": message})
+    deletion = cli(["volume", "delete", ownership["volume"], "--yes"])
+    if deletion.returncode != 0:
+        raise RuntimeError("Owned Volume deletion failed: " + deletion.stderr)
+    volumes = cli(["volume", "list", "--json"])
+    apps = cli(["app", "list", "--json"])
+    if volumes.returncode != 0 or apps.returncode != 0:
+        raise RuntimeError("Post-cleanup resource listing failed")
+    volume_rows, app_rows = json.loads(volumes.stdout), json.loads(apps.stdout)
+    if any(row["name"] == ownership["volume"] for row in volume_rows):
+        raise ValueError("Owned Volume still exists")
+    owned_apps = [row for row in app_rows if row["app_id"] in ownership["app_ids"]]
+    if len(owned_apps) != len(ownership["app_ids"]) or any(
+        row["state"].lower() != "stopped" or int(row["tasks"]) != 0 for row in owned_apps
+    ):
+        raise ValueError("Owned app cleanup is not verified")
+    record = {
+        "checked_at_utc": datetime.now(UTC).isoformat(),
+        "owned_volume_absent": True,
+        "owned_apps": owned_apps,
+        "stop_receipts": stops,
+        "zero_owned_tasks": True,
+        "volume_delete_stdout": deletion.stdout,
+        "unrelated_resources_modified": False,
+        "optimizer_recovery_states_retained": False,
+    }
+    atomic_json(root / "cleanup.json", record)
+    print(json.dumps({k: v for k, v in record.items() if k not in ("owned_apps", "stop_receipts")}))
+
+
+if __name__ == "__main__":
+    main()

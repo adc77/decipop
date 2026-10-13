@@ -1,0 +1,32 @@
+{
+  "control": {
+    "repo_id": "axondendriteplus/decision-lab-v2-smollm2-360m-control",
+    "protocol_identity": "223dc1c532c688871512c380efd163f80e457d26d3f190dffcbe5350ff2aa58f",
+    "created_private_by_this_release": true,
+    "commit": "7cb185a64126d6812e3e96b2bb614cb20a33dba5",
+    "url": "https://huggingface.co/axondendriteplus/decision-lab-v2-smollm2-360m-control",
+    "artifact_manifest_sha256": "ce939745155063b971f9d54c28a78b5777d0e0d24fa9299196e3893c3f1c2e68",
+    "remote_download_verification": {
+      "verified": true,
+      "inputs": 8,
+      "device": "cpu",
+      "artifact_identity": "223dc1c532c688871512c380efd163f80e457d26d3f190dffcbe5350ff2aa58f"
+    },
+    "verified_download_directory": "/Users/axon_dendrite/decision-model-lab/artifacts/v2-hub-verification/control"
+  },
+  "treatment": {
+    "repo_id": "axondendriteplus/decision-lab-v2-smollm2-360m-counterfactual",
+    "protocol_identity": "6315c240a0e12cce47af29f0b251681ead5b2481528afddcdc63461b48760556",
+    "created_private_by_this_release": true,
+    "commit": "bb6e562f66a3689da2a8b3a5ccd5d4135ff12471",
+    "url": "https://huggingface.co/axondendriteplus/decision-lab-v2-smollm2-360m-counterfactual",
+    "artifact_manifest_sha256": "1a55ea9b044f3d441925a9b7a65636e23f4824e213f0014c6a264d7ff56c2625",
+    "remote_download_verification": {
+      "verified": true,
+      "inputs": 8,
+      "device": "cpu",
+      "artifact_identity": "6315c240a0e12cce47af29f0b251681ead5b2481528afddcdc63461b48760556"
+    },
+    "verified_download_directory": "/Users/axon_dendrite/decision-model-lab/artifacts/v2-hub-verification/treatment"
+  }
+}

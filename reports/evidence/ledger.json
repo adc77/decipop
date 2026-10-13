@@ -1,0 +1,205 @@
+{
+  "starting_verified_credits_usd": 30.0,
+  "initial_pilot_allocation_usd": 1.0,
+  "invocations": [
+    {
+      "stage": "gate",
+      "maximum_estimated_usd": 0.37376608000000006,
+      "status": "complete",
+      "attempt": "gate-ceb1e23b2311449ea96f63b840c4bfb1"
+    },
+    {
+      "stage": "token",
+      "maximum_estimated_usd": 0.37376608000000006,
+      "status": "complete",
+      "attempt": "attempt-8bd2d3fec5fd48948a866f38d9ba1abc"
+    },
+    {
+      "stage": "token",
+      "maximum_estimated_usd": 0.37376608000000006,
+      "status": "complete",
+      "attempt": "attempt-3b0654e587b04bd8b4d0d5c1daa32bbc"
+    },
+    {
+      "stage": "token",
+      "maximum_estimated_usd": 0.37376608000000006,
+      "status": "complete",
+      "attempt": "attempt-f1a83c22bac04b31a0cb45d1285f2b95"
+    },
+    {
+      "stage": "token",
+      "maximum_estimated_usd": 0.37376608000000006,
+      "status": "complete",
+      "attempt": "attempt-d9a441b4e0664979ba633cdaccf2c9e2"
+    },
+    {
+      "stage": "token",
+      "maximum_estimated_usd": 0.37376608000000006,
+      "status": "complete",
+      "attempt": "attempt-6c4c616fbc1a42fa8ec54e2f3bf383e8"
+    },
+    {
+      "stage": "token",
+      "maximum_estimated_usd": 0.37376608000000006,
+      "status": "complete",
+      "attempt": "attempt-395e55c93f314e439d4de094f6925247"
+    },
+    {
+      "stage": "token",
+      "maximum_estimated_usd": 0.37376608000000006,
+      "status": "complete",
+      "attempt": "attempt-4b511aec0e15459c94690761f93eaf72"
+    },
+    {
+      "stage": "token",
+      "maximum_estimated_usd": 0.37376608000000006,
+      "status": "complete",
+      "attempt": "attempt-1ad2859fb7e348f0b80e5fd51e716320"
+    },
+    {
+      "stage": "head",
+      "maximum_estimated_usd": 0.37376608000000006,
+      "status": "complete",
+      "attempt": "attempt-0c3b2cf9b9624fa3b8179efbdddd23b4"
+    },
+    {
+      "stage": "head",
+      "maximum_estimated_usd": 0.37376608000000006,
+      "status": "complete",
+      "attempt": "attempt-12b5c6697760447cabf045c9a31b62fd"
+    },
+    {
+      "stage": "head",
+      "maximum_estimated_usd": 0.37376608000000006,
+      "status": "complete",
+      "attempt": "attempt-79a86009e96b402ab6f83dffa2a6b698"
+    },
+    {
+      "stage": "head",
+      "maximum_estimated_usd": 0.37376608000000006,
+      "status": "complete",
+      "attempt": "attempt-8aa77acdd04b412088b13990ced7133e"
+    },
+    {
+      "stage": "head",
+      "maximum_estimated_usd": 0.37376608000000006,
+      "status": "failed",
+      "attempt": "attempt-2357f9e6c2ba49328845ea1b3c3b72b1"
+    },
+    {
+      "stage": "head",
+      "maximum_estimated_usd": 0.37376608000000006,
+      "status": "failed",
+      "attempt": "attempt-2856a0a143ec4255a505de846d7c59e6"
+    },
+    {
+      "stage": "head",
+      "maximum_estimated_usd": 0.37376608000000006,
+      "status": "complete",
+      "attempt": "attempt-e524855b5d244afcaabdfdaf27c8101d"
+    },
+    {
+      "stage": "head",
+      "maximum_estimated_usd": 0.37376608000000006,
+      "status": "complete",
+      "attempt": "attempt-9db7569e5d994a27969c8719135f81d1"
+    },
+    {
+      "stage": "head",
+      "maximum_estimated_usd": 0.37376608000000006,
+      "status": "complete",
+      "attempt": "attempt-9e7594284c9f45e6a7126d02e7946066"
+    },
+    {
+      "stage": "head",
+      "maximum_estimated_usd": 0.37376608000000006,
+      "status": "complete",
+      "attempt": "attempt-b82fb9d9da2a479a8fe467b129ac3966"
+    },
+    {
+      "stage": "scratch",
+      "maximum_estimated_usd": 0.37376608000000006,
+      "status": "complete",
+      "attempt": "attempt-0199595545e9411cb3bdaaf0727766d2"
+    },
+    {
+      "stage": "scratch",
+      "maximum_estimated_usd": 0.37376608000000006,
+      "status": "complete",
+      "attempt": "attempt-d73a3d2a172245e78be0c7d9a433db80"
+    },
+    {
+      "stage": "scratch",
+      "maximum_estimated_usd": 0.37376608000000006,
+      "status": "complete",
+      "attempt": "attempt-677742b67aee4027a3f6d30a3a18f09e"
+    },
+    {
+      "stage": "scratch",
+      "maximum_estimated_usd": 0.37376608000000006,
+      "status": "complete",
+      "attempt": "attempt-779d47431c1344fea05e6f2ee6575c9a"
+    },
+    {
+      "stage": "scratch",
+      "maximum_estimated_usd": 0.37376608000000006,
+      "status": "complete",
+      "attempt": "attempt-f5c19055a04246279bcd1ad272d76252"
+    },
+    {
+      "stage": "scratch",
+      "maximum_estimated_usd": 0.37376608000000006,
+      "status": "complete",
+      "attempt": "attempt-142cba8779ad41f294945495f1fff2ba"
+    },
+    {
+      "stage": "scratch",
+      "maximum_estimated_usd": 0.37376608000000006,
+      "status": "complete",
+      "attempt": "attempt-80800da8e2764f1a9711c8c56a831fd9"
+    },
+    {
+      "stage": "scratch",
+      "maximum_estimated_usd": 0.37376608000000006,
+      "status": "complete",
+      "attempt": "attempt-ac098459d945492a990047ace8826807"
+    },
+    {
+      "stage": "evaluation",
+      "maximum_estimated_usd": 0.6846620800000001,
+      "status": "complete",
+      "phase": "calibrate"
+    },
+    {
+      "stage": "evaluation",
+      "maximum_estimated_usd": 0.6846620800000001,
+      "status": "complete",
+      "phase": "evaluate"
+    },
+    {
+      "stage": "evaluation",
+      "maximum_estimated_usd": 0.6846620800000001,
+      "status": "complete",
+      "phase": "verify"
+    }
+  ],
+  "account_usage_reconciled": true,
+  "operational_amendment": {
+    "protocol_identity": "b622cfa2d34eb2fb779a4692ceb69290e053d1dcd1b307da68d203bbd25f4d3e",
+    "additional_calls": {
+      "head": 1
+    },
+    "reason": "One extra recovery call after a local DNS disconnect and a subsequent orphan-selection collision; original nine-call cap included one spare. Hyperparameters, examples, exposure, selection, and evaluation are unchanged. The $20 compute cap and $10 reserve still apply."
+  },
+  "reconciliation": {
+    "observed_at_utc": "2026-10-12T18:13:57.640278+00:00",
+    "metered_cost_usd": "2.77152523",
+    "billed_cost_usd": "0E-8",
+    "raw_owned_app_report_total_usd": "2.72688182",
+    "raw_app_aggregation_gap_usd": "0.04379309",
+    "within_verified_credits": true,
+    "invoice_final": false,
+    "late_storage_accounting_possible": true,
+    "temporary_volume_deleted": true
+  }
+}

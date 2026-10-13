@@ -1,0 +1,12 @@
+{
+  "valid": true,
+  "prediction_rows_checked": 48000,
+  "protocol_identity": "2ab1532953c1f8b4c2dfaab8d1b3a49ddc39a32cbeeff5e5413e6ed55a631650",
+  "diagnostic_identity": "593025f62c7668bb77c4d89e1374c749d57d889a4e9e7792699df6b22465bfc3",
+  "selection_identity": "eacc80b38059a848a8f9565d688c43207bdd97a71c359cf35df062f5b694d050",
+  "all_declared_candidates_retained": true,
+  "historical_scientific_files_unchanged": true,
+  "completed_calls": 10,
+  "failed_calls": 0,
+  "submitted_compute_ceilings_usd": 3.5626555555555557
+}

@@ -1,0 +1,11 @@
+{
+  "observed_at_utc": "2026-10-12T18:13:57.640278+00:00",
+  "metered_cost_usd": "2.77152523",
+  "billed_cost_usd": "0E-8",
+  "raw_owned_app_report_total_usd": "2.72688182",
+  "raw_app_aggregation_gap_usd": "0.04379309",
+  "within_verified_credits": true,
+  "invoice_final": false,
+  "late_storage_accounting_possible": true,
+  "temporary_volume_deleted": true
+}

@@ -1,0 +1,15 @@
+seed: 17
+calibration_max_iterations: 100
+calibration_learning_rate: 0.1
+calibration_min_temperature: 0.05
+calibration_max_temperature: 20.0
+ece_bins: 10
+high_confidence_threshold: 0.9
+bootstrap_repetitions: 2000
+bootstrap_confidence: 0.95
+robustness_families: 100
+performance_requests: 500
+performance_warmup: 20
+performance_batch: 32
+coverage_targets: [0.25, 0.5, 0.75, 0.9, 1.0]
+evaluation_timeout_seconds: 1800

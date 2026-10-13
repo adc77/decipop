@@ -1,0 +1,15 @@
+{
+  "comparison_identity": "be6db15a671430027698c88f6d48068c260285b6e0cec649b5f0d3c9656648bd",
+  "v1_protocol_identity": "b622cfa2d34eb2fb779a4692ceb69290e053d1dcd1b307da68d203bbd25f4d3e",
+  "v1_training_code_unchanged": true,
+  "v1_evaluation_code_unchanged": true,
+  "v2_scientific_code_unchanged": true,
+  "frozen_protocol_prose_unchanged": true,
+  "git_head": "bf5ea15ec9cc2805adf428d03f4f916ce4c5c6fe",
+  "implementation_uncommitted": true,
+  "tests": {
+    "passed": 54,
+    "log_sha256": "b27991a4ae61777bd33d6d13f328f4f9df210678a99971c7371936afb9d0a91c"
+  },
+  "all_operational_helpers_executed_successfully": true
+}

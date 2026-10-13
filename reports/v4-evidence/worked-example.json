@@ -1,0 +1,988 @@
+{
+  "selection": {
+    "family_id": "v4-test-000000",
+    "selection_rule": "lexicographically first paired primary-test family",
+    "chosen_before_test_inference": true,
+    "descriptive_only": true,
+    "recorded_utc": "2026-10-13T08:05:13.070521+00:00",
+    "training_protocol_identity": "2ab1532953c1f8b4c2dfaab8d1b3a49ddc39a32cbeeff5e5413e6ed55a631650"
+  },
+  "suites": {
+    "test_original": [
+      {
+        "example": {
+          "example_id": "v4-test-000000-test_original-false",
+          "family_id": "v4-test-000000",
+          "split": "test_original",
+          "theory": {
+            "entities": [
+              "Hana",
+              "Dalia",
+              "Evan"
+            ],
+            "facts": [
+              {
+                "predicate": "approved",
+                "arguments": [
+                  "Evan"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "authorized",
+                "arguments": [
+                  "Dalia"
+                ],
+                "negative": true
+              },
+              {
+                "predicate": "authorized",
+                "arguments": [
+                  "Evan"
+                ],
+                "negative": true
+              },
+              {
+                "predicate": "enabled",
+                "arguments": [
+                  "Hana"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "ready",
+                "arguments": [
+                  "Hana"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "verified",
+                "arguments": [
+                  "Dalia"
+                ],
+                "negative": false
+              }
+            ],
+            "rules": [
+              {
+                "conditions": [
+                  {
+                    "predicate": "enabled",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": false
+                  },
+                  {
+                    "predicate": "ready",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": false
+                  }
+                ],
+                "conclusion": {
+                  "predicate": "verified",
+                  "arguments": [
+                    "?x"
+                  ],
+                  "negative": true
+                }
+              },
+              {
+                "conditions": [
+                  {
+                    "predicate": "enabled",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": false
+                  },
+                  {
+                    "predicate": "ready",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": true
+                  }
+                ],
+                "conclusion": {
+                  "predicate": "verified",
+                  "arguments": [
+                    "?x"
+                  ],
+                  "negative": false
+                }
+              }
+            ]
+          },
+          "query": {
+            "predicate": "verified",
+            "arguments": [
+              "Hana"
+            ],
+            "negative": false
+          },
+          "label": "FALSE",
+          "proof_depth": 1,
+          "theory_depth": 1,
+          "motif": "chain",
+          "renderer_id": "conditional",
+          "theory_hash": "12e5b5448ce01def2cff46aa89c6cd59c49076deebd8e76cbe0c9b2d06c549ef",
+          "structure_hash": "d6cdea0617b6466794837beafb7653bbf07acb9494a5c628e1b8f13f481fdb99",
+          "facts": [
+            "Hana is ready.",
+            "Evan is not authorized.",
+            "Hana is enabled.",
+            "Dalia is not authorized.",
+            "Evan is approved.",
+            "Dalia is verified."
+          ],
+          "rules": [
+            "Whenever person 1 is enabled and person 1 is ready, person 1 is not verified; this applies to all people mentioned.",
+            "Whenever person 1 is enabled and person 1 is not ready, person 1 is verified; this applies to all people mentioned."
+          ],
+          "question": "Hana is verified.",
+          "prompt": "Decide using only these facts and rules. TRUE means the statement follows; FALSE means its explicit negation follows; UNKNOWN means neither follows. Absence is not negation. Answer A for TRUE, B for FALSE, or C for UNKNOWN.\n\nFacts:\nHana is ready.\nEvan is not authorized.\nHana is enabled.\nDalia is not authorized.\nEvan is approved.\nDalia is verified.\n\nRules:\nWhenever person 1 is enabled and person 1 is ready, person 1 is not verified; this applies to all people mentioned.\nWhenever person 1 is enabled and person 1 is not ready, person 1 is verified; this applies to all people mentioned.\n\nStatement: Hana is verified.\n\nAnswer:"
+        },
+        "arms": {
+          "control": {
+            "decision": "FALSE",
+            "logits": [
+              -4.53125,
+              8.3125,
+              -5.75
+            ],
+            "raw_confidence": 0.999996576269977,
+            "calibrated_confidence": 0.8221816944019127,
+            "temperature": 6.034315882573097
+          },
+          "treatment": {
+            "decision": "FALSE",
+            "logits": [
+              -6.09375,
+              2.859375,
+              0.458984375
+            ],
+            "raw_confidence": 0.9167483783894491,
+            "calibrated_confidence": 0.8929402005504148,
+            "temperature": 1.1300427719087858
+          }
+        }
+      },
+      {
+        "example": {
+          "example_id": "v4-test-000000-test_original-true",
+          "family_id": "v4-test-000000",
+          "split": "test_original",
+          "theory": {
+            "entities": [
+              "Hana",
+              "Dalia",
+              "Evan"
+            ],
+            "facts": [
+              {
+                "predicate": "approved",
+                "arguments": [
+                  "Evan"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "authorized",
+                "arguments": [
+                  "Dalia"
+                ],
+                "negative": true
+              },
+              {
+                "predicate": "authorized",
+                "arguments": [
+                  "Evan"
+                ],
+                "negative": true
+              },
+              {
+                "predicate": "enabled",
+                "arguments": [
+                  "Hana"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "ready",
+                "arguments": [
+                  "Hana"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "verified",
+                "arguments": [
+                  "Dalia"
+                ],
+                "negative": false
+              }
+            ],
+            "rules": [
+              {
+                "conditions": [
+                  {
+                    "predicate": "enabled",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": false
+                  },
+                  {
+                    "predicate": "ready",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": false
+                  }
+                ],
+                "conclusion": {
+                  "predicate": "verified",
+                  "arguments": [
+                    "?x"
+                  ],
+                  "negative": true
+                }
+              },
+              {
+                "conditions": [
+                  {
+                    "predicate": "enabled",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": false
+                  },
+                  {
+                    "predicate": "ready",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": true
+                  }
+                ],
+                "conclusion": {
+                  "predicate": "verified",
+                  "arguments": [
+                    "?x"
+                  ],
+                  "negative": false
+                }
+              }
+            ]
+          },
+          "query": {
+            "predicate": "verified",
+            "arguments": [
+              "Hana"
+            ],
+            "negative": true
+          },
+          "label": "TRUE",
+          "proof_depth": 1,
+          "theory_depth": 1,
+          "motif": "chain",
+          "renderer_id": "conditional",
+          "theory_hash": "12e5b5448ce01def2cff46aa89c6cd59c49076deebd8e76cbe0c9b2d06c549ef",
+          "structure_hash": "d6cdea0617b6466794837beafb7653bbf07acb9494a5c628e1b8f13f481fdb99",
+          "facts": [
+            "Hana is ready.",
+            "Evan is not authorized.",
+            "Hana is enabled.",
+            "Dalia is not authorized.",
+            "Evan is approved.",
+            "Dalia is verified."
+          ],
+          "rules": [
+            "Whenever person 1 is enabled and person 1 is ready, person 1 is not verified; this applies to all people mentioned.",
+            "Whenever person 1 is enabled and person 1 is not ready, person 1 is verified; this applies to all people mentioned."
+          ],
+          "question": "Hana is not verified.",
+          "prompt": "Decide using only these facts and rules. TRUE means the statement follows; FALSE means its explicit negation follows; UNKNOWN means neither follows. Absence is not negation. Answer A for TRUE, B for FALSE, or C for UNKNOWN.\n\nFacts:\nHana is ready.\nEvan is not authorized.\nHana is enabled.\nDalia is not authorized.\nEvan is approved.\nDalia is verified.\n\nRules:\nWhenever person 1 is enabled and person 1 is ready, person 1 is not verified; this applies to all people mentioned.\nWhenever person 1 is enabled and person 1 is not ready, person 1 is verified; this applies to all people mentioned.\n\nStatement: Hana is not verified.\n\nAnswer:"
+        },
+        "arms": {
+          "control": {
+            "decision": "TRUE",
+            "logits": [
+              9.4375,
+              -3.84375,
+              -4.75
+            ],
+            "raw_confidence": 0.999997604458068,
+            "calibrated_confidence": 0.8292160165416775,
+            "temperature": 6.034315882573097
+          },
+          "treatment": {
+            "decision": "TRUE",
+            "logits": [
+              2.890625,
+              -4.53125,
+              1.046875
+            ],
+            "raw_confidence": 0.8629460439073262,
+            "calibrated_confidence": 0.8354037024517655,
+            "temperature": 1.1300427719087858
+          }
+        }
+      },
+      {
+        "example": {
+          "example_id": "v4-test-000000-test_original-unknown",
+          "family_id": "v4-test-000000",
+          "split": "test_original",
+          "theory": {
+            "entities": [
+              "Hana",
+              "Dalia",
+              "Evan"
+            ],
+            "facts": [
+              {
+                "predicate": "approved",
+                "arguments": [
+                  "Evan"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "authorized",
+                "arguments": [
+                  "Dalia"
+                ],
+                "negative": true
+              },
+              {
+                "predicate": "authorized",
+                "arguments": [
+                  "Evan"
+                ],
+                "negative": true
+              },
+              {
+                "predicate": "enabled",
+                "arguments": [
+                  "Hana"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "ready",
+                "arguments": [
+                  "Hana"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "verified",
+                "arguments": [
+                  "Dalia"
+                ],
+                "negative": false
+              }
+            ],
+            "rules": [
+              {
+                "conditions": [
+                  {
+                    "predicate": "enabled",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": false
+                  },
+                  {
+                    "predicate": "ready",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": false
+                  }
+                ],
+                "conclusion": {
+                  "predicate": "verified",
+                  "arguments": [
+                    "?x"
+                  ],
+                  "negative": true
+                }
+              },
+              {
+                "conditions": [
+                  {
+                    "predicate": "enabled",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": false
+                  },
+                  {
+                    "predicate": "ready",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": true
+                  }
+                ],
+                "conclusion": {
+                  "predicate": "verified",
+                  "arguments": [
+                    "?x"
+                  ],
+                  "negative": false
+                }
+              }
+            ]
+          },
+          "query": {
+            "predicate": "verified",
+            "arguments": [
+              "Evan"
+            ],
+            "negative": true
+          },
+          "label": "UNKNOWN",
+          "proof_depth": null,
+          "theory_depth": 1,
+          "motif": "chain",
+          "renderer_id": "conditional",
+          "theory_hash": "12e5b5448ce01def2cff46aa89c6cd59c49076deebd8e76cbe0c9b2d06c549ef",
+          "structure_hash": "452fc03fe2b109b042d10502e5770d53dc7985bb632c4f2fa96a4e6b8a8a36dc",
+          "facts": [
+            "Hana is ready.",
+            "Evan is not authorized.",
+            "Hana is enabled.",
+            "Dalia is not authorized.",
+            "Evan is approved.",
+            "Dalia is verified."
+          ],
+          "rules": [
+            "Whenever person 1 is enabled and person 1 is ready, person 1 is not verified; this applies to all people mentioned.",
+            "Whenever person 1 is enabled and person 1 is not ready, person 1 is verified; this applies to all people mentioned."
+          ],
+          "question": "Evan is not verified.",
+          "prompt": "Decide using only these facts and rules. TRUE means the statement follows; FALSE means its explicit negation follows; UNKNOWN means neither follows. Absence is not negation. Answer A for TRUE, B for FALSE, or C for UNKNOWN.\n\nFacts:\nHana is ready.\nEvan is not authorized.\nHana is enabled.\nDalia is not authorized.\nEvan is approved.\nDalia is verified.\n\nRules:\nWhenever person 1 is enabled and person 1 is ready, person 1 is not verified; this applies to all people mentioned.\nWhenever person 1 is enabled and person 1 is not ready, person 1 is verified; this applies to all people mentioned.\n\nStatement: Evan is not verified.\n\nAnswer:"
+        },
+        "arms": {
+          "control": {
+            "decision": "TRUE",
+            "logits": [
+              9.4375,
+              -3.84375,
+              -4.8125
+            ],
+            "raw_confidence": 0.9999976462241726,
+            "calibrated_confidence": 0.8298914899225688,
+            "temperature": 6.034315882573097
+          },
+          "treatment": {
+            "decision": "TRUE",
+            "logits": [
+              4.46875,
+              -4.6875,
+              -0.1630859375
+            ],
+            "raw_confidence": 0.9902535047392668,
+            "calibrated_confidence": 0.9833856109297721,
+            "temperature": 1.1300427719087858
+          }
+        }
+      }
+    ],
+    "test_counterfactual": [
+      {
+        "example": {
+          "example_id": "v4-test-000000-test_counterfactual-false",
+          "family_id": "v4-test-000000",
+          "split": "test_counterfactual",
+          "theory": {
+            "entities": [
+              "Hana",
+              "Dalia",
+              "Evan"
+            ],
+            "facts": [
+              {
+                "predicate": "approved",
+                "arguments": [
+                  "Evan"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "authorized",
+                "arguments": [
+                  "Dalia"
+                ],
+                "negative": true
+              },
+              {
+                "predicate": "authorized",
+                "arguments": [
+                  "Evan"
+                ],
+                "negative": true
+              },
+              {
+                "predicate": "enabled",
+                "arguments": [
+                  "Hana"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "verified",
+                "arguments": [
+                  "Dalia"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "ready",
+                "arguments": [
+                  "Hana"
+                ],
+                "negative": true
+              }
+            ],
+            "rules": [
+              {
+                "conditions": [
+                  {
+                    "predicate": "enabled",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": false
+                  },
+                  {
+                    "predicate": "ready",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": false
+                  }
+                ],
+                "conclusion": {
+                  "predicate": "verified",
+                  "arguments": [
+                    "?x"
+                  ],
+                  "negative": true
+                }
+              },
+              {
+                "conditions": [
+                  {
+                    "predicate": "enabled",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": false
+                  },
+                  {
+                    "predicate": "ready",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": true
+                  }
+                ],
+                "conclusion": {
+                  "predicate": "verified",
+                  "arguments": [
+                    "?x"
+                  ],
+                  "negative": false
+                }
+              }
+            ]
+          },
+          "query": {
+            "predicate": "verified",
+            "arguments": [
+              "Hana"
+            ],
+            "negative": true
+          },
+          "label": "FALSE",
+          "proof_depth": 1,
+          "theory_depth": 1,
+          "motif": "chain",
+          "renderer_id": "conditional",
+          "theory_hash": "a18558b377ba0aab334fca9159bb22004d4cc77a6b2cea78fdab87ebfb3c5e6f",
+          "structure_hash": "d6cdea0617b6466794837beafb7653bbf07acb9494a5c628e1b8f13f481fdb99",
+          "facts": [
+            "Dalia is verified.",
+            "Evan is not authorized.",
+            "Hana is enabled.",
+            "Dalia is not authorized.",
+            "Evan is approved.",
+            "Hana is not ready."
+          ],
+          "rules": [
+            "Whenever person 1 is enabled and person 1 is ready, person 1 is not verified; this applies to all people mentioned.",
+            "Whenever person 1 is enabled and person 1 is not ready, person 1 is verified; this applies to all people mentioned."
+          ],
+          "question": "Hana is not verified.",
+          "prompt": "Decide using only these facts and rules. TRUE means the statement follows; FALSE means its explicit negation follows; UNKNOWN means neither follows. Absence is not negation. Answer A for TRUE, B for FALSE, or C for UNKNOWN.\n\nFacts:\nDalia is verified.\nEvan is not authorized.\nHana is enabled.\nDalia is not authorized.\nEvan is approved.\nHana is not ready.\n\nRules:\nWhenever person 1 is enabled and person 1 is ready, person 1 is not verified; this applies to all people mentioned.\nWhenever person 1 is enabled and person 1 is not ready, person 1 is verified; this applies to all people mentioned.\n\nStatement: Hana is not verified.\n\nAnswer:"
+        },
+        "arms": {
+          "control": {
+            "decision": "FALSE",
+            "logits": [
+              -4.40625,
+              8.4375,
+              -5.6875
+            ],
+            "raw_confidence": 0.9999966235970769,
+            "calibrated_confidence": 0.8228596623631365,
+            "temperature": 6.034315882573097
+          },
+          "treatment": {
+            "decision": "FALSE",
+            "logits": [
+              -6.25,
+              3.171875,
+              0.4921875
+            ],
+            "raw_confidence": 0.935746483364679,
+            "calibrated_confidence": 0.9144134526909875,
+            "temperature": 1.1300427719087858
+          }
+        }
+      },
+      {
+        "example": {
+          "example_id": "v4-test-000000-test_counterfactual-true",
+          "family_id": "v4-test-000000",
+          "split": "test_counterfactual",
+          "theory": {
+            "entities": [
+              "Hana",
+              "Dalia",
+              "Evan"
+            ],
+            "facts": [
+              {
+                "predicate": "approved",
+                "arguments": [
+                  "Evan"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "authorized",
+                "arguments": [
+                  "Dalia"
+                ],
+                "negative": true
+              },
+              {
+                "predicate": "authorized",
+                "arguments": [
+                  "Evan"
+                ],
+                "negative": true
+              },
+              {
+                "predicate": "enabled",
+                "arguments": [
+                  "Hana"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "ready",
+                "arguments": [
+                  "Hana"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "verified",
+                "arguments": [
+                  "Dalia"
+                ],
+                "negative": false
+              }
+            ],
+            "rules": [
+              {
+                "conditions": [
+                  {
+                    "predicate": "enabled",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": false
+                  },
+                  {
+                    "predicate": "ready",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": false
+                  }
+                ],
+                "conclusion": {
+                  "predicate": "verified",
+                  "arguments": [
+                    "?x"
+                  ],
+                  "negative": true
+                }
+              },
+              {
+                "conditions": [
+                  {
+                    "predicate": "enabled",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": false
+                  },
+                  {
+                    "predicate": "ready",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": true
+                  }
+                ],
+                "conclusion": {
+                  "predicate": "verified",
+                  "arguments": [
+                    "?x"
+                  ],
+                  "negative": false
+                }
+              }
+            ]
+          },
+          "query": {
+            "predicate": "verified",
+            "arguments": [
+              "Hana"
+            ],
+            "negative": true
+          },
+          "label": "TRUE",
+          "proof_depth": 1,
+          "theory_depth": 1,
+          "motif": "chain",
+          "renderer_id": "conditional",
+          "theory_hash": "12e5b5448ce01def2cff46aa89c6cd59c49076deebd8e76cbe0c9b2d06c549ef",
+          "structure_hash": "d6cdea0617b6466794837beafb7653bbf07acb9494a5c628e1b8f13f481fdb99",
+          "facts": [
+            "Hana is ready.",
+            "Evan is not authorized.",
+            "Hana is enabled.",
+            "Dalia is not authorized.",
+            "Evan is approved.",
+            "Dalia is verified."
+          ],
+          "rules": [
+            "Whenever person 1 is enabled and person 1 is ready, person 1 is not verified; this applies to all people mentioned.",
+            "Whenever person 1 is enabled and person 1 is not ready, person 1 is verified; this applies to all people mentioned."
+          ],
+          "question": "Hana is not verified.",
+          "prompt": "Decide using only these facts and rules. TRUE means the statement follows; FALSE means its explicit negation follows; UNKNOWN means neither follows. Absence is not negation. Answer A for TRUE, B for FALSE, or C for UNKNOWN.\n\nFacts:\nHana is ready.\nEvan is not authorized.\nHana is enabled.\nDalia is not authorized.\nEvan is approved.\nDalia is verified.\n\nRules:\nWhenever person 1 is enabled and person 1 is ready, person 1 is not verified; this applies to all people mentioned.\nWhenever person 1 is enabled and person 1 is not ready, person 1 is verified; this applies to all people mentioned.\n\nStatement: Hana is not verified.\n\nAnswer:"
+        },
+        "arms": {
+          "control": {
+            "decision": "TRUE",
+            "logits": [
+              9.4375,
+              -3.84375,
+              -4.75
+            ],
+            "raw_confidence": 0.999997604458068,
+            "calibrated_confidence": 0.8292160165416775,
+            "temperature": 6.034315882573097
+          },
+          "treatment": {
+            "decision": "TRUE",
+            "logits": [
+              2.890625,
+              -4.53125,
+              1.046875
+            ],
+            "raw_confidence": 0.8629460439073262,
+            "calibrated_confidence": 0.8354037024517655,
+            "temperature": 1.1300427719087858
+          }
+        }
+      },
+      {
+        "example": {
+          "example_id": "v4-test-000000-test_counterfactual-unknown",
+          "family_id": "v4-test-000000",
+          "split": "test_counterfactual",
+          "theory": {
+            "entities": [
+              "Hana",
+              "Dalia",
+              "Evan"
+            ],
+            "facts": [
+              {
+                "predicate": "approved",
+                "arguments": [
+                  "Evan"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "authorized",
+                "arguments": [
+                  "Dalia"
+                ],
+                "negative": true
+              },
+              {
+                "predicate": "authorized",
+                "arguments": [
+                  "Evan"
+                ],
+                "negative": true
+              },
+              {
+                "predicate": "ready",
+                "arguments": [
+                  "Hana"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "verified",
+                "arguments": [
+                  "Dalia"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "enabled",
+                "arguments": [
+                  "Hana"
+                ],
+                "negative": true
+              }
+            ],
+            "rules": [
+              {
+                "conditions": [
+                  {
+                    "predicate": "enabled",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": false
+                  },
+                  {
+                    "predicate": "ready",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": false
+                  }
+                ],
+                "conclusion": {
+                  "predicate": "verified",
+                  "arguments": [
+                    "?x"
+                  ],
+                  "negative": true
+                }
+              },
+              {
+                "conditions": [
+                  {
+                    "predicate": "enabled",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": false
+                  },
+                  {
+                    "predicate": "ready",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": true
+                  }
+                ],
+                "conclusion": {
+                  "predicate": "verified",
+                  "arguments": [
+                    "?x"
+                  ],
+                  "negative": false
+                }
+              }
+            ]
+          },
+          "query": {
+            "predicate": "verified",
+            "arguments": [
+              "Hana"
+            ],
+            "negative": true
+          },
+          "label": "UNKNOWN",
+          "proof_depth": null,
+          "theory_depth": 0,
+          "motif": "chain",
+          "renderer_id": "conditional",
+          "theory_hash": "8dc801ed1982aa5e7f5aa9cf759bd0d1212cfb55633681b682bc829b5caa7d66",
+          "structure_hash": "452fc03fe2b109b042d10502e5770d53dc7985bb632c4f2fa96a4e6b8a8a36dc",
+          "facts": [
+            "Dalia is verified.",
+            "Evan is not authorized.",
+            "Hana is ready.",
+            "Dalia is not authorized.",
+            "Evan is approved.",
+            "Hana is not enabled."
+          ],
+          "rules": [
+            "Whenever person 1 is enabled and person 1 is ready, person 1 is not verified; this applies to all people mentioned.",
+            "Whenever person 1 is enabled and person 1 is not ready, person 1 is verified; this applies to all people mentioned."
+          ],
+          "question": "Hana is not verified.",
+          "prompt": "Decide using only these facts and rules. TRUE means the statement follows; FALSE means its explicit negation follows; UNKNOWN means neither follows. Absence is not negation. Answer A for TRUE, B for FALSE, or C for UNKNOWN.\n\nFacts:\nDalia is verified.\nEvan is not authorized.\nHana is ready.\nDalia is not authorized.\nEvan is approved.\nHana is not enabled.\n\nRules:\nWhenever person 1 is enabled and person 1 is ready, person 1 is not verified; this applies to all people mentioned.\nWhenever person 1 is enabled and person 1 is not ready, person 1 is verified; this applies to all people mentioned.\n\nStatement: Hana is not verified.\n\nAnswer:"
+        },
+        "arms": {
+          "control": {
+            "decision": "UNKNOWN",
+            "logits": [
+              -5.0625,
+              -5.5625,
+              9.0625
+            ],
+            "raw_confidence": 0.9999988210946207,
+            "calibrated_confidence": 0.8439877681414222,
+            "temperature": 6.034315882573097
+          },
+          "treatment": {
+            "decision": "UNKNOWN",
+            "logits": [
+              -3.984375,
+              -3.671875,
+              7.15625
+            ],
+            "raw_confidence": 0.9999656567299584,
+            "calibrated_confidence": 0.9998787629830838,
+            "temperature": 1.1300427719087858
+          }
+        }
+      }
+    ]
+  }
+}

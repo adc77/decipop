@@ -1,0 +1,54 @@
+{
+  "token_minus_head_accuracy": {
+    "left_minus_right": -0.007666666666666666,
+    "interval": [
+      -0.013,
+      -0.0026666666666666666
+    ],
+    "confidence": 0.95,
+    "families": 1000,
+    "repetitions": 2000,
+    "uncertainty": "test-family sampling only; one training seed"
+  },
+  "token_minus_head_nll": {
+    "left_minus_right": 0.04428179853948085,
+    "interval": [
+      0.028784939373236867,
+      0.06072096464085057
+    ],
+    "confidence": 0.95,
+    "families": 1000,
+    "repetitions": 2000,
+    "uncertainty": "test-family sampling only; one training seed"
+  },
+  "token_depth_drop": {
+    "id_minus_depth_accuracy": -0.0006666666666667043,
+    "interval": [
+      -0.01200000000000001,
+      0.010333333333333306
+    ],
+    "confidence": 0.95,
+    "repetitions": 2000,
+    "convention": "independent family resampling in ID and depth pools; one training seed"
+  },
+  "head_depth_drop": {
+    "id_minus_depth_accuracy": 0.0043333333333333,
+    "interval": [
+      -0.006666666666666601,
+      0.015666666666666607
+    ],
+    "confidence": 0.95,
+    "repetitions": 2000,
+    "convention": "independent family resampling in ID and depth pools; one training seed"
+  },
+  "scratch_depth_drop": {
+    "id_minus_depth_accuracy": 0.0,
+    "interval": [
+      0.0,
+      0.0
+    ],
+    "confidence": 0.95,
+    "repetitions": 2000,
+    "convention": "independent family resampling in ID and depth pools; one training seed"
+  }
+}

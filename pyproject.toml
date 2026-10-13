@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "decision-model-lab"
+version = "0.1.0"
+description = "Controlled research on small decision models."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = ["pydantic>=2.10,<3", "PyYAML>=6,<7"]
+
+[project.optional-dependencies]
+baseline = ["scikit-learn>=1.6,<2"]
+analysis = ["matplotlib>=3.10,<4", "numpy>=2,<3"]
+train = [
+  "torch>=2.6,<3",
+  "transformers>=4.57,<5",
+  "tokenizers>=0.22,<0.24",
+  "huggingface-hub>=0.34,<1",
+  "safetensors>=0.5,<1",
+]
+cloud = ["modal>=1,<2"]
+
+[project.scripts]
+decision-lab = "decision_lab.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "ruff>=0.11,<1"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/decision_lab"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

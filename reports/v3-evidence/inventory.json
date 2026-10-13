@@ -1,0 +1,27 @@
+{
+  "protocol_identity": "d9e5cc5a734ee7c7da6975d434a9e46c2be98215e3418bdc35fdaa79a7c58d16",
+  "files": {
+    "allocation-ledger.json": "79ce25fe8ca35675c3e815bf023145fa14507d0a13fe7ed9fd1f8570e8b44ce4",
+    "app-stop.txt": "b7c68ab670f12cabf7f7fc6ae16b297ae4810f3fe4091d36a005b7738936c87a",
+    "artifact-verification.json": "0fc2f8c8d921433e7a71fa69f00c0630bcbaf246ff871f46efa498ef8538a0f6",
+    "billing-attribution.json": "7ede4fad1b86db3ec8b3d3172b1b819fb1af27d1f3c0570e30632ab875ed6325",
+    "billing-before.json": "4d58c913853fe237bc8b38ab1677d4cfdeeffc9baf37052755c60cd4af12ceca",
+    "billing-final.json": "2697e84a36348d4b411e8f638b7bde1c1fe281d0d30c2fff1738eaad73661810",
+    "cleanup.json": "51c044a7973b69e452672597eaba5855ec98494321c099b4b7dc850f0c182723",
+    "data-audit.json": "38428ca431bff628370c34dbd6325a224016ac0dd6e9aba7046785b90134aecb",
+    "data-manifest.json": "d336fae73e0ea34764817afd129a82f773021b51630c60b0feb2fb872968c4af",
+    "evaluation.json": "1672eab63f05fbbdd1f6e8ef221399744fb55808571d98bbe344f446ebc2e22a",
+    "final-audit.json": "e22c196b22e498084697b192d9d27c265e69da3bb7276ad3800881961f1e2340",
+    "final-audit.txt": "dbbe0dfcac21d6dabe616189c9ffb1e83c94e280b76c274607e3dedbe834fa9c",
+    "huggingface-release.json": "a574a950d8e0deae93e753e8e1984a05762f50ee469ff0b7c6e309103a353fc5",
+    "modal-ownership.json": "44cac22b79dc4c006d30fd24b7d51e2e3777268c2ad454d5d4512caf71c92fd5",
+    "preflight.json": "310b921bef16ce2e7a948bf52fda8330c48ee2232f86c2c756493fd68c65d95b",
+    "protocol.json": "a0fdd9a6e9d0de524d3570c70d34aa130087070e1e7989460018593d12d690a3",
+    "retention.json": "f310322ec1298e78349b78c45ded641dcf2feddfa0cd928dcae3cea98e91e7b6",
+    "selection-freeze.json": "66a5c0c98527cee894a5f4ada97b469efca597d469b8ab008499076a4791e65c",
+    "source-before-inference-manifest.json": "80a1674963cbab980170d96edea0bd648d39d5fa375c26aa5ea604752a6fc7d1",
+    "statistics.json": "a783f0762386d94cb8b6ac3fab8757fc531bd2c9a5caec46498c8a59a880365f",
+    "test-started.json": "d5ca6f51efc4dabd9f80f40e30969fd9aee4a8d5a21d083fcca53b06e909b589",
+    "worked-example.json": "92c07522c1ee79325d80f5d8edd5193a2c0872bb432cb0426de63aaf8c99d020"
+  }
+}

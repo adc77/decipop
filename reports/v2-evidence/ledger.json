@@ -1,0 +1,66 @@
+{
+  "compute_limit_usd": 5.0,
+  "worst_case_allocation_usd": 4.86863136,
+  "invocations": [
+    {
+      "stage": "pilot",
+      "maximum_usd": 0.20795488,
+      "status": "complete",
+      "client_seconds": 92.38444487471133
+    },
+    {
+      "stage": "control",
+      "maximum_usd": 0.46012608,
+      "status": "complete",
+      "attempt": "attempt-692a509e5bf7408fbddca0e583fb988b",
+      "client_seconds": 987.888840209227
+    },
+    {
+      "stage": "control",
+      "maximum_usd": 0.46012608,
+      "status": "complete",
+      "attempt": "attempt-5972b1cfe1db47aba6cc351c323d0234",
+      "client_seconds": 985.5277109160088
+    },
+    {
+      "stage": "control",
+      "maximum_usd": 0.46012608,
+      "status": "complete",
+      "attempt": "attempt-9cfff21867754ce2a046a852048872ce",
+      "client_seconds": 900.2804479156621
+    },
+    {
+      "stage": "treatment",
+      "maximum_usd": 0.46012608,
+      "status": "complete",
+      "attempt": "attempt-9286baddbfd642698ab24250c7ba0cd3",
+      "client_seconds": 948.7492776247673
+    },
+    {
+      "stage": "treatment",
+      "maximum_usd": 0.46012608,
+      "status": "complete",
+      "attempt": "attempt-2719c60b37884ca396e914ce7e92aa8d",
+      "client_seconds": 978.9518900420517
+    },
+    {
+      "stage": "treatment",
+      "maximum_usd": 0.46012608,
+      "status": "complete",
+      "attempt": "attempt-97fe16c94f4b4d82b2dffaf427b65195",
+      "client_seconds": 903.6434506657533
+    },
+    {
+      "stage": "evaluation",
+      "maximum_usd": 0.37376608000000006,
+      "status": "complete",
+      "client_seconds": 290.400176666677
+    },
+    {
+      "stage": "verification",
+      "maximum_usd": 0.14577568000000002,
+      "status": "complete",
+      "client_seconds": 298.56365237524733
+    }
+  ]
+}

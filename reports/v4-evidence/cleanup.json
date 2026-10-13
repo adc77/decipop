@@ -1,0 +1,45 @@
+{
+  "checked_at_utc": "2026-10-13T10:45:21.411650+00:00",
+  "owned_volume_absent": true,
+  "owned_apps": [
+    {
+      "app_id": "ap-pVCmXouCXlpMQLCWSGY3Cb",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1791877853.345851
+    },
+    {
+      "app_id": "ap-tpuzum1ZPnjBQn2x8BNnhk",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1791878012.871004
+    },
+    {
+      "app_id": "ap-WeSjCGe4mvRMFwdwZzEQo0",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1791884303.717902
+    },
+    {
+      "app_id": "ap-6NcFCQ3Be3ngA0MMMEBDCE",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1791884814.23757
+    },
+    {
+      "app_id": "ap-qOH2V4feNu21yUoyGpLHWi",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1791885217.896369
+    }
+  ],
+  "actions": {
+    "mode": "read-only verification; no stop or deletion performed by this invocation",
+    "earlier_action_receipts_available": false,
+    "earlier_source_sha256": "a9fe2fa5b854adbb180c5b18bfcfd28a7ae56b1929acb3b535f5bcf16bba2e9f",
+    "earlier_failed_verification_log_sha256": "11783b257053acb88d205e000d66bff7225d485b8de1c2073134bff1f418bbce"
+  },
+  "zero_owned_tasks": true,
+  "unrelated_resources_modified": false,
+  "optimizer_recovery_states_retained": false
+}

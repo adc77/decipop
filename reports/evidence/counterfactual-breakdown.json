@@ -1,0 +1,28 @@
+{
+  "models": {
+    "token": {
+      "questions": 142,
+      "correct": 0,
+      "kept_original_label": 142,
+      "switched_true_false": 0,
+      "high_confidence_wrong": 130
+    },
+    "head": {
+      "questions": 142,
+      "correct": 0,
+      "kept_original_label": 142,
+      "switched_true_false": 0,
+      "high_confidence_wrong": 128
+    },
+    "scratch": {
+      "questions": 142,
+      "correct": 0,
+      "kept_original_label": 71,
+      "switched_true_false": 71,
+      "high_confidence_wrong": 0
+    }
+  },
+  "example_index": 3,
+  "base_example_id": "test_id-000171-q0",
+  "selection_rule": "first broken-support case both pretrained models get wrong in the frozen file order"
+}

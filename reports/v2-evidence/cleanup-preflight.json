@@ -1,0 +1,12 @@
+{
+  "checked_at_utc": "2026-10-12T21:36:44.153459+00:00",
+  "comparison_identity": "be6db15a671430027698c88f6d48068c260285b6e0cec649b5f0d3c9656648bd",
+  "volume_name": "decision-model-lab-v2-runs",
+  "volume_id": "vo-LUMYIjbW3hDvGTt4sioOVk",
+  "verified": true,
+  "metadata_files": 64,
+  "private_hub_checks": 2,
+  "input_and_prediction_files_verified": true,
+  "pretraining_source_archive_verified": true,
+  "owned_apps_confirmed_stopped": true
+}

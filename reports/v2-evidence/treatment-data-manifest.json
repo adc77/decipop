@@ -1,0 +1,287 @@
+{
+  "arm": "treatment",
+  "settings": {
+    "study": "study-v2",
+    "dataset_seed": 117,
+    "model_seed": 17,
+    "train_families": 6667,
+    "development_families": 667,
+    "calibration_families": 667,
+    "test_families": 1000,
+    "transfer_families": 500,
+    "epochs": 3,
+    "chunk_steps": 625,
+    "chunk_training_seconds": 820,
+    "training_timeout_seconds": 1100,
+    "pilot_timeout_seconds": 420,
+    "evaluation_timeout_seconds": 900,
+    "verification_timeout_seconds": 240,
+    "max_training_calls_per_arm": 4,
+    "retry_calls_reserved": 1,
+    "compute_allocation_usd": 5.0,
+    "storage_reserve_usd": 1.0,
+    "volume": "decision-model-lab-v2-runs",
+    "hf_namespace": "axondendriteplus"
+  },
+  "base_config": {
+    "schema_version": 1,
+    "seed": 17,
+    "max_attempts_per_family": 200,
+    "entities_min": 3,
+    "entities_max": 5,
+    "extra_facts_min": 4,
+    "extra_facts_max": 8,
+    "max_text_characters": 2400,
+    "train_templates": [
+      "canonical",
+      "conditional"
+    ],
+    "heldout_template": "paraphrase",
+    "train_entities": [
+      "Aman",
+      "Bella",
+      "Chen",
+      "Dalia",
+      "Evan",
+      "Farah",
+      "Gabe",
+      "Hana"
+    ],
+    "heldout_entities": [
+      "Inez",
+      "Jules",
+      "Kiran",
+      "Leila",
+      "Marco",
+      "Nia",
+      "Omar",
+      "Pia"
+    ],
+    "predicates": [
+      [
+        "verified",
+        "registered",
+        "authorized",
+        "active",
+        "trusted",
+        "ready",
+        "enabled",
+        "approved"
+      ],
+      [
+        "blue",
+        "round",
+        "quiet",
+        "warm",
+        "bright",
+        "calm",
+        "large",
+        "kind"
+      ]
+    ],
+    "relations": [
+      "supports",
+      "follows",
+      "knows"
+    ],
+    "splits": {
+      "train": {
+        "families": 6667,
+        "depths": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "motifs": [
+          "chain",
+          "conjunction",
+          "relational"
+        ],
+        "heldout_wording": false
+      },
+      "development": {
+        "families": 667,
+        "depths": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "motifs": [
+          "chain",
+          "conjunction",
+          "relational"
+        ],
+        "heldout_wording": false
+      },
+      "calibration": {
+        "families": 667,
+        "depths": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "motifs": [
+          "chain",
+          "conjunction",
+          "relational"
+        ],
+        "heldout_wording": false
+      },
+      "test_id": {
+        "families": 1000,
+        "depths": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "motifs": [
+          "chain",
+          "conjunction",
+          "relational"
+        ],
+        "heldout_wording": false
+      },
+      "test_depth": {
+        "families": 500,
+        "depths": [
+          4,
+          5
+        ],
+        "motifs": [
+          "chain",
+          "conjunction",
+          "relational"
+        ],
+        "heldout_wording": false
+      },
+      "test_wording": {
+        "families": 500,
+        "depths": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "motifs": [
+          "chain",
+          "conjunction",
+          "relational"
+        ],
+        "heldout_wording": true
+      },
+      "test_structure": {
+        "families": 500,
+        "depths": [
+          3
+        ],
+        "motifs": [
+          "diamond"
+        ],
+        "heldout_wording": false
+      }
+    }
+  },
+  "splits": {
+    "train": {
+      "file": "train.jsonl",
+      "file_sha256": "c008a0a7906ba56be85230907fc9de1d4177f4a9c8256bf2beb093a6fb5426c8",
+      "questions": 20001,
+      "families": 6667,
+      "labels": {
+        "FALSE": 6667,
+        "TRUE": 6667,
+        "UNKNOWN": 6667
+      }
+    },
+    "development": {
+      "file": "development.jsonl",
+      "file_sha256": "8026630042839f44202aace250199fddd028f0dd45c918a0abe52b5d80f31c5c",
+      "questions": 2001,
+      "families": 667,
+      "labels": {
+        "FALSE": 667,
+        "TRUE": 667,
+        "UNKNOWN": 667
+      }
+    },
+    "calibration": {
+      "file": "calibration.jsonl",
+      "file_sha256": "5ad9e1723e2070062e82765b94f136fe53b7bae91529a5d6e416a7c13393dcf2",
+      "questions": 2001,
+      "families": 667,
+      "labels": {
+        "FALSE": 667,
+        "TRUE": 667,
+        "UNKNOWN": 667
+      }
+    },
+    "test_original": {
+      "file": "test_original.jsonl",
+      "file_sha256": "dc4170ac42d7a6d38a86b050a1ff5f7321db5069077449ad89c3a3f22528833c",
+      "questions": 3000,
+      "families": 1000,
+      "labels": {
+        "FALSE": 1000,
+        "TRUE": 1000,
+        "UNKNOWN": 1000
+      }
+    },
+    "test_counterfactual": {
+      "file": "test_counterfactual.jsonl",
+      "file_sha256": "ca2d60dbc0966fec12a220396d3ce875bfd4aeec1b2563b2ebc82372774deae8",
+      "questions": 3000,
+      "families": 1000,
+      "labels": {
+        "FALSE": 1000,
+        "TRUE": 1000,
+        "UNKNOWN": 1000
+      }
+    },
+    "test_depth": {
+      "file": "test_depth.jsonl",
+      "file_sha256": "5d31d7c04f19000181fa826852e3f047b15adc022741ec53f0bbd878b18ceb9f",
+      "questions": 1500,
+      "families": 500,
+      "labels": {
+        "TRUE": 500,
+        "UNKNOWN": 500,
+        "FALSE": 500
+      }
+    },
+    "test_wording": {
+      "file": "test_wording.jsonl",
+      "file_sha256": "0fca87f3888ac1e814736668ea4bb8522aca882b554311498468661b7f8818ab",
+      "questions": 1500,
+      "families": 500,
+      "labels": {
+        "TRUE": 500,
+        "FALSE": 500,
+        "UNKNOWN": 500
+      }
+    },
+    "test_single_branch": {
+      "file": "test_single_branch.jsonl",
+      "file_sha256": "8ed6d94e46a89cb80e40f7deea315dbc8c6a485abff5803e1ac309481da65f17",
+      "questions": 1000,
+      "families": 500,
+      "labels": {
+        "TRUE": 256,
+        "FALSE": 244,
+        "UNKNOWN": 500
+      }
+    }
+  },
+  "v1_theories_excluded": 10501,
+  "family_manifest_sha256": "1c86773e9e19c4249ef346c62b5d6d6bfea64ff1a7a4e3df61aba65bd8b5c52f",
+  "generator_sha256": "1f50f8ed64ff9352b5ce11c004eb8bfa6d370d3af5cd6af40cef05b661bd1cd1",
+  "rejections": {
+    "Both a statement and its explicit negation are derivable": 12090,
+    "Parent does not have its requested proof": 497,
+    "No original-style UNKNOWN query": 1062,
+    "Candidate does not have the requested shortest proof depth": 28
+  }
+}

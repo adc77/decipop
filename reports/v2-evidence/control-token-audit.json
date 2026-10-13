@@ -1,0 +1,56 @@
+{
+  "arm": "control",
+  "model_revision": "f8027fd0eaeea54caa13c31d31b9fdc459c38b49",
+  "dataset_manifest_sha256": "ac2a08bd0e8c8e0f063bd593e3d9e947e7e641af8ef7d738845fbe0e8cafc156",
+  "within_limit": true,
+  "splits": {
+    "calibration": {
+      "min": 170,
+      "max": 278,
+      "mean": 210.3943028485757,
+      "questions": 2001
+    },
+    "development": {
+      "min": 170,
+      "max": 278,
+      "mean": 210.42228885557222,
+      "questions": 2001
+    },
+    "test_counterfactual": {
+      "min": 169,
+      "max": 280,
+      "mean": 210.37733333333333,
+      "questions": 3000
+    },
+    "test_depth": {
+      "min": 231,
+      "max": 352,
+      "mean": 273.806,
+      "questions": 1500
+    },
+    "test_original": {
+      "min": 170,
+      "max": 281,
+      "mean": 210.36333333333334,
+      "questions": 3000
+    },
+    "test_single_branch": {
+      "min": 130,
+      "max": 259,
+      "mean": 185.465,
+      "questions": 1000
+    },
+    "test_wording": {
+      "min": 168,
+      "max": 276,
+      "mean": 207.32533333333333,
+      "questions": 1500
+    },
+    "train": {
+      "min": 169,
+      "max": 281,
+      "mean": 210.06974651267436,
+      "questions": 20001
+    }
+  }
+}

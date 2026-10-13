@@ -1,0 +1,7 @@
+{
+  "valid": true,
+  "suite_arm_pairs_checked": 10,
+  "evaluation_sha256": "19e841e82a8821b195cee6575a6c6b41c3c23664e4148254a0a1e24b810741ba",
+  "breakdown_sha256": "7336a6650e7f2edbf932b61903cbad57dbd86beda3a8dc082f70eb99d82eba04",
+  "scope": "Descriptive confusion counts independently reconciled with frozen aggregate accuracy and UNKNOWN accuracy."
+}

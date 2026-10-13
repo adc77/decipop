@@ -1,0 +1,44 @@
+{
+  "comparison_identity": "be6db15a671430027698c88f6d48068c260285b6e0cec649b5f0d3c9656648bd",
+  "arms": {
+    "control": {
+      "temperature": 2.921642669487171,
+      "calibration_questions": 2001,
+      "raw_nll": 1.1035527473919986,
+      "calibrated_nll": 1.0967250184549582,
+      "bounds": [
+        0.05,
+        20.0
+      ],
+      "weights": "/runs/study-v2/control/head/selected-000250/model.safetensors",
+      "weights_sha256": "ceb632a2469ca2a7c9bb44a2c2b3a30dd3c30a943bda709955390c43702e4348",
+      "thresholds": {
+        "0.25": 0.3609042417942949,
+        "0.5": 0.3566638164743305,
+        "0.75": 0.352889403996139,
+        "0.9": 0.3498690963085657,
+        "1.0": 0.33997045940427323
+      }
+    },
+    "treatment": {
+      "temperature": 20.0,
+      "calibration_questions": 2001,
+      "raw_nll": 1.1158496436445218,
+      "calibrated_nll": 1.098607969440582,
+      "bounds": [
+        0.05,
+        20.0
+      ],
+      "weights": "/runs/study-v2/treatment/head/selected-000250/model.safetensors",
+      "weights_sha256": "a21b9338a4185c72812efe3d68b7fe77811dac6a5f9a0505d095372f448e190f",
+      "thresholds": {
+        "0.25": 0.337695036133068,
+        "0.5": 0.3371763462020371,
+        "0.75": 0.33659521903570666,
+        "0.9": 0.3360396829722458,
+        "1.0": 0.33437385021159954
+      }
+    }
+  },
+  "identity": "9ea9aa3842ba947a329e83e9150552ecd4266389827158a367d2ab13603716a7"
+}

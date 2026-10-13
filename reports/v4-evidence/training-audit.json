@@ -1,0 +1,50 @@
+{
+  "valid": true,
+  "families": 10367,
+  "questions": 53602,
+  "unique_worlds": 30601,
+  "prior_worlds_excluded": 53204,
+  "token_audit": {
+    "calibration": {
+      "maximum_tokens": 277,
+      "questions": 1200
+    },
+    "selection": {
+      "maximum_tokens": 278,
+      "questions": 1200
+    },
+    "selection_fit": {
+      "maximum_tokens": 277,
+      "questions": 1200
+    },
+    "test_counterfactual": {
+      "maximum_tokens": 278,
+      "questions": 3000
+    },
+    "test_depth": {
+      "maximum_tokens": 346,
+      "questions": 1500
+    },
+    "test_original": {
+      "maximum_tokens": 278,
+      "questions": 3000
+    },
+    "test_single_branch": {
+      "maximum_tokens": 262,
+      "questions": 1000
+    },
+    "test_wording": {
+      "maximum_tokens": 272,
+      "questions": 1500
+    },
+    "train_control": {
+      "maximum_tokens": 281,
+      "questions": 20001
+    },
+    "train_treatment": {
+      "maximum_tokens": 282,
+      "questions": 20001
+    }
+  },
+  "analysis_script_sha256": "78387e3b292b23a65dc821c5cca651d191d6d1366d912ed602d7c6dcea1d7054"
+}

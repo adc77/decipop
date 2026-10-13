@@ -1,0 +1,16 @@
+{
+  "scope": "Post-test descriptive UNKNOWN counts, no significance test or protocol change.",
+  "grouping": "Negative iff the original-query statement contains the literal substring: is not; all rows use the frozen default rendering.",
+  "input_sha256": "d34886cea4b5e8c9b160fcec6daf291874b5c71ea62591e8e8da55dcfd7bc8fb",
+  "prediction_sha256": "08339ddfdaea934f4435373a3c0e544682ad1819f3755415f6eb064eb48b857b",
+  "counts": {
+    "positive": {
+      "correct": 404,
+      "questions": 489
+    },
+    "negative": {
+      "correct": 411,
+      "questions": 511
+    }
+  }
+}

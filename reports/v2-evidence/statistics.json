@@ -1,0 +1,24 @@
+{
+  "primary_unknown_accuracy": {
+    "left_minus_right": 0.0,
+    "interval": [
+      0.0,
+      0.0
+    ],
+    "confidence": 0.95,
+    "families": 1000,
+    "repetitions": 2000,
+    "uncertainty": "test-family sampling only; one training seed"
+  },
+  "counterfactual_raw_nll": {
+    "left_minus_right": 0.0007115263416915175,
+    "interval": [
+      -0.00023293972900259897,
+      0.0017006510695347949
+    ],
+    "confidence": 0.95,
+    "families": 1000,
+    "repetitions": 2000,
+    "uncertainty": "test-family sampling only; one training seed"
+  }
+}

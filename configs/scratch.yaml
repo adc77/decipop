@@ -1,0 +1,10 @@
+vocab_size: 8192
+hidden_size: 384
+heads: 6
+layers: 6
+intermediate_size: 1536
+max_length: 512
+dropout: 0.1
+classes: 3
+pad_id: 0
+initializer_std: 0.02

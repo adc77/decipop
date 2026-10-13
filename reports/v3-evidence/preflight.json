@@ -1,0 +1,11 @@
+{
+  "protocol_identity": "d9e5cc5a734ee7c7da6975d434a9e46c2be98215e3418bdc35fdaa79a7c58d16",
+  "tests_passed": 59,
+  "tests_seconds": 24.55,
+  "lint_passed": true,
+  "v1_v2_frozen_sources_verified": true,
+  "source_archive_sha256": "bd52bdc4dff1fbc8f60bbff7acfa7cd9e1ad87ec065cb006f4cddb7cd24146bb",
+  "pricing_source": "https://modal.com/pricing",
+  "maximum_compute_allocation_usd": 1.32856224,
+  "total_study_cap_usd": 3.0
+}

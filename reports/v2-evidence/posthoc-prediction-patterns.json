@@ -1,0 +1,65 @@
+{
+  "analysis": "descriptive; no retraining or reselection",
+  "arms": {
+    "control": {
+      "prediction_file_sha256": "752bb8ea743c1091cfd8e8d99c5ea59f6c5e072e1362c1aa89e448153632e462",
+      "class_labels": [
+        "TRUE",
+        "FALSE",
+        "UNKNOWN"
+      ],
+      "predicted_class_counts": {
+        "0": 3000
+      },
+      "confusion_matrix_true_rows_predicted_columns": [
+        [
+          1000,
+          0,
+          0
+        ],
+        [
+          1000,
+          0,
+          0
+        ],
+        [
+          1000,
+          0,
+          0
+        ]
+      ],
+      "constant_prediction_families": 1000,
+      "families": 1000
+    },
+    "treatment": {
+      "prediction_file_sha256": "f4ef8368f9078b49e4d63527c2e53c6a30f957144db9163d0705c4a1fede397f",
+      "class_labels": [
+        "TRUE",
+        "FALSE",
+        "UNKNOWN"
+      ],
+      "predicted_class_counts": {
+        "0": 3000
+      },
+      "confusion_matrix_true_rows_predicted_columns": [
+        [
+          1000,
+          0,
+          0
+        ],
+        [
+          1000,
+          0,
+          0
+        ],
+        [
+          1000,
+          0,
+          0
+        ]
+      ],
+      "constant_prediction_families": 1000,
+      "families": 1000
+    }
+  }
+}

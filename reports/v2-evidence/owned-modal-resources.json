@@ -1,0 +1,9 @@
+{
+  "volume_name": "decision-model-lab-v2-runs",
+  "volume_id": "vo-LUMYIjbW3hDvGTt4sioOVk",
+  "apps": [
+    "ap-HUt7uP4YXkZP3JsDPtoauJ",
+    "ap-etxuxzXxVeRcfuwir94H04"
+  ],
+  "unrelated_workspace_apps_excluded": true
+}

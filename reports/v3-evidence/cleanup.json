@@ -1,0 +1,11 @@
+{
+  "app_id": "ap-0xlyzGsaz2DJXh8yTb1uFf",
+  "owned_app_stopped": true,
+  "volume_id": "vo-XDiq6AZkY89H9O1c9xSQbl",
+  "volume_name": "decision-model-lab-v3-runs",
+  "owned_volume_deleted": true,
+  "absence_verified": true,
+  "owned_containers_running": 0,
+  "unrelated_apps_or_volumes_modified": false,
+  "retention_audit_passed": true
+}

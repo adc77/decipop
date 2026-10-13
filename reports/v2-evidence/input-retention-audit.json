@@ -1,0 +1,82 @@
+{
+  "comparison_identity": "be6db15a671430027698c88f6d48068c260285b6e0cec649b5f0d3c9656648bd",
+  "arms": {
+    "control": {
+      "inputs": {
+        "data/calibration.jsonl": "5ad9e1723e2070062e82765b94f136fe53b7bae91529a5d6e416a7c13393dcf2",
+        "data/development.jsonl": "8026630042839f44202aace250199fddd028f0dd45c918a0abe52b5d80f31c5c",
+        "data/families.jsonl": "1c86773e9e19c4249ef346c62b5d6d6bfea64ff1a7a4e3df61aba65bd8b5c52f",
+        "data/manifest.json": "ac2a08bd0e8c8e0f063bd593e3d9e947e7e641af8ef7d738845fbe0e8cafc156",
+        "data/test_counterfactual.jsonl": "ca2d60dbc0966fec12a220396d3ce875bfd4aeec1b2563b2ebc82372774deae8",
+        "data/test_depth.jsonl": "5d31d7c04f19000181fa826852e3f047b15adc022741ec53f0bbd878b18ceb9f",
+        "data/test_original.jsonl": "dc4170ac42d7a6d38a86b050a1ff5f7321db5069077449ad89c3a3f22528833c",
+        "data/test_single_branch.jsonl": "8ed6d94e46a89cb80e40f7deea315dbc8c6a485abff5803e1ac309481da65f17",
+        "data/test_wording.jsonl": "0fca87f3888ac1e814736668ea4bb8522aca882b554311498468661b7f8818ab",
+        "data/train.jsonl": "0f31d55ae347693dd21745ae07893dadb1e286fc888743ac9b25c5014eacb608",
+        "audit/token-audit.json": "bfece8e66f74c7b161e68287e44029232840560e92cee3bff57a231ebc25020f",
+        "test-inputs/manifest.json": "a9917688d4d93314e65a9a29ab809599e9307e07ec56dfca29482325b1f8950f"
+      },
+      "predictions": {
+        "test_original": {
+          "questions": 3000,
+          "sha256": "02e7c3837606fc8cb35f1f7fee941af1fa813a8dd749005937d8dae722721ec4"
+        },
+        "test_counterfactual": {
+          "questions": 3000,
+          "sha256": "752bb8ea743c1091cfd8e8d99c5ea59f6c5e072e1362c1aa89e448153632e462"
+        },
+        "test_depth": {
+          "questions": 1500,
+          "sha256": "b0be6ff337be97e532836e66da4da2f5dabc623ca4857ff31366bccca25dec6d"
+        },
+        "test_wording": {
+          "questions": 1500,
+          "sha256": "67e5ce21193b835b49977ad3421c8cd16e4dc358205a4edab53ff9b30ba91a4b"
+        },
+        "test_single_branch": {
+          "questions": 1000,
+          "sha256": "f1fc472e2a416b8044d17e93da50ccca77e7fc3f188eef1acf830723ace37e28"
+        }
+      }
+    },
+    "treatment": {
+      "inputs": {
+        "data/calibration.jsonl": "5ad9e1723e2070062e82765b94f136fe53b7bae91529a5d6e416a7c13393dcf2",
+        "data/development.jsonl": "8026630042839f44202aace250199fddd028f0dd45c918a0abe52b5d80f31c5c",
+        "data/families.jsonl": "1c86773e9e19c4249ef346c62b5d6d6bfea64ff1a7a4e3df61aba65bd8b5c52f",
+        "data/manifest.json": "24403342c5345c161cc599f8d3aeee699f26777d374b326599458a2d566bc85c",
+        "data/test_counterfactual.jsonl": "ca2d60dbc0966fec12a220396d3ce875bfd4aeec1b2563b2ebc82372774deae8",
+        "data/test_depth.jsonl": "5d31d7c04f19000181fa826852e3f047b15adc022741ec53f0bbd878b18ceb9f",
+        "data/test_original.jsonl": "dc4170ac42d7a6d38a86b050a1ff5f7321db5069077449ad89c3a3f22528833c",
+        "data/test_single_branch.jsonl": "8ed6d94e46a89cb80e40f7deea315dbc8c6a485abff5803e1ac309481da65f17",
+        "data/test_wording.jsonl": "0fca87f3888ac1e814736668ea4bb8522aca882b554311498468661b7f8818ab",
+        "data/train.jsonl": "c008a0a7906ba56be85230907fc9de1d4177f4a9c8256bf2beb093a6fb5426c8",
+        "audit/token-audit.json": "dd54163dfb1fed86e35e8637bb637b0d13420549ebd45484c7d30b565b6b6777",
+        "test-inputs/manifest.json": "a9917688d4d93314e65a9a29ab809599e9307e07ec56dfca29482325b1f8950f"
+      },
+      "predictions": {
+        "test_original": {
+          "questions": 3000,
+          "sha256": "2391c564f182b61cf9f740135679a236921a9879a4654e9bc53419e9ad32c6cb"
+        },
+        "test_counterfactual": {
+          "questions": 3000,
+          "sha256": "f4ef8368f9078b49e4d63527c2e53c6a30f957144db9163d0705c4a1fede397f"
+        },
+        "test_depth": {
+          "questions": 1500,
+          "sha256": "ae401969ce98050d80f6d7c82f68789206a46ffabed7f020112a0b85b861e7c1"
+        },
+        "test_wording": {
+          "questions": 1500,
+          "sha256": "a6009bd325b9127f49f51b5e093694092e6d8afda6e49a9443205055d4139a9b"
+        },
+        "test_single_branch": {
+          "questions": 1000,
+          "sha256": "b99a70079c69a268c84e3d4e7edb4e2b4ab0b0f1aadf94271a1bf65a743561b9"
+        }
+      }
+    }
+  },
+  "verified": true
+}

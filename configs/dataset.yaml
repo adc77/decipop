@@ -1,0 +1,52 @@
+schema_version: 1
+seed: 17
+max_attempts_per_family: 200
+entities_min: 3
+entities_max: 5
+extra_facts_min: 4
+extra_facts_max: 8
+max_text_characters: 2400
+train_templates: [canonical, conditional]
+heldout_template: paraphrase
+train_entities: [Aman, Bella, Chen, Dalia, Evan, Farah, Gabe, Hana]
+heldout_entities: [Inez, Jules, Kiran, Leila, Marco, Nia, Omar, Pia]
+predicates:
+  - ["verified", "registered", "authorized", "active", "trusted", "ready", "enabled", "approved"]
+  - ["blue", "round", "quiet", "warm", "bright", "calm", "large", "kind"]
+relations: [supports, follows, knows]
+splits:
+  train:
+    families: 6667
+    depths: [0, 1, 2, 3]
+    motifs: [chain, conjunction, relational]
+    heldout_wording: false
+  development:
+    families: 667
+    depths: [0, 1, 2, 3]
+    motifs: [chain, conjunction, relational]
+    heldout_wording: false
+  calibration:
+    families: 667
+    depths: [0, 1, 2, 3]
+    motifs: [chain, conjunction, relational]
+    heldout_wording: false
+  test_id:
+    families: 1000
+    depths: [0, 1, 2, 3]
+    motifs: [chain, conjunction, relational]
+    heldout_wording: false
+  test_depth:
+    families: 500
+    depths: [4, 5]
+    motifs: [chain, conjunction, relational]
+    heldout_wording: false
+  test_wording:
+    families: 500
+    depths: [0, 1, 2, 3]
+    motifs: [chain, conjunction, relational]
+    heldout_wording: true
+  test_structure:
+    families: 500
+    depths: [3]
+    motifs: [diamond]
+    heldout_wording: false

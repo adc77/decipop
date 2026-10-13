@@ -1,0 +1,21 @@
+{
+  "snapshot_utc": "2026-10-13T07:48:50.686696+00:00",
+  "conservative_original_budget_remaining_usd": 23.79893953,
+  "workspace_billed_usd": "0E-8",
+  "rates_source": "Modal billing API",
+  "published_rates_url": "https://modal.com/pricing",
+  "budget": {
+    "hourly_requested_usd": 1.2452,
+    "call_ceiling_usd": {
+      "diagnostic": 0.2082251111111111,
+      "pilot": 0.1874717777777778,
+      "training": 0.39154622222222224,
+      "selection": 0.37425177777777785,
+      "test": 0.47801844444444447,
+      "retry": 0.39154622222222224
+    },
+    "maximum_compute_usd": 3.988790666666667
+  },
+  "parent_repo": "axondendriteplus/decision-lab-v3-smollm2-360m-treatment-final",
+  "parent_commit": "d165bf46ed93deee9697143204f78bdccdddb17d"
+}

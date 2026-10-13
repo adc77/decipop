@@ -1,0 +1,13 @@
+{
+  "valid": true,
+  "families": 200,
+  "questions": 1600,
+  "unique_worlds": 800,
+  "prior_worlds_excluded": 52404,
+  "token_audit": {
+    "diagnostic": {
+      "maximum_tokens": 283,
+      "questions": 1600
+    }
+  }
+}

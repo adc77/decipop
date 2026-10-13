@@ -1,0 +1,316 @@
+{
+  "scope": "Post-test descriptive label counts; no selection or protocol changes.",
+  "label_order": [
+    "TRUE",
+    "FALSE",
+    "UNKNOWN"
+  ],
+  "matrix_axes": "rows: oracle label; columns: predicted label",
+  "script_sha256": "989ed8de437d46d1fcd6ddf5950c4ca8ed401fd2bd4b03d11130110feaeeca34",
+  "arms": {
+    "control": {
+      "test_counterfactual": {
+        "prediction_sha256": "8e68c2d0fb32d4d388aebb41eff644d956708d7732530f8259d999500eac1e8f",
+        "confusion_matrix": [
+          [
+            1000,
+            0,
+            0
+          ],
+          [
+            0,
+            1000,
+            0
+          ],
+          [
+            0,
+            0,
+            1000
+          ]
+        ],
+        "correct_by_label": [
+          1000,
+          1000,
+          1000
+        ],
+        "questions_by_label": [
+          1000,
+          1000,
+          1000
+        ]
+      },
+      "test_depth": {
+        "prediction_sha256": "8c3d641d1ab62cdc6dd7c7c663a8242105e2c2eea1cb71facc252e1b932b1a70",
+        "confusion_matrix": [
+          [
+            460,
+            0,
+            40
+          ],
+          [
+            0,
+            462,
+            38
+          ],
+          [
+            37,
+            0,
+            463
+          ]
+        ],
+        "correct_by_label": [
+          460,
+          462,
+          463
+        ],
+        "questions_by_label": [
+          500,
+          500,
+          500
+        ]
+      },
+      "test_original": {
+        "prediction_sha256": "614da2be233694a9d33c38804524cea9c16deca2dc426addc9fc22c3c55a6001",
+        "confusion_matrix": [
+          [
+            1000,
+            0,
+            0
+          ],
+          [
+            0,
+            1000,
+            0
+          ],
+          [
+            525,
+            475,
+            0
+          ]
+        ],
+        "correct_by_label": [
+          1000,
+          1000,
+          0
+        ],
+        "questions_by_label": [
+          1000,
+          1000,
+          1000
+        ]
+      },
+      "test_single_branch": {
+        "prediction_sha256": "4c24bc6a755a9c585abd7c5abf9e36542f531c0d7699e05c5df48921c668a438",
+        "confusion_matrix": [
+          [
+            239,
+            4,
+            13
+          ],
+          [
+            225,
+            1,
+            18
+          ],
+          [
+            176,
+            38,
+            286
+          ]
+        ],
+        "correct_by_label": [
+          239,
+          1,
+          286
+        ],
+        "questions_by_label": [
+          256,
+          244,
+          500
+        ]
+      },
+      "test_wording": {
+        "prediction_sha256": "60d4faee13e22542f00795727e2e96ee76b4e766448a5f33fd2ec449072944b4",
+        "confusion_matrix": [
+          [
+            304,
+            0,
+            196
+          ],
+          [
+            308,
+            0,
+            192
+          ],
+          [
+            170,
+            0,
+            330
+          ]
+        ],
+        "correct_by_label": [
+          304,
+          0,
+          330
+        ],
+        "questions_by_label": [
+          500,
+          500,
+          500
+        ]
+      }
+    },
+    "treatment": {
+      "test_counterfactual": {
+        "prediction_sha256": "178c7ff569967459de89810fb492dfa7f2d5293b598e45446919f6ec621861b6",
+        "confusion_matrix": [
+          [
+            998,
+            1,
+            1
+          ],
+          [
+            0,
+            999,
+            1
+          ],
+          [
+            0,
+            0,
+            1000
+          ]
+        ],
+        "correct_by_label": [
+          998,
+          999,
+          1000
+        ],
+        "questions_by_label": [
+          1000,
+          1000,
+          1000
+        ]
+      },
+      "test_depth": {
+        "prediction_sha256": "ba1c95c5285c8846412b02e7b3ead587a12c90f83cb52629f7dd4a15ac0e4343",
+        "confusion_matrix": [
+          [
+            364,
+            0,
+            136
+          ],
+          [
+            1,
+            362,
+            137
+          ],
+          [
+            26,
+            0,
+            474
+          ]
+        ],
+        "correct_by_label": [
+          364,
+          362,
+          474
+        ],
+        "questions_by_label": [
+          500,
+          500,
+          500
+        ]
+      },
+      "test_original": {
+        "prediction_sha256": "08339ddfdaea934f4435373a3c0e544682ad1819f3755415f6eb064eb48b857b",
+        "confusion_matrix": [
+          [
+            998,
+            1,
+            1
+          ],
+          [
+            0,
+            999,
+            1
+          ],
+          [
+            100,
+            85,
+            815
+          ]
+        ],
+        "correct_by_label": [
+          998,
+          999,
+          815
+        ],
+        "questions_by_label": [
+          1000,
+          1000,
+          1000
+        ]
+      },
+      "test_single_branch": {
+        "prediction_sha256": "36359e4c9aa35bed3feffa163df8666696538831abdb865f817e737228060436",
+        "confusion_matrix": [
+          [
+            58,
+            0,
+            198
+          ],
+          [
+            49,
+            1,
+            194
+          ],
+          [
+            40,
+            3,
+            457
+          ]
+        ],
+        "correct_by_label": [
+          58,
+          1,
+          457
+        ],
+        "questions_by_label": [
+          256,
+          244,
+          500
+        ]
+      },
+      "test_wording": {
+        "prediction_sha256": "331088a831b4d0134744dac49bdd526bf44608c1b52ca9fd2cf2022234e81763",
+        "confusion_matrix": [
+          [
+            271,
+            0,
+            229
+          ],
+          [
+            270,
+            0,
+            230
+          ],
+          [
+            133,
+            0,
+            367
+          ]
+        ],
+        "correct_by_label": [
+          271,
+          0,
+          367
+        ],
+        "questions_by_label": [
+          500,
+          500,
+          500
+        ]
+      }
+    }
+  }
+}

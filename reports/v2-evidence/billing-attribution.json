@@ -1,0 +1,158 @@
+{
+  "snapshot_at_utc": "2026-10-12T21:37:07.306268+00:00",
+  "owned_resources": {
+    "volume_name": "decision-model-lab-v2-runs",
+    "volume_id": "vo-LUMYIjbW3hDvGTt4sioOVk",
+    "apps": [
+      "ap-HUt7uP4YXkZP3JsDPtoauJ",
+      "ap-etxuxzXxVeRcfuwir94H04"
+    ],
+    "unrelated_workspace_apps_excluded": true
+  },
+  "metered_owned_resources_usd": "2.13302126",
+  "resources_usd": {
+    "L4": "1.37017609",
+    "Network Egress": "0.00033769",
+    "Memory": "0.43845635",
+    "CPU": "0.32405113"
+  },
+  "workspace_billed_usd": "0E-8",
+  "workspace_credit_balance_usd": "24.63000000",
+  "scope": "Owned app/Volume attribution; unrelated workspace apps excluded. Workspace totals are not project costs.",
+  "owned_volume_rows": 0,
+  "raw_report_sha256": "82c8df18924ebfe3acaf399e0e2054b4a3a5c4dbf6b9906871157999ff8e9513",
+  "scoped_rows": [
+    {
+      "object_id": "ap-HUt7uP4YXkZP3JsDPtoauJ",
+      "description": "decision-model-lab-v2",
+      "environment": "main",
+      "interval_start": "2026-10-12T19:00:00",
+      "resource": "L4",
+      "cost": "0.01955558"
+    },
+    {
+      "object_id": "ap-HUt7uP4YXkZP3JsDPtoauJ",
+      "description": "decision-model-lab-v2",
+      "environment": "main",
+      "interval_start": "2026-10-12T19:00:00",
+      "resource": "Network Egress",
+      "cost": "0.00033678"
+    },
+    {
+      "object_id": "ap-HUt7uP4YXkZP3JsDPtoauJ",
+      "description": "decision-model-lab-v2",
+      "environment": "main",
+      "interval_start": "2026-10-12T19:00:00",
+      "resource": "Memory",
+      "cost": "0.00625779"
+    },
+    {
+      "object_id": "ap-HUt7uP4YXkZP3JsDPtoauJ",
+      "description": "decision-model-lab-v2",
+      "environment": "main",
+      "interval_start": "2026-10-12T19:00:00",
+      "resource": "CPU",
+      "cost": "0.00462489"
+    },
+    {
+      "object_id": "ap-etxuxzXxVeRcfuwir94H04",
+      "description": "decision-model-lab-v2",
+      "environment": "main",
+      "interval_start": "2026-10-12T19:00:00",
+      "resource": "L4",
+      "cost": "0.29599999"
+    },
+    {
+      "object_id": "ap-etxuxzXxVeRcfuwir94H04",
+      "description": "decision-model-lab-v2",
+      "environment": "main",
+      "interval_start": "2026-10-12T19:00:00",
+      "resource": "Network Egress",
+      "cost": "2.1E-7"
+    },
+    {
+      "object_id": "ap-etxuxzXxVeRcfuwir94H04",
+      "description": "decision-model-lab-v2",
+      "environment": "main",
+      "interval_start": "2026-10-12T19:00:00",
+      "resource": "Memory",
+      "cost": "0.09472000"
+    },
+    {
+      "object_id": "ap-etxuxzXxVeRcfuwir94H04",
+      "description": "decision-model-lab-v2",
+      "environment": "main",
+      "interval_start": "2026-10-12T19:00:00",
+      "resource": "CPU",
+      "cost": "0.07000727"
+    },
+    {
+      "object_id": "ap-etxuxzXxVeRcfuwir94H04",
+      "description": "decision-model-lab-v2",
+      "environment": "main",
+      "interval_start": "2026-10-12T20:00:00",
+      "resource": "L4",
+      "cost": "0.80001279"
+    },
+    {
+      "object_id": "ap-etxuxzXxVeRcfuwir94H04",
+      "description": "decision-model-lab-v2",
+      "environment": "main",
+      "interval_start": "2026-10-12T20:00:00",
+      "resource": "Network Egress",
+      "cost": "4.2E-7"
+    },
+    {
+      "object_id": "ap-etxuxzXxVeRcfuwir94H04",
+      "description": "decision-model-lab-v2",
+      "environment": "main",
+      "interval_start": "2026-10-12T20:00:00",
+      "resource": "Memory",
+      "cost": "0.25600409"
+    },
+    {
+      "object_id": "ap-etxuxzXxVeRcfuwir94H04",
+      "description": "decision-model-lab-v2",
+      "environment": "main",
+      "interval_start": "2026-10-12T20:00:00",
+      "resource": "CPU",
+      "cost": "0.18920424"
+    },
+    {
+      "object_id": "ap-etxuxzXxVeRcfuwir94H04",
+      "description": "decision-model-lab-v2",
+      "environment": "main",
+      "interval_start": "2026-10-12T21:00:00",
+      "resource": "L4",
+      "cost": "0.25460773"
+    },
+    {
+      "object_id": "ap-etxuxzXxVeRcfuwir94H04",
+      "description": "decision-model-lab-v2",
+      "environment": "main",
+      "interval_start": "2026-10-12T21:00:00",
+      "resource": "Network Egress",
+      "cost": "2.8E-7"
+    },
+    {
+      "object_id": "ap-etxuxzXxVeRcfuwir94H04",
+      "description": "decision-model-lab-v2",
+      "environment": "main",
+      "interval_start": "2026-10-12T21:00:00",
+      "resource": "Memory",
+      "cost": "0.08147447"
+    },
+    {
+      "object_id": "ap-etxuxzXxVeRcfuwir94H04",
+      "description": "decision-model-lab-v2",
+      "environment": "main",
+      "interval_start": "2026-10-12T21:00:00",
+      "resource": "CPU",
+      "cost": "0.06021473"
+    }
+  ],
+  "compute_limit_usd": 5.0,
+  "maximum_used_invocation_allocations_usd": 3.48825312,
+  "failed_invocations": 0,
+  "billing_is_snapshot_not_final_invoice": true
+}

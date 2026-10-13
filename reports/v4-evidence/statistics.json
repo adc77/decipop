@@ -1,0 +1,131 @@
+{
+  "protocol_identity": "2ab1532953c1f8b4c2dfaab8d1b3a49ddc39a32cbeeff5e5413e6ed55a631650",
+  "comparisons": {
+    "test_original": {
+      "overall": {
+        "left_minus_right": 0.27066666666666667,
+        "interval": [
+          0.26166666666666666,
+          0.2786666666666667
+        ],
+        "confidence": 0.95,
+        "families": 1000,
+        "repetitions": 2000,
+        "uncertainty": "test-family sampling only; one training seed"
+      },
+      "unknown": {
+        "left_minus_right": 0.815,
+        "interval": [
+          0.791,
+          0.8380249999999998
+        ],
+        "confidence": 0.95,
+        "families": 1000,
+        "repetitions": 2000,
+        "uncertainty": "test-family sampling only; one training seed"
+      }
+    },
+    "test_counterfactual": {
+      "overall": {
+        "left_minus_right": -0.001,
+        "interval": [
+          -0.0023333333333333335,
+          0.0
+        ],
+        "confidence": 0.95,
+        "families": 1000,
+        "repetitions": 2000,
+        "uncertainty": "test-family sampling only; one training seed"
+      },
+      "unknown": {
+        "left_minus_right": 0.0,
+        "interval": [
+          0.0,
+          0.0
+        ],
+        "confidence": 0.95,
+        "families": 1000,
+        "repetitions": 2000,
+        "uncertainty": "test-family sampling only; one training seed"
+      }
+    },
+    "test_depth": {
+      "overall": {
+        "left_minus_right": -0.12333333333333334,
+        "interval": [
+          -0.14666666666666667,
+          -0.102
+        ],
+        "confidence": 0.95,
+        "families": 500,
+        "repetitions": 2000,
+        "uncertainty": "test-family sampling only; one training seed"
+      },
+      "unknown": {
+        "left_minus_right": 0.022,
+        "interval": [
+          0.004,
+          0.04
+        ],
+        "confidence": 0.95,
+        "families": 500,
+        "repetitions": 2000,
+        "uncertainty": "test-family sampling only; one training seed"
+      }
+    },
+    "test_wording": {
+      "overall": {
+        "left_minus_right": 0.0026666666666666666,
+        "interval": [
+          -0.012666666666666666,
+          0.017333333333333333
+        ],
+        "confidence": 0.95,
+        "families": 500,
+        "repetitions": 2000,
+        "uncertainty": "test-family sampling only; one training seed"
+      },
+      "unknown": {
+        "left_minus_right": 0.074,
+        "interval": [
+          0.04195000000000009,
+          0.108
+        ],
+        "confidence": 0.95,
+        "families": 500,
+        "repetitions": 2000,
+        "uncertainty": "test-family sampling only; one training seed"
+      }
+    },
+    "test_single_branch": {
+      "overall": {
+        "left_minus_right": -0.01,
+        "interval": [
+          -0.039,
+          0.02
+        ],
+        "confidence": 0.95,
+        "families": 500,
+        "repetitions": 2000,
+        "uncertainty": "test-family sampling only; one training seed"
+      },
+      "unknown": {
+        "left_minus_right": 0.342,
+        "interval": [
+          0.3,
+          0.386
+        ],
+        "confidence": 0.95,
+        "families": 500,
+        "repetitions": 2000,
+        "uncertainty": "test-family sampling only; one training seed"
+      }
+    }
+  },
+  "engineering_gate": {
+    "primary_gain_interval_excludes_zero": true,
+    "counterfactual_noninferiority_margin": 0.02,
+    "counterfactual_lower_bound_above_negative_margin": true,
+    "scope": "paired test-family sampling; one additional-training seed; descriptive transfer suites"
+  }
+}

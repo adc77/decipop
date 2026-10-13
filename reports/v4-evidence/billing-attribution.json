@@ -1,0 +1,172 @@
+{
+  "snapshot_utc": "2026-10-13T10:54:33.272419+00:00",
+  "report_start_utc": "2026-10-13T00:00:00+00:00",
+  "report_resolution": "h",
+  "owned_resources": {
+    "volume": "decision-model-lab-v4-runs",
+    "volume_id": "vo-01ehjGaSgNFao6icxzq3Yl",
+    "app_ids": [
+      "ap-pVCmXouCXlpMQLCWSGY3Cb",
+      "ap-tpuzum1ZPnjBQn2x8BNnhk",
+      "ap-WeSjCGe4mvRMFwdwZzEQo0",
+      "ap-6NcFCQ3Be3ngA0MMMEBDCE",
+      "ap-qOH2V4feNu21yUoyGpLHWi"
+    ]
+  },
+  "metered_owned_resources_usd": "2.32520053",
+  "resources_usd": {
+    "CPU": "0.35330427",
+    "L4": "1.49386081",
+    "Memory": "0.47803545"
+  },
+  "workspace_billed_usd": "0E-8",
+  "workspace_metered_delta_usd": "3.69844416",
+  "raw_report_sha256": "d373704d63466605ac7a193bb7a8f97931f569d5122df031c9a2e11f1e215b72",
+  "scoped_rows": [
+    {
+      "object_id": "ap-6NcFCQ3Be3ngA0MMMEBDCE",
+      "description": "decision-model-lab-v4-mixed-unknown",
+      "environment": "main",
+      "interval_start": "2026-10-13T09:00:00",
+      "resource": "L4",
+      "cost": "0.10988138"
+    },
+    {
+      "object_id": "ap-6NcFCQ3Be3ngA0MMMEBDCE",
+      "description": "decision-model-lab-v4-mixed-unknown",
+      "environment": "main",
+      "interval_start": "2026-10-13T09:00:00",
+      "resource": "Memory",
+      "cost": "0.03516204"
+    },
+    {
+      "object_id": "ap-6NcFCQ3Be3ngA0MMMEBDCE",
+      "description": "decision-model-lab-v4-mixed-unknown",
+      "environment": "main",
+      "interval_start": "2026-10-13T09:00:00",
+      "resource": "CPU",
+      "cost": "0.02598695"
+    },
+    {
+      "object_id": "ap-WeSjCGe4mvRMFwdwZzEQo0",
+      "description": "decision-model-lab-v4-mixed-unknown",
+      "environment": "main",
+      "interval_start": "2026-10-13T08:00:00",
+      "resource": "L4",
+      "cost": "0.77989547"
+    },
+    {
+      "object_id": "ap-WeSjCGe4mvRMFwdwZzEQo0",
+      "description": "decision-model-lab-v4-mixed-unknown",
+      "environment": "main",
+      "interval_start": "2026-10-13T08:00:00",
+      "resource": "Memory",
+      "cost": "0.24956655"
+    },
+    {
+      "object_id": "ap-WeSjCGe4mvRMFwdwZzEQo0",
+      "description": "decision-model-lab-v4-mixed-unknown",
+      "environment": "main",
+      "interval_start": "2026-10-13T08:00:00",
+      "resource": "CPU",
+      "cost": "0.18445147"
+    },
+    {
+      "object_id": "ap-WeSjCGe4mvRMFwdwZzEQo0",
+      "description": "decision-model-lab-v4-mixed-unknown",
+      "environment": "main",
+      "interval_start": "2026-10-13T09:00:00",
+      "resource": "L4",
+      "cost": "0.51142354"
+    },
+    {
+      "object_id": "ap-WeSjCGe4mvRMFwdwZzEQo0",
+      "description": "decision-model-lab-v4-mixed-unknown",
+      "environment": "main",
+      "interval_start": "2026-10-13T09:00:00",
+      "resource": "Memory",
+      "cost": "0.16365553"
+    },
+    {
+      "object_id": "ap-WeSjCGe4mvRMFwdwZzEQo0",
+      "description": "decision-model-lab-v4-mixed-unknown",
+      "environment": "main",
+      "interval_start": "2026-10-13T09:00:00",
+      "resource": "CPU",
+      "cost": "0.12095167"
+    },
+    {
+      "object_id": "ap-pVCmXouCXlpMQLCWSGY3Cb",
+      "description": "decision-model-lab-v4-mixed-unknown",
+      "environment": "main",
+      "interval_start": "2026-10-13T07:00:00",
+      "resource": "L4",
+      "cost": "0.01066662"
+    },
+    {
+      "object_id": "ap-pVCmXouCXlpMQLCWSGY3Cb",
+      "description": "decision-model-lab-v4-mixed-unknown",
+      "environment": "main",
+      "interval_start": "2026-10-13T07:00:00",
+      "resource": "Memory",
+      "cost": "0.00341332"
+    },
+    {
+      "object_id": "ap-pVCmXouCXlpMQLCWSGY3Cb",
+      "description": "decision-model-lab-v4-mixed-unknown",
+      "environment": "main",
+      "interval_start": "2026-10-13T07:00:00",
+      "resource": "CPU",
+      "cost": "0.00252265"
+    },
+    {
+      "object_id": "ap-qOH2V4feNu21yUoyGpLHWi",
+      "description": "decision-model-lab-v4-mixed-unknown",
+      "environment": "main",
+      "interval_start": "2026-10-13T09:00:00",
+      "resource": "L4",
+      "cost": "0.06866029"
+    },
+    {
+      "object_id": "ap-qOH2V4feNu21yUoyGpLHWi",
+      "description": "decision-model-lab-v4-mixed-unknown",
+      "environment": "main",
+      "interval_start": "2026-10-13T09:00:00",
+      "resource": "Memory",
+      "cost": "0.02197129"
+    },
+    {
+      "object_id": "ap-qOH2V4feNu21yUoyGpLHWi",
+      "description": "decision-model-lab-v4-mixed-unknown",
+      "environment": "main",
+      "interval_start": "2026-10-13T09:00:00",
+      "resource": "CPU",
+      "cost": "0.01623816"
+    },
+    {
+      "object_id": "ap-tpuzum1ZPnjBQn2x8BNnhk",
+      "description": "decision-model-lab-v4-mixed-unknown",
+      "environment": "main",
+      "interval_start": "2026-10-13T07:00:00",
+      "resource": "L4",
+      "cost": "0.01333351"
+    },
+    {
+      "object_id": "ap-tpuzum1ZPnjBQn2x8BNnhk",
+      "description": "decision-model-lab-v4-mixed-unknown",
+      "environment": "main",
+      "interval_start": "2026-10-13T07:00:00",
+      "resource": "Memory",
+      "cost": "0.00426672"
+    },
+    {
+      "object_id": "ap-tpuzum1ZPnjBQn2x8BNnhk",
+      "description": "decision-model-lab-v4-mixed-unknown",
+      "environment": "main",
+      "interval_start": "2026-10-13T07:00:00",
+      "resource": "CPU",
+      "cost": "0.00315337"
+    }
+  ],
+  "scope": "Owned V4 app/Volume rows only; observed snapshot, not a final invoice. Workspace aggregate delta is not this project's exact cost."
+}

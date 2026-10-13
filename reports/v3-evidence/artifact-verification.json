@@ -1,0 +1,26 @@
+{
+  "control-early": {
+    "verified": true,
+    "inputs": 8,
+    "device": "cuda",
+    "artifact_identity": "d9e5cc5a734ee7c7da6975d434a9e46c2be98215e3418bdc35fdaa79a7c58d16"
+  },
+  "control-final": {
+    "verified": true,
+    "inputs": 8,
+    "device": "cuda",
+    "artifact_identity": "d9e5cc5a734ee7c7da6975d434a9e46c2be98215e3418bdc35fdaa79a7c58d16"
+  },
+  "treatment-early": {
+    "verified": true,
+    "inputs": 8,
+    "device": "cuda",
+    "artifact_identity": "d9e5cc5a734ee7c7da6975d434a9e46c2be98215e3418bdc35fdaa79a7c58d16"
+  },
+  "treatment-final": {
+    "verified": true,
+    "inputs": 8,
+    "device": "cuda",
+    "artifact_identity": "d9e5cc5a734ee7c7da6975d434a9e46c2be98215e3418bdc35fdaa79a7c58d16"
+  }
+}

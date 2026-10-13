@@ -1,0 +1,7 @@
+{
+  "v1_robustness_worlds_checked": 400,
+  "v2_registered_worlds_checked": 31003,
+  "canonical_overlap": 0,
+  "supplements_predeclared_v1_original_world_exclusion": true,
+  "uses_no_v2_neural_test_predictions": true
+}

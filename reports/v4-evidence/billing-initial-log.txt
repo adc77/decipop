@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/Users/axon_dendrite/decision-model-lab/v4_cost.py", line 59, in <module>
+    main()
+  File "/Users/axon_dendrite/decision-model-lab/v4_cost.py", line 28, in main
+    rows = fetch(
+           ^^^^^^
+  File "/Users/axon_dendrite/decision-model-lab/v4_cost.py", line 13, in fetch
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "/Users/axon_dendrite/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['uv', 'run', '--extra', 'cloud', 'modal', 'billing', 'report', '--for', 'this month', '--resolution', 'h', '--show-resources', '--json']' returned non-zero exit status 1.

@@ -1,0 +1,56 @@
+{
+  "arm": "treatment",
+  "model_revision": "f8027fd0eaeea54caa13c31d31b9fdc459c38b49",
+  "dataset_manifest_sha256": "24403342c5345c161cc599f8d3aeee699f26777d374b326599458a2d566bc85c",
+  "within_limit": true,
+  "splits": {
+    "calibration": {
+      "min": 170,
+      "max": 278,
+      "mean": 210.3943028485757,
+      "questions": 2001
+    },
+    "development": {
+      "min": 170,
+      "max": 278,
+      "mean": 210.42228885557222,
+      "questions": 2001
+    },
+    "test_counterfactual": {
+      "min": 169,
+      "max": 280,
+      "mean": 210.37733333333333,
+      "questions": 3000
+    },
+    "test_depth": {
+      "min": 231,
+      "max": 352,
+      "mean": 273.806,
+      "questions": 1500
+    },
+    "test_original": {
+      "min": 170,
+      "max": 281,
+      "mean": 210.36333333333334,
+      "questions": 3000
+    },
+    "test_single_branch": {
+      "min": 130,
+      "max": 259,
+      "mean": 185.465,
+      "questions": 1000
+    },
+    "test_wording": {
+      "min": 168,
+      "max": 276,
+      "mean": 207.32533333333333,
+      "questions": 1500
+    },
+    "train": {
+      "min": 163,
+      "max": 282,
+      "mean": 208.97690115494225,
+      "questions": 20001
+    }
+  }
+}

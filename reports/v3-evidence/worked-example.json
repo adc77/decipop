@@ -1,0 +1,237 @@
+{
+  "selection_identity": "1036271f028104ba1edc35e6792fe72f17e166f25d531fe072ce5e20e234699d",
+  "selection_rule": "first sorted matched selection family, plus first sorted original-style selection UNKNOWN; post hoc descriptive examples, not test estimates",
+  "precision": "recorded GPU BF16 logits, FP64 probability calculation",
+  "examples": [
+    {
+      "example_id": "v3-selection-000001-selection-true",
+      "oracle_label": "TRUE",
+      "facts": [
+        "Hana is not quiet.",
+        "Gabe is not calm.",
+        "Evan is not large.",
+        "Dalia is not calm.",
+        "Hana is not warm.",
+        "Evan is round."
+      ],
+      "rules": [
+        "Whenever person 1 is not warm and person 1 is not quiet, person 1 is large; this applies to all people mentioned.",
+        "Whenever person 1 is not warm and person 1 is quiet, person 1 is not large; this applies to all people mentioned."
+      ],
+      "question": "Hana is large.",
+      "models": {
+        "treatment-early": {
+          "logits": [
+            0.609375,
+            0.3984375,
+            0.1884765625
+          ],
+          "decision": "TRUE",
+          "raw_probabilities": [
+            0.40546872722262106,
+            0.3283585820063001,
+            0.26617269077107886
+          ],
+          "calibrated_probabilities": [
+            0.3369118992627961,
+            0.3333150714572317,
+            0.32977302927997226
+          ],
+          "temperature": 19.6526845388757
+        },
+        "treatment-final": {
+          "logits": [
+            6.96875,
+            -2.640625,
+            -3.375
+          ],
+          "decision": "TRUE",
+          "raw_probabilities": [
+            0.9999007197400044,
+            6.709008528492062e-05,
+            3.2190174710570875e-05
+          ],
+          "calibrated_probabilities": [
+            0.7998802784953776,
+            0.10771090783237729,
+            0.09240881367224503
+          ],
+          "temperature": 4.792678949787822
+        }
+      }
+    },
+    {
+      "example_id": "v3-selection-000001-selection-false",
+      "oracle_label": "FALSE",
+      "facts": [
+        "Evan is round.",
+        "Gabe is not calm.",
+        "Evan is not large.",
+        "Dalia is not calm.",
+        "Hana is quiet.",
+        "Hana is not warm."
+      ],
+      "rules": [
+        "Whenever person 1 is not warm and person 1 is not quiet, person 1 is large; this applies to all people mentioned.",
+        "Whenever person 1 is not warm and person 1 is quiet, person 1 is not large; this applies to all people mentioned."
+      ],
+      "question": "Hana is large.",
+      "models": {
+        "treatment-early": {
+          "logits": [
+            0.609375,
+            0.380859375,
+            0.2080078125
+          ],
+          "decision": "TRUE",
+          "raw_probabilities": [
+            0.405660080483225,
+            0.32278935014359067,
+            0.2715505693731844
+          ],
+          "calibrated_probabilities": [
+            0.3369018253612579,
+            0.3330071173467469,
+            0.33009105729199534
+          ],
+          "temperature": 19.6526845388757
+        },
+        "treatment-final": {
+          "logits": [
+            -3.515625,
+            6.375,
+            -4.34375
+          ],
+          "decision": "FALSE",
+          "raw_probabilities": [
+            5.06435960404503e-05,
+            0.9999272318553873,
+            2.2124548572254805e-05
+          ],
+          "calibrated_probabilities": [
+            0.10291957442306962,
+            0.8104926826603159,
+            0.08658774291661445
+          ],
+          "temperature": 4.792678949787822
+        }
+      }
+    },
+    {
+      "example_id": "v3-selection-000001-selection-unknown",
+      "oracle_label": "UNKNOWN",
+      "facts": [
+        "Hana is not quiet.",
+        "Gabe is not calm.",
+        "Evan is not large.",
+        "Dalia is not calm.",
+        "Hana is warm.",
+        "Evan is round."
+      ],
+      "rules": [
+        "Whenever person 1 is not warm and person 1 is not quiet, person 1 is large; this applies to all people mentioned.",
+        "Whenever person 1 is not warm and person 1 is quiet, person 1 is not large; this applies to all people mentioned."
+      ],
+      "question": "Hana is large.",
+      "models": {
+        "treatment-early": {
+          "logits": [
+            0.609375,
+            0.392578125,
+            0.189453125
+          ],
+          "decision": "TRUE",
+          "raw_probabilities": [
+            0.40614222848569925,
+            0.32698246307611795,
+            0.26687530843818297
+          ],
+          "calibrated_probabilities": [
+            0.3369398567343942,
+            0.33324336037397145,
+            0.3298167828916343
+          ],
+          "temperature": 19.6526845388757
+        },
+        "treatment-final": {
+          "logits": [
+            -3.390625,
+            -3.625,
+            8.0625
+          ],
+          "decision": "UNKNOWN",
+          "raw_probabilities": [
+            1.0616045083335068e-05,
+            8.397982880640195e-06,
+            0.9999809859720361
+          ],
+          "calibrated_probabilities": [
+            0.07774459205858582,
+            0.07403413575207038,
+            0.8482212721893438
+          ],
+          "temperature": 4.792678949787822
+        }
+      }
+    },
+    {
+      "example_id": "v3-selection-000000-selection-unknown",
+      "oracle_label": "UNKNOWN",
+      "facts": [
+        "Gabe is round.",
+        "Hana is not quiet.",
+        "Chen is not bright.",
+        "Hana is not large.",
+        "Chen is not blue.",
+        "Chen is calm.",
+        "Bella is not bright.",
+        "Gabe is not kind."
+      ],
+      "rules": [
+        "For every person mentioned: if person 1 is round and person 1 is not kind, then person 1 is not quiet.",
+        "For every person mentioned: if person 1 is round and person 1 is kind, then person 1 is quiet."
+      ],
+      "question": "Bella is quiet.",
+      "models": {
+        "treatment-early": {
+          "logits": [
+            0.6484375,
+            0.404296875,
+            0.1376953125
+          ],
+          "decision": "TRUE",
+          "raw_probabilities": [
+            0.4195638374947055,
+            0.32867685502822763,
+            0.2517593074770668
+          ],
+          "calibrated_probabilities": [
+            0.33760967119188773,
+            0.33344156982730333,
+            0.3289487589808089
+          ],
+          "temperature": 19.6526845388757
+        },
+        "treatment-final": {
+          "logits": [
+            -4.15625,
+            6.625,
+            -4.4375
+          ],
+          "decision": "FALSE",
+          "raw_probabilities": [
+            2.0784844331876733e-05,
+            0.9999635259320453,
+            1.5689223622877308e-05
+          ],
+          "calibrated_probabilities": [
+            0.08751790387999671,
+            0.8299522389135924,
+            0.08252985720641086
+          ],
+          "temperature": 4.792678949787822
+        }
+      }
+    }
+  ]
+}

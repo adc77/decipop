@@ -1,0 +1,14 @@
+{
+  "control": {
+    "original_manifest_sha256": "05a7a7f74b85d710b052b631bc860cb1ad8ece816786d1fc2d101c251ce93f5b",
+    "annotated_manifest_sha256": "ce939745155063b971f9d54c28a78b5777d0e0d24fa9299196e3893c3f1c2e68",
+    "weights_sha256": "ceb632a2469ca2a7c9bb44a2c2b3a30dd3c30a943bda709955390c43702e4348",
+    "metadata_only": true
+  },
+  "treatment": {
+    "original_manifest_sha256": "9e1700494bdebd019c21b7b3f90bad57eed4d3a7742d1787d5c81bc70148e778",
+    "annotated_manifest_sha256": "1a55ea9b044f3d441925a9b7a65636e23f4824e213f0014c6a264d7ff56c2625",
+    "weights_sha256": "a21b9338a4185c72812efe3d68b7fe77811dac6a5f9a0505d095372f448e190f",
+    "metadata_only": true
+  }
+}

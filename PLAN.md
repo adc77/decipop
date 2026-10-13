@@ -2,8 +2,8 @@
 
 - **Owner:** Aman / adc77
 - **Created:** 2026-10-12
-- **Status:** draft for review; documentation only
-- **Budget:** $30 in reported Modal credits; account balance not yet verified
+- **Status:** v1 study completed; implementation and reports remain local and uncommitted
+- **Budget:** $30 starting credits verified by the billing screenshot; $0 net spend limit saved
 - **Sequence:** fine-tune first, then train a tiny transformer from scratch
 - **Completion:** defined by the deliverables below, without a calendar deadline
 
@@ -121,7 +121,7 @@ Use several controlled vocabularies, such as access permissions, software capabi
 Generation controls:
 
 - Two to eight entities per theory.
-- Four to sixteen initial facts and one to eight rules.
+- Four to sixteen initial facts and zero to eight rules; depth-zero cases can use facts alone.
 - Unary properties and binary relations.
 - One- and two-condition rules, with explicit negative facts/conclusions.
 - Short inference chains, irrelevant facts, redundant facts, and alternative valid paths.
@@ -412,11 +412,11 @@ Checkpoint state includes model, optimizer, scheduler, random number state, data
 
 ### 12.2 Model release bundle
 
-Each required model gets a separate Hugging Face model repository, initially private for artifact validation. Target names, pending the user's Hugging Face namespace:
+Each required model has a separate private Hugging Face model repository in `axondendriteplus`. Pinned verified revisions are listed in `reports/COSTS_AND_RELEASES.md`:
 
-- `<hf-namespace>/decision-lab-smollm2-360m-token`
-- `<hf-namespace>/decision-lab-smollm2-360m-head`
-- `<hf-namespace>/decision-lab-transformer-14m`
+- `axondendriteplus/decision-lab-smollm2-360m-token`
+- `axondendriteplus/decision-lab-smollm2-360m-head`
+- `axondendriteplus/decision-lab-transformer-14m`
 
 Release bundle:
 
@@ -458,18 +458,18 @@ Never put credential values in source, GitHub, manifests, model cards, logs, or 
 
 ### Current readiness
 
-- GitHub identity adc77 is authenticated and can publish this plan.
-- The model and relevant research tools are publicly available upstream.
-- No project data, weights, or application code have been created yet.
-- The prior local audit found `uv`, but no Modal SDK or training packages in the checked default environment, and no Modal/Hugging Face credentials there.
-- The $30 balance is user-reported and still needs account verification.
-- The local default Python was 3.14; implementation will use a separate pinned 3.12 environment.
+- The plan is on GitHub; implementation is local on `feat/data-foundation` and has not been committed or pushed.
+- The public pretrained checkpoint and all dependency versions are pinned.
+- Data generation, all three models, training, evaluation, and private model releases are implemented and executed.
+- Modal authentication is verified for `amandogra2016`; Hugging Face write access and private releases are verified for `axondendriteplus`.
+- The billing screenshot verified $30 starting credits and a saved $0 net spend limit. The final observed accounting is in `reports/COSTS_AND_RELEASES.md`.
+- The project uses Python 3.12 and `uv.lock`; the user explicitly authorized CPU-only tests on this laptop.
 
-Missing credentials block remote execution or uploads, not planning and local source preparation. Recheck readiness when implementation starts; this table is not a live account audit.
+Credentials remain in local SDK authentication stores. No write token was sent to a GPU worker or included in a release bundle.
 
 ## 14. Proposed repository structure
 
-Only `README.md`, `PLAN.md`, and `.gitignore` exist at this planning stage. The following is the implementation target, not a claim that these files already exist:
+The original plan commit contains only `README.md`, `PLAN.md`, and `.gitignore`. Implementation and results are local. The tree below is the original proposed layout; `docs/SETUP.md` records the implemented commands and `reports/LOCAL_PROGRESS.md` records the retained artifacts.
 
 ```text
 decision-model-lab/
@@ -656,19 +656,19 @@ Include accuracy-by-depth plots, confusion matrices, reliability diagrams, riskâ
 
 ## 19. Completion checklist
 
-- [ ] Plan reviewed; implementation authorized.
-- [ ] Personal Modal workspace, credits, budgets, and Hugging Face namespace verified.
-- [ ] Dataset semantics, solver, rendering, and split-isolation checks pass.
-- [ ] Training protocol frozen after the cost/throughput pilot.
-- [ ] Model A trained, selected on development data, exported, and reloaded.
-- [ ] Model B trained under the shared protocol, exported, and reloaded.
-- [ ] Model C implemented, trained from random initialization, exported, and reloaded.
-- [ ] Calibration and deferral thresholds fitted independently of tests.
-- [ ] Required test, robustness, uncertainty, and efficiency results recorded.
-- [ ] Actual project cost reconciled within verified credits.
-- [ ] Three private Hugging Face model bundles uploaded and round-trip checked.
-- [ ] Final report contains limitations, failed runs, and reproducibility details.
-- [ ] Required artifacts are retained and no research job is left running.
+- [x] Plan reviewed; implementation authorized.
+- [x] Personal Modal workspace, credits, budgets, and Hugging Face namespace verified.
+- [x] Dataset semantics, solver, rendering, and split-isolation checks pass.
+- [x] Training protocol frozen after the cost/throughput pilot.
+- [x] Model A trained, selected on development data, exported, and reloaded.
+- [x] Model B trained under the shared protocol, exported, and reloaded.
+- [x] Model C implemented, trained from random initialization, exported, and reloaded.
+- [x] Calibration and deferral thresholds fitted independently of tests.
+- [x] Required test, robustness, uncertainty, and efficiency results recorded.
+- [x] Actual project cost reconciled within verified credits.
+- [x] Three private Hugging Face model bundles uploaded and round-trip checked.
+- [x] Final report contains limitations, failed runs, and reproducibility details.
+- [x] Required artifacts are retained and no research job is left running.
 
 Completion is about a valid, reproducible study. No accuracy threshold, positive hypothesis, publication acceptance, or commercial usefulness is promised.
 

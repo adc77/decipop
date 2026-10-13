@@ -1,0 +1,170 @@
+{
+  "protocol_identity": "d9e5cc5a734ee7c7da6975d434a9e46c2be98215e3418bdc35fdaa79a7c58d16",
+  "selection_fit_temperatures": {
+    "control-early": {
+      "temperature": 2.204672974204358,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1200,
+      "raw_nll": 1.0999874343223033,
+      "calibrated_nll": 1.0953441881229213,
+      "optimizer": "convex inverse-temperature derivative bisection"
+    },
+    "control-final": {
+      "temperature": 6.064393601125417,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1200,
+      "raw_nll": 1.8234903447092305,
+      "calibrated_nll": 0.9459255186497887,
+      "optimizer": "convex inverse-temperature derivative bisection"
+    },
+    "treatment-early": {
+      "temperature": 54.22514709103563,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1200,
+      "raw_nll": 1.115760545386229,
+      "calibrated_nll": 1.0986061682677826,
+      "optimizer": "convex inverse-temperature derivative bisection"
+    },
+    "treatment-final": {
+      "temperature": 4.777779170840072,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1200,
+      "raw_nll": 1.8733851543722233,
+      "calibrated_nll": 0.5867521054298548,
+      "optimizer": "convex inverse-temperature derivative bisection"
+    }
+  },
+  "selection_scores": {
+    "control-early": {
+      "raw_nll": 1.105118647428371,
+      "calibrated_nll": 1.0975609894840834,
+      "accuracy": 0.3458333333333333
+    },
+    "control-final": {
+      "raw_nll": 1.8250994466917283,
+      "calibrated_nll": 0.9474621333700346,
+      "accuracy": 0.4775
+    },
+    "treatment-early": {
+      "raw_nll": 1.1150415917967476,
+      "calibrated_nll": 1.0985820365334027,
+      "accuracy": 0.33416666666666667
+    },
+    "treatment-final": {
+      "raw_nll": 1.8612486018674943,
+      "calibrated_nll": 0.5848373968157596,
+      "accuracy": 0.8333333333333334
+    }
+  },
+  "choices": {
+    "control": {
+      "raw_nll": "control-early",
+      "calibrated_nll": "control-final",
+      "accuracy": "control-final"
+    },
+    "treatment": {
+      "raw_nll": "treatment-early",
+      "calibrated_nll": "treatment-final",
+      "accuracy": "treatment-final"
+    }
+  },
+  "final_calibrations": {
+    "control-early": {
+      "temperature": 3.493208155116793,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1200,
+      "raw_nll": 1.1053562807445965,
+      "calibrated_nll": 1.0972878227437604,
+      "optimizer": "convex inverse-temperature derivative bisection",
+      "weights": "/runs/study-v3/candidates/control-early/model.safetensors",
+      "weights_sha256": "ceb632a2469ca2a7c9bb44a2c2b3a30dd3c30a943bda709955390c43702e4348"
+    },
+    "control-final": {
+      "temperature": 5.9994992861637195,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1200,
+      "raw_nll": 1.8102817488192768,
+      "calibrated_nll": 0.9446190894804505,
+      "optimizer": "convex inverse-temperature derivative bisection",
+      "weights": "/runs/study-v3/candidates/control-final/model.safetensors",
+      "weights_sha256": "01e6296a7eb93736658e6e45754f7c69eef3e56eab73533cb66abbd618e73e96"
+    },
+    "treatment-early": {
+      "temperature": 19.6526845388757,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1200,
+      "raw_nll": 1.1148410270284708,
+      "calibrated_nll": 1.098564972049318,
+      "optimizer": "convex inverse-temperature derivative bisection",
+      "weights": "/runs/study-v3/candidates/treatment-early/model.safetensors",
+      "weights_sha256": "a21b9338a4185c72812efe3d68b7fe77811dac6a5f9a0505d095372f448e190f"
+    },
+    "treatment-final": {
+      "temperature": 4.792678949787822,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1200,
+      "raw_nll": 1.8819997429558297,
+      "calibrated_nll": 0.5881565581659816,
+      "optimizer": "convex inverse-temperature derivative bisection",
+      "weights": "/runs/study-v3/candidates/treatment-final/model.safetensors",
+      "weights_sha256": "d30e6273329639604b14ff4b08e52d6db2828aead67991f22308f9ecfe76f8a1"
+    }
+  },
+  "prediction_files": {
+    "control-early": {
+      "selection_fit": "4b9d603ffc7a0bf80638c683c20df54be3c235bf8b5ce743144f2c1692dce6b3",
+      "selection": "d8a192e9b22acdf16e75b652c94fd17f9cec7cc66a3f2e8618873b4bbdb9246f",
+      "calibration": "fafa28e7078ca7b2f88dc12a1caee2b888c630bfd213f626f4eb1ece2239dc0c"
+    },
+    "control-final": {
+      "selection_fit": "5a94f7f1396b23b4466845c0d2df97981e336fa7a2cfc0851696227d33dadcf5",
+      "selection": "97149d0f064c2a639d1b49ea98302545936f935611fa2f1c6ab197626bb22247",
+      "calibration": "87568393168743652f0de3490661a6b462f6132749395c42b9a03b13905637a4"
+    },
+    "treatment-early": {
+      "selection_fit": "26f90c0d5e6b9a7ce9c65b09bfe8034dbf829a8fe9081cd12487dcca33d92027",
+      "selection": "ab2adffb848b95bf26aa17ac1c58a7614bebee589521332477b5cfe337b05f24",
+      "calibration": "05628d588af549966e4a2118e722c2069b37fd93913cad27ceeb60e394d500d5"
+    },
+    "treatment-final": {
+      "selection_fit": "1ddeb304ca99a7c12a330fd273b01e599b0ab67bd1b7bfe6c8b5c3cf86782a58",
+      "selection": "8674c58ce91d24dd1ed3f4b56c8120a2c88500c3c4120a86d6233fbf4335aee5",
+      "calibration": "2a5647f22a06eda4d32367af50af83974609cf873ed6718e2bb814d91512b119"
+    }
+  },
+  "test_predictions_inspected": false,
+  "seconds": 167.092768992,
+  "identity": "1036271f028104ba1edc35e6792fe72f17e166f25d531fe072ce5e20e234699d"
+}

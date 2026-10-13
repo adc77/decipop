@@ -8,10 +8,10 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 .cache/
-data/
-artifacts/
-runs/
-checkpoints/
+/data/
+/artifacts/
+/runs/
+/checkpoints/
 *.safetensors
 *.pt
 *.pth

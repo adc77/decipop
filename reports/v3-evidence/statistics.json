@@ -1,0 +1,1676 @@
+{
+  "protocol_identity": "d9e5cc5a734ee7c7da6975d434a9e46c2be98215e3418bdc35fdaa79a7c58d16",
+  "primary": {
+    "left": "treatment-final",
+    "right": "treatment-early",
+    "unknown_accuracy": {
+      "left_minus_right": 1.0,
+      "interval": [
+        1.0,
+        1.0
+      ],
+      "confidence": 0.95,
+      "families": 1000,
+      "repetitions": 2000,
+      "uncertainty": "test-family sampling only; one training seed"
+    },
+    "overall_accuracy": {
+      "left_minus_right": 0.666,
+      "interval": [
+        0.665,
+        0.6666666666666666
+      ],
+      "confidence": 0.95,
+      "families": 1000,
+      "repetitions": 2000,
+      "uncertainty": "test-family sampling only; one training seed"
+    },
+    "calibrated_nll": {
+      "left_minus_right": -0.9037995543539025,
+      "interval": [
+        -0.9052195122415118,
+        -0.9019283398687556
+      ],
+      "confidence": 0.95,
+      "families": 1000,
+      "repetitions": 2000,
+      "uncertainty": "test-family sampling only; one training seed"
+    },
+    "all_family_correct": {
+      "left_minus_right": 0.998,
+      "interval": [
+        0.995,
+        1.0
+      ],
+      "families": 1000,
+      "uncertainty": "test-family sampling only; one training seed"
+    }
+  },
+  "comparisons": {
+    "control:calibrated_nll-minus-raw_nll": {
+      "test_original": {
+        "left": "control-final",
+        "right": "control-early",
+        "unknown_accuracy": {
+          "left_minus_right": 0.919,
+          "interval": [
+            0.902,
+            0.936
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.29633333333333334,
+          "interval": [
+            0.2783166666666667,
+            0.31366666666666665
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": -0.44259642363236373,
+          "interval": [
+            -0.4436460101441055,
+            -0.44153744514568105
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.35,
+          "interval": [
+            0.32,
+            0.378
+          ],
+          "families": 1000,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_counterfactual": {
+        "left": "control-final",
+        "right": "control-early",
+        "unknown_accuracy": {
+          "left_minus_right": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.0006666666666666666,
+          "interval": [
+            -0.005341666666666652,
+            0.007333333333333333
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": 0.1427643572918149,
+          "interval": [
+            0.14215691009286816,
+            0.14333650315063684
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ],
+          "families": 1000,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_depth": {
+        "left": "control-final",
+        "right": "control-early",
+        "unknown_accuracy": {
+          "left_minus_right": 0.164,
+          "interval": [
+            0.132,
+            0.19404999999999972
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": -0.004,
+          "interval": [
+            -0.014683333333333303,
+            0.006666666666666667
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": 0.1536192438323408,
+          "interval": [
+            0.14718881789480207,
+            0.160004164813656
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ],
+          "families": 500,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_wording": {
+        "left": "control-final",
+        "right": "control-early",
+        "unknown_accuracy": {
+          "left_minus_right": 0.884,
+          "interval": [
+            0.854,
+            0.91
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.008,
+          "interval": [
+            -0.0026666666666666666,
+            0.018666666666666668
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": 0.23941583708159062,
+          "interval": [
+            0.2255253605112422,
+            0.25271295326529064
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ],
+          "families": 500,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_single_branch": {
+        "left": "control-final",
+        "right": "control-early",
+        "unknown_accuracy": {
+          "left_minus_right": 0.82,
+          "interval": [
+            0.784,
+            0.852
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.207,
+          "interval": [
+            0.182,
+            0.232
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": 0.07971734360562979,
+          "interval": [
+            0.06451595090177854,
+            0.09508197713315542
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.024,
+          "interval": [
+            0.01,
+            0.04
+          ],
+          "families": 500,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      }
+    },
+    "control:accuracy-minus-raw_nll": {
+      "test_original": {
+        "left": "control-final",
+        "right": "control-early",
+        "unknown_accuracy": {
+          "left_minus_right": 0.919,
+          "interval": [
+            0.902,
+            0.936
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.29633333333333334,
+          "interval": [
+            0.2783166666666667,
+            0.31366666666666665
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": -0.44259642363236373,
+          "interval": [
+            -0.4436460101441055,
+            -0.44153744514568105
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.35,
+          "interval": [
+            0.32,
+            0.378
+          ],
+          "families": 1000,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_counterfactual": {
+        "left": "control-final",
+        "right": "control-early",
+        "unknown_accuracy": {
+          "left_minus_right": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.0006666666666666666,
+          "interval": [
+            -0.005341666666666652,
+            0.007333333333333333
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": 0.1427643572918149,
+          "interval": [
+            0.14215691009286816,
+            0.14333650315063684
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ],
+          "families": 1000,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_depth": {
+        "left": "control-final",
+        "right": "control-early",
+        "unknown_accuracy": {
+          "left_minus_right": 0.164,
+          "interval": [
+            0.132,
+            0.19404999999999972
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": -0.004,
+          "interval": [
+            -0.014683333333333303,
+            0.006666666666666667
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": 0.1536192438323408,
+          "interval": [
+            0.14718881789480207,
+            0.160004164813656
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ],
+          "families": 500,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_wording": {
+        "left": "control-final",
+        "right": "control-early",
+        "unknown_accuracy": {
+          "left_minus_right": 0.884,
+          "interval": [
+            0.854,
+            0.91
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.008,
+          "interval": [
+            -0.0026666666666666666,
+            0.018666666666666668
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": 0.23941583708159062,
+          "interval": [
+            0.2255253605112422,
+            0.25271295326529064
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ],
+          "families": 500,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_single_branch": {
+        "left": "control-final",
+        "right": "control-early",
+        "unknown_accuracy": {
+          "left_minus_right": 0.82,
+          "interval": [
+            0.784,
+            0.852
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.207,
+          "interval": [
+            0.182,
+            0.232
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": 0.07971734360562979,
+          "interval": [
+            0.06451595090177854,
+            0.09508197713315542
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.024,
+          "interval": [
+            0.01,
+            0.04
+          ],
+          "families": 500,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      }
+    },
+    "treatment:calibrated_nll-minus-raw_nll": {
+      "test_original": {
+        "left": "treatment-final",
+        "right": "treatment-early",
+        "unknown_accuracy": {
+          "left_minus_right": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.333,
+          "interval": [
+            0.3323333333333333,
+            0.3333333333333333
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": -0.12333095624114727,
+          "interval": [
+            -0.1261781238210183,
+            -0.12034963395034937
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ],
+          "families": 1000,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_counterfactual": {
+        "left": "treatment-final",
+        "right": "treatment-early",
+        "unknown_accuracy": {
+          "left_minus_right": 1.0,
+          "interval": [
+            1.0,
+            1.0
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.666,
+          "interval": [
+            0.665,
+            0.6666666666666666
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": -0.9037995543539025,
+          "interval": [
+            -0.9052195122415118,
+            -0.9019283398687556
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.998,
+          "interval": [
+            0.995,
+            1.0
+          ],
+          "families": 1000,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_depth": {
+        "left": "treatment-final",
+        "right": "treatment-early",
+        "unknown_accuracy": {
+          "left_minus_right": 0.934,
+          "interval": [
+            0.912,
+            0.954
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.542,
+          "interval": [
+            0.52,
+            0.5633333333333334
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": -0.6295281727745886,
+          "interval": [
+            -0.6714414360787684,
+            -0.5847323362843463
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.774,
+          "interval": [
+            0.736,
+            0.812
+          ],
+          "families": 500,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_wording": {
+        "left": "treatment-final",
+        "right": "treatment-early",
+        "unknown_accuracy": {
+          "left_minus_right": 0.76,
+          "interval": [
+            0.722,
+            0.796
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.10066666666666667,
+          "interval": [
+            0.08666666666666667,
+            0.11401666666666659
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": 0.24054763422271946,
+          "interval": [
+            0.20670195578827488,
+            0.27501934342639844
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ],
+          "families": 500,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_single_branch": {
+        "left": "treatment-final",
+        "right": "treatment-early",
+        "unknown_accuracy": {
+          "left_minus_right": 0.574,
+          "interval": [
+            0.532,
+            0.618
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.255,
+          "interval": [
+            0.23197500000000004,
+            0.279
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": 0.10232632947196445,
+          "interval": [
+            0.04380195164976844,
+            0.1638887572582598
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.232,
+          "interval": [
+            0.196,
+            0.27
+          ],
+          "families": 500,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      }
+    },
+    "treatment:accuracy-minus-raw_nll": {
+      "test_original": {
+        "left": "treatment-final",
+        "right": "treatment-early",
+        "unknown_accuracy": {
+          "left_minus_right": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.333,
+          "interval": [
+            0.3323333333333333,
+            0.3333333333333333
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": -0.12333095624114727,
+          "interval": [
+            -0.1261781238210183,
+            -0.12034963395034937
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ],
+          "families": 1000,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_counterfactual": {
+        "left": "treatment-final",
+        "right": "treatment-early",
+        "unknown_accuracy": {
+          "left_minus_right": 1.0,
+          "interval": [
+            1.0,
+            1.0
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.666,
+          "interval": [
+            0.665,
+            0.6666666666666666
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": -0.9037995543539025,
+          "interval": [
+            -0.9052195122415118,
+            -0.9019283398687556
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.998,
+          "interval": [
+            0.995,
+            1.0
+          ],
+          "families": 1000,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_depth": {
+        "left": "treatment-final",
+        "right": "treatment-early",
+        "unknown_accuracy": {
+          "left_minus_right": 0.934,
+          "interval": [
+            0.912,
+            0.954
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.542,
+          "interval": [
+            0.52,
+            0.5633333333333334
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": -0.6295281727745886,
+          "interval": [
+            -0.6714414360787684,
+            -0.5847323362843463
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.774,
+          "interval": [
+            0.736,
+            0.812
+          ],
+          "families": 500,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_wording": {
+        "left": "treatment-final",
+        "right": "treatment-early",
+        "unknown_accuracy": {
+          "left_minus_right": 0.76,
+          "interval": [
+            0.722,
+            0.796
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.10066666666666667,
+          "interval": [
+            0.08666666666666667,
+            0.11401666666666659
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": 0.24054763422271946,
+          "interval": [
+            0.20670195578827488,
+            0.27501934342639844
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ],
+          "families": 500,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_single_branch": {
+        "left": "treatment-final",
+        "right": "treatment-early",
+        "unknown_accuracy": {
+          "left_minus_right": 0.574,
+          "interval": [
+            0.532,
+            0.618
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.255,
+          "interval": [
+            0.23197500000000004,
+            0.279
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": 0.10232632947196445,
+          "interval": [
+            0.04380195164976844,
+            0.1638887572582598
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.232,
+          "interval": [
+            0.196,
+            0.27
+          ],
+          "families": 500,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      }
+    },
+    "raw_nll:treatment-minus-control": {
+      "test_original": {
+        "left": "treatment-early",
+        "right": "control-early",
+        "unknown_accuracy": {
+          "left_minus_right": -0.081,
+          "interval": [
+            -0.098,
+            -0.064
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": -0.027333333333333334,
+          "interval": [
+            -0.033,
+            -0.021666666666666667
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": 0.005448694268166938,
+          "interval": [
+            0.004535979515782003,
+            0.00640551821202082
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ],
+          "families": 1000,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_counterfactual": {
+        "left": "treatment-early",
+        "right": "control-early",
+        "unknown_accuracy": {
+          "left_minus_right": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": -0.0003333333333333333,
+          "interval": [
+            -0.001,
+            0.0
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": -0.001357691361020355,
+          "interval": [
+            -0.0015323904284517047,
+            -0.0011872519382264684
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ],
+          "families": 1000,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_depth": {
+        "left": "treatment-early",
+        "right": "control-early",
+        "unknown_accuracy": {
+          "left_minus_right": -0.002,
+          "interval": [
+            -0.006,
+            0.0
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.0,
+          "interval": [
+            -0.002,
+            0.002
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": -0.0011307136527962513,
+          "interval": [
+            -0.001338330563393458,
+            -0.0009211070260846315
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ],
+          "families": 500,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_wording": {
+        "left": "treatment-early",
+        "right": "control-early",
+        "unknown_accuracy": {
+          "left_minus_right": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.002,
+          "interval": [
+            -0.004666666666666667,
+            0.008
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": -0.0007554802900007108,
+          "interval": [
+            -0.0010326046053895513,
+            -0.0005047168064174557
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ],
+          "families": 500,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_single_branch": {
+        "left": "treatment-early",
+        "right": "control-early",
+        "unknown_accuracy": {
+          "left_minus_right": -0.002,
+          "interval": [
+            -0.014,
+            0.01
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": -0.002,
+          "interval": [
+            -0.009024999999999955,
+            0.005
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": -0.006939457357576927,
+          "interval": [
+            -0.008303480109318638,
+            -0.005580456225385162
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": -0.002,
+          "interval": [
+            -0.01,
+            0.004
+          ],
+          "families": 500,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      }
+    },
+    "calibrated_nll:treatment-minus-control": {
+      "test_original": {
+        "left": "treatment-final",
+        "right": "control-final",
+        "unknown_accuracy": {
+          "left_minus_right": -1.0,
+          "interval": [
+            -1.0,
+            -1.0
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.009333333333333334,
+          "interval": [
+            -0.007666666666666666,
+            0.02666666666666667
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": 0.3247141616593834,
+          "interval": [
+            0.3216983581601469,
+            0.3278814249723321
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": -0.35,
+          "interval": [
+            -0.378,
+            -0.32
+          ],
+          "families": 1000,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_counterfactual": {
+        "left": "treatment-final",
+        "right": "control-final",
+        "unknown_accuracy": {
+          "left_minus_right": 1.0,
+          "interval": [
+            1.0,
+            1.0
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.665,
+          "interval": [
+            0.6583333333333333,
+            0.6713333333333333
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": -1.0479216030067375,
+          "interval": [
+            -1.0494879000140647,
+            -1.0459713643091582
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.998,
+          "interval": [
+            0.995,
+            1.0
+          ],
+          "families": 1000,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_depth": {
+        "left": "treatment-final",
+        "right": "control-final",
+        "unknown_accuracy": {
+          "left_minus_right": 0.768,
+          "interval": [
+            0.73,
+            0.806
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.546,
+          "interval": [
+            0.522,
+            0.5686666666666667
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": -0.7842781302597256,
+          "interval": [
+            -0.8275097793804704,
+            -0.7398274762494346
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.774,
+          "interval": [
+            0.736,
+            0.812
+          ],
+          "families": 500,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_wording": {
+        "left": "treatment-final",
+        "right": "control-final",
+        "unknown_accuracy": {
+          "left_minus_right": -0.124,
+          "interval": [
+            -0.174,
+            -0.076
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.09466666666666666,
+          "interval": [
+            0.07866666666666666,
+            0.11066666666666666
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": 0.0003763168511281515,
+          "interval": [
+            -0.03298005273595309,
+            0.031891718236092895
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ],
+          "families": 500,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_single_branch": {
+        "left": "treatment-final",
+        "right": "control-final",
+        "unknown_accuracy": {
+          "left_minus_right": -0.248,
+          "interval": [
+            -0.3,
+            -0.194
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.046,
+          "interval": [
+            0.014,
+            0.077
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": 0.015669528508757722,
+          "interval": [
+            -0.04067910972414321,
+            0.08000753566476866
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.206,
+          "interval": [
+            0.166,
+            0.244
+          ],
+          "families": 500,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      }
+    },
+    "accuracy:treatment-minus-control": {
+      "test_original": {
+        "left": "treatment-final",
+        "right": "control-final",
+        "unknown_accuracy": {
+          "left_minus_right": -1.0,
+          "interval": [
+            -1.0,
+            -1.0
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.009333333333333334,
+          "interval": [
+            -0.007666666666666666,
+            0.02666666666666667
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": 0.3247141616593834,
+          "interval": [
+            0.3216983581601469,
+            0.3278814249723321
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": -0.35,
+          "interval": [
+            -0.378,
+            -0.32
+          ],
+          "families": 1000,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_counterfactual": {
+        "left": "treatment-final",
+        "right": "control-final",
+        "unknown_accuracy": {
+          "left_minus_right": 1.0,
+          "interval": [
+            1.0,
+            1.0
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.665,
+          "interval": [
+            0.6583333333333333,
+            0.6713333333333333
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": -1.0479216030067375,
+          "interval": [
+            -1.0494879000140647,
+            -1.0459713643091582
+          ],
+          "confidence": 0.95,
+          "families": 1000,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.998,
+          "interval": [
+            0.995,
+            1.0
+          ],
+          "families": 1000,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_depth": {
+        "left": "treatment-final",
+        "right": "control-final",
+        "unknown_accuracy": {
+          "left_minus_right": 0.768,
+          "interval": [
+            0.73,
+            0.806
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.546,
+          "interval": [
+            0.522,
+            0.5686666666666667
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": -0.7842781302597256,
+          "interval": [
+            -0.8275097793804704,
+            -0.7398274762494346
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.774,
+          "interval": [
+            0.736,
+            0.812
+          ],
+          "families": 500,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_wording": {
+        "left": "treatment-final",
+        "right": "control-final",
+        "unknown_accuracy": {
+          "left_minus_right": -0.124,
+          "interval": [
+            -0.174,
+            -0.076
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.09466666666666666,
+          "interval": [
+            0.07866666666666666,
+            0.11066666666666666
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": 0.0003763168511281515,
+          "interval": [
+            -0.03298005273595309,
+            0.031891718236092895
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ],
+          "families": 500,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      },
+      "test_single_branch": {
+        "left": "treatment-final",
+        "right": "control-final",
+        "unknown_accuracy": {
+          "left_minus_right": -0.248,
+          "interval": [
+            -0.3,
+            -0.194
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "overall_accuracy": {
+          "left_minus_right": 0.046,
+          "interval": [
+            0.014,
+            0.077
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "calibrated_nll": {
+          "left_minus_right": 0.015669528508757722,
+          "interval": [
+            -0.04067910972414321,
+            0.08000753566476866
+          ],
+          "confidence": 0.95,
+          "families": 500,
+          "repetitions": 2000,
+          "uncertainty": "test-family sampling only; one training seed"
+        },
+        "all_family_correct": {
+          "left_minus_right": 0.206,
+          "interval": [
+            0.166,
+            0.244
+          ],
+          "families": 500,
+          "uncertainty": "test-family sampling only; one training seed"
+        }
+      }
+    }
+  },
+  "secondary_analyses": "descriptive; no multiplicity correction"
+}
