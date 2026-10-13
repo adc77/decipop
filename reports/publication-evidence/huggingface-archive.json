@@ -1,0 +1,13 @@
+{
+  "commit": "06c0fb2050f4727d84f6873445794df21f416134",
+  "created_private_by_this_publication": true,
+  "fresh_download_records_verified": 1457,
+  "manifest_sha256": "87815f401d9a170bd7691c427f2b670f47ef78daeebc702d4ec862dca2a599e0",
+  "new_weight_blobs": 8,
+  "private": true,
+  "remote_files_verified": 11,
+  "repo_id": "axondendriteplus/decision-lab-research-archive",
+  "verification": "Fresh records/member hashes; uploaded weight blob SHA-256 and size from pinned remote LFS metadata; selected-release manifests verified separately.",
+  "verified_at_utc": "2026-10-13T12:37:02.577139+00:00",
+  "weight_paths_preserved": 41
+}

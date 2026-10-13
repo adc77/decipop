@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "/Users/axon_dendrite/decision-model-lab/publish_research_archive.py", line 274, in <module>
+    upload()
+  File "/Users/axon_dendrite/decision-model-lab/publish_research_archive.py", line 200, in upload
+    commit = api.create_commit(
+             ^^^^^^^^^^^^^^^^^^
+  File "/Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/huggingface_hub/hf_api.py", line 1687, in _inner
+    return fn(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/huggingface_hub/hf_api.py", line 4320, in create_commit
+    commit_resp = get_session().post(url=commit_url, headers=headers, data=data, params=params)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/requests/sessions.py", line 712, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+    return super().send(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/requests/adapters.py", line 711, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: (ProtocolError('Connection aborted.', BrokenPipeError(32, 'Broken pipe')), '(Request ID: a1ddc00f-c730-4c4c-a39e-74ad368d2a81)')

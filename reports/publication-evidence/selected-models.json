@@ -1,0 +1,68 @@
+[
+  {
+    "repo_id": "axondendriteplus/decision-lab-smollm2-360m-token",
+    "commit": "b5db649b84cef324ac59d5115ac5c730a919c0d7",
+    "private": true,
+    "artifact_manifest_sha256": "548c03a2de5ec686ac0005a8004afa0c1c93f62382f836005a6d7a320a63b4f0"
+  },
+  {
+    "repo_id": "axondendriteplus/decision-lab-smollm2-360m-head",
+    "commit": "9bd0a31fa732ed2e746906638e7b0c349a9afeb2",
+    "private": true,
+    "artifact_manifest_sha256": "e73b59fb84202e101365c6af260aeb95d8d533caf9307bd37c5e44bc014c5152"
+  },
+  {
+    "repo_id": "axondendriteplus/decision-lab-transformer-14m",
+    "commit": "f09dbc99d615ba37e143e33ae34c6fea68d61c56",
+    "private": true,
+    "artifact_manifest_sha256": "45b02d9cb8ffd8e83a86b245dfb1299a26214b0d951e1b5da902ae9fe1b63978"
+  },
+  {
+    "repo_id": "axondendriteplus/decision-lab-v2-smollm2-360m-control",
+    "commit": "7cb185a64126d6812e3e96b2bb614cb20a33dba5",
+    "private": true,
+    "artifact_manifest_sha256": "ce939745155063b971f9d54c28a78b5777d0e0d24fa9299196e3893c3f1c2e68"
+  },
+  {
+    "repo_id": "axondendriteplus/decision-lab-v2-smollm2-360m-counterfactual",
+    "commit": "bb6e562f66a3689da2a8b3a5ccd5d4135ff12471",
+    "private": true,
+    "artifact_manifest_sha256": "1a55ea9b044f3d441925a9b7a65636e23f4824e213f0014c6a264d7ff56c2625"
+  },
+  {
+    "repo_id": "axondendriteplus/decision-lab-v3-smollm2-360m-control-early",
+    "commit": "0af460093201087dae7b60ad16c78a994095f325",
+    "private": true,
+    "artifact_manifest_sha256": "8eff4aa8e6eb87fb867b0e5d365cb276a49fd6e28aabd5c7571a56dfe6253205"
+  },
+  {
+    "repo_id": "axondendriteplus/decision-lab-v3-smollm2-360m-control-final",
+    "commit": "96992f4ef0c3e30dafe02297b449a323fd3c6dcc",
+    "private": true,
+    "artifact_manifest_sha256": "5c2a3c8bbe913272bec1aa0b203349abb18930693e620bd3a9adb3d86d82cf50"
+  },
+  {
+    "repo_id": "axondendriteplus/decision-lab-v3-smollm2-360m-treatment-early",
+    "commit": "fc2a810f0ead5039ae1364cde9667839b932aa0d",
+    "private": true,
+    "artifact_manifest_sha256": "fd8cef4c7416f480ebcb51e9b3e86b8d61093ecee91cf33e6423c82aab3e5d83"
+  },
+  {
+    "repo_id": "axondendriteplus/decision-lab-v3-smollm2-360m-treatment-final",
+    "commit": "d165bf46ed93deee9697143204f78bdccdddb17d",
+    "private": true,
+    "artifact_manifest_sha256": "3ffca2d360f6424ce5fc0f4a04aeafbf1fadbc93e4fa64cf2d866d1389356bc3"
+  },
+  {
+    "repo_id": "axondendriteplus/decision-lab-v4-smollm2-360m-control",
+    "commit": "f6fb417b7a7851fa3492412490ee7e39afa35815",
+    "private": true,
+    "artifact_manifest_sha256": "ca5b418357acfe9379c66a27f140622c081e4e4f8ea794909b7aaefa02737595"
+  },
+  {
+    "repo_id": "axondendriteplus/decision-lab-v4-smollm2-360m-mixed-unknown",
+    "commit": "c4ee886cd3a718036297edb56b0202b590457cf2",
+    "private": true,
+    "artifact_manifest_sha256": "5a54b1dab9d5a7f2948acb5b996f2a2ff37b0db9a0ea7191fcab7d3a81c880d7"
+  }
+]

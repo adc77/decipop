@@ -1,0 +1,21 @@
+{
+  "checked_at_utc": "2026-10-13T12:38:26.790720+00:00",
+  "cpu_tests_passed": 69,
+  "cpu_test_seconds": 26.99,
+  "cpu_test_command": "uv run --extra train --extra cloud python -m pytest -q",
+  "frozen_scientific_build_files_unchanged": 106,
+  "selected_private_repositories_verified": 11,
+  "selected_remote_weight_hashes_verified": 11,
+  "lint_passed": true,
+  "format_check_passed": true,
+  "lock_check_passed": true,
+  "staged_whitespace_passed": true,
+  "generated_svg_bytes_preserved": true,
+  "credential_pattern_scan_passed": true,
+  "initial_upload_log_sha256": "3982cf5af21cf20e7cd755098e634ae5a5d4a2037f73472655015bef9d940f77",
+  "resume_upload_log_sha256": "937313328c423ff6faa6624235e5d31cfddaace0fceadbfc32d450314e2a0384",
+  "initial_upload_error": "ConnectionError / BrokenPipeError on final commit request; no archive files committed",
+  "resumed_upload_new_bytes": 0,
+  "archive_commit": "06c0fb2050f4727d84f6873445794df21f416134",
+  "verification_scope": "Fresh records/member hashes; uploaded weight blob SHA-256 and size from pinned remote LFS metadata; selected-release manifests verified separately."
+}

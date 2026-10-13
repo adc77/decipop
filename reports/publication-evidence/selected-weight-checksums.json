@@ -1,0 +1,68 @@
+[
+  {
+    "repo_id": "axondendriteplus/decision-lab-smollm2-360m-token",
+    "commit": "b5db649b84cef324ac59d5115ac5c730a919c0d7",
+    "weight_sha256": "84254f999060a52cb2c29f7b0e0d2ce6ecb6b0ce4df8b01bb0c13f832bd472f3",
+    "weight_bytes": 1447318080
+  },
+  {
+    "repo_id": "axondendriteplus/decision-lab-smollm2-360m-head",
+    "commit": "9bd0a31fa732ed2e746906638e7b0c349a9afeb2",
+    "weight_sha256": "d217c1f5bd5e9fa249df37b97e4e4d8fe05aa1e2b59334e65f31981fb1711ab3",
+    "weight_bytes": 1447329612
+  },
+  {
+    "repo_id": "axondendriteplus/decision-lab-transformer-14m",
+    "commit": "f09dbc99d615ba37e143e33ae34c6fea68d61c56",
+    "weight_sha256": "41b35630cb98e91e32d855bc873db463318b8d81d2b8c02d559ff5cfb1d7c17a",
+    "weight_bytes": 55971748
+  },
+  {
+    "repo_id": "axondendriteplus/decision-lab-v2-smollm2-360m-control",
+    "commit": "7cb185a64126d6812e3e96b2bb614cb20a33dba5",
+    "weight_sha256": "ceb632a2469ca2a7c9bb44a2c2b3a30dd3c30a943bda709955390c43702e4348",
+    "weight_bytes": 1447329612
+  },
+  {
+    "repo_id": "axondendriteplus/decision-lab-v2-smollm2-360m-counterfactual",
+    "commit": "bb6e562f66a3689da2a8b3a5ccd5d4135ff12471",
+    "weight_sha256": "a21b9338a4185c72812efe3d68b7fe77811dac6a5f9a0505d095372f448e190f",
+    "weight_bytes": 1447329612
+  },
+  {
+    "repo_id": "axondendriteplus/decision-lab-v3-smollm2-360m-control-early",
+    "commit": "0af460093201087dae7b60ad16c78a994095f325",
+    "weight_sha256": "ceb632a2469ca2a7c9bb44a2c2b3a30dd3c30a943bda709955390c43702e4348",
+    "weight_bytes": 1447329612
+  },
+  {
+    "repo_id": "axondendriteplus/decision-lab-v3-smollm2-360m-control-final",
+    "commit": "96992f4ef0c3e30dafe02297b449a323fd3c6dcc",
+    "weight_sha256": "01e6296a7eb93736658e6e45754f7c69eef3e56eab73533cb66abbd618e73e96",
+    "weight_bytes": 1447329612
+  },
+  {
+    "repo_id": "axondendriteplus/decision-lab-v3-smollm2-360m-treatment-early",
+    "commit": "fc2a810f0ead5039ae1364cde9667839b932aa0d",
+    "weight_sha256": "a21b9338a4185c72812efe3d68b7fe77811dac6a5f9a0505d095372f448e190f",
+    "weight_bytes": 1447329612
+  },
+  {
+    "repo_id": "axondendriteplus/decision-lab-v3-smollm2-360m-treatment-final",
+    "commit": "d165bf46ed93deee9697143204f78bdccdddb17d",
+    "weight_sha256": "d30e6273329639604b14ff4b08e52d6db2828aead67991f22308f9ecfe76f8a1",
+    "weight_bytes": 1447329612
+  },
+  {
+    "repo_id": "axondendriteplus/decision-lab-v4-smollm2-360m-control",
+    "commit": "f6fb417b7a7851fa3492412490ee7e39afa35815",
+    "weight_sha256": "f4a54afed286c635de6606a8f770c23ea3e84a1d972d516598a3a11515262917",
+    "weight_bytes": 1447329612
+  },
+  {
+    "repo_id": "axondendriteplus/decision-lab-v4-smollm2-360m-mixed-unknown",
+    "commit": "c4ee886cd3a718036297edb56b0202b590457cf2",
+    "weight_sha256": "417f2b856d0b117d9c8e532539d026654d4e28f40b34f3ddf62e0bf3660cc7b1",
+    "weight_bytes": 1447329612
+  }
+]
