@@ -1,0 +1,20 @@
+{
+  "checked_at_utc": "2026-10-15T09:54:50.642113+00:00",
+  "github_repository": "https://github.com/adc77/premise",
+  "first_public_source_commit": "f5614f543804cad20f38befbdae6a247a21b7438",
+  "github_public": true,
+  "default_branch": "main",
+  "anonymous_github_article_links_verified": 20,
+  "anonymous_hf_repositories_verified": 9,
+  "public_models": 8,
+  "cpu_reference_inputs_verified": 64,
+  "cpu_tests_passed": 126,
+  "dataset_configurations_loaded": 4,
+  "serialized_dataset_rows": 190688,
+  "clean_checkout_article_rebuild_verified": true,
+  "clean_checkout_documented_cli_verified": true,
+  "cli_implicit_token_disabled": true,
+  "historical_v8_scientific_freeze_unchanged": true,
+  "historical_v8_archive_sha256": "d6ea6c4f5c8f34caa89ea0374c71a636dde9054b457604c17181873e180e99af",
+  "new_training_or_gpu_jobs": false
+}

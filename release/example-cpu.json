@@ -1,0 +1,42 @@
+{
+  "repo_id": "axondendriteplus/premise-v8-r2-consistency",
+  "revision": "fd52d3fc0bd81504b72cb174d36d6f8613de6ebb",
+  "input": "examples/prompts.json",
+  "verification_purpose": "Publication inference smoke check; not a new aggregate study evaluation.",
+  "result": {
+    "class_labels": [
+      "TRUE",
+      "FALSE",
+      "UNKNOWN"
+    ],
+    "logits": [
+      [
+        2.819326639175415,
+        -3.708188056945801,
+        1.3017483949661255
+      ],
+      [
+        2.7483348846435547,
+        -3.6047699451446533,
+        1.2230637073516846
+      ]
+    ],
+    "probabilities": [
+      [
+        0.7235909700393677,
+        0.009861688129603863,
+        0.2665473520755768
+      ],
+      [
+        0.7236971259117126,
+        0.011062690988183022,
+        0.26524022221565247
+      ]
+    ],
+    "decisions": [
+      "TRUE",
+      "TRUE"
+    ],
+    "precision": "FP32 artifact verification inference"
+  }
+}

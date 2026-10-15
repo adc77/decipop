@@ -35,13 +35,7 @@
         <p>a “world” is one set of facts and rules. i ask several questions about that same world. the model has to keep each person’s evidence separate.</p>
         <p>the input contains facts, universally quantified rules, and a queried statement. A symbolic forward-chaining oracle supplies the correct class; contradictory worlds are rejected. The model sees rendered text and predicts one of three labels.</p>
         <div class="semantic-labels"><div><span class="class-label true">TRUE</span><p>the statement follows from the supplied facts and rules.</p></div><div><span class="class-label false">FALSE</span><p>the statement’s explicit negation follows.</p></div><div><span class="class-label unknown">UNKNOWN</span><p>neither the statement nor its explicit negation follows.</p></div></div>
-        <div class="logic-world"><div class="mono">illustrative world · oracle answers, not model predictions</div><pre>Bella is registered.    Bella is enabled.
-Chen is registered.     Chen is not enabled.
-Aman is registered.
-
-registered(x) ∧ enabled(x)     → authorized(x)
-registered(x) ∧ not enabled(x) → not authorized(x)</pre><div class="world-answers"><span>Bella authorized? <b>TRUE</b></span><span>Chen authorized? <b>FALSE</b></span><span>Aman authorized? <b>UNKNOWN</b></span></div></div>
-        <p>removing “Bella is enabled” changes the first answer to UNKNOWN. It does not make the answer FALSE. Removing support and asserting the opposite are different interventions.</p>
+        <p>missing verification and failed verification are different facts. removing a necessary fact can make the answer UNKNOWN without making it FALSE. the <a href="#examples">recorded example below</a> shows exactly that change.</p>
         <p><strong>UNKNOWN is a semantic answer, not a refusal.</strong> Confidence-based deferral is a separate policy. Temperature scaling changes probabilities; it cannot repair an incorrect predicted class.</p>
       </section>
 

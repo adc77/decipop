@@ -113,18 +113,11 @@ async function main() {
   renderReplication(data.studies.v7);
   renderIntervals(data.studies.v8);
   renderReliability(data.studies.v8, 'r1');
-  let currentCase = 'r2';
-  renderCase(data.examples, currentCase);
+  renderCase(data.examples, 'r2');
   document.querySelectorAll('[data-reliability]').forEach((button) => {
     button.addEventListener('click', () => renderReliability(data.studies.v8, button.dataset.reliability));
   });
-  document.querySelectorAll('[data-case]').forEach((button) => {
-    button.addEventListener('click', () => {
-      currentCase = button.dataset.case;
-      renderCase(data.examples, currentCase);
-    });
-  });
-  $('#remove-premise').addEventListener('change', () => renderCase(data.examples, currentCase));
+  $('#remove-premise').addEventListener('change', () => renderCase(data.examples, 'r2'));
   document.documentElement.dataset.ready = 'true';
 }
 
