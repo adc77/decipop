@@ -6,10 +6,10 @@ import torch
 from test_v4 import tiny_parent
 
 from decision_lab.data.validate import read_examples
+from decision_lab.studies.v7 import study
+from decision_lab.studies.v7.data import generate, validate
+from decision_lab.studies.v7.protocol import budget, reservation, settings
 from decision_lab.training.checkpoint import file_hash
-from v7_lab import study
-from v7_lab.data import generate, validate
-from v7_lab.protocol import budget, reservation, settings
 
 
 def small_spec(repetition):
@@ -50,7 +50,7 @@ def test_repetitions_are_fresh_namespaced_and_label_matched(tmp_path):
 
 
 def test_same_curriculum_settings_and_joint_reservation():
-    from v6_lab.protocol import settings as v6_settings
+    from decision_lab.studies.v6.protocol import settings as v6_settings
 
     previous = v6_settings()
     replicas = [settings(rep) for rep in ("r1", "r2")]
@@ -93,7 +93,7 @@ def test_failed_calls_consume_the_stage_and_joint_allowances():
 
 @pytest.mark.parametrize("rep", ["r1", "r2"])
 def test_namespacing_does_not_change_the_v6_curriculum(tmp_path, rep):
-    from v6_lab.data import generate as reference_generate
+    from decision_lab.studies.v6.data import generate as reference_generate
 
     spec = small_spec(rep)
     reference_generate(tmp_path / "reference", spec, set(), {})

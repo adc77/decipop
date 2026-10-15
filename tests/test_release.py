@@ -90,4 +90,7 @@ def test_custom_release_loads_exact_architecture_and_detects_tampering(tmp_path,
 def test_evaluation_app_import_does_not_launch_gpu_work():
     import runpy
 
-    assert runpy.run_path("eval_app.py")["app"].name == "decision-model-lab-evaluation"
+    assert (
+        runpy.run_path("src/decision_lab/studies/v1/evaluate.py")["app"].name
+        == "decision-model-lab-evaluation"
+    )

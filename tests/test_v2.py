@@ -5,9 +5,9 @@ import pytest
 
 from decision_lab.data.schema import Label
 from decision_lab.data.validate import read_examples
-from decision_lab.v2.budget import allocations, finish, reserve
-from decision_lab.v2.data import generate, validate
-from decision_lab.v2.protocol import settings
+from decision_lab.studies.v2.budget import allocations, finish, reserve
+from decision_lab.studies.v2.data import generate, validate
+from decision_lab.studies.v2.protocol import settings
 
 
 def test_v2_calibration_evaluation_and_two_head_exports(tmp_path, monkeypatch):
@@ -22,11 +22,11 @@ def test_v2_calibration_evaluation_and_two_head_exports(tmp_path, monkeypatch):
     from decision_lab.models.decision_head import HeadDecisionModel
     from decision_lab.publication import atomic_json
     from decision_lab.release import verify_release
+    from decision_lab.studies.v2 import study
+    from decision_lab.studies.v2.protocol import code_hash
+    from decision_lab.studies.v2.report import write_report
     from decision_lab.training.core import predict
     from decision_lab.training.protocol import json_hash, make_protocol
-    from decision_lab.v2 import study
-    from decision_lab.v2.protocol import code_hash
-    from decision_lab.v2.report import write_report
 
     spec, pilot, scratch, training, evaluation = settings()
     spec = spec | {
@@ -168,8 +168,8 @@ def test_v2_allocation_keeps_failed_calls_and_limits_retries(tmp_path):
 
 
 def test_orphan_selection_is_preserved_without_touching_durable_selection(tmp_path):
+    from decision_lab.studies.v2.recovery import preserve_orphan_selections
     from decision_lab.training.checkpoint import file_hash
-    from decision_lab.v2.recovery import preserve_orphan_selections
 
     parent = tmp_path / "head/attempt/checkpoint-001000"
     parent.mkdir(parents=True)

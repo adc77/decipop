@@ -2,8 +2,8 @@ import os
 
 import pytest
 
+from decision_lab.studies.v7.files import deduplicate_verified_weight, download
 from decision_lab.training.checkpoint import file_hash
-from v7_files import deduplicate_verified_weight, download
 
 
 def test_verified_deduplication_preserves_bundle_bytes(tmp_path):

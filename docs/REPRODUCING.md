@@ -1,39 +1,96 @@
-# Reproducing Premise
+# Develop and reproduce decipop
 
-Use Python 3.12. Clone `https://github.com/adc77/premise`, then run `uv sync --extra train --extra analysis --extra baseline`. The historical package/import name remains `decision_lab`.
+The [article is public](https://adc77.github.io/decipop/). Reading it requires no
+installation or local server. This guide is for running code and checking results.
 
-## Read or run the selected models
+## Environment and checks
 
-Choose a public checkpoint from [MODELS.md](MODELS.md). Run `uv run python examples/predict.py --model <repo> --revision <commit>` for the exact recorded prompts in `examples/prompts.json`. The loader verifies all files listed in `artifact-manifest.json`. Use the pinned commit rather than the moving `main` branch for a reproducible download.
+```sh
+git clone https://github.com/adc77/decipop.git
+cd decipop
+uv sync --extra train --extra cloud --extra analysis --extra baseline
+uv run pytest -q
+uv run ruff check src tests tools examples
+```
 
-The included model bundle supports standalone inference through its own `infer.py`, `code/`, tokenizer, calibration, and dependency requirements. It uses a custom three-class head, not a stock chat-model or sequence-classification pipeline. Inputs are full prompts following `prompt-template.txt`, not isolated questions. Maximum length is 512 tokens; overlong inputs fail.
+Use Python 3.12. CPU tests do not submit Modal jobs. The distribution is named
+`decipop`; the import package remains `decision_lab` for saved-model compatibility.
 
-For the eight fixed artifact checks, call `decision_lab.release.verify_release(Path(download_directory))` in the locked environment. Those checks use FP32 and stored numerical tolerances. Aggregate study scores were measured using BF16. Fresh CPU inference is not an exact reproduction of every BF16 aggregate logit.
+## Models and precision
 
-## Restore the frozen data
+Choose a [pinned checkpoint](MODELS.md), then run:
 
-The public dataset `axondendriteplus/premise-worlds` contains configs `v7-r1`, `v7-r2`, `v8-r1`, and `v8-r2`. Use `huggingface_hub.snapshot_download(..., repo_type="dataset", revision=<pin>)` to retain exact original JSONL files, rather than reserializing rows. Verify every digest in `sha256.json`.
+```sh
+uv run python examples/predict.py --model axondendriteplus/decipop-v8-r2-consistency --revision <commit>
+```
 
-`data/<config>/` contains the input splits. `provenance/<config>/` preserves the family registry and original manifest. Model training needs its matching arm's `train_control` or `train_treatment`; do not concatenate them. V8 intentionally uses the same training rows in both arms.
+The example verifies the bundle's SHA-256 inventory, restores its custom decision
+head and saved temperature, and evaluates `examples/prompts.json`. These are full
+prompts, not isolated questions. Maximum length is 512 tokens; longer inputs fail.
+The weights are not stock chat checkpoints. Standalone inference uses the bundle's
+`infer.py`, `code/`, tokenizer and requirements.
 
-The study datasets exclude recorded earlier worlds. Regenerating a full historical dataset byte-for-byte also requires its recorded exclusion inventory; do not run a later generator without those records and claim it recreated the original partition. The public frozen files are the supported path to those exact inputs.
+`decision_lab.release.verify_release(Path(bundle_directory))` checks eight stored
+FP32 references. Aggregate reported results used BF16. Fresh FP32 predictions are
+not exact reproductions of all BF16 logits. Rename-only releases preserve weight,
+tokenizer and inference hashes; publication records identify the earlier revision
+at which each full fresh-download CPU check ran.
 
-## Verify reported metrics
+## Data and historical results
 
-Public `reports/v7-evidence` and `reports/v8-evidence` contain the independent raw-count receipts, numerical checks, selection records, protocol seals, and inventories. The release dataset includes exact source inputs. Model cards include the original full evaluation JSON and fixed references. The article's `assets/results.json` is a compact presentation of those records, not another experiment.
+The public `axondendriteplus/decipop-worlds` dataset has four configs: `v7-r1`,
+`v7-r2`, `v8-r1`, `v8-r2`. Download a pinned snapshot with `repo_type="dataset"`.
+`sha256.json` records each normalized file's digest and original source digest.
+`normalization.json` describes semantic checks; `row-counts.json` has split counts.
 
-Full original per-question logits remain in the owner's retained run directories and are not claimed as a public raw-logit archive. To independently reproduce aggregate scores, run the released model on its matching test inputs using the original BF16 precision and grouping rules, and recompute counts. `v7_raw_audit.py`, `v8_raw_audit.py` and the study analysis source specify those checks; their historical CLI wrappers expect the original `runs/study-v*/...` layout and refuse to overwrite receipts.
+The public release replaces one entity symbol consistently with `EntityA`.
+**Logical labels are preserved, but model tokenization can change. Original scores
+must not be presented as evaluations on the normalized inputs.** Original files
+are retained privately. Exact replay of the reported aggregate scores requires
+those original files; public normalized data support a new, explicitly named
+re-evaluation instead. No such re-evaluation has been performed in this release.
 
-Bootstrap intervals resample three-world rotation blocks within declared strata, conditional on the fixed selected weights. They do not measure a training-seed population. The fresh-seed comparisons and all endpoint definitions are in the frozen protocols.
+Do not concatenate control and treatment training files. They are experimental
+arms and intentionally identical in V8. Keep related questions and edits together
+by family. Do not merge configs into a single fresh benchmark.
 
-## Tests and local article
+Public `reports/v7-evidence` and `reports/v8-evidence` contain compact raw-count
+audits, numerical checks, selection records and protocol seals. Full per-question
+logits remain in retained private run directories. They are not a public raw-logit
+archive. World-sampling intervals condition on fixed selected models and resample
+three-world rotation blocks; they do not estimate a population of training seeds.
 
-Run `uv run --extra train --extra analysis --extra baseline python -m pytest -q`. The suite tests the symbolic oracle, partition invariants, generated inputs, paired loss, selection, checkpointing, and reporting checks. It does not submit Modal jobs.
+## Code organization and frozen source
 
-Run `python3 research-article/build.py`, then `python3 -m http.server 8765 --bind 127.0.0.1 --directory research-article/dist`. The builder reads the committed compact study receipts under `reports`, so rebuilding the presentation works in a fresh checkout without private run directories. Article controls display saved predictions, not live inference.
+Shared implementation lives in `src/decision_lab/{data,models,training,evaluation}`.
+Study-specific logic and former root scripts live in `src/decision_lab/studies/vN`.
+For example, `v8_raw_audit.py` is now:
+
+```sh
+uv run python -m decision_lab.studies.v8.raw_audit --help
+```
+
+Module imports are supported; individual file execution is not required. The
+[refactor map](../release/refactor-map.json) records every old path and module.
+Some historical orchestration modules are intentionally stateful and expect the
+owner's run directories. Do not invoke them merely to discover their usage.
+
+The `v0.1.0` tag preserves original paths, historical manifests and publication
+receipts. Frozen scientific documents describe that source. Moving modules and
+changing the default entity vocabulary change source identities, so current code
+will not pass old source seals. No historical hashes were rewritten. For an exact
+historical implementation, use a separate checkout of `v0.1.0`; reuse of an old run
+identity with new source should fail.
+
+## Article development
+
+See [ARTICLE_DEVELOPMENT.md](ARTICLE_DEVELOPMENT.md). The builder reads committed
+receipts and works without private run directories. GitHub Pages publishes `site/`.
 
 ## New training
 
-Training is separate from inference and CPU verification. Study scripts require Modal authentication, historical parents/exclusion inventories, source seals, a new run directory and an explicitly bounded allocation. They enforce source/data identities and do not silently launch a new study from a fresh checkout. Full optimizer/RNG recovery checkpoints were temporary. Released selected weights support a new fine-tuning run, not an exact continuation of deleted optimizer state.
-
-This release does not add training, new seeds, an architecture experiment or coefficient sweeps.
+Training requires Modal authentication, historical parents/exclusions, a new run
+identity and an explicitly bounded allocation. No new training is part of this
+release. Selected weights support new fine-tuning; deleted temporary optimizer/RNG
+states do not support exact continuation. Source seals deliberately prevent
+silently resuming a frozen study with modified code.

@@ -8,10 +8,10 @@ import torch
 from decision_lab.data.schema import Label
 from decision_lab.data.validate import read_examples
 from decision_lab.publication import atomic_json
+from decision_lab.studies.v4 import study
+from decision_lab.studies.v4.data import generate, validate
+from decision_lab.studies.v4.protocol import budget, settings
 from decision_lab.training.checkpoint import file_hash
-from v4_lab import study
-from v4_lab.data import generate, validate
-from v4_lab.protocol import budget, settings
 
 
 def small_spec():
@@ -172,7 +172,7 @@ def test_cpu_diagnostics_and_training_resume_match_uninterrupted(tmp_path, monke
 
 def test_cpu_selection_calibration_scoring_and_export_round_trip(tmp_path, monkeypatch):
     from decision_lab.release import verify_release
-    from decision_lab.v3.protocol import check_seal
+    from decision_lab.studies.v3.protocol import check_seal
 
     torch.set_num_threads(2)
     spec = small_spec() | {

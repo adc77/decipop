@@ -8,8 +8,8 @@ from decision_lab.config import load_dataset_config
 from decision_lab.data.schema import Atom, Label, Theory
 from decision_lab.data.solve import InconsistentTheoryError, solve
 from decision_lab.data.split import canonical_hash
-from v5_lab.analysis import interval, pair_metrics
-from v5_lab.data import (
+from decision_lab.studies.v5.analysis import interval, pair_metrics
+from decision_lab.studies.v5.data import (
     atom,
     audit_family,
     independent_closure,
@@ -17,7 +17,7 @@ from v5_lab.data import (
     reference_label,
     validate_dataset,
 )
-from v5_lab.protocol import budget, settings
+from decision_lab.studies.v5.protocol import budget, settings
 
 
 @pytest.mark.parametrize("suite", ["conjunction", "deeper", "signed_chain"])

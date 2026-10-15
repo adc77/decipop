@@ -10,11 +10,11 @@ from test_v4 import tiny_parent
 from decision_lab.config import load_dataset_config
 from decision_lab.data.schema import Label
 from decision_lab.data.validate import read_examples
+from decision_lab.studies.v6 import study
+from decision_lab.studies.v6.analysis import complete_worlds, world_contrast
+from decision_lab.studies.v6.data import VARIANTS, generate, multi_bundle, validate
+from decision_lab.studies.v6.protocol import budget, settings
 from decision_lab.training.checkpoint import file_hash
-from v6_lab import study
-from v6_lab.analysis import complete_worlds, world_contrast
-from v6_lab.data import VARIANTS, generate, multi_bundle, validate
-from v6_lab.protocol import budget, settings
 
 
 def small_spec():
@@ -168,7 +168,7 @@ def test_cpu_training_resume_selection_and_fresh_export(tmp_path, monkeypatch):
 
 
 def test_packaging_failure_recovers_original_optimizer_and_rng(tmp_path, monkeypatch):
-    from v6_recovery import prepare_resume
+    from decision_lab.studies.v6.recovery import prepare_resume
 
     torch.set_num_threads(2)
     spec = small_spec() | {

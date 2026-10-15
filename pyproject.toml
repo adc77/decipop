@@ -3,8 +3,8 @@ requires = ["hatchling>=1.27,<2"]
 build-backend = "hatchling.build"
 
 [project]
-name = "decision-model-lab"
-version = "0.1.0"
+name = "decipop"
+version = "0.2.0"
 description = "Controlled research on small decision models."
 readme = "README.md"
 requires-python = ">=3.12,<3.13"

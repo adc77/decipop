@@ -1,126 +1,281 @@
 {
-  "name": "Premise",
-  "source_repository": "https://github.com/adc77/premise",
-  "source_revision": "v0.1.0",
+  "name": "decipop",
+  "source_repository": "https://github.com/adc77/decipop",
+  "source_revision": "v0.2.0",
   "dataset": {
     "repo_type": "dataset",
-    "commit": "f5d6c9458e0331dbe21a0a2888dc9aa39d5bd24b",
-    "verified": true,
+    "repo_id": "axondendriteplus/decipop-worlds",
+    "commit": "f59ba2a8e0e9822d76637d03bf0f781282b82ef1",
     "public": true,
-    "repo_id": "axondendriteplus/premise-worlds",
-    "serialized_rows": 190688
+    "verified": true,
+    "serialized_rows": 190688,
+    "file_hashes_verified": true,
+    "source_dataset_retained_private": true,
+    "normalization": {
+      "transformation": "One entity symbol replaced consistently with EntityA.",
+      "original_source_revision": "v0.1.0",
+      "labels_and_proof_depths": "All rows checked with production and independent oracles.",
+      "canonical_hash_samples": [
+        "data/v7-r1/calibration.jsonl",
+        "data/v7-r1/development.jsonl",
+        "data/v7-r1/selection.jsonl",
+        "data/v7-r1/selection_fit.jsonl",
+        "data/v7-r1/test_counterfactual.jsonl",
+        "data/v7-r1/test_depth.jsonl",
+        "data/v7-r1/test_multi.jsonl",
+        "data/v7-r1/test_multi_depth.jsonl",
+        "data/v7-r1/test_multi_signed_chain.jsonl",
+        "data/v7-r1/test_multi_transformations.jsonl",
+        "data/v7-r1/test_multi_wording.jsonl",
+        "data/v7-r1/test_original.jsonl",
+        "data/v7-r1/test_single_branch.jsonl",
+        "data/v7-r1/test_wording.jsonl",
+        "data/v7-r1/train_control.jsonl",
+        "data/v7-r1/train_treatment.jsonl",
+        "data/v7-r2/calibration.jsonl",
+        "data/v7-r2/development.jsonl",
+        "data/v7-r2/selection.jsonl",
+        "data/v7-r2/selection_fit.jsonl",
+        "data/v7-r2/test_counterfactual.jsonl",
+        "data/v7-r2/test_depth.jsonl",
+        "data/v7-r2/test_multi.jsonl",
+        "data/v7-r2/test_multi_depth.jsonl",
+        "data/v7-r2/test_multi_signed_chain.jsonl",
+        "data/v7-r2/test_multi_transformations.jsonl",
+        "data/v7-r2/test_multi_wording.jsonl",
+        "data/v7-r2/test_original.jsonl",
+        "data/v7-r2/test_single_branch.jsonl",
+        "data/v7-r2/test_wording.jsonl",
+        "data/v7-r2/train_control.jsonl",
+        "data/v7-r2/train_treatment.jsonl",
+        "data/v8-r1/calibration.jsonl",
+        "data/v8-r1/development.jsonl",
+        "data/v8-r1/selection.jsonl",
+        "data/v8-r1/selection_fit.jsonl",
+        "data/v8-r1/test_counterfactual.jsonl",
+        "data/v8-r1/test_depth.jsonl",
+        "data/v8-r1/test_multi.jsonl",
+        "data/v8-r1/test_multi_depth.jsonl",
+        "data/v8-r1/test_multi_signed_chain.jsonl",
+        "data/v8-r1/test_multi_transformations.jsonl",
+        "data/v8-r1/test_multi_wording.jsonl",
+        "data/v8-r1/test_original.jsonl",
+        "data/v8-r1/test_paired.jsonl",
+        "data/v8-r1/test_single_branch.jsonl",
+        "data/v8-r1/test_wording.jsonl",
+        "data/v8-r1/train_control.jsonl",
+        "data/v8-r1/train_treatment.jsonl",
+        "data/v8-r2/calibration.jsonl",
+        "data/v8-r2/development.jsonl",
+        "data/v8-r2/selection.jsonl",
+        "data/v8-r2/selection_fit.jsonl",
+        "data/v8-r2/test_counterfactual.jsonl",
+        "data/v8-r2/test_depth.jsonl",
+        "data/v8-r2/test_multi.jsonl",
+        "data/v8-r2/test_multi_depth.jsonl",
+        "data/v8-r2/test_multi_signed_chain.jsonl",
+        "data/v8-r2/test_multi_transformations.jsonl",
+        "data/v8-r2/test_multi_wording.jsonl",
+        "data/v8-r2/test_original.jsonl",
+        "data/v8-r2/test_paired.jsonl",
+        "data/v8-r2/test_single_branch.jsonl",
+        "data/v8-r2/test_wording.jsonl",
+        "data/v8-r2/train_control.jsonl",
+        "data/v8-r2/train_treatment.jsonl"
+      ],
+      "serialized_rows": 190688,
+      "model_scores": "Historical scores use original inputs; normalized inputs not re-evaluated."
+    },
+    "anonymous_loader_checks": [
+      {
+        "config": "v7-r1",
+        "split": "test_multi",
+        "loaded": true
+      },
+      {
+        "config": "v7-r2",
+        "split": "test_multi",
+        "loaded": true
+      },
+      {
+        "config": "v8-r1",
+        "split": "test_paired",
+        "loaded": true
+      },
+      {
+        "config": "v8-r2",
+        "split": "test_paired",
+        "loaded": true
+      }
+    ]
   },
   "models": [
     {
       "repo_type": "model",
-      "commit": "157e587e557b1ce2b11ef7920ad24817b10c8f86",
+      "commit": "e37a423f76dd7b82c9a276f7fc21407f324e25ad",
       "verified": true,
       "public": true,
-      "repo_id": "axondendriteplus/premise-v7-r1-control",
+      "repo_id": "axondendriteplus/decipop-v7-r1-control",
       "weight_sha256": "a65ae3147b2b41a3a0a33146194c555c2f2ee7c379176c8dca8af72845e6836e",
       "fresh_download_cpu": {
         "verified": true,
         "inputs": 8,
         "device": "cpu",
-        "artifact_identity": "f07e4f34618900fe4a571f47f380737efe7919897a5465704c92a138c3154c71"
+        "artifact_identity": "f07e4f34618900fe4a571f47f380737efe7919897a5465704c92a138c3154c71",
+        "verified_at_revision": "157e587e557b1ce2b11ef7920ad24817b10c8f86"
+      },
+      "previous_public_commit": "157e587e557b1ce2b11ef7920ad24817b10c8f86",
+      "rename_verification": {
+        "weights_tokenizer_inference_unchanged": true,
+        "anonymous_public": true,
+        "metadata_commit_verified": true
       }
     },
     {
       "repo_type": "model",
-      "commit": "42f6df7804d334757a81d39ac960acd3d022c5fc",
+      "commit": "88b2562ada13ce54a1e6fdf2ea33e72986d96c3a",
       "verified": true,
       "public": true,
-      "repo_id": "axondendriteplus/premise-v7-r1-multi-entity",
+      "repo_id": "axondendriteplus/decipop-v7-r1-multi-entity",
       "weight_sha256": "875f353f76c256b581aff6560914b0968dccdabfe3ea9862cf38740a5ae7f479",
       "fresh_download_cpu": {
         "verified": true,
         "inputs": 8,
         "device": "cpu",
-        "artifact_identity": "f07e4f34618900fe4a571f47f380737efe7919897a5465704c92a138c3154c71"
+        "artifact_identity": "f07e4f34618900fe4a571f47f380737efe7919897a5465704c92a138c3154c71",
+        "verified_at_revision": "42f6df7804d334757a81d39ac960acd3d022c5fc"
+      },
+      "previous_public_commit": "42f6df7804d334757a81d39ac960acd3d022c5fc",
+      "rename_verification": {
+        "weights_tokenizer_inference_unchanged": true,
+        "anonymous_public": true,
+        "metadata_commit_verified": true
       }
     },
     {
       "repo_type": "model",
-      "commit": "e4deb9a42b91c369cdc27b911f7e16fa4bd32fcc",
+      "commit": "519d6cf07fd04c3c1423df107b6fee36ad6ba008",
       "verified": true,
       "public": true,
-      "repo_id": "axondendriteplus/premise-v7-r2-control",
+      "repo_id": "axondendriteplus/decipop-v7-r2-control",
       "weight_sha256": "481ada01e00f9bf2b07b21cba79d00df57bd587501aae68e48f470057c69b89f",
       "fresh_download_cpu": {
         "verified": true,
         "inputs": 8,
         "device": "cpu",
-        "artifact_identity": "94550cc844cb3a116a64211bac4be473610aa0b835f8b493f70b2478ab9f808f"
+        "artifact_identity": "94550cc844cb3a116a64211bac4be473610aa0b835f8b493f70b2478ab9f808f",
+        "verified_at_revision": "e4deb9a42b91c369cdc27b911f7e16fa4bd32fcc"
+      },
+      "previous_public_commit": "e4deb9a42b91c369cdc27b911f7e16fa4bd32fcc",
+      "rename_verification": {
+        "weights_tokenizer_inference_unchanged": true,
+        "anonymous_public": true,
+        "metadata_commit_verified": true
       }
     },
     {
       "repo_type": "model",
-      "commit": "94f8868b00aed4388243fe43b4531772939a4776",
+      "commit": "1c90ddd9ac9fc001582edbcab5fe6c258908b797",
       "verified": true,
       "public": true,
-      "repo_id": "axondendriteplus/premise-v7-r2-multi-entity",
+      "repo_id": "axondendriteplus/decipop-v7-r2-multi-entity",
       "weight_sha256": "c7e9e72a0b3f34f1316c9451cacb8de7a3e1c1eb610f65688e16bd1b4296f505",
       "fresh_download_cpu": {
         "verified": true,
         "inputs": 8,
         "device": "cpu",
-        "artifact_identity": "94550cc844cb3a116a64211bac4be473610aa0b835f8b493f70b2478ab9f808f"
+        "artifact_identity": "94550cc844cb3a116a64211bac4be473610aa0b835f8b493f70b2478ab9f808f",
+        "verified_at_revision": "94f8868b00aed4388243fe43b4531772939a4776"
+      },
+      "previous_public_commit": "94f8868b00aed4388243fe43b4531772939a4776",
+      "rename_verification": {
+        "weights_tokenizer_inference_unchanged": true,
+        "anonymous_public": true,
+        "metadata_commit_verified": true
       }
     },
     {
       "repo_type": "model",
-      "commit": "e6577327150614975fd4dc5f6967234e2a1d254e",
+      "commit": "9193af7e2f9776671325fb48c8715625e352d085",
       "verified": true,
       "public": true,
-      "repo_id": "axondendriteplus/premise-v8-r1-paired-ce",
+      "repo_id": "axondendriteplus/decipop-v8-r1-paired-ce",
       "weight_sha256": "c396ea746c7daa7000acd75657d3235d28f4049b3f2b2e2b1c44cd00ca1d10fa",
       "fresh_download_cpu": {
         "verified": true,
         "inputs": 8,
         "device": "cpu",
-        "artifact_identity": "c3dd59fa24ec9c61658603eef1ed560b5b1094712936ed31fb4bc2354ea88b62"
+        "artifact_identity": "c3dd59fa24ec9c61658603eef1ed560b5b1094712936ed31fb4bc2354ea88b62",
+        "verified_at_revision": "e6577327150614975fd4dc5f6967234e2a1d254e"
+      },
+      "previous_public_commit": "e6577327150614975fd4dc5f6967234e2a1d254e",
+      "rename_verification": {
+        "weights_tokenizer_inference_unchanged": true,
+        "anonymous_public": true,
+        "metadata_commit_verified": true
       }
     },
     {
       "repo_type": "model",
-      "commit": "61ad5248c6330d07a87b3e83b2abe4c38eb6c888",
+      "commit": "5e6729066d10ce1d6d8d69ba8f41d751defe425f",
       "verified": true,
       "public": true,
-      "repo_id": "axondendriteplus/premise-v8-r1-consistency",
+      "repo_id": "axondendriteplus/decipop-v8-r1-consistency",
       "weight_sha256": "d0f26df3677d194209e26eff6d44b16589a5b6d6de80231340467c2f24768c69",
       "fresh_download_cpu": {
         "verified": true,
         "inputs": 8,
         "device": "cpu",
-        "artifact_identity": "c3dd59fa24ec9c61658603eef1ed560b5b1094712936ed31fb4bc2354ea88b62"
+        "artifact_identity": "c3dd59fa24ec9c61658603eef1ed560b5b1094712936ed31fb4bc2354ea88b62",
+        "verified_at_revision": "61ad5248c6330d07a87b3e83b2abe4c38eb6c888"
+      },
+      "previous_public_commit": "61ad5248c6330d07a87b3e83b2abe4c38eb6c888",
+      "rename_verification": {
+        "weights_tokenizer_inference_unchanged": true,
+        "anonymous_public": true,
+        "metadata_commit_verified": true
       }
     },
     {
       "repo_type": "model",
-      "commit": "441fe30d022e0b2ffa9c7ae32a7507369745db31",
+      "commit": "3440070b10e1fc57c74796c65c83c543220852ce",
       "verified": true,
       "public": true,
-      "repo_id": "axondendriteplus/premise-v8-r2-paired-ce",
+      "repo_id": "axondendriteplus/decipop-v8-r2-paired-ce",
       "weight_sha256": "5309be175ec26b0a51fb5177049a34e014fdf47f3d75516da6a2a0add64c1ac8",
       "fresh_download_cpu": {
         "verified": true,
         "inputs": 8,
         "device": "cpu",
-        "artifact_identity": "9c843f1daa2333aae4bcafb9cc5b719adf484e3294b77199602b85308a3edc71"
+        "artifact_identity": "9c843f1daa2333aae4bcafb9cc5b719adf484e3294b77199602b85308a3edc71",
+        "verified_at_revision": "441fe30d022e0b2ffa9c7ae32a7507369745db31"
+      },
+      "previous_public_commit": "441fe30d022e0b2ffa9c7ae32a7507369745db31",
+      "rename_verification": {
+        "weights_tokenizer_inference_unchanged": true,
+        "anonymous_public": true,
+        "metadata_commit_verified": true
       }
     },
     {
       "repo_type": "model",
-      "commit": "fd52d3fc0bd81504b72cb174d36d6f8613de6ebb",
+      "commit": "11ffe22bed8459a3af19a0296a403dd0974648ab",
       "verified": true,
       "public": true,
-      "repo_id": "axondendriteplus/premise-v8-r2-consistency",
+      "repo_id": "axondendriteplus/decipop-v8-r2-consistency",
       "weight_sha256": "8a547e893a7e44d69a7c0491de1f73fa7064898f2483b35c2aec433cb6c60cbc",
       "fresh_download_cpu": {
         "verified": true,
         "inputs": 8,
         "device": "cpu",
-        "artifact_identity": "9c843f1daa2333aae4bcafb9cc5b719adf484e3294b77199602b85308a3edc71"
+        "artifact_identity": "9c843f1daa2333aae4bcafb9cc5b719adf484e3294b77199602b85308a3edc71",
+        "verified_at_revision": "fd52d3fc0bd81504b72cb174d36d6f8613de6ebb"
+      },
+      "previous_public_commit": "fd52d3fc0bd81504b72cb174d36d6f8613de6ebb",
+      "rename_verification": {
+        "weights_tokenizer_inference_unchanged": true,
+        "anonymous_public": true,
+        "metadata_commit_verified": true
       }
     }
   ]

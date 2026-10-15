@@ -1,8 +1,14 @@
 {
-  "repo_id": "axondendriteplus/premise-v8-r2-consistency",
-  "revision": "fd52d3fc0bd81504b72cb174d36d6f8613de6ebb",
+  "repo_id": "axondendriteplus/decipop-v8-r2-consistency",
+  "revision": "11ffe22bed8459a3af19a0296a403dd0974648ab",
   "input": "examples/prompts.json",
-  "verification_purpose": "Publication inference smoke check; not a new aggregate study evaluation.",
+  "verification_purpose": "Renamed metadata downloaded anonymously; unchanged weights reused by hash. CPU inference smoke check, not a new aggregate evaluation.",
+  "eight_references": {
+    "verified": true,
+    "inputs": 8,
+    "device": "cpu",
+    "artifact_identity": "9c843f1daa2333aae4bcafb9cc5b719adf484e3294b77199602b85308a3edc71"
+  },
   "result": {
     "class_labels": [
       "TRUE",

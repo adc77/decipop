@@ -33,7 +33,7 @@ def test_ledger_blocks_spending_into_project_cap_or_credit_reserve(tmp_path):
 def test_study_definition_import_does_not_start_gpu_work():
     import runpy
 
-    definition = runpy.run_path("study_app.py")
+    definition = runpy.run_path("src/decision_lab/studies/v1/app.py")
     assert definition["app"].name == "decision-model-lab-study"
     assert definition["resources"]["cpu"] == (4, 4)
     assert definition["resources"]["memory"] == (32768, 32768)

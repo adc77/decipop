@@ -1,17 +1,17 @@
-# Premise models
+# decipop models
 
 All eight selected checkpoints from the V7 curriculum and V8 paired-loss comparisons. These are full-fine-tuned SmolLM2-360M decision heads with three semantic labels, not chat models.
 
 | Study | Seed | Arm | Selected update | Model card |
 | --- | ---: | --- | ---: | --- |
-| V7 | 731 | Old curriculum | 900 | [premise-v7-r1-control](https://huggingface.co/axondendriteplus/premise-v7-r1-control) |
-| V7 | 731 | Multi-entity curriculum | 1134 | [premise-v7-r1-multi-entity](https://huggingface.co/axondendriteplus/premise-v7-r1-multi-entity) |
-| V7 | 947 | Old curriculum | 900 | [premise-v7-r2-control](https://huggingface.co/axondendriteplus/premise-v7-r2-control) |
-| V7 | 947 | Multi-entity curriculum | 900 | [premise-v7-r2-multi-entity](https://huggingface.co/axondendriteplus/premise-v7-r2-multi-entity) |
-| V8 | 1601 | Paired cross-entropy | 1134 | [premise-v8-r1-paired-ce](https://huggingface.co/axondendriteplus/premise-v8-r1-paired-ce) |
-| V8 | 1601 | Paired CE + consistency | 1134 | [premise-v8-r1-consistency](https://huggingface.co/axondendriteplus/premise-v8-r1-consistency) |
-| V8 | 1801 | Paired cross-entropy | 1134 | [premise-v8-r2-paired-ce](https://huggingface.co/axondendriteplus/premise-v8-r2-paired-ce) |
-| V8 | 1801 | Paired CE + consistency | 1134 | [premise-v8-r2-consistency](https://huggingface.co/axondendriteplus/premise-v8-r2-consistency) |
+| V7 | 731 | Old curriculum | 900 | [decipop-v7-r1-control](https://huggingface.co/axondendriteplus/decipop-v7-r1-control) |
+| V7 | 731 | Multi-entity curriculum | 1134 | [decipop-v7-r1-multi-entity](https://huggingface.co/axondendriteplus/decipop-v7-r1-multi-entity) |
+| V7 | 947 | Old curriculum | 900 | [decipop-v7-r2-control](https://huggingface.co/axondendriteplus/decipop-v7-r2-control) |
+| V7 | 947 | Multi-entity curriculum | 900 | [decipop-v7-r2-multi-entity](https://huggingface.co/axondendriteplus/decipop-v7-r2-multi-entity) |
+| V8 | 1601 | Paired cross-entropy | 1134 | [decipop-v8-r1-paired-ce](https://huggingface.co/axondendriteplus/decipop-v8-r1-paired-ce) |
+| V8 | 1601 | Paired CE + consistency | 1134 | [decipop-v8-r1-consistency](https://huggingface.co/axondendriteplus/decipop-v8-r1-consistency) |
+| V8 | 1801 | Paired cross-entropy | 1134 | [decipop-v8-r2-paired-ce](https://huggingface.co/axondendriteplus/decipop-v8-r2-paired-ce) |
+| V8 | 1801 | Paired CE + consistency | 1134 | [decipop-v8-r2-consistency](https://huggingface.co/axondendriteplus/decipop-v8-r2-consistency) |
 
 ## Inference
 
@@ -19,7 +19,7 @@ Use the repository’s Python 3.12 locked environment:
 
 ```sh
 uv sync --extra train --extra analysis --extra baseline
-uv run python examples/predict.py --model axondendriteplus/premise-v8-r2-consistency
+uv run python examples/predict.py --model axondendriteplus/decipop-v8-r2-consistency
 ```
 
 Pass `--revision <commit>` from the publication receipt to pin the exact bundle. The loader checks the SHA-256 manifest, restores the custom classification head and saved temperature, and runs the exact held-out prompts in `examples/prompts.json`. No GPU service is needed.
@@ -30,7 +30,7 @@ Each card describes the matching dataset config, training exposure, checkpoint s
 
 Public packaging preserves original weights, tokenizer and inference code. README/card and provenance metadata have new hashes, so each public bundle has a new artifact manifest and HF commit. Historical private bundles and their pinned manifests remain unchanged. `public-release.json` inside each bundle identifies the original revision and exact weight SHA-256.
 
-All V7/V8 models must be compared on the matching config of [Premise Worlds](https://huggingface.co/datasets/axondendriteplus/premise-worlds). V7 complete base worlds and V8 complete paired worlds are distinct endpoints. The highest opened test score is not a new universal model-selection rule.
+The linked [decipop worlds](https://huggingface.co/datasets/axondendriteplus/decipop-worlds) preserves config and split relationships but normalizes one entity name to EntityA. Models were trained and evaluated on the original text. Historical scores are not evaluations on this normalized derivative; tokenization and predictions can change. The original input data are retained privately. V7 complete base worlds and V8 complete paired worlds are distinct endpoints. The highest opened test score is not a new universal model-selection rule.
 
 See [V7 results](../reports/V7_RESULTS.md), [V8 results](../reports/V8_RESULTS.md), and [reproduction](REPRODUCING.md).
 
@@ -38,13 +38,13 @@ See [V7 results](../reports/V7_RESULTS.md), [V8 results](../reports/V8_RESULTS.m
 
 | Repository | Public commit |
 | --- | --- |
-| [axondendriteplus/premise-v7-r1-control](https://huggingface.co/axondendriteplus/premise-v7-r1-control) | [`157e587e557b1ce2b11ef7920ad24817b10c8f86`](https://huggingface.co/axondendriteplus/premise-v7-r1-control/tree/157e587e557b1ce2b11ef7920ad24817b10c8f86) |
-| [axondendriteplus/premise-v7-r1-multi-entity](https://huggingface.co/axondendriteplus/premise-v7-r1-multi-entity) | [`42f6df7804d334757a81d39ac960acd3d022c5fc`](https://huggingface.co/axondendriteplus/premise-v7-r1-multi-entity/tree/42f6df7804d334757a81d39ac960acd3d022c5fc) |
-| [axondendriteplus/premise-v7-r2-control](https://huggingface.co/axondendriteplus/premise-v7-r2-control) | [`e4deb9a42b91c369cdc27b911f7e16fa4bd32fcc`](https://huggingface.co/axondendriteplus/premise-v7-r2-control/tree/e4deb9a42b91c369cdc27b911f7e16fa4bd32fcc) |
-| [axondendriteplus/premise-v7-r2-multi-entity](https://huggingface.co/axondendriteplus/premise-v7-r2-multi-entity) | [`94f8868b00aed4388243fe43b4531772939a4776`](https://huggingface.co/axondendriteplus/premise-v7-r2-multi-entity/tree/94f8868b00aed4388243fe43b4531772939a4776) |
-| [axondendriteplus/premise-v8-r1-paired-ce](https://huggingface.co/axondendriteplus/premise-v8-r1-paired-ce) | [`e6577327150614975fd4dc5f6967234e2a1d254e`](https://huggingface.co/axondendriteplus/premise-v8-r1-paired-ce/tree/e6577327150614975fd4dc5f6967234e2a1d254e) |
-| [axondendriteplus/premise-v8-r1-consistency](https://huggingface.co/axondendriteplus/premise-v8-r1-consistency) | [`61ad5248c6330d07a87b3e83b2abe4c38eb6c888`](https://huggingface.co/axondendriteplus/premise-v8-r1-consistency/tree/61ad5248c6330d07a87b3e83b2abe4c38eb6c888) |
-| [axondendriteplus/premise-v8-r2-paired-ce](https://huggingface.co/axondendriteplus/premise-v8-r2-paired-ce) | [`441fe30d022e0b2ffa9c7ae32a7507369745db31`](https://huggingface.co/axondendriteplus/premise-v8-r2-paired-ce/tree/441fe30d022e0b2ffa9c7ae32a7507369745db31) |
-| [axondendriteplus/premise-v8-r2-consistency](https://huggingface.co/axondendriteplus/premise-v8-r2-consistency) | [`fd52d3fc0bd81504b72cb174d36d6f8613de6ebb`](https://huggingface.co/axondendriteplus/premise-v8-r2-consistency/tree/fd52d3fc0bd81504b72cb174d36d6f8613de6ebb) |
+| [axondendriteplus/decipop-v7-r1-control](https://huggingface.co/axondendriteplus/decipop-v7-r1-control) | [`e37a423f76dd7b82c9a276f7fc21407f324e25ad`](https://huggingface.co/axondendriteplus/decipop-v7-r1-control/tree/e37a423f76dd7b82c9a276f7fc21407f324e25ad) |
+| [axondendriteplus/decipop-v7-r1-multi-entity](https://huggingface.co/axondendriteplus/decipop-v7-r1-multi-entity) | [`88b2562ada13ce54a1e6fdf2ea33e72986d96c3a`](https://huggingface.co/axondendriteplus/decipop-v7-r1-multi-entity/tree/88b2562ada13ce54a1e6fdf2ea33e72986d96c3a) |
+| [axondendriteplus/decipop-v7-r2-control](https://huggingface.co/axondendriteplus/decipop-v7-r2-control) | [`519d6cf07fd04c3c1423df107b6fee36ad6ba008`](https://huggingface.co/axondendriteplus/decipop-v7-r2-control/tree/519d6cf07fd04c3c1423df107b6fee36ad6ba008) |
+| [axondendriteplus/decipop-v7-r2-multi-entity](https://huggingface.co/axondendriteplus/decipop-v7-r2-multi-entity) | [`1c90ddd9ac9fc001582edbcab5fe6c258908b797`](https://huggingface.co/axondendriteplus/decipop-v7-r2-multi-entity/tree/1c90ddd9ac9fc001582edbcab5fe6c258908b797) |
+| [axondendriteplus/decipop-v8-r1-paired-ce](https://huggingface.co/axondendriteplus/decipop-v8-r1-paired-ce) | [`9193af7e2f9776671325fb48c8715625e352d085`](https://huggingface.co/axondendriteplus/decipop-v8-r1-paired-ce/tree/9193af7e2f9776671325fb48c8715625e352d085) |
+| [axondendriteplus/decipop-v8-r1-consistency](https://huggingface.co/axondendriteplus/decipop-v8-r1-consistency) | [`5e6729066d10ce1d6d8d69ba8f41d751defe425f`](https://huggingface.co/axondendriteplus/decipop-v8-r1-consistency/tree/5e6729066d10ce1d6d8d69ba8f41d751defe425f) |
+| [axondendriteplus/decipop-v8-r2-paired-ce](https://huggingface.co/axondendriteplus/decipop-v8-r2-paired-ce) | [`3440070b10e1fc57c74796c65c83c543220852ce`](https://huggingface.co/axondendriteplus/decipop-v8-r2-paired-ce/tree/3440070b10e1fc57c74796c65c83c543220852ce) |
+| [axondendriteplus/decipop-v8-r2-consistency](https://huggingface.co/axondendriteplus/decipop-v8-r2-consistency) | [`11ffe22bed8459a3af19a0296a403dd0974648ab`](https://huggingface.co/axondendriteplus/decipop-v8-r2-consistency/tree/11ffe22bed8459a3af19a0296a403dd0974648ab) |
 
-Dataset pin: `f5d6c9458e0331dbe21a0a2888dc9aa39d5bd24b`. Machine-readable pins and eight-input CPU verification receipts: [release/manifest.json](../release/manifest.json). All nine Hub repositories were checked anonymously at these revisions.
+Dataset pin: `f59ba2a8e0e9822d76637d03bf0f781282b82ef1`. Machine-readable pins, unchanged-weight checks and earlier eight-input CPU verification receipts: [release/manifest.json](../release/manifest.json). All eight model repositories and the normalized dataset were checked anonymously at these revisions.

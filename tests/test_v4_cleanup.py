@@ -4,7 +4,7 @@ from types import SimpleNamespace
 import pytest
 from modal_proto import api_pb2
 
-from v4_cleanup import verify_owned_apps
+from decision_lab.studies.v4.cleanup import verify_owned_apps
 
 
 class FakeStub:

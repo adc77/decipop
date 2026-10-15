@@ -1,78 +1,84 @@
-# Premise
+# decipop
 
-Can a small model follow changing evidence?
+Can a small model change its answer when the evidence changes?
 
-Premise is a reproducible study of three-way decisions over explicit facts and rules. It includes an exact symbolic oracle, synthetic data generators, matched training comparisons, strict intervention tests, and research checkpoints based on SmolLM2-360M.
+**[Read the research article](https://adc77.github.io/decipop/)** · [Models](docs/MODELS.md) · [Dataset](https://huggingface.co/datasets/axondendriteplus/decipop-worlds)
 
-[Dataset](https://huggingface.co/datasets/axondendriteplus/premise-worlds) · [Models](docs/MODELS.md) · [Research article](research-article/README.md) · [Results](reports/V8_RESULTS.md)
+decipop studies three-way decisions over explicit facts and rules: TRUE, FALSE or
+UNKNOWN. It includes a symbolic oracle, synthetic data, controlled training
+comparisons and eight selected SmolLM2-360M research checkpoints.
 
-## What the experiments found
+## What we found
 
-| Comparison | Run 1 | Run 2 |
-| --- | --- | --- |
-| Multi-entity curriculum vs. old curriculum, complete base worlds | **245/360 vs. 25/360** | **245/360 vs. 19/360** |
-| Added consistency vs. paired cross-entropy, complete paired worlds | **208/378 vs. 205/378** | **235/378 vs. 221/378** |
-| Latest consistency models, complete families across all nine variants | **50/378** | **46/378** |
+| Test | Run 1 | Run 2 |
+| --- | ---: | ---: |
+| Multi-entity curriculum: every person correct | **245/360**, control 25/360 | **245/360**, control 19/360 |
+| Added consistency loss: every person correct before and after an edit | **208/378**, control 205/378 | **235/378**, control 221/378 |
+| Consistency model: every answer correct across all nine variants | **50/378** | **46/378** |
 
-The curriculum gain replicated. The added-loss advantage failed its declared replication check: its first 95% world-sampling interval includes zero. Transformation reliability remains weak. These are different endpoints on fresh datasets, not a single leaderboard. See [V7](reports/V7_RESULTS.md) and [V8](reports/V8_RESULTS.md) for counts, intervals, selection, deviations, and limitations.
+The curriculum gain replicated. The added-loss advantage failed its declared
+replication check: the first interval includes zero. Even the later models remain
+fragile under evidence edits. These are distinct tests on fresh data, not one
+leaderboard. [V7 results](reports/V7_RESULTS.md) · [V8 results](reports/V8_RESULTS.md).
 
-A correct individual answer is a lower bar than getting every person right. A complete paired world additionally requires correctness after an assigned edit. A complete transformation family requires every included query and variant correct. Intervals condition on fixed trained models; they do not estimate a population of training seeds.
-
-## Try an actual recorded case
-
-Use Python 3.12 and [uv](https://docs.astral.sh/uv/):
+## Run a recorded case
 
 ```sh
-git clone https://github.com/adc77/premise.git
-cd premise
+git clone https://github.com/adc77/decipop.git
+cd decipop
 uv sync --extra train --extra analysis --extra baseline
-uv run python examples/predict.py --model axondendriteplus/premise-v8-r2-consistency
+uv run python examples/predict.py
 ```
 
-The example uses the exact held-out prompts in [examples/prompts.json](examples/prompts.json). Farah is trusted and verified; those facts imply active, which implies authorized. Removing her verification prevents that derivation. The correct answer becomes UNKNOWN. The recorded consistency model still answers TRUE. [Full case and original saved outputs](examples/recorded-support-removal.json).
+Python 3.12 and [uv](https://docs.astral.sh/uv/) are required. The command downloads
+a custom research checkpoint and checks its file hashes before running two saved
+prompts on CPU. Use `--revision <commit>` from the [model index](docs/MODELS.md) to
+pin the download.
 
-This illustration was chosen after evaluation; the original preselected cases remain in the [V8 report](reports/V8_RESULTS.md). Names are symbols in generated data, not real people or operational access decisions. CPU FP32 inference can differ slightly from the original BF16 aggregate inference; fixed reference checks have recorded tolerances.
+In this [actual held-out case](examples/recorded-support-removal.json), Farah's
+trusted and verified facts imply authorization. Removing verification changes the
+correct answer from TRUE to UNKNOWN. The model still answers TRUE. The illustration
+was chosen after evaluation; it is not an additional confirmatory test.
 
-The weights require the included custom decision-head loader. They are not stock chat checkpoints. Pass `--revision <commit>` to pin a model. The example verifies the downloaded artifact's SHA-256 inventory before inference.
-
-## Dataset
+## Use the data
 
 ```python
 from datasets import load_dataset
-
-rows = load_dataset("axondendriteplus/premise-worlds", "v8-r2", split="test_paired")
-print(rows[0]["prompt"], rows[0]["label"])
+rows = load_dataset("axondendriteplus/decipop-worlds", "v8-r2", split="test_paired")
 ```
 
-Install `datasets` separately to use this optional Hub example. Four configurations preserve exact frozen V7/V8 files, IDs, symbolic theories, prompts, labels, splits and manifests. The release has **190,688 serialized rows**; repeated training rows and related transformations are not independent worlds. Do not combine configurations into one train/test split. The [dataset card](https://huggingface.co/datasets/axondendriteplus/premise-worlds) explains composition, overlap, licensing, and evaluation units.
+Install `datasets` separately for this optional example. The four configs contain
+190,688 serialized rows, including repeats and related edits. They are not
+independent worlds. One entity name is consistently normalized to `EntityA`.
+Labels and proof depths are checked with two oracles. **Reported model scores use
+the original inputs; the normalized release has not been re-evaluated.** See the
+[dataset card](https://huggingface.co/datasets/axondendriteplus/decipop-worlds).
 
-TRUE means the statement follows. FALSE means its explicit negation follows. UNKNOWN means neither follows. Missing evidence is not negative evidence; UNKNOWN is not confidence-based deferral.
+## Repository map
 
-## Inspect and reproduce
+| Path | Contents |
+| --- | --- |
+| [src/decision_lab/data](src/decision_lab/data) | Schemas, oracle, generation and partitioning |
+| [src/decision_lab/models](src/decision_lab/models) | Decision heads, token model and scratch baseline |
+| [src/decision_lab/training](src/decision_lab/training) | Training, checkpointing and call ledger |
+| [src/decision_lab/evaluation](src/decision_lab/evaluation) | Calibration, metrics and exports |
+| [src/decision_lab/studies](src/decision_lab/studies) | V1–V8 study modules and orchestration |
+| [src/decision_lab/publishing](src/decision_lab/publishing) | Dataset normalization and release utilities |
+| [configs](configs), [tests](tests), [examples](examples) | Settings, CPU tests and inference example |
+| [site](site), [tools](tools) | Public article and its data builder |
+| [docs](docs), [reports](reports), [release](release) | Methods, results and pinned publication records |
 
-```sh
-uv run --extra train --extra analysis --extra baseline python -m pytest -q
-python3 research-article/build.py
-python3 -m http.server 8765 --bind 127.0.0.1 --directory research-article/dist
-```
+The Python import name `decision_lab` is retained for compatibility with model
+bundles. [Development and reproduction](docs/REPRODUCING.md) explains the new module
+commands and how to recover the original experiment source from `v0.1.0`.
+[RESEARCH_LOG.md](RESEARCH_LOG.md) records decisions, failures and corrections.
 
-Open http://localhost:8765 for the research article. Its figures and examples read recorded results; no live model inference occurs in the page.
+## Scope and license
 
-- [Reproduction guide](docs/REPRODUCING.md): fresh checkout, artifacts, inference, metrics, and training scope.
-- [Model index](docs/MODELS.md): all eight public matched-comparison checkpoints and revision pins.
-- [V7 methods](docs/V7_PROTOCOL.md) and [V8 methods](docs/V8_PROTOCOL.md): frozen scientific specifications.
-- [Research journal](RESEARCH_LOG.md): successful results, negative results, corrections, and historical publication states.
-- [V1–V8 reports](reports): original outcomes, figures and compact evidence.
-- [Original architecture](docs/ARCHITECTURE.md): token head, classification head, and scratch baseline.
+One pretrained family and narrow synthetic distributions. No claim of unrestricted
+reasoning, architecture novelty or validated business decisions. UNKNOWN means
+neither a statement nor its explicit negation follows; it is not a refusal.
 
-The final study passed **126 CPU tests**, two independent raw-count audits and **44 metric recomputations**, covering **165,344 prediction rows**. Public model bundles have separate publication verification. Historical private-release receipts and archived source hashes describe their original versions; subsequent naming and documentation changes do not rewrite them.
-
-## Scope
-
-This is controlled research on one pretrained model family and narrow synthetic distributions. Shared templates, vocabulary, and rule skeletons remain. The experiments do not establish unrestricted logical reasoning, architecture novelty, or reliable business decisions. The original scratch baseline differs in size, tokenizer and attention, so its chance-level result does not isolate the effect of pretraining.
-
-The public code retains the historical `decision_lab` Python package and study file names to preserve reproducibility. The project was previously called Decision Model Lab. Selected V7/V8 bundles are public; earlier private archives and intermediate training checkpoints are not part of this public model release. Full optimizer/RNG recovery states were temporary and are not included.
-
-## License and related work
-
-Project-authored code and generated data: [Apache 2.0](LICENSE). Retain [NOTICE](NOTICE). Pretrained model and dependencies retain their own attribution. RuleTaker, ProofWriter, temperature scaling, and consistency regularization are prior work; this project does not claim to invent those methods. See the article references and frozen protocols.
+Project code and generated data: [Apache 2.0](LICENSE); retain [NOTICE](NOTICE).
+Pretrained-model and dependency attribution remain separate. Related work includes
+RuleTaker, ProofWriter, temperature scaling and consistency regularization.

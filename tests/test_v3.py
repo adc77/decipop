@@ -5,10 +5,17 @@ import pytest
 import torch
 
 from decision_lab.publication import atomic_json
+from decision_lab.studies.v3.data import generate, validate
+from decision_lab.studies.v3.protocol import (
+    budget,
+    check_seal,
+    code_hash,
+    inventory,
+    seal,
+    settings,
+)
+from decision_lab.studies.v3.selection import fit_temperature, select_candidates
 from decision_lab.training.checkpoint import file_hash
-from decision_lab.v3.data import generate, validate
-from decision_lab.v3.protocol import budget, check_seal, code_hash, inventory, seal, settings
-from decision_lab.v3.selection import fit_temperature, select_candidates
 
 
 def small_spec():
@@ -99,8 +106,8 @@ def test_cpu_selection_freeze_test_scoring_and_verified_exports(tmp_path, monkey
     from decision_lab.evaluation.export import export_release
     from decision_lab.models.decision_head import HeadDecisionModel
     from decision_lab.release import load_release, verify_release
+    from decision_lab.studies.v3 import study
     from decision_lab.training.core import predict
-    from decision_lab.v3 import study
 
     torch.set_num_threads(2)
     root = tmp_path / "study"

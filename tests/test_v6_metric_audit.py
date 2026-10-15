@@ -4,8 +4,8 @@ from types import SimpleNamespace
 import pytest
 import torch
 
-from decision_lab.v3.study import metrics
-from v6_metric_audit import verify_metrics
+from decision_lab.studies.v3.study import metrics
+from decision_lab.studies.v6.metric_audit import verify_metrics
 
 
 def recorded(logits):

@@ -3,7 +3,7 @@ from types import SimpleNamespace
 
 import pytest
 
-import v4_retain
+import decision_lab.studies.v4.retain as v4_retain
 
 
 class FakeVolume:

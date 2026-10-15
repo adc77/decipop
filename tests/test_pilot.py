@@ -16,5 +16,5 @@ def test_pilot_fails_on_cpu_before_downloading_model(tmp_path, monkeypatch):
 
 
 def test_modal_app_definition_does_not_launch_remote_work():
-    definition = runpy.run_path("modal_app.py")
+    definition = runpy.run_path("src/decision_lab/studies/v1/pilot_app.py")
     assert definition["app"].name == definition["config"].app_name

@@ -7,11 +7,11 @@ from test_v4 import tiny_parent
 from torch.nn import functional as F
 
 from decision_lab.data.validate import read_examples
+from decision_lab.studies.v8 import study
+from decision_lab.studies.v8.data import generate, validate
+from decision_lab.studies.v8.objective import paired_loss
+from decision_lab.studies.v8.protocol import budget, reservation, settings
 from decision_lab.training.checkpoint import file_hash
-from v8_lab import study
-from v8_lab.data import generate, validate
-from v8_lab.objective import paired_loss
-from v8_lab.protocol import budget, reservation, settings
 
 
 def small_spec(rep):
@@ -151,7 +151,7 @@ def test_paired_training_exact_resume_selection_export(tmp_path, monkeypatch):
 
 
 def test_blocked_contrast_and_target_subsets(tmp_path):
-    from v8_lab.analysis import complete_worlds, entity_checks, world_contrast
+    from decision_lab.studies.v8.analysis import complete_worlds, entity_checks, world_contrast
 
     root = tmp_path / "data"
     spec = small_spec("r1")
