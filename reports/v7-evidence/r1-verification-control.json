@@ -1,0 +1,17 @@
+{
+  "control": {
+    "repo_id": "axondendriteplus/decision-lab-v7-r1-smollm2-360m-control",
+    "protocol_identity": "f07e4f34618900fe4a571f47f380737efe7919897a5465704c92a138c3154c71",
+    "created_private_by_this_release": true,
+    "commit": "82620838100d55290e309e5c561d7827acd70507",
+    "url": "https://huggingface.co/axondendriteplus/decision-lab-v7-r1-smollm2-360m-control",
+    "artifact_manifest_sha256": "21e996aef63236d58dcf2777e47f1ed80d1450aa72afc677e2e98461d24b3015",
+    "remote_download_verification": {
+      "verified": true,
+      "inputs": 8,
+      "device": "cpu",
+      "artifact_identity": "f07e4f34618900fe4a571f47f380737efe7919897a5465704c92a138c3154c71"
+    },
+    "verified_download_directory": "/Users/axon_dendrite/decision-model-lab/artifacts/v7-hub-verification/r1/control"
+  }
+}

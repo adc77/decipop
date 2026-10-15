@@ -1,0 +1,49 @@
+{
+  "protocol_identity": "6038ac97693f50a8392825714fe48978e0072a3cee5ad05747290fb01bb4d4d8",
+  "models": {
+    "v3_parent": {
+      "rows": 972,
+      "inference_seconds": 10.526798819999996,
+      "load_seconds": 5.522129411999998,
+      "rows_per_second": 92.33576290574538,
+      "fixed_reference_verification": {
+        "verified": true,
+        "inputs": 8,
+        "device": "cuda",
+        "artifact_identity": "d9e5cc5a734ee7c7da6975d434a9e46c2be98215e3418bdc35fdaa79a7c58d16"
+      },
+      "precision": "BF16 CUDA autocast for scoring; FP32 reference checks",
+      "predictions_sha256": null
+    },
+    "v4_control": {
+      "rows": 972,
+      "inference_seconds": 10.389861768999992,
+      "load_seconds": 5.303730141999992,
+      "rows_per_second": 93.55273646663284,
+      "fixed_reference_verification": {
+        "verified": true,
+        "inputs": 8,
+        "device": "cuda",
+        "artifact_identity": "2ab1532953c1f8b4c2dfaab8d1b3a49ddc39a32cbeeff5e5413e6ed55a631650"
+      },
+      "precision": "BF16 CUDA autocast for scoring; FP32 reference checks",
+      "predictions_sha256": null
+    },
+    "v4_mixed": {
+      "rows": 972,
+      "inference_seconds": 10.469613512999999,
+      "load_seconds": 5.233216096999996,
+      "rows_per_second": 92.84010329446056,
+      "fixed_reference_verification": {
+        "verified": true,
+        "inputs": 8,
+        "device": "cuda",
+        "artifact_identity": "2ab1532953c1f8b4c2dfaab8d1b3a49ddc39a32cbeeff5e5413e6ed55a631650"
+      },
+      "precision": "BF16 CUDA autocast for scoring; FP32 reference checks",
+      "predictions_sha256": null
+    }
+  },
+  "pilot_logits_retained": false,
+  "final_predictions_inspected": false
+}

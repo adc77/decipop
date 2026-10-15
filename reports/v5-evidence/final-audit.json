@@ -1,0 +1,14 @@
+{
+  "valid": true,
+  "protocol_identity": "6038ac97693f50a8392825714fe48978e0072a3cee5ad05747290fb01bb4d4d8",
+  "serialized_data_audit": {
+    "valid": true,
+    "questions": 13932,
+    "families": 516,
+    "unique_canonical_worlds": 2580,
+    "prior_world_overlap": 0
+  },
+  "prediction_rows_verified": 38880,
+  "historical_scientific_build_files_unchanged": 106,
+  "analysis_sha256": "bf2d248c2dbcb0c5247ca6d9ebab1d21a186054054667328d487b2e6b8c2bfbc"
+}

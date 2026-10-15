@@ -1,0 +1,7 @@
+{
+  "repo_id": "axondendriteplus/decision-lab-v4-smollm2-360m-mixed-unknown",
+  "commit": "c4ee886cd3a718036297edb56b0202b590457cf2",
+  "private": true,
+  "manifest_sha256": "5a54b1dab9d5a7f2948acb5b996f2a2ff37b0db9a0ea7191fcab7d3a81c880d7",
+  "weights_sha256": "417f2b856d0b117d9c8e532539d026654d4e28f40b34f3ddf62e0bf3660cc7b1"
+}

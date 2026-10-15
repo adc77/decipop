@@ -1,0 +1,7 @@
+{
+  "repo_id": "axondendriteplus/decision-lab-v7-r1-smollm2-360m-multi-entity",
+  "commit": "6aa3e01e41460dba7049c044906dc81fe4c7ba53",
+  "private": true,
+  "manifest_sha256": "dcbb097d6981cae2f50ce7423fd8780717fe197f19a67d16f03bd031f4f4390b",
+  "weights_sha256": "875f353f76c256b581aff6560914b0968dccdabfe3ea9862cf38740a5ae7f479"
+}

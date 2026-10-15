@@ -1,0 +1,156 @@
+{
+  "r1": {
+    "valid": true,
+    "worlds": 360,
+    "rotation_blocks": 120,
+    "label_compositions": 46,
+    "base_fact_count_per_entity": 3,
+    "name_label_counts": {
+      "Aman": {
+        "TRUE": 60,
+        "FALSE": 60,
+        "UNKNOWN": 60
+      },
+      "Bella": {
+        "TRUE": 60,
+        "FALSE": 60,
+        "UNKNOWN": 60
+      },
+      "Chen": {
+        "TRUE": 60,
+        "FALSE": 60,
+        "UNKNOWN": 60
+      },
+      "Dalia": {
+        "FALSE": 60,
+        "UNKNOWN": 60,
+        "TRUE": 60
+      },
+      "Evan": {
+        "TRUE": 60,
+        "FALSE": 60,
+        "UNKNOWN": 60
+      },
+      "Farah": {
+        "UNKNOWN": 60,
+        "TRUE": 60,
+        "FALSE": 60
+      },
+      "Gabe": {
+        "UNKNOWN": 60,
+        "TRUE": 60,
+        "FALSE": 60
+      },
+      "Hana": {
+        "FALSE": 60,
+        "UNKNOWN": 60,
+        "TRUE": 60
+      }
+    },
+    "slot_label_counts": {
+      "0": {
+        "TRUE": 120,
+        "FALSE": 120,
+        "UNKNOWN": 120
+      },
+      "1": {
+        "TRUE": 120,
+        "FALSE": 120,
+        "UNKNOWN": 120
+      },
+      "2": {
+        "TRUE": 120,
+        "FALSE": 120,
+        "UNKNOWN": 120
+      },
+      "3": {
+        "TRUE": 80,
+        "FALSE": 80,
+        "UNKNOWN": 80
+      },
+      "4": {
+        "TRUE": 40,
+        "FALSE": 40,
+        "UNKNOWN": 40
+      }
+    },
+    "same_world_rendering_for_all_queries": true
+  },
+  "r2": {
+    "valid": true,
+    "worlds": 360,
+    "rotation_blocks": 120,
+    "label_compositions": 43,
+    "base_fact_count_per_entity": 3,
+    "name_label_counts": {
+      "Aman": {
+        "TRUE": 60,
+        "FALSE": 60,
+        "UNKNOWN": 60
+      },
+      "Bella": {
+        "TRUE": 60,
+        "FALSE": 60,
+        "UNKNOWN": 60
+      },
+      "Chen": {
+        "TRUE": 60,
+        "FALSE": 60,
+        "UNKNOWN": 60
+      },
+      "Dalia": {
+        "FALSE": 60,
+        "UNKNOWN": 60,
+        "TRUE": 60
+      },
+      "Evan": {
+        "UNKNOWN": 60,
+        "TRUE": 60,
+        "FALSE": 60
+      },
+      "Farah": {
+        "UNKNOWN": 60,
+        "TRUE": 60,
+        "FALSE": 60
+      },
+      "Gabe": {
+        "UNKNOWN": 60,
+        "TRUE": 60,
+        "FALSE": 60
+      },
+      "Hana": {
+        "TRUE": 60,
+        "FALSE": 60,
+        "UNKNOWN": 60
+      }
+    },
+    "slot_label_counts": {
+      "0": {
+        "TRUE": 120,
+        "FALSE": 120,
+        "UNKNOWN": 120
+      },
+      "1": {
+        "TRUE": 120,
+        "FALSE": 120,
+        "UNKNOWN": 120
+      },
+      "2": {
+        "TRUE": 120,
+        "FALSE": 120,
+        "UNKNOWN": 120
+      },
+      "3": {
+        "TRUE": 80,
+        "FALSE": 80,
+        "UNKNOWN": 80
+      },
+      "4": {
+        "TRUE": 40,
+        "FALSE": 40,
+        "UNKNOWN": 40
+      }
+    },
+    "same_world_rendering_for_all_queries": true
+  }
+}

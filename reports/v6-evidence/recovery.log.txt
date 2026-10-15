@@ -1,0 +1,22 @@
+✓ Initialized. View run at 
+https://modal.com/apps/amandogra2016/main/ap-7wZTkDyHcF421G32QL2eeq
+✓ Created objects.
+├── ✓ Uploaded /Users/axon_dendrite/decision-model-lab/v6_app.py
+├── ✓ Uploaded NOTICE
+├── ✓ Uploaded LICENSE
+├── ✓ Uploaded /Users/axon_dendrite/decision-model-lab/configs
+├── ✓ Uploaded PythonPackage:decision_lab, PythonPackage:v4_lab, 
+│   PythonPackage:v5_lab, PythonPackage:v6_lab, PythonPackage:v6_recovery
+├── ✓ Created Function gpu_pilot.
+├── ✓ Created Function gpu_training.
+├── ✓ Created Function gpu_recovery.
+├── ✓ Created Function gpu_selection.
+└── ✓ Created Function gpu_test.
+{"arm": "control", "step": 300, "loss": 0.004377971985377371, "elapsed": 72.35798885}
+{"arm": "control", "step": 400, "loss": 0.115533426287584, "elapsed": 202.80492070399998}
+{"arm": "control", "step": 500, "loss": 0.11119452468119562, "elapsed": 334.983993613}
+{"arm": "control", "step": 600, "loss": 0.009281760430894792, "elapsed": 533.655621212}
+{"arm": "control", "step": 628, "epoch": 1, "cursor": 8000, "presentations": 20096, "total_steps": 1134, "complete": false, "body_seconds": 618.970189584, "start_step": 250, "protocol_identity": "099611c7f4eb70c9bc12f2fd44d0279c5bfc81e0cf0913b6e5d5e0035b3f44af", "recovered_from_call": "control-1"}
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/amandogra2016/main/ap-7wZTkDyHcF421G32QL2eeq

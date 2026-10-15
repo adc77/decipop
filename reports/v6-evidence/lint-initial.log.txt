@@ -1,0 +1,108 @@
+I001 [*] Import block is un-sorted or un-formatted
+  --> tests/test_v6.py:1:1
+   |
+ 1 | / import json
+ 2 | | import random
+ 3 | | from collections import Counter
+ 4 | | from pathlib import Path
+ 5 | |
+ 6 | | import pytest
+ 7 | | import torch
+ 8 | |
+ 9 | | from decision_lab.config import load_dataset_config
+10 | | from decision_lab.data.schema import Label
+11 | | from decision_lab.data.validate import read_examples
+12 | | from decision_lab.training.checkpoint import file_hash
+13 | | from test_v4 import tiny_parent
+14 | | from v6_lab import study
+15 | | from v6_lab.analysis import complete_worlds, world_contrast
+16 | | from v6_lab.data import VARIANTS, generate, multi_bundle, validate
+17 | | from v6_lab.protocol import budget, settings
+   | |____________________________________________^
+help: Organize imports
+   |
+7  | import torch
+8  + from test_v4 import tiny_parent
+9  |
+--------------------------------------------------------------------------------
+13 | from decision_lab.training.checkpoint import file_hash
+   - from test_v4 import tiny_parent
+14 | from v6_lab import study
+   |
+
+F401 [*] `pathlib.Path` imported but unused
+ --> v6_lab/analysis.py:3:21
+  |
+1 | import json
+2 | from collections import defaultdict
+3 | from pathlib import Path
+  |                     ^^^^
+4 |
+5 | import numpy as np
+  |
+help: Remove unused import: `pathlib.Path`
+  |
+2 | from collections import defaultdict
+  - from pathlib import Path
+3 |
+  |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> v6_lab/data.py:1:1
+   |
+ 1 | / import json
+ 2 | | import random
+ 3 | | from collections import Counter, defaultdict
+ 4 | | from pathlib import Path
+ 5 | |
+ 6 | | from decision_lab.config import load_dataset_config
+ 7 | | from decision_lab.data.generate import _candidate
+ 8 | | from decision_lab.data.render import build_prompt, render_atom, render_rule
+ 9 | | from decision_lab.data.schema import Label, Rule, Theory
+10 | | from decision_lab.data.solve import InconsistentTheoryError, solve
+11 | | from decision_lab.data.split import canonical_hash
+12 | | from decision_lab.data.validate import read_examples
+13 | | from decision_lab.publication import atomic_json
+14 | | from decision_lab.training.checkpoint import file_hash
+15 | | from decision_lab.v2.data import example, parent_world, replace_fact
+16 | | from v4_lab.data import triples
+17 | | from v5_lab.data import atom, exclusions as previous_exclusions
+18 | | from v5_lab.data import independent_closure, reference_label, remap
+   | |___________________________________________________________________^
+19 |
+20 |   VARIANTS = (
+   |
+help: Organize imports
+   |
+16 | from v4_lab.data import triples
+   - from v5_lab.data import atom, exclusions as previous_exclusions
+   - from v5_lab.data import independent_closure, reference_label, remap
+17 + from v5_lab.data import atom, independent_closure, reference_label, remap
+18 + from v5_lab.data import exclusions as previous_exclusions
+19 |
+   |
+
+E741 Ambiguous variable name: `l`
+   --> v6_lab/data.py:166:36
+    |
+164 |         "component": "multi",
+165 |         "entities": entities,
+166 |         "assignment": [l.value for l in assignment],
+    |                                    ^
+167 |         "depth": depth,
+168 |         "signed_chain": signed,
+    |
+
+E501 Line too long (189 > 100)
+   --> v6_lab/study.py:416:101
+    |
+414 | …
+415 | …
+416 | …lum; treatment replaces half its question presentations with multi-entity worlds. Token exposure differs.\n\n"
+    |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+417 | …acy |\n"
+418 | …
+    |
+
+Found 5 errors.
+[*] 3 fixable with `--fix`.

@@ -1,0 +1,15 @@
+{
+  "recorded_at_utc": "2026-10-13T18:08:53.965026+00:00",
+  "scope": "Post-run operational artifact audit; frozen scientific source and reported metrics unchanged",
+  "prior_helper_sha256": "037903591ea2496c9eeee41c09cb68ba753559616ec00b34ddf8479b58ae741e",
+  "comparison_helper_sha256": "e99144d10ffdab6ac3f9e5ece4e4d0a6e5da3611fb5069efbc75697e9055f6bc",
+  "initial_difference_receipt_sha256": "baeda17bfcc691595a69ce7fcf7046c0d0c62f9db8adaedb6009f1e6d33e11db",
+  "validated_receipt_sha256": "27ae33e01ce78722d88d38d47ae02edfbc90576e71410c1db6455960cc1fdbf6",
+  "splits_checked": 20,
+  "all_nonfloat_fields_identical": true,
+  "float_absolute_tolerance": 1e-12,
+  "confidence_tie_tolerance": 7.105427357601002e-15,
+  "aurc_bounds_method": "Keep strict confidence-group order; compute extrema over all error orders inside groups spanning at most 32 float64 epsilons",
+  "scientific_metrics_replaced": false,
+  "new_gpu_calls": 0
+}

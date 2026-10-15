@@ -1,0 +1,45 @@
+{
+  "checked_at_utc": "2026-10-13T14:33:50.402949+00:00",
+  "owned_volume_absent": true,
+  "apps": [
+    {
+      "app_id": "ap-FOFkYK0qefMDfnRu3w8HM4",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1791900723.426397
+    },
+    {
+      "app_id": "ap-aBLUIfWgZGT494imqfyB7J",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1791901257.088354
+    }
+  ],
+  "actions": {
+    "stop_receipts": [
+      {
+        "app_id": "ap-FOFkYK0qefMDfnRu3w8HM4",
+        "action": "verified already stopped; no stop requested",
+        "lifecycle": {
+          "app_id": "ap-FOFkYK0qefMDfnRu3w8HM4",
+          "state": "stopped",
+          "tasks": 0,
+          "stopped_at": 1791900723.426397
+        }
+      },
+      {
+        "app_id": "ap-aBLUIfWgZGT494imqfyB7J",
+        "action": "verified already stopped; no stop requested",
+        "lifecycle": {
+          "app_id": "ap-aBLUIfWgZGT494imqfyB7J",
+          "state": "stopped",
+          "tasks": 0,
+          "stopped_at": 1791901257.088354
+        }
+      }
+    ],
+    "volume_delete_stdout": ""
+  },
+  "zero_owned_tasks": true,
+  "unrelated_resources_modified": false
+}

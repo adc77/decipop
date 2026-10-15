@@ -1,0 +1,17 @@
+{
+  "control": {
+    "repo_id": "axondendriteplus/decision-lab-v8-r2-smollm2-360m-paired-ce",
+    "protocol_identity": "9c843f1daa2333aae4bcafb9cc5b719adf484e3294b77199602b85308a3edc71",
+    "created_private_by_this_release": true,
+    "commit": "8d653fe264308b87e2201cb53d69f25b0308487b",
+    "url": "https://huggingface.co/axondendriteplus/decision-lab-v8-r2-smollm2-360m-paired-ce",
+    "artifact_manifest_sha256": "8ceedb09dd6ccadc4d34ecf67b83b397b491dd29abd0e1343eec9d0d3e32535b",
+    "remote_download_verification": {
+      "verified": true,
+      "inputs": 8,
+      "device": "cpu",
+      "artifact_identity": "9c843f1daa2333aae4bcafb9cc5b719adf484e3294b77199602b85308a3edc71"
+    },
+    "verified_download_directory": "/Users/axon_dendrite/decision-model-lab/artifacts/v8-hub-verification/r2/control"
+  }
+}

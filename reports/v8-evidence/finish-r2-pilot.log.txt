@@ -1,0 +1,21 @@
+✓ Initialized. View run at 
+https://modal.com/apps/amandogra2016/main/ap-cs96Kw1sWJJXbDBRS0xNWN
+✓ Created objects.
+├── ✓ Uploaded /Users/axon_dendrite/decision-model-lab/v8_app.py
+├── ✓ Uploaded docs/V8_PROTOCOL.md
+├── ✓ Uploaded uv.lock
+├── ✓ Uploaded NOTICE
+├── ✓ Uploaded LICENSE
+├── ✓ Uploaded /Users/axon_dendrite/decision-model-lab/configs
+├── ✓ Uploaded PythonPackage:decision_lab, PythonPackage:v4_lab, 
+│   PythonPackage:v5_lab, PythonPackage:v6_lab, PythonPackage:v7_lab, 
+│   PythonPackage:v8_lab
+├── ✓ Created Function gpu_pilot.
+├── ✓ Created Function gpu_training.
+├── ✓ Created Function gpu_selection.
+├── ✓ Created Function gpu_recovery.
+└── ✓ Created Function gpu_test.
+{"repetition": "r2", "action": "position-revalidation", "completed": true}
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/amandogra2016/main/ap-cs96Kw1sWJJXbDBRS0xNWN

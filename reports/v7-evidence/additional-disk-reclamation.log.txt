@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "at_utc": "2026-10-14T14:37:40.084259+00:00",
+  "study": "v4",
+  "arm": "treatment",
+  "private_repo": "axondendriteplus/decision-lab-v4-smollm2-360m-mixed-unknown",
+  "private_revision": "c4ee886cd3a718036297edb56b0202b590457cf2",
+  "fresh_directory": "/Users/axon_dendrite/decision-model-lab/artifacts/v4-hub-verification/treatment",
+  "retained_directory": "artifacts/v4-releases/treatment",
+  "helper_source_sha256": "0e6b6ce03c49f8067eb77137d753f5c0d45b6fd26aaa28aeed54a2d0a375a5e2",
+  "historical_receipt_sha256": "e9f2325178cbbfcf243890685ea9073068b80c78b361b05beaa5354c82832a31",
+  "weight_sha256": "417f2b856d0b117d9c8e532539d026654d4e28f40b34f3ddf62e0bf3660cc7b1",
+  "already_same_inode": false,
+  "now_same_inode": true,
+  "all_bundle_checksums_unchanged": true,
+  "new_inference_or_download": false,
+  "free_bytes_before": 2149359616,
+  "free_bytes_after": 3595509760
+}

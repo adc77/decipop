@@ -1,0 +1,133 @@
+{
+  "valid": true,
+  "families": 6996,
+  "questions": 45080,
+  "unique_worlds": 14366,
+  "prior_worlds_excluded": 115117,
+  "training_questions_per_arm": 12096,
+  "matched_label_stream": true,
+  "shared_training_questions": 6048,
+  "token_audit": {
+    "calibration": {
+      "questions": 1008,
+      "maximum_tokens": 273,
+      "total_input_tokens": 223699
+    },
+    "development": {
+      "questions": 1008,
+      "maximum_tokens": 277,
+      "total_input_tokens": 222670
+    },
+    "selection": {
+      "questions": 1008,
+      "maximum_tokens": 273,
+      "total_input_tokens": 220674
+    },
+    "selection_fit": {
+      "questions": 1008,
+      "maximum_tokens": 276,
+      "total_input_tokens": 221383
+    },
+    "test_counterfactual": {
+      "questions": 900,
+      "maximum_tokens": 277,
+      "total_input_tokens": 188786
+    },
+    "test_depth": {
+      "questions": 300,
+      "maximum_tokens": 342,
+      "total_input_tokens": 81770
+    },
+    "test_multi": {
+      "questions": 1440,
+      "maximum_tokens": 271,
+      "total_input_tokens": 336164
+    },
+    "test_multi_depth": {
+      "questions": 432,
+      "maximum_tokens": 354,
+      "total_input_tokens": 137565
+    },
+    "test_multi_signed_chain": {
+      "questions": 432,
+      "maximum_tokens": 257,
+      "total_input_tokens": 94329
+    },
+    "test_multi_transformations": {
+      "questions": 11520,
+      "maximum_tokens": 303,
+      "total_input_tokens": 2723388
+    },
+    "test_multi_wording": {
+      "questions": 432,
+      "maximum_tokens": 267,
+      "total_input_tokens": 98963
+    },
+    "test_original": {
+      "questions": 900,
+      "maximum_tokens": 277,
+      "total_input_tokens": 188828
+    },
+    "test_single_branch": {
+      "questions": 200,
+      "maximum_tokens": 258,
+      "total_input_tokens": 36733
+    },
+    "test_wording": {
+      "questions": 300,
+      "maximum_tokens": 272,
+      "total_input_tokens": 61637
+    },
+    "train_control": {
+      "questions": 12096,
+      "maximum_tokens": 280,
+      "total_input_tokens": 2537575
+    },
+    "train_treatment": {
+      "questions": 12096,
+      "maximum_tokens": 279,
+      "total_input_tokens": 2657154
+    }
+  },
+  "exclusion_files": {
+    "data/pilot-v3/calibration.jsonl": "f4fe9513ce84d49ca09f2bd3abb763c339bc87c92539a28c182538e1a758dddf",
+    "data/pilot-v3/development.jsonl": "89822945458c7652d9daa143224901ade591a6b9b3724b74bfd583b817e3cdea",
+    "data/pilot-v3/test_depth.jsonl": "cf825f3f48b50c868f0b400795648e724a239356f1b25135309b19ab00b37718",
+    "data/pilot-v3/test_id.jsonl": "186adf70fef3ec8a42cbaab221c374838979c936fcecc43340d3c7460b6aba87",
+    "data/pilot-v3/test_structure.jsonl": "e242154c0c0e57120c6f529748859d4a6f1239b98f53f772f13476950acda808",
+    "data/pilot-v3/test_wording.jsonl": "0d49676a5cbcf4963fc50b4dfb94c79e89a4bcb815c742d47c83bf0e9f057f0d",
+    "data/pilot-v3/train.jsonl": "c13ab0bea98f594aac6d99553b0cdfbe6840556e4bada5bfbcfdbfe605e93eed",
+    "runs/study-v1/test-inputs/flip_fact.jsonl": "39a111e0f7015b136e27dfde6cabd1fdf552da13c7e1aae530c0bb30afaff6d6",
+    "runs/study-v1/test-inputs/irrelevant.jsonl": "55e6a60998b45824fac24cb0c9c492681abe4d942d98e99ae0a393f3b116f219",
+    "runs/study-v1/test-inputs/paraphrase.jsonl": "2154fb016240bcf20e180ac326f3bbf7159eaba23b46487931974fce1c2b7b34",
+    "runs/study-v1/test-inputs/remove_premise.jsonl": "8037087ba59e2c8b713b3bff36a51d3dfe8d139d8ad2a76d11814d034df7cf44",
+    "runs/study-v1/test-inputs/rename.jsonl": "2d3667dabc9a8b16d1b7ff79ff2adffb66fcee57d93a5029d86cb4bdb25668a4",
+    "runs/study-v1/test-inputs/reorder.jsonl": "0fff378ade8b86d534a6103009583bb8313e3caa997dc61a4392f63867f42f0e",
+    "data/v2/control/calibration.jsonl": "5ad9e1723e2070062e82765b94f136fe53b7bae91529a5d6e416a7c13393dcf2",
+    "data/v2/control/development.jsonl": "8026630042839f44202aace250199fddd028f0dd45c918a0abe52b5d80f31c5c",
+    "data/v2/control/families.jsonl": "1c86773e9e19c4249ef346c62b5d6d6bfea64ff1a7a4e3df61aba65bd8b5c52f",
+    "data/v2/control/test_counterfactual.jsonl": "ca2d60dbc0966fec12a220396d3ce875bfd4aeec1b2563b2ebc82372774deae8",
+    "data/v2/control/test_depth.jsonl": "5d31d7c04f19000181fa826852e3f047b15adc022741ec53f0bbd878b18ceb9f",
+    "data/v2/control/test_original.jsonl": "dc4170ac42d7a6d38a86b050a1ff5f7321db5069077449ad89c3a3f22528833c",
+    "data/v2/control/test_single_branch.jsonl": "8ed6d94e46a89cb80e40f7deea315dbc8c6a485abff5803e1ac309481da65f17",
+    "data/v2/control/test_wording.jsonl": "0fca87f3888ac1e814736668ea4bb8522aca882b554311498468661b7f8818ab",
+    "data/v2/control/train.jsonl": "0f31d55ae347693dd21745ae07893dadb1e286fc888743ac9b25c5014eacb608",
+    "data/v2/treatment/calibration.jsonl": "5ad9e1723e2070062e82765b94f136fe53b7bae91529a5d6e416a7c13393dcf2",
+    "data/v2/treatment/development.jsonl": "8026630042839f44202aace250199fddd028f0dd45c918a0abe52b5d80f31c5c",
+    "data/v2/treatment/families.jsonl": "1c86773e9e19c4249ef346c62b5d6d6bfea64ff1a7a4e3df61aba65bd8b5c52f",
+    "data/v2/treatment/test_counterfactual.jsonl": "ca2d60dbc0966fec12a220396d3ce875bfd4aeec1b2563b2ebc82372774deae8",
+    "data/v2/treatment/test_depth.jsonl": "5d31d7c04f19000181fa826852e3f047b15adc022741ec53f0bbd878b18ceb9f",
+    "data/v2/treatment/test_original.jsonl": "dc4170ac42d7a6d38a86b050a1ff5f7321db5069077449ad89c3a3f22528833c",
+    "data/v2/treatment/test_single_branch.jsonl": "8ed6d94e46a89cb80e40f7deea315dbc8c6a485abff5803e1ac309481da65f17",
+    "data/v2/treatment/test_wording.jsonl": "0fca87f3888ac1e814736668ea4bb8522aca882b554311498468661b7f8818ab",
+    "data/v2/treatment/train.jsonl": "c008a0a7906ba56be85230907fc9de1d4177f4a9c8256bf2beb093a6fb5426c8",
+    "data/v2/families.jsonl": "1c86773e9e19c4249ef346c62b5d6d6bfea64ff1a7a4e3df61aba65bd8b5c52f",
+    "runs/study-v3/data/families.jsonl": "d939fbd5c98a4326547d8fead7b0a56ec3d6f208ccb1633602557d610904ae69",
+    "runs/study-v4/diagnostic/families.jsonl": "3904ebe4d5c2d8161f6276dc02466348ce09a6f19fdcf8531b6cad64adf333ed",
+    "runs/study-v4/training/families.jsonl": "fa19afb1379e632ef795ebc593299d9b590f9a6e90126bb5508154b9ce9a5559",
+    "runs/study-v5/data/families.jsonl": "27fa3adbdbb5192fac31263755d761ada825a5f53ed4d24c11fe956648c2bc1a",
+    "runs/study-v6/data/families.jsonl": "c45ee11a650b1e274c9685420f2551e0c155df98ba16aacb1d60948c4595c091",
+    "runs/study-v7/r1/data/families.jsonl": "467f4ca69ddacf84a1818715442dc536bcb6a3d23877e0f691e16b584237afd2"
+  },
+  "preselected_family": "v7-r2-test_multi-multi-3-0000-0"
+}

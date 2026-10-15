@@ -1,0 +1,717 @@
+{
+  "splits_checked": [
+    "control/test_multi",
+    "control/test_multi_transformations",
+    "control/test_multi_depth",
+    "control/test_multi_wording",
+    "control/test_multi_signed_chain",
+    "control/test_original",
+    "control/test_counterfactual",
+    "control/test_depth",
+    "control/test_wording",
+    "control/test_single_branch",
+    "treatment/test_multi",
+    "treatment/test_multi_transformations",
+    "treatment/test_multi_depth",
+    "treatment/test_multi_wording",
+    "treatment/test_multi_signed_chain",
+    "treatment/test_original",
+    "treatment/test_counterfactual",
+    "treatment/test_depth",
+    "treatment/test_wording",
+    "treatment/test_single_branch"
+  ],
+  "exactly_equal": false,
+  "differences": [
+    {
+      "field": "control/test_multi/raw/brier_sum_over_classes",
+      "recomputed": 1.3119751559710076,
+      "recorded": 1.3119751559710073,
+      "delta": 2.220446049250313e-16
+    },
+    {
+      "field": "control/test_multi/raw/ece_bins/7/confidence",
+      "recomputed": 0.7524073764653063,
+      "recorded": 0.7524073764653062,
+      "delta": 1.1102230246251565e-16
+    },
+    {
+      "field": "control/test_multi/raw/ece_bins/9/confidence",
+      "recomputed": 0.9961912520601311,
+      "recorded": 0.996191252060131,
+      "delta": 1.1102230246251565e-16
+    },
+    {
+      "field": "control/test_multi/calibrated/ece",
+      "recomputed": 0.3041011450601074,
+      "recorded": 0.3041011450601073,
+      "delta": 5.551115123125783e-17
+    },
+    {
+      "field": "control/test_multi/calibrated/ece_bins/6/confidence",
+      "recomputed": 0.6495549055711832,
+      "recorded": 0.6495549055711831,
+      "delta": 1.1102230246251565e-16
+    },
+    {
+      "field": "control/test_multi_transformations/raw/ece_bins/7/confidence",
+      "recomputed": 0.7552291949330014,
+      "recorded": 0.7552291949330013,
+      "delta": 1.1102230246251565e-16
+    },
+    {
+      "field": "control/test_multi_transformations/calibrated/brier_sum_over_classes",
+      "recomputed": 0.8075901345442313,
+      "recorded": 0.8075901345442312,
+      "delta": 1.1102230246251565e-16
+    },
+    {
+      "field": "control/test_multi_transformations/calibrated/ece",
+      "recomputed": 0.3108701510037986,
+      "recorded": 0.31087015100379867,
+      "delta": -5.551115123125783e-17
+    },
+    {
+      "field": "control/test_multi_transformations/calibrated/ece_bins/3/confidence",
+      "recomputed": 0.3915632413065176,
+      "recorded": 0.3915632413065175,
+      "delta": 1.1102230246251565e-16
+    },
+    {
+      "field": "control/test_multi_transformations/calibrated/ece_bins/5/confidence",
+      "recomputed": 0.5504287275807493,
+      "recorded": 0.5504287275807495,
+      "delta": -1.1102230246251565e-16
+    },
+    {
+      "field": "control/test_multi_transformations/calibrated/ece_bins/7/confidence",
+      "recomputed": 0.7201032517202065,
+      "recorded": 0.7201032517202066,
+      "delta": -1.1102230246251565e-16
+    },
+    {
+      "field": "control/test_multi_transformations/calibrated/aurc",
+      "recomputed": 0.671708053194929,
+      "recorded": 0.6717086548284877,
+      "delta": -6.01633558749981e-07
+    },
+    {
+      "field": "control/test_multi_depth/raw/ece_bins/9/confidence",
+      "recomputed": 0.9964877534716274,
+      "recorded": 0.9964877534716273,
+      "delta": 1.1102230246251565e-16
+    },
+    {
+      "field": "control/test_multi_depth/calibrated/ece",
+      "recomputed": 0.2881273597603308,
+      "recorded": 0.2881273597603307,
+      "delta": 1.1102230246251565e-16
+    },
+    {
+      "field": "control/test_multi_depth/calibrated/ece_bins/4/confidence",
+      "recomputed": 0.46480204166949884,
+      "recorded": 0.4648020416694989,
+      "delta": -5.551115123125783e-17
+    },
+    {
+      "field": "control/test_multi_depth/calibrated/ece_bins/6/confidence",
+      "recomputed": 0.6468169443906514,
+      "recorded": 0.6468169443906512,
+      "delta": 2.220446049250313e-16
+    },
+    {
+      "field": "control/test_multi_wording/raw/ece",
+      "recomputed": 0.6675358616456794,
+      "recorded": 0.6675358616456796,
+      "delta": -2.220446049250313e-16
+    },
+    {
+      "field": "control/test_multi_wording/raw/ece_bins/9/confidence",
+      "recomputed": 0.9992919247848715,
+      "recorded": 0.9992919247848716,
+      "delta": -1.1102230246251565e-16
+    },
+    {
+      "field": "control/test_multi_wording/raw/aurc",
+      "recomputed": 0.6618171723955082,
+      "recorded": 0.6618171723955081,
+      "delta": 1.1102230246251565e-16
+    },
+    {
+      "field": "control/test_multi_wording/calibrated/brier_sum_over_classes",
+      "recomputed": 0.8578851475861706,
+      "recorded": 0.8578851475861705,
+      "delta": 1.1102230246251565e-16
+    },
+    {
+      "field": "control/test_multi_wording/calibrated/ece",
+      "recomputed": 0.3564163844713597,
+      "recorded": 0.3564163844713598,
+      "delta": -1.1102230246251565e-16
+    },
+    {
+      "field": "control/test_multi_wording/calibrated/ece_bins/6/confidence",
+      "recomputed": 0.6572924047294426,
+      "recorded": 0.6572924047294427,
+      "delta": -1.1102230246251565e-16
+    },
+    {
+      "field": "control/test_multi_wording/calibrated/ece_bins/7/confidence",
+      "recomputed": 0.7201573829013797,
+      "recorded": 0.7201573829013798,
+      "delta": -1.1102230246251565e-16
+    },
+    {
+      "field": "control/test_multi_signed_chain/calibrated/brier_sum_over_classes",
+      "recomputed": 0.8070015438935371,
+      "recorded": 0.8070015438935372,
+      "delta": -1.1102230246251565e-16
+    },
+    {
+      "field": "control/test_multi_signed_chain/calibrated/ece",
+      "recomputed": 0.31579748017714043,
+      "recorded": 0.3157974801771405,
+      "delta": -5.551115123125783e-17
+    },
+    {
+      "field": "control/test_multi_signed_chain/calibrated/ece_bins/4/confidence",
+      "recomputed": 0.46099670583129143,
+      "recorded": 0.4609967058312915,
+      "delta": -5.551115123125783e-17
+    },
+    {
+      "field": "control/test_multi_signed_chain/calibrated/ece_bins/6/confidence",
+      "recomputed": 0.643028646493325,
+      "recorded": 0.6430286464933251,
+      "delta": -1.1102230246251565e-16
+    },
+    {
+      "field": "control/test_original/raw/nll",
+      "recomputed": 0.2683765853961945,
+      "recorded": 0.26837658539619447,
+      "delta": 5.551115123125783e-17
+    },
+    {
+      "field": "control/test_original/raw/ece",
+      "recomputed": 0.05196467089520245,
+      "recorded": 0.051964670895202764,
+      "delta": -3.122502256758253e-16
+    },
+    {
+      "field": "control/test_original/raw/ece_bins/6/confidence",
+      "recomputed": 0.6702241186952369,
+      "recorded": 0.6702241186952368,
+      "delta": 1.1102230246251565e-16
+    },
+    {
+      "field": "control/test_original/raw/ece_bins/8/confidence",
+      "recomputed": 0.8653619506611234,
+      "recorded": 0.8653619506611235,
+      "delta": -1.1102230246251565e-16
+    },
+    {
+      "field": "control/test_original/raw/ece_bins/9/confidence",
+      "recomputed": 0.9764925567128652,
+      "recorded": 0.9764925567128655,
+      "delta": -3.3306690738754696e-16
+    },
+    {
+      "field": "control/test_counterfactual/raw/nll",
+      "recomputed": 0.029101336088796222,
+      "recorded": 0.029101336088796233,
+      "delta": -1.0408340855860843e-17
+    },
+    {
+      "field": "control/test_counterfactual/calibrated/brier_sum_over_classes",
+      "recomputed": 0.2454477451964571,
+      "recorded": 0.24544774519645712,
+      "delta": -2.7755575615628914e-17
+    },
+    {
+      "field": "control/test_counterfactual/calibrated/ece",
+      "recomputed": 0.38475609996464494,
+      "recorded": 0.384756099964645,
+      "delta": -5.551115123125783e-17
+    },
+    {
+      "field": "control/test_counterfactual/calibrated/ece_bins/4/confidence",
+      "recomputed": 0.4869801875342629,
+      "recorded": 0.48698018753426303,
+      "delta": -1.1102230246251565e-16
+    },
+    {
+      "field": "control/test_counterfactual/calibrated/ece_bins/5/confidence",
+      "recomputed": 0.5429849690459572,
+      "recorded": 0.5429849690459573,
+      "delta": -1.1102230246251565e-16
+    },
+    {
+      "field": "control/test_counterfactual/calibrated/ece_bins/7/confidence",
+      "recomputed": 0.7325796682710363,
+      "recorded": 0.7325796682710362,
+      "delta": 1.1102230246251565e-16
+    },
+    {
+      "field": "control/test_depth/raw/nll",
+      "recomputed": 1.6423659862082474,
+      "recorded": 1.6423659862082471,
+      "delta": 2.220446049250313e-16
+    },
+    {
+      "field": "control/test_depth/raw/brier_sum_over_classes",
+      "recomputed": 0.4041139679636343,
+      "recorded": 0.40411396796363425,
+      "delta": 5.551115123125783e-17
+    },
+    {
+      "field": "control/test_depth/raw/ece",
+      "recomputed": 0.18345174302574344,
+      "recorded": 0.18345174302574363,
+      "delta": -1.942890293094024e-16
+    },
+    {
+      "field": "control/test_depth/raw/ece_bins/9/confidence",
+      "recomputed": 0.9849819278849904,
+      "recorded": 0.9849819278849906,
+      "delta": -2.220446049250313e-16
+    },
+    {
+      "field": "control/test_depth/calibrated/brier_sum_over_classes",
+      "recomputed": 0.4182202413791815,
+      "recorded": 0.41822024137918146,
+      "delta": 5.551115123125783e-17
+    },
+    {
+      "field": "control/test_depth/calibrated/aurc",
+      "recomputed": 0.17929100219480917,
+      "recorded": 0.1792910021948092,
+      "delta": -2.7755575615628914e-17
+    },
+    {
+      "field": "control/test_wording/raw/brier_sum_over_classes",
+      "recomputed": 1.1153880254088542,
+      "recorded": 1.115388025408854,
+      "delta": 2.220446049250313e-16
+    },
+    {
+      "field": "control/test_wording/raw/ece",
+      "recomputed": 0.5518902570144237,
+      "recorded": 0.551890257014424,
+      "delta": -2.220446049250313e-16
+    },
+    {
+      "field": "control/test_wording/raw/ece_bins/7/confidence",
+      "recomputed": 0.7570350681029693,
+      "recorded": 0.757035068102969,
+      "delta": 2.220446049250313e-16
+    },
+    {
+      "field": "control/test_wording/raw/ece_bins/8/confidence",
+      "recomputed": 0.8728837321375544,
+      "recorded": 0.8728837321375545,
+      "delta": -1.1102230246251565e-16
+    },
+    {
+      "field": "control/test_wording/raw/ece_bins/9/confidence",
+      "recomputed": 0.9853809081220486,
+      "recorded": 0.9853809081220488,
+      "delta": -2.220446049250313e-16
+    },
+    {
+      "field": "control/test_wording/calibrated/ece",
+      "recomputed": 0.20558584026137067,
+      "recorded": 0.20558584026137072,
+      "delta": -5.551115123125783e-17
+    },
+    {
+      "field": "control/test_wording/calibrated/ece_bins/7/confidence",
+      "recomputed": 0.73414264397469,
+      "recorded": 0.7341426439746901,
+      "delta": -1.1102230246251565e-16
+    },
+    {
+      "field": "control/test_single_branch/raw/ece",
+      "recomputed": 0.48043605487352026,
+      "recorded": 0.4804360548735199,
+      "delta": 3.3306690738754696e-16
+    },
+    {
+      "field": "control/test_single_branch/raw/ece_bins/9/confidence",
+      "recomputed": 0.9946044556065164,
+      "recorded": 0.9946044556065161,
+      "delta": 3.3306690738754696e-16
+    },
+    {
+      "field": "control/test_single_branch/calibrated/nll",
+      "recomputed": 1.060815185967556,
+      "recorded": 1.0608151859675565,
+      "delta": -4.440892098500626e-16
+    },
+    {
+      "field": "control/test_single_branch/calibrated/brier_sum_over_classes",
+      "recomputed": 0.6309095521571146,
+      "recorded": 0.6309095521571144,
+      "delta": 2.220446049250313e-16
+    },
+    {
+      "field": "control/test_single_branch/calibrated/ece_bins/4/confidence",
+      "recomputed": 0.4694114931844764,
+      "recorded": 0.46941149318447634,
+      "delta": 5.551115123125783e-17
+    },
+    {
+      "field": "control/test_single_branch/calibrated/ece_bins/7/confidence",
+      "recomputed": 0.7346318851731514,
+      "recorded": 0.7346318851731513,
+      "delta": 1.1102230246251565e-16
+    },
+    {
+      "field": "treatment/test_multi/raw/ece",
+      "recomputed": 0.021543206869669387,
+      "recorded": 0.021543206869669398,
+      "delta": -1.0408340855860843e-17
+    },
+    {
+      "field": "treatment/test_multi/raw/ece_bins/4/confidence",
+      "recomputed": 0.4703099089097153,
+      "recorded": 0.4703099089097152,
+      "delta": 1.1102230246251565e-16
+    },
+    {
+      "field": "treatment/test_multi/raw/ece_bins/6/confidence",
+      "recomputed": 0.6487498242110805,
+      "recorded": 0.6487498242110806,
+      "delta": -1.1102230246251565e-16
+    },
+    {
+      "field": "treatment/test_multi/raw/aurc",
+      "recomputed": 0.028954347060844383,
+      "recorded": 0.028954347060844376,
+      "delta": 6.938893903907228e-18
+    },
+    {
+      "field": "treatment/test_multi/calibrated/ece",
+      "recomputed": 0.028001415948823234,
+      "recorded": 0.028001415948823244,
+      "delta": -1.0408340855860843e-17
+    },
+    {
+      "field": "treatment/test_multi/calibrated/ece_bins/4/confidence",
+      "recomputed": 0.4657096673709908,
+      "recorded": 0.46570966737099084,
+      "delta": -5.551115123125783e-17
+    },
+    {
+      "field": "treatment/test_multi/calibrated/ece_bins/7/confidence",
+      "recomputed": 0.7509227057810569,
+      "recorded": 0.750922705781057,
+      "delta": -1.1102230246251565e-16
+    },
+    {
+      "field": "treatment/test_multi_transformations/raw/brier_sum_over_classes",
+      "recomputed": 0.2553373574085209,
+      "recorded": 0.25533735740852087,
+      "delta": 5.551115123125783e-17
+    },
+    {
+      "field": "treatment/test_multi_transformations/raw/ece",
+      "recomputed": 0.05075014098456512,
+      "recorded": 0.050750140984565116,
+      "delta": 6.938893903907228e-18
+    },
+    {
+      "field": "treatment/test_multi_transformations/raw/ece_bins/5/confidence",
+      "recomputed": 0.5487432600021303,
+      "recorded": 0.5487432600021301,
+      "delta": 1.1102230246251565e-16
+    },
+    {
+      "field": "treatment/test_multi_transformations/raw/aurc",
+      "recomputed": 0.07488495142064856,
+      "recorded": 0.07488489900412561,
+      "delta": 5.241652295540078e-08
+    },
+    {
+      "field": "treatment/test_multi_transformations/calibrated/ece_bins/3/confidence",
+      "recomputed": 0.3749655789889534,
+      "recorded": 0.3749655789889535,
+      "delta": -1.1102230246251565e-16
+    },
+    {
+      "field": "treatment/test_multi_transformations/calibrated/aurc",
+      "recomputed": 0.07483756053961489,
+      "recorded": 0.07483759218899871,
+      "delta": -3.164938382205218e-08
+    },
+    {
+      "field": "treatment/test_multi_depth/raw/nll",
+      "recomputed": 0.3437346036887373,
+      "recorded": 0.3437346036887374,
+      "delta": -5.551115123125783e-17
+    },
+    {
+      "field": "treatment/test_multi_depth/raw/brier_sum_over_classes",
+      "recomputed": 0.21282475981292556,
+      "recorded": 0.2128247598129255,
+      "delta": 5.551115123125783e-17
+    },
+    {
+      "field": "treatment/test_multi_depth/raw/ece_bins/4/confidence",
+      "recomputed": 0.4728969358086876,
+      "recorded": 0.47289693580868764,
+      "delta": -5.551115123125783e-17
+    },
+    {
+      "field": "treatment/test_multi_depth/calibrated/ece",
+      "recomputed": 0.023879353585326044,
+      "recorded": 0.023879353585326054,
+      "delta": -1.0408340855860843e-17
+    },
+    {
+      "field": "treatment/test_multi_depth/calibrated/ece_bins/7/confidence",
+      "recomputed": 0.7515928097338322,
+      "recorded": 0.7515928097338321,
+      "delta": 1.1102230246251565e-16
+    },
+    {
+      "field": "treatment/test_multi_wording/raw/brier_sum_over_classes",
+      "recomputed": 0.3118731746884004,
+      "recorded": 0.3118731746884005,
+      "delta": -5.551115123125783e-17
+    },
+    {
+      "field": "treatment/test_multi_wording/raw/ece",
+      "recomputed": 0.09558455865962218,
+      "recorded": 0.09558455865962226,
+      "delta": -8.326672684688674e-17
+    },
+    {
+      "field": "treatment/test_multi_wording/raw/ece_bins/6/confidence",
+      "recomputed": 0.6525913383989532,
+      "recorded": 0.6525913383989534,
+      "delta": -2.220446049250313e-16
+    },
+    {
+      "field": "treatment/test_multi_wording/raw/ece_bins/9/confidence",
+      "recomputed": 0.9754881076781453,
+      "recorded": 0.9754881076781454,
+      "delta": -1.1102230246251565e-16
+    },
+    {
+      "field": "treatment/test_multi_wording/calibrated/nll",
+      "recomputed": 0.46760661851346297,
+      "recorded": 0.46760661851346286,
+      "delta": 1.1102230246251565e-16
+    },
+    {
+      "field": "treatment/test_multi_wording/calibrated/ece",
+      "recomputed": 0.074805968394285,
+      "recorded": 0.07480596839428508,
+      "delta": -8.326672684688674e-17
+    },
+    {
+      "field": "treatment/test_multi_wording/calibrated/ece_bins/8/confidence",
+      "recomputed": 0.8507982593734953,
+      "recorded": 0.8507982593734955,
+      "delta": -2.220446049250313e-16
+    },
+    {
+      "field": "treatment/test_multi_wording/calibrated/ece_bins/9/confidence",
+      "recomputed": 0.9737626556348018,
+      "recorded": 0.9737626556348019,
+      "delta": -1.1102230246251565e-16
+    },
+    {
+      "field": "treatment/test_multi_signed_chain/raw/ece",
+      "recomputed": 0.03733245622484968,
+      "recorded": 0.037332456224849646,
+      "delta": 3.469446951953614e-17
+    },
+    {
+      "field": "treatment/test_multi_signed_chain/raw/ece_bins/6/confidence",
+      "recomputed": 0.6452153251877885,
+      "recorded": 0.6452153251877883,
+      "delta": 1.1102230246251565e-16
+    },
+    {
+      "field": "treatment/test_multi_signed_chain/raw/ece_bins/7/confidence",
+      "recomputed": 0.746989211067043,
+      "recorded": 0.7469892110670431,
+      "delta": -1.1102230246251565e-16
+    },
+    {
+      "field": "treatment/test_multi_signed_chain/raw/ece_bins/8/confidence",
+      "recomputed": 0.8550013234750191,
+      "recorded": 0.855001323475019,
+      "delta": 1.1102230246251565e-16
+    },
+    {
+      "field": "treatment/test_original/raw/ece_bins/6/confidence",
+      "recomputed": 0.6618072696941628,
+      "recorded": 0.6618072696941629,
+      "delta": -1.1102230246251565e-16
+    },
+    {
+      "field": "treatment/test_original/raw/ece_bins/8/confidence",
+      "recomputed": 0.8597429515739292,
+      "recorded": 0.8597429515739293,
+      "delta": -1.1102230246251565e-16
+    },
+    {
+      "field": "treatment/test_original/raw/aurc",
+      "recomputed": 0.019533934097437238,
+      "recorded": 0.01953393409743724,
+      "delta": -3.469446951953614e-18
+    },
+    {
+      "field": "treatment/test_original/calibrated/ece",
+      "recomputed": 0.04574540631057843,
+      "recorded": 0.04574540631057844,
+      "delta": -6.938893903907228e-18
+    },
+    {
+      "field": "treatment/test_original/calibrated/ece_bins/8/confidence",
+      "recomputed": 0.8550476229919027,
+      "recorded": 0.8550476229919028,
+      "delta": -1.1102230246251565e-16
+    },
+    {
+      "field": "treatment/test_counterfactual/raw/nll",
+      "recomputed": 0.02113710020901715,
+      "recorded": 0.021137100209017146,
+      "delta": 3.469446951953614e-18
+    },
+    {
+      "field": "treatment/test_counterfactual/raw/ece",
+      "recomputed": 0.017021823946018363,
+      "recorded": 0.01702182394601836,
+      "delta": 3.469446951953614e-18
+    },
+    {
+      "field": "treatment/test_counterfactual/raw/ece_bins/5/confidence",
+      "recomputed": 0.5659506015592803,
+      "recorded": 0.5659506015592805,
+      "delta": -1.1102230246251565e-16
+    },
+    {
+      "field": "treatment/test_counterfactual/raw/ece_bins/8/confidence",
+      "recomputed": 0.8583196308130222,
+      "recorded": 0.8583196308130224,
+      "delta": -2.220446049250313e-16
+    },
+    {
+      "field": "treatment/test_counterfactual/raw/aurc",
+      "recomputed": 1.6112922222541108e-05,
+      "recorded": 1.611292222254111e-05,
+      "delta": -3.3881317890172014e-21
+    },
+    {
+      "field": "treatment/test_counterfactual/calibrated/aurc",
+      "recomputed": 1.6112922222541108e-05,
+      "recorded": 1.611292222254111e-05,
+      "delta": -3.3881317890172014e-21
+    },
+    {
+      "field": "treatment/test_depth/raw/brier_sum_over_classes",
+      "recomputed": 0.38833241427698995,
+      "recorded": 0.38833241427698983,
+      "delta": 1.1102230246251565e-16
+    },
+    {
+      "field": "treatment/test_depth/raw/ece",
+      "recomputed": 0.19186910688083547,
+      "recorded": 0.1918691068808357,
+      "delta": -2.220446049250313e-16
+    },
+    {
+      "field": "treatment/test_depth/raw/ece_bins/9/confidence",
+      "recomputed": 0.9907815401806442,
+      "recorded": 0.9907815401806445,
+      "delta": -2.220446049250313e-16
+    },
+    {
+      "field": "treatment/test_depth/calibrated/brier_sum_over_classes",
+      "recomputed": 0.3867654531678208,
+      "recorded": 0.38676545316782085,
+      "delta": -5.551115123125783e-17
+    },
+    {
+      "field": "treatment/test_depth/calibrated/ece_bins/6/confidence",
+      "recomputed": 0.6743573057820705,
+      "recorded": 0.6743573057820704,
+      "delta": 1.1102230246251565e-16
+    },
+    {
+      "field": "treatment/test_depth/calibrated/ece_bins/7/confidence",
+      "recomputed": 0.7613689355750809,
+      "recorded": 0.7613689355750808,
+      "delta": 1.1102230246251565e-16
+    },
+    {
+      "field": "treatment/test_depth/calibrated/ece_bins/8/confidence",
+      "recomputed": 0.8558609894790224,
+      "recorded": 0.8558609894790228,
+      "delta": -3.3306690738754696e-16
+    },
+    {
+      "field": "treatment/test_wording/raw/brier_sum_over_classes",
+      "recomputed": 0.9972235112372758,
+      "recorded": 0.997223511237276,
+      "delta": -2.220446049250313e-16
+    },
+    {
+      "field": "treatment/test_wording/raw/aurc",
+      "recomputed": 0.4386689201441821,
+      "recorded": 0.4386689201441822,
+      "delta": -1.1102230246251565e-16
+    },
+    {
+      "field": "treatment/test_wording/calibrated/brier_sum_over_classes",
+      "recomputed": 0.9792053537407057,
+      "recorded": 0.9792053537407059,
+      "delta": -2.220446049250313e-16
+    },
+    {
+      "field": "treatment/test_wording/calibrated/ece_bins/4/confidence",
+      "recomputed": 0.4444507936149302,
+      "recorded": 0.4444507936149301,
+      "delta": 5.551115123125783e-17
+    },
+    {
+      "field": "treatment/test_wording/calibrated/ece_bins/5/confidence",
+      "recomputed": 0.5554363002554593,
+      "recorded": 0.5554363002554592,
+      "delta": 1.1102230246251565e-16
+    },
+    {
+      "field": "treatment/test_single_branch/raw/brier_sum_over_classes",
+      "recomputed": 0.9040576612071297,
+      "recorded": 0.9040576612071295,
+      "delta": 2.220446049250313e-16
+    },
+    {
+      "field": "treatment/test_single_branch/raw/ece_bins/8/confidence",
+      "recomputed": 0.879008696966352,
+      "recorded": 0.8790086969663521,
+      "delta": -1.1102230246251565e-16
+    },
+    {
+      "field": "treatment/test_single_branch/raw/aurc",
+      "recomputed": 0.4042147229163215,
+      "recorded": 0.40421472291632143,
+      "delta": 5.551115123125783e-17
+    },
+    {
+      "field": "treatment/test_single_branch/calibrated/ece_bins/5/confidence",
+      "recomputed": 0.5491594688248702,
+      "recorded": 0.5491594688248701,
+      "delta": 1.1102230246251565e-16
+    },
+    {
+      "field": "treatment/test_single_branch/calibrated/ece_bins/7/confidence",
+      "recomputed": 0.7543409605185589,
+      "recorded": 0.7543409605185588,
+      "delta": 1.1102230246251565e-16
+    }
+  ]
+}

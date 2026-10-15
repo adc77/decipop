@@ -1,0 +1,9 @@
+{
+  "snapshot_utc": "2026-10-13T14:24:57.251378+00:00",
+  "owned_resource_metered_usd": "0",
+  "resources_usd": {},
+  "workspace_billed_usd": "0E-8",
+  "scoped_rows": [],
+  "scope": "Owned V5 app/Volume rows only; observed snapshot, not a final invoice.",
+  "raw_report_sha256": "3f35c0f816de778e49f6d83d697e506998683e421fa7889d0cf2a87885d99cce"
+}

@@ -1,0 +1,18 @@
+Note that running a local entrypoint in detached mode only keeps the last triggered Modal function alive after the parent process has been killed or disconnected.
+✓ Initialized. View run at 
+https://modal.com/apps/amandogra2016/main/ap-UvXazh9P1DsMgPM9GSmc2W
+✓ Created objects.
+├── ✓ Uploaded /Users/axon_dendrite/decision-model-lab/v8_final_eval_app.py
+├── ✓ Uploaded docs/V8_PROTOCOL.md
+├── ✓ Uploaded uv.lock
+├── ✓ Uploaded NOTICE
+├── ✓ Uploaded LICENSE
+├── ✓ Uploaded /Users/axon_dendrite/decision-model-lab/configs
+├── ✓ Uploaded PythonPackage:decision_lab, PythonPackage:v4_lab, 
+│   PythonPackage:v5_lab, PythonPackage:v6_lab, PythonPackage:v7_lab, 
+│   PythonPackage:v8_lab, PythonPackage:v8_selection_completion
+└── ✓ Created Function finish_and_evaluate.
+{"spawned_call_id": "fc-01M4Y3F40MCZSY0GFKAVJ9BP6R", "gpu_calls_added_beyond_reservation": 0}
+[modal-client] 2026-10-15T02:30:47+0530 Timed out waiting for final app logs.
+✓ App completed. View run at 
+https://modal.com/apps/amandogra2016/main/ap-UvXazh9P1DsMgPM9GSmc2W

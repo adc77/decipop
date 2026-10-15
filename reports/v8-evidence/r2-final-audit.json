@@ -1,0 +1,949 @@
+{
+  "valid": true,
+  "protocol_identity": "9c843f1daa2333aae4bcafb9cc5b719adf484e3294b77199602b85308a3edc71",
+  "prediction_rows_verified": 82672,
+  "prediction_rows_expected": 82672,
+  "prediction_files_verified": 58,
+  "candidate_count": 10,
+  "metric_recomputation_checks": {
+    "control/test_counterfactual": {
+      "absolute_float_tolerance": 1e-12,
+      "confidence_tie_tolerance": 7.105427357601002e-15,
+      "float_roundoff_differences": [
+        {
+          "field": "raw/nll",
+          "recomputed": 0.009764622156284085,
+          "recorded": 0.009764622156284083
+        },
+        {
+          "field": "raw/brier_sum_over_classes",
+          "recomputed": 0.0008543281902541666,
+          "recorded": 0.0008543281902541667
+        },
+        {
+          "field": "raw/ece",
+          "recomputed": 0.009518989013014359,
+          "recorded": 0.00951898901301447
+        },
+        {
+          "field": "raw/ece_bins/9/confidence",
+          "recomputed": 0.9911128375923312,
+          "recorded": 0.991112837592331
+        },
+        {
+          "field": "calibrated/nll",
+          "recomputed": 0.032602016292646765,
+          "recorded": 0.03260201629264676
+        }
+      ],
+      "aurc_near_tie_checks": []
+    },
+    "control/test_depth": {
+      "absolute_float_tolerance": 1e-12,
+      "confidence_tie_tolerance": 7.105427357601002e-15,
+      "float_roundoff_differences": [
+        {
+          "field": "raw/ece_bins/6/confidence",
+          "recomputed": 0.6794730577658518,
+          "recorded": 0.6794730577658519
+        },
+        {
+          "field": "raw/aurc",
+          "recomputed": 0.2826622445609546,
+          "recorded": 0.28266224456095457
+        },
+        {
+          "field": "calibrated/brier_sum_over_classes",
+          "recomputed": 0.38832046045120033,
+          "recorded": 0.3883204604512004
+        },
+        {
+          "field": "calibrated/ece_bins/6/confidence",
+          "recomputed": 0.6531617032293732,
+          "recorded": 0.6531617032293731
+        },
+        {
+          "field": "calibrated/ece_bins/7/confidence",
+          "recomputed": 0.7800606514021402,
+          "recorded": 0.7800606514021403
+        },
+        {
+          "field": "calibrated/aurc",
+          "recomputed": 0.2832816259537922,
+          "recorded": 0.28328162595379225
+        }
+      ],
+      "aurc_near_tie_checks": []
+    },
+    "control/test_multi": {
+      "absolute_float_tolerance": 1e-12,
+      "confidence_tie_tolerance": 7.105427357601002e-15,
+      "float_roundoff_differences": [
+        {
+          "field": "raw/ece",
+          "recomputed": 0.016689487378860713,
+          "recorded": 0.016689487378860716
+        },
+        {
+          "field": "raw/ece_bins/6/confidence",
+          "recomputed": 0.6517959266815262,
+          "recorded": 0.6517959266815261
+        },
+        {
+          "field": "raw/ece_bins/7/confidence",
+          "recomputed": 0.7473981133542331,
+          "recorded": 0.747398113354233
+        },
+        {
+          "field": "calibrated/brier_sum_over_classes",
+          "recomputed": 0.13708457940444427,
+          "recorded": 0.1370845794044442
+        },
+        {
+          "field": "calibrated/ece",
+          "recomputed": 0.020311264339143584,
+          "recorded": 0.020311264339143563
+        },
+        {
+          "field": "calibrated/ece_bins/6/confidence",
+          "recomputed": 0.6493664716251771,
+          "recorded": 0.6493664716251772
+        },
+        {
+          "field": "calibrated/ece_bins/7/confidence",
+          "recomputed": 0.7519438930911421,
+          "recorded": 0.7519438930911422
+        }
+      ],
+      "aurc_near_tie_checks": []
+    },
+    "control/test_multi_depth": {
+      "absolute_float_tolerance": 1e-12,
+      "confidence_tie_tolerance": 7.105427357601002e-15,
+      "float_roundoff_differences": [
+        {
+          "field": "raw/ece",
+          "recomputed": 0.02666869559012087,
+          "recorded": 0.02666869559012086
+        },
+        {
+          "field": "raw/ece_bins/6/confidence",
+          "recomputed": 0.6529773017223536,
+          "recorded": 0.6529773017223535
+        },
+        {
+          "field": "raw/aurc",
+          "recomputed": 0.01639566862305983,
+          "recorded": 0.016395668623059835
+        },
+        {
+          "field": "calibrated/ece",
+          "recomputed": 0.02134957180299524,
+          "recorded": 0.021349571802995106
+        },
+        {
+          "field": "calibrated/ece_bins/6/confidence",
+          "recomputed": 0.651184661751261,
+          "recorded": 0.6511846617512611
+        },
+        {
+          "field": "calibrated/ece_bins/8/confidence",
+          "recomputed": 0.8279641863120393,
+          "recorded": 0.8279641863120395
+        },
+        {
+          "field": "calibrated/ece_bins/9/confidence",
+          "recomputed": 0.9929717396398569,
+          "recorded": 0.9929717396398571
+        }
+      ],
+      "aurc_near_tie_checks": []
+    },
+    "control/test_multi_signed_chain": {
+      "absolute_float_tolerance": 1e-12,
+      "confidence_tie_tolerance": 7.105427357601002e-15,
+      "float_roundoff_differences": [
+        {
+          "field": "raw/nll",
+          "recomputed": 0.2297709095089234,
+          "recorded": 0.22977090950892337
+        },
+        {
+          "field": "raw/ece",
+          "recomputed": 0.022894648259865785,
+          "recorded": 0.022894648259865792
+        },
+        {
+          "field": "raw/ece_bins/8/confidence",
+          "recomputed": 0.8464807586056171,
+          "recorded": 0.846480758605617
+        },
+        {
+          "field": "raw/aurc",
+          "recomputed": 0.018146013913655248,
+          "recorded": 0.018146013913655244
+        },
+        {
+          "field": "calibrated/ece",
+          "recomputed": 0.044279535223862354,
+          "recorded": 0.04427953522386233
+        },
+        {
+          "field": "calibrated/ece_bins/5/confidence",
+          "recomputed": 0.5520861502084315,
+          "recorded": 0.5520861502084317
+        },
+        {
+          "field": "calibrated/ece_bins/7/confidence",
+          "recomputed": 0.7449818782118329,
+          "recorded": 0.744981878211833
+        }
+      ],
+      "aurc_near_tie_checks": []
+    },
+    "control/test_multi_transformations": {
+      "absolute_float_tolerance": 1e-12,
+      "confidence_tie_tolerance": 7.105427357601002e-15,
+      "float_roundoff_differences": [
+        {
+          "field": "raw/brier_sum_over_classes",
+          "recomputed": 0.21282206580738802,
+          "recorded": 0.21282206580738805
+        },
+        {
+          "field": "raw/ece",
+          "recomputed": 0.05551275666771796,
+          "recorded": 0.05551275666771795
+        },
+        {
+          "field": "raw/ece_bins/3/confidence",
+          "recomputed": 0.3564515841313286,
+          "recorded": 0.3564515841313285
+        },
+        {
+          "field": "raw/ece_bins/8/confidence",
+          "recomputed": 0.8505623889119645,
+          "recorded": 0.8505623889119643
+        },
+        {
+          "field": "calibrated/brier_sum_over_classes",
+          "recomputed": 0.20706383770672443,
+          "recorded": 0.20706383770672437
+        },
+        {
+          "field": "calibrated/ece_bins/7/confidence",
+          "recomputed": 0.7501075595409008,
+          "recorded": 0.7501075595409007
+        }
+      ],
+      "aurc_near_tie_checks": [
+        {
+          "field": "raw/aurc",
+          "recomputed": 0.05128224783295116,
+          "recorded": 0.05128225202848365,
+          "lower": 0.05128040281493917,
+          "upper": 0.05128576409167744,
+          "near_tie_groups": 1407
+        },
+        {
+          "field": "calibrated/aurc",
+          "recomputed": 0.05144194240258603,
+          "recorded": 0.0514419305469149,
+          "lower": 0.051440161772859316,
+          "upper": 0.05144528194374722,
+          "near_tie_groups": 1407
+        }
+      ]
+    },
+    "control/test_multi_wording": {
+      "absolute_float_tolerance": 1e-12,
+      "confidence_tie_tolerance": 7.105427357601002e-15,
+      "float_roundoff_differences": [
+        {
+          "field": "raw/ece",
+          "recomputed": 0.10466435170001742,
+          "recorded": 0.10466435170001764
+        },
+        {
+          "field": "raw/ece_bins/9/confidence",
+          "recomputed": 0.9894686872115442,
+          "recorded": 0.9894686872115446
+        }
+      ],
+      "aurc_near_tie_checks": []
+    },
+    "control/test_original": {
+      "absolute_float_tolerance": 1e-12,
+      "confidence_tie_tolerance": 7.105427357601002e-15,
+      "float_roundoff_differences": [
+        {
+          "field": "raw/nll",
+          "recomputed": 0.2552956914991668,
+          "recorded": 0.25529569149916675
+        },
+        {
+          "field": "raw/ece_bins/7/confidence",
+          "recomputed": 0.7896861699955924,
+          "recorded": 0.7896861699955925
+        },
+        {
+          "field": "raw/ece_bins/8/confidence",
+          "recomputed": 0.859223409993014,
+          "recorded": 0.8592234099930138
+        },
+        {
+          "field": "calibrated/aurc",
+          "recomputed": 0.01812126728165117,
+          "recorded": 0.018121267281651175
+        }
+      ],
+      "aurc_near_tie_checks": []
+    },
+    "control/test_paired": {
+      "absolute_float_tolerance": 1e-12,
+      "confidence_tie_tolerance": 7.105427357601002e-15,
+      "float_roundoff_differences": [
+        {
+          "field": "raw/brier_sum_over_classes",
+          "recomputed": 0.14915342681533614,
+          "recorded": 0.14915342681533617
+        },
+        {
+          "field": "raw/ece",
+          "recomputed": 0.021543809543927844,
+          "recorded": 0.02154380954392785
+        },
+        {
+          "field": "raw/ece_bins/4/confidence",
+          "recomputed": 0.4993483038888151,
+          "recorded": 0.499348303888815
+        },
+        {
+          "field": "raw/ece_bins/5/confidence",
+          "recomputed": 0.5518613865799471,
+          "recorded": 0.5518613865799472
+        },
+        {
+          "field": "raw/aurc",
+          "recomputed": 0.01855572737109333,
+          "recorded": 0.018555727371093327
+        },
+        {
+          "field": "calibrated/nll",
+          "recomputed": 0.2202289898174475,
+          "recorded": 0.22022898981744754
+        },
+        {
+          "field": "calibrated/ece",
+          "recomputed": 0.010992158407417166,
+          "recorded": 0.010992158407417145
+        },
+        {
+          "field": "calibrated/ece_bins/4/confidence",
+          "recomputed": 0.49798587204291445,
+          "recorded": 0.4979858720429145
+        },
+        {
+          "field": "calibrated/ece_bins/5/confidence",
+          "recomputed": 0.5519386349955394,
+          "recorded": 0.5519386349955393
+        },
+        {
+          "field": "calibrated/ece_bins/7/confidence",
+          "recomputed": 0.7519522789765439,
+          "recorded": 0.7519522789765438
+        }
+      ],
+      "aurc_near_tie_checks": []
+    },
+    "control/test_single_branch": {
+      "absolute_float_tolerance": 1e-12,
+      "confidence_tie_tolerance": 7.105427357601002e-15,
+      "float_roundoff_differences": [
+        {
+          "field": "raw/brier_sum_over_classes",
+          "recomputed": 0.8500112752385769,
+          "recorded": 0.850011275238577
+        },
+        {
+          "field": "raw/ece",
+          "recomputed": 0.4152965596768585,
+          "recorded": 0.41529655967685836
+        },
+        {
+          "field": "raw/ece_bins/5/confidence",
+          "recomputed": 0.5792734835712856,
+          "recorded": 0.5792734835712857
+        },
+        {
+          "field": "raw/ece_bins/6/confidence",
+          "recomputed": 0.6419313372443665,
+          "recorded": 0.6419313372443664
+        },
+        {
+          "field": "raw/ece_bins/7/confidence",
+          "recomputed": 0.76327006998272,
+          "recorded": 0.7632700699827198
+        },
+        {
+          "field": "raw/ece_bins/8/confidence",
+          "recomputed": 0.8494855623834006,
+          "recorded": 0.8494855623834008
+        },
+        {
+          "field": "raw/ece_bins/9/confidence",
+          "recomputed": 0.9880137351673968,
+          "recorded": 0.9880137351673965
+        },
+        {
+          "field": "calibrated/ece",
+          "recomputed": 0.3758074859532358,
+          "recorded": 0.3758074859532356
+        },
+        {
+          "field": "calibrated/ece_bins/7/confidence",
+          "recomputed": 0.7471771986862322,
+          "recorded": 0.7471771986862321
+        },
+        {
+          "field": "calibrated/ece_bins/8/confidence",
+          "recomputed": 0.8439498563425846,
+          "recorded": 0.8439498563425843
+        },
+        {
+          "field": "calibrated/ece_bins/9/confidence",
+          "recomputed": 0.9787846473528943,
+          "recorded": 0.978784647352894
+        },
+        {
+          "field": "calibrated/aurc",
+          "recomputed": 0.28120632715028476,
+          "recorded": 0.2812063271502848
+        }
+      ],
+      "aurc_near_tie_checks": []
+    },
+    "control/test_wording": {
+      "absolute_float_tolerance": 1e-12,
+      "confidence_tie_tolerance": 7.105427357601002e-15,
+      "float_roundoff_differences": [
+        {
+          "field": "raw/brier_sum_over_classes",
+          "recomputed": 1.0291577323813548,
+          "recorded": 1.0291577323813546
+        },
+        {
+          "field": "raw/ece_bins/6/confidence",
+          "recomputed": 0.6457777702784686,
+          "recorded": 0.6457777702784685
+        },
+        {
+          "field": "raw/ece_bins/8/confidence",
+          "recomputed": 0.8509657763071772,
+          "recorded": 0.8509657763071768
+        },
+        {
+          "field": "raw/ece_bins/9/confidence",
+          "recomputed": 0.9861023909809322,
+          "recorded": 0.9861023909809323
+        },
+        {
+          "field": "raw/aurc",
+          "recomputed": 0.4522518522721379,
+          "recorded": 0.45225185227213777
+        },
+        {
+          "field": "calibrated/brier_sum_over_classes",
+          "recomputed": 0.9723037232451909,
+          "recorded": 0.9723037232451911
+        },
+        {
+          "field": "calibrated/ece",
+          "recomputed": 0.4712551112486293,
+          "recorded": 0.47125511124862934
+        },
+        {
+          "field": "calibrated/ece_bins/3/confidence",
+          "recomputed": 0.38907117740832364,
+          "recorded": 0.3890711774083236
+        },
+        {
+          "field": "calibrated/ece_bins/4/confidence",
+          "recomputed": 0.459762185677964,
+          "recorded": 0.45976218567796395
+        },
+        {
+          "field": "calibrated/ece_bins/5/confidence",
+          "recomputed": 0.5537571245131716,
+          "recorded": 0.5537571245131717
+        },
+        {
+          "field": "calibrated/ece_bins/6/confidence",
+          "recomputed": 0.6619145449525049,
+          "recorded": 0.661914544952505
+        },
+        {
+          "field": "calibrated/ece_bins/7/confidence",
+          "recomputed": 0.7521295982191238,
+          "recorded": 0.7521295982191237
+        },
+        {
+          "field": "calibrated/ece_bins/8/confidence",
+          "recomputed": 0.8574271502991968,
+          "recorded": 0.8574271502991969
+        }
+      ],
+      "aurc_near_tie_checks": []
+    },
+    "treatment/test_counterfactual": {
+      "absolute_float_tolerance": 1e-12,
+      "confidence_tie_tolerance": 7.105427357601002e-15,
+      "float_roundoff_differences": [
+        {
+          "field": "raw/nll",
+          "recomputed": 0.02195960498923501,
+          "recorded": 0.021959604989235007
+        },
+        {
+          "field": "raw/brier_sum_over_classes",
+          "recomputed": 0.006933163869637471,
+          "recorded": 0.006933163869637473
+        },
+        {
+          "field": "raw/ece_bins/6/confidence",
+          "recomputed": 0.6124021102621221,
+          "recorded": 0.612402110262122
+        },
+        {
+          "field": "raw/aurc",
+          "recomputed": 0.000828964157304966,
+          "recorded": 0.0008289641573049661
+        },
+        {
+          "field": "calibrated/ece",
+          "recomputed": 0.03161121780626116,
+          "recorded": 0.03161121780626126
+        },
+        {
+          "field": "calibrated/ece_bins/9/confidence",
+          "recomputed": 0.9735520118741043,
+          "recorded": 0.9735520118741042
+        }
+      ],
+      "aurc_near_tie_checks": []
+    },
+    "treatment/test_depth": {
+      "absolute_float_tolerance": 1e-12,
+      "confidence_tie_tolerance": 7.105427357601002e-15,
+      "float_roundoff_differences": [
+        {
+          "field": "raw/ece_bins/5/confidence",
+          "recomputed": 0.5924897652158927,
+          "recorded": 0.5924897652158928
+        },
+        {
+          "field": "raw/ece_bins/8/confidence",
+          "recomputed": 0.8615174862630152,
+          "recorded": 0.8615174862630154
+        },
+        {
+          "field": "raw/aurc",
+          "recomputed": 0.3247059132596202,
+          "recorded": 0.32470591325962017
+        },
+        {
+          "field": "calibrated/brier_sum_over_classes",
+          "recomputed": 0.4215734399762749,
+          "recorded": 0.42157343997627494
+        },
+        {
+          "field": "calibrated/ece",
+          "recomputed": 0.19598855875045898,
+          "recorded": 0.19598855875045879
+        },
+        {
+          "field": "calibrated/ece_bins/5/confidence",
+          "recomputed": 0.5592616546467455,
+          "recorded": 0.5592616546467454
+        },
+        {
+          "field": "calibrated/ece_bins/7/confidence",
+          "recomputed": 0.7387988512455703,
+          "recorded": 0.7387988512455702
+        },
+        {
+          "field": "calibrated/ece_bins/9/confidence",
+          "recomputed": 0.975975297573489,
+          "recorded": 0.9759752975734888
+        }
+      ],
+      "aurc_near_tie_checks": []
+    },
+    "treatment/test_multi": {
+      "absolute_float_tolerance": 1e-12,
+      "confidence_tie_tolerance": 7.105427357601002e-15,
+      "float_roundoff_differences": [
+        {
+          "field": "raw/ece",
+          "recomputed": 0.013161551390020012,
+          "recorded": 0.013161551390019842
+        },
+        {
+          "field": "raw/ece_bins/5/confidence",
+          "recomputed": 0.5489846385457743,
+          "recorded": 0.5489846385457744
+        },
+        {
+          "field": "raw/ece_bins/7/confidence",
+          "recomputed": 0.7504917377887992,
+          "recorded": 0.7504917377887991
+        },
+        {
+          "field": "raw/ece_bins/9/confidence",
+          "recomputed": 0.9977089107255641,
+          "recorded": 0.9977089107255639
+        },
+        {
+          "field": "calibrated/ece",
+          "recomputed": 0.02539178557004474,
+          "recorded": 0.02539178557004475
+        },
+        {
+          "field": "calibrated/ece_bins/5/confidence",
+          "recomputed": 0.5502810213478895,
+          "recorded": 0.5502810213478894
+        },
+        {
+          "field": "calibrated/ece_bins/8/confidence",
+          "recomputed": 0.8371996502614186,
+          "recorded": 0.8371996502614185
+        }
+      ],
+      "aurc_near_tie_checks": []
+    },
+    "treatment/test_multi_depth": {
+      "absolute_float_tolerance": 1e-12,
+      "confidence_tie_tolerance": 7.105427357601002e-15,
+      "float_roundoff_differences": [
+        {
+          "field": "raw/nll",
+          "recomputed": 0.2028774385375135,
+          "recorded": 0.20287743853751347
+        },
+        {
+          "field": "raw/brier_sum_over_classes",
+          "recomputed": 0.13757823969597208,
+          "recorded": 0.13757823969597205
+        },
+        {
+          "field": "raw/ece",
+          "recomputed": 0.021142436406958367,
+          "recorded": 0.021142436406958447
+        },
+        {
+          "field": "raw/ece_bins/9/confidence",
+          "recomputed": 0.9980429157537244,
+          "recorded": 0.9980429157537245
+        },
+        {
+          "field": "calibrated/ece",
+          "recomputed": 0.014066423755688135,
+          "recorded": 0.014066423755688137
+        },
+        {
+          "field": "calibrated/ece_bins/8/confidence",
+          "recomputed": 0.857841985335514,
+          "recorded": 0.8578419853355141
+        }
+      ],
+      "aurc_near_tie_checks": []
+    },
+    "treatment/test_multi_signed_chain": {
+      "absolute_float_tolerance": 1e-12,
+      "confidence_tie_tolerance": 7.105427357601002e-15,
+      "float_roundoff_differences": [
+        {
+          "field": "raw/ece",
+          "recomputed": 0.025695622911158702,
+          "recorded": 0.02569562291115856
+        },
+        {
+          "field": "raw/ece_bins/6/confidence",
+          "recomputed": 0.656322462350934,
+          "recorded": 0.6563224623509339
+        },
+        {
+          "field": "raw/ece_bins/8/confidence",
+          "recomputed": 0.8401661223452144,
+          "recorded": 0.8401661223452143
+        },
+        {
+          "field": "raw/ece_bins/9/confidence",
+          "recomputed": 0.9945898470514349,
+          "recorded": 0.9945898470514347
+        },
+        {
+          "field": "calibrated/ece",
+          "recomputed": 0.03866646038631174,
+          "recorded": 0.038666460386311885
+        },
+        {
+          "field": "calibrated/ece_bins/7/confidence",
+          "recomputed": 0.7412424247707401,
+          "recorded": 0.74124242477074
+        },
+        {
+          "field": "calibrated/ece_bins/9/confidence",
+          "recomputed": 0.9902376233256365,
+          "recorded": 0.9902376233256363
+        },
+        {
+          "field": "calibrated/aurc",
+          "recomputed": 0.02027669918270673,
+          "recorded": 0.020276699182706734
+        }
+      ],
+      "aurc_near_tie_checks": []
+    },
+    "treatment/test_multi_transformations": {
+      "absolute_float_tolerance": 1e-12,
+      "confidence_tie_tolerance": 7.105427357601002e-15,
+      "float_roundoff_differences": [
+        {
+          "field": "raw/ece",
+          "recomputed": 0.05428828952969304,
+          "recorded": 0.05428828952969296
+        },
+        {
+          "field": "raw/ece_bins/4/confidence",
+          "recomputed": 0.49631628446384557,
+          "recorded": 0.4963162844638457
+        },
+        {
+          "field": "raw/ece_bins/7/confidence",
+          "recomputed": 0.7499976006581957,
+          "recorded": 0.7499976006581955
+        },
+        {
+          "field": "raw/ece_bins/8/confidence",
+          "recomputed": 0.8456920254366099,
+          "recorded": 0.84569202543661
+        },
+        {
+          "field": "raw/ece_bins/9/confidence",
+          "recomputed": 0.9964860543670518,
+          "recorded": 0.9964860543670517
+        },
+        {
+          "field": "calibrated/brier_sum_over_classes",
+          "recomputed": 0.2113773593029987,
+          "recorded": 0.21137735930299872
+        },
+        {
+          "field": "calibrated/ece_bins/6/confidence",
+          "recomputed": 0.6473263648357984,
+          "recorded": 0.6473263648357985
+        },
+        {
+          "field": "calibrated/ece_bins/7/confidence",
+          "recomputed": 0.7425138318295805,
+          "recorded": 0.7425138318295808
+        }
+      ],
+      "aurc_near_tie_checks": [
+        {
+          "field": "raw/aurc",
+          "recomputed": 0.04807561885349202,
+          "recorded": 0.048075673973277895,
+          "lower": 0.04807413354769339,
+          "upper": 0.048076960588708306,
+          "near_tie_groups": 1427
+        },
+        {
+          "field": "calibrated/aurc",
+          "recomputed": 0.048139059937056944,
+          "recorded": 0.04813902245044952,
+          "lower": 0.04813749575012688,
+          "upper": 0.04814028761636496,
+          "near_tie_groups": 1427
+        }
+      ]
+    },
+    "treatment/test_multi_wording": {
+      "absolute_float_tolerance": 1e-12,
+      "confidence_tie_tolerance": 7.105427357601002e-15,
+      "float_roundoff_differences": [
+        {
+          "field": "raw/ece_bins/6/confidence",
+          "recomputed": 0.6596204685606041,
+          "recorded": 0.6596204685606042
+        },
+        {
+          "field": "raw/ece_bins/7/confidence",
+          "recomputed": 0.7559505738423722,
+          "recorded": 0.7559505738423721
+        },
+        {
+          "field": "calibrated/ece",
+          "recomputed": 0.11051211112364147,
+          "recorded": 0.11051211112364163
+        },
+        {
+          "field": "calibrated/ece_bins/6/confidence",
+          "recomputed": 0.6427505534123643,
+          "recorded": 0.6427505534123642
+        },
+        {
+          "field": "calibrated/ece_bins/9/confidence",
+          "recomputed": 0.9835612909406435,
+          "recorded": 0.9835612909406437
+        }
+      ],
+      "aurc_near_tie_checks": []
+    },
+    "treatment/test_original": {
+      "absolute_float_tolerance": 1e-12,
+      "confidence_tie_tolerance": 7.105427357601002e-15,
+      "float_roundoff_differences": [
+        {
+          "field": "raw/brier_sum_over_classes",
+          "recomputed": 0.11409994712788339,
+          "recorded": 0.1140999471278834
+        },
+        {
+          "field": "raw/ece",
+          "recomputed": 0.04886974508183016,
+          "recorded": 0.048869745081830056
+        },
+        {
+          "field": "raw/ece_bins/8/confidence",
+          "recomputed": 0.8581248056258337,
+          "recorded": 0.8581248056258336
+        },
+        {
+          "field": "raw/ece_bins/9/confidence",
+          "recomputed": 0.9917844586920621,
+          "recorded": 0.991784458692062
+        },
+        {
+          "field": "calibrated/nll",
+          "recomputed": 0.19925213597493788,
+          "recorded": 0.1992521359749379
+        },
+        {
+          "field": "calibrated/ece",
+          "recomputed": 0.023705953162274487,
+          "recorded": 0.023705953162274286
+        },
+        {
+          "field": "calibrated/ece_bins/9/confidence",
+          "recomputed": 0.9717970876853608,
+          "recorded": 0.9717970876853605
+        }
+      ],
+      "aurc_near_tie_checks": []
+    },
+    "treatment/test_paired": {
+      "absolute_float_tolerance": 1e-12,
+      "confidence_tie_tolerance": 7.105427357601002e-15,
+      "float_roundoff_differences": [
+        {
+          "field": "raw/ece",
+          "recomputed": 0.023867296199642105,
+          "recorded": 0.023867296199642243
+        },
+        {
+          "field": "raw/ece_bins/5/confidence",
+          "recomputed": 0.551879514895624,
+          "recorded": 0.5518795148956241
+        },
+        {
+          "field": "raw/ece_bins/9/confidence",
+          "recomputed": 0.9977239736719244,
+          "recorded": 0.9977239736719247
+        },
+        {
+          "field": "calibrated/nll",
+          "recomputed": 0.21928573790868117,
+          "recorded": 0.21928573790868114
+        },
+        {
+          "field": "calibrated/ece_bins/4/confidence",
+          "recomputed": 0.4961110649849153,
+          "recorded": 0.49611106498491525
+        },
+        {
+          "field": "calibrated/aurc",
+          "recomputed": 0.018109142830080305,
+          "recorded": 0.0181091428300803
+        }
+      ],
+      "aurc_near_tie_checks": []
+    },
+    "treatment/test_single_branch": {
+      "absolute_float_tolerance": 1e-12,
+      "confidence_tie_tolerance": 7.105427357601002e-15,
+      "float_roundoff_differences": [
+        {
+          "field": "raw/ece",
+          "recomputed": 0.4633282579564166,
+          "recorded": 0.4633282579564167
+        },
+        {
+          "field": "raw/ece_bins/7/confidence",
+          "recomputed": 0.7503488370558887,
+          "recorded": 0.7503488370558888
+        },
+        {
+          "field": "raw/ece_bins/9/confidence",
+          "recomputed": 0.991181267165567,
+          "recorded": 0.9911812671655671
+        },
+        {
+          "field": "calibrated/brier_sum_over_classes",
+          "recomputed": 0.8904760954064191,
+          "recorded": 0.890476095406419
+        },
+        {
+          "field": "calibrated/ece_bins/7/confidence",
+          "recomputed": 0.7571711210516648,
+          "recorded": 0.7571711210516647
+        }
+      ],
+      "aurc_near_tie_checks": []
+    },
+    "treatment/test_wording": {
+      "absolute_float_tolerance": 1e-12,
+      "confidence_tie_tolerance": 7.105427357601002e-15,
+      "float_roundoff_differences": [
+        {
+          "field": "raw/ece_bins/5/confidence",
+          "recomputed": 0.5582719862407939,
+          "recorded": 0.5582719862407938
+        },
+        {
+          "field": "raw/ece_bins/7/confidence",
+          "recomputed": 0.7439961515691556,
+          "recorded": 0.7439961515691554
+        },
+        {
+          "field": "calibrated/ece_bins/3/confidence",
+          "recomputed": 0.37458494661522934,
+          "recorded": 0.3745849466152293
+        },
+        {
+          "field": "calibrated/ece_bins/7/confidence",
+          "recomputed": 0.7585944889459046,
+          "recorded": 0.7585944889459045
+        },
+        {
+          "field": "calibrated/ece_bins/8/confidence",
+          "recomputed": 0.864384594795692,
+          "recorded": 0.8643845947956919
+        }
+      ],
+      "aurc_near_tie_checks": []
+    }
+  },
+  "analysis_sha256": "e945daacd120ddae2e2141bc43a20ecaf2d0c78d3e00f8e09f1b02917b9428d9"
+}

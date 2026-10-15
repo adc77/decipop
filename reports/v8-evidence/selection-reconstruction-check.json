@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "selected_choices_identical": true,
+  "prediction_sha_inventory_identical": true,
+  "maximum_calibrated_nll_difference": 5.551115123125783e-17,
+  "additional_model_inference": false
+}

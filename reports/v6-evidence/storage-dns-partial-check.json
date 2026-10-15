@@ -1,0 +1,9 @@
+{
+  "failure_receipt_sha256": "e696119d6029bf2689bdef381e3ce47f266ace6a1c279ff7a1f8cd49ae32b927",
+  "retained_partial_downloads": {
+    "runs/study-v6/failed-storage-downloads/treatment-step900.partial": {
+      "sha256": "a68fd63cf64771b251f01d5e8c0857f92124c76919bd6097910a652dbebc880b",
+      "bytes": 83886080
+    }
+  }
+}

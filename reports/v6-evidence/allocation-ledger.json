@@ -1,0 +1,92 @@
+[
+  {
+    "name": "pilot",
+    "stage": "pilot",
+    "allocation_usd": 0.2082251111111111,
+    "app_id": "ap-vyuVWtpW4DrEZCfK1bRkfx",
+    "status": "complete",
+    "protocol_identity": "e9bcc7639951e6b2f017b19e938e716d93b6975abb63e7165ee212fa3835b6c5",
+    "client_seconds": 125.80903533380479
+  },
+  {
+    "name": "control-1",
+    "stage": "training",
+    "allocation_usd": 0.42613511111111113,
+    "app_id": "ap-9gdczWwiUjEKBaNCTtTz5G",
+    "status": "failed",
+    "protocol_identity": "e9bcc7639951e6b2f017b19e938e716d93b6975abb63e7165ee212fa3835b6c5",
+    "client_seconds": 421.8615510421805
+  },
+  {
+    "name": "recovery-control",
+    "stage": "retry",
+    "allocation_usd": 0.42613511111111113,
+    "app_id": "ap-7wZTkDyHcF421G32QL2eeq",
+    "status": "complete",
+    "protocol_identity": "099611c7f4eb70c9bc12f2fd44d0279c5bfc81e0cf0913b6e5d5e0035b3f44af",
+    "client_seconds": 716.2995662093163
+  },
+  {
+    "name": "control-2",
+    "stage": "training",
+    "allocation_usd": 0.42613511111111113,
+    "app_id": "ap-jJvCVoUuFnQj6eBdHXAlHi",
+    "status": "complete",
+    "protocol_identity": "099611c7f4eb70c9bc12f2fd44d0279c5bfc81e0cf0913b6e5d5e0035b3f44af",
+    "client_seconds": 651.3364279591478
+  },
+  {
+    "name": "control-3",
+    "stage": "training",
+    "allocation_usd": 0.42613511111111113,
+    "app_id": "ap-jJvCVoUuFnQj6eBdHXAlHi",
+    "status": "complete",
+    "protocol_identity": "099611c7f4eb70c9bc12f2fd44d0279c5bfc81e0cf0913b6e5d5e0035b3f44af",
+    "client_seconds": 246.06361120799556
+  },
+  {
+    "name": "treatment-1",
+    "stage": "training",
+    "allocation_usd": 0.42613511111111113,
+    "app_id": "ap-jJvCVoUuFnQj6eBdHXAlHi",
+    "status": "complete",
+    "protocol_identity": "099611c7f4eb70c9bc12f2fd44d0279c5bfc81e0cf0913b6e5d5e0035b3f44af",
+    "client_seconds": 657.5041473326273
+  },
+  {
+    "name": "treatment-2",
+    "stage": "training",
+    "allocation_usd": 0.42613511111111113,
+    "app_id": "ap-jJvCVoUuFnQj6eBdHXAlHi",
+    "status": "complete",
+    "protocol_identity": "099611c7f4eb70c9bc12f2fd44d0279c5bfc81e0cf0913b6e5d5e0035b3f44af",
+    "client_seconds": 651.3205306250602
+  },
+  {
+    "name": "treatment-3",
+    "stage": "training",
+    "allocation_usd": 0.42613511111111113,
+    "app_id": "ap-jJvCVoUuFnQj6eBdHXAlHi",
+    "status": "complete",
+    "protocol_identity": "099611c7f4eb70c9bc12f2fd44d0279c5bfc81e0cf0913b6e5d5e0035b3f44af",
+    "client_seconds": 653.5373984579928
+  },
+  {
+    "name": "selection",
+    "stage": "selection",
+    "allocation_usd": 0.2704851111111111,
+    "app_id": "ap-JzY0txKUaVKof6JUej7AfU",
+    "status": "complete",
+    "protocol_identity": "099611c7f4eb70c9bc12f2fd44d0279c5bfc81e0cf0913b6e5d5e0035b3f44af",
+    "client_seconds": 527.6122739161365
+  },
+  {
+    "name": "test",
+    "stage": "test",
+    "allocation_usd": 0.37425177777777785,
+    "app_id": "ap-W7iVjF969Bf1VHkhrcfNKA",
+    "status": "complete",
+    "protocol_identity": "099611c7f4eb70c9bc12f2fd44d0279c5bfc81e0cf0913b6e5d5e0035b3f44af",
+    "client_seconds": 469.2839320418425
+  }
+]

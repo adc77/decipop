@@ -1,0 +1,82 @@
+{
+  "repository": "axondendriteplus/decision-lab-v7-r1-checkpoints",
+  "protocol_identity": "f07e4f34618900fe4a571f47f380737efe7919897a5465704c92a138c3154c71",
+  "weights": {
+    "control-step250": {
+      "repo_id": "axondendriteplus/decision-lab-v7-r1-checkpoints",
+      "commit": "208fb78d0ecbb44b0a2e1cf8632769369f541c50",
+      "filename": "weights/6c1beda2b4c54d57a8d018c8e118f89bac637316635f4abe69b646eba7eb020c.safetensors",
+      "sha256": "6c1beda2b4c54d57a8d018c8e118f89bac637316635f4abe69b646eba7eb020c",
+      "size": 1447329612,
+      "path": null,
+      "verification": "Pinned remote LFS size/SHA metadata; no intermediate inference claim"
+    },
+    "control-step600": {
+      "repo_id": "axondendriteplus/decision-lab-v7-r1-checkpoints",
+      "commit": "417cecf8950d7c4147c81abbe53c3d05bd553993",
+      "filename": "weights/41bc98efc2bb98ec8851d71469bc6a06b1a38884b77018b3315aaa127fca52ce.safetensors",
+      "sha256": "41bc98efc2bb98ec8851d71469bc6a06b1a38884b77018b3315aaa127fca52ce",
+      "size": 1447329612,
+      "path": null,
+      "verification": "Pinned remote LFS size/SHA metadata; no intermediate inference claim"
+    },
+    "control-step900": {
+      "repo_id": "axondendriteplus/decision-lab-v7-r1-checkpoints",
+      "commit": "8004091a9b68ad75a85f68a22bcc8210576244a9",
+      "filename": "weights/a65ae3147b2b41a3a0a33146194c555c2f2ee7c379176c8dca8af72845e6836e.safetensors",
+      "sha256": "a65ae3147b2b41a3a0a33146194c555c2f2ee7c379176c8dca8af72845e6836e",
+      "size": 1447329612,
+      "path": "runs/study-v7/r1/candidates/control-step900/model.safetensors",
+      "verification": "Pinned remote LFS size/SHA metadata; no intermediate inference claim"
+    },
+    "control-step1134": {
+      "repo_id": "axondendriteplus/decision-lab-v7-r1-checkpoints",
+      "commit": "6aaf480d38e68ff13835b38f9f3422380fd726a8",
+      "filename": "weights/5ef9099ddb1c1208b588fae754c7bfec923334f15228d65139fba796ac9bee88.safetensors",
+      "sha256": "5ef9099ddb1c1208b588fae754c7bfec923334f15228d65139fba796ac9bee88",
+      "size": 1447329612,
+      "path": null,
+      "verification": "Pinned remote LFS size/SHA metadata; no intermediate inference claim"
+    },
+    "treatment-step250": {
+      "repo_id": "axondendriteplus/decision-lab-v7-r1-checkpoints",
+      "commit": "dd0cb280282ef8383d1cc7891efdf920aaa2f5ee",
+      "filename": "weights/bdefe2dcd3fe9f27bd52a5eef8985c8c90a2b63e9936dcfd2505c37d62002966.safetensors",
+      "sha256": "bdefe2dcd3fe9f27bd52a5eef8985c8c90a2b63e9936dcfd2505c37d62002966",
+      "size": 1447329612,
+      "path": null,
+      "verification": "Pinned remote LFS size/SHA metadata; no intermediate inference claim"
+    },
+    "treatment-step600": {
+      "repo_id": "axondendriteplus/decision-lab-v7-r1-checkpoints",
+      "commit": "f30f890021f4a86bf800b4022015c3d2081cc091",
+      "filename": "weights/027ec37b30bc45ebc6de29d689bb1129ddbc7ce1fe2e3d02a7af00b45221a916.safetensors",
+      "sha256": "027ec37b30bc45ebc6de29d689bb1129ddbc7ce1fe2e3d02a7af00b45221a916",
+      "size": 1447329612,
+      "path": null,
+      "verification": "Pinned remote LFS size/SHA metadata; no intermediate inference claim"
+    },
+    "treatment-step900": {
+      "repo_id": "axondendriteplus/decision-lab-v7-r1-checkpoints",
+      "commit": "33a2cfe8710cad30e8ae27475eab11ea0a182593",
+      "filename": "weights/023ee1abc006c791f3c2daea3c0e53f07786388176a60c70a58edefebfffef03.safetensors",
+      "sha256": "023ee1abc006c791f3c2daea3c0e53f07786388176a60c70a58edefebfffef03",
+      "size": 1447329612,
+      "path": null,
+      "verification": "Pinned remote LFS size/SHA metadata; no intermediate inference claim"
+    },
+    "treatment-step1134": {
+      "repo_id": "axondendriteplus/decision-lab-v7-r1-checkpoints",
+      "commit": "a2b32e287ae942e736218da2ec11ab01f6557acb",
+      "filename": "weights/875f353f76c256b581aff6560914b0968dccdabfe3ea9862cf38740a5ae7f479.safetensors",
+      "sha256": "875f353f76c256b581aff6560914b0968dccdabfe3ea9862cf38740a5ae7f479",
+      "size": 1447329612,
+      "path": "runs/study-v7/r1/candidates/treatment-step1134/model.safetensors",
+      "verification": "Pinned remote LFS size/SHA metadata; no intermediate inference claim"
+    }
+  },
+  "final_commit": "844f06b3c2f06891b16dfc31fd43f2a9136d2ea5",
+  "candidate_inventory_sha256": "5bd9bbafa9c88aee6f398c19ab6d072f3b81bd61339b2e925ea95362d954f2e7",
+  "candidates_verified": 10,
+  "all_additional_weight_metadata_verified": true
+}

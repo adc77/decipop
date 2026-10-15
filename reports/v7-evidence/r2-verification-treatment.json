@@ -1,0 +1,17 @@
+{
+  "treatment": {
+    "repo_id": "axondendriteplus/decision-lab-v7-r2-smollm2-360m-multi-entity",
+    "protocol_identity": "94550cc844cb3a116a64211bac4be473610aa0b835f8b493f70b2478ab9f808f",
+    "created_private_by_this_release": true,
+    "commit": "63d1df3c1648217398243b7b943a9d1cd7362ef0",
+    "url": "https://huggingface.co/axondendriteplus/decision-lab-v7-r2-smollm2-360m-multi-entity",
+    "artifact_manifest_sha256": "8f345e1ee24f28906188c18d3c1a88cd2674841afb4d40aeef11d79bba23c456",
+    "remote_download_verification": {
+      "verified": true,
+      "inputs": 8,
+      "device": "cpu",
+      "artifact_identity": "94550cc844cb3a116a64211bac4be473610aa0b835f8b493f70b2478ab9f808f"
+    },
+    "verified_download_directory": "/Users/axon_dendrite/decision-model-lab/artifacts/v7-hub-verification/r2/treatment"
+  }
+}

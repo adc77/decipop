@@ -1,0 +1,47 @@
+✓ Initialized. View run at 
+https://modal.com/apps/amandogra2016/main/ap-l9hBlwgUb9cqEB7pJvNa9c
+✓ Created objects.
+├── ✓ Uploaded /Users/axon_dendrite/decision-model-lab/v8_app.py
+├── ✓ Uploaded docs/V8_PROTOCOL.md
+├── ✓ Uploaded uv.lock
+├── ✓ Uploaded NOTICE
+├── ✓ Uploaded LICENSE
+├── ✓ Uploaded /Users/axon_dendrite/decision-model-lab/configs
+├── ✓ Uploaded PythonPackage:decision_lab, PythonPackage:v4_lab, 
+│   PythonPackage:v5_lab, PythonPackage:v6_lab, PythonPackage:v7_lab, 
+│   PythonPackage:v8_lab
+├── ✓ Created Function gpu_pilot.
+├── ✓ Created Function gpu_training.
+├── ✓ Created Function gpu_selection.
+├── ✓ Created Function gpu_recovery.
+└── ✓ Created Function gpu_test.
+{"candidate": "parent", "scored": "test_paired", "questions": 3024}
+{"candidate": "parent", "scored": "test_multi", "questions": 1512}
+{"candidate": "parent", "scored": "test_original", "questions": 900}
+{"candidate": "parent", "scored": "test_counterfactual", "questions": 900}
+{"candidate": "control", "scored": "test_paired", "questions": 3024}
+{"candidate": "control", "scored": "test_multi", "questions": 1512}
+{"candidate": "control", "scored": "test_multi_transformations", "questions": 13608}
+{"candidate": "control", "scored": "test_multi_depth", "questions": 432}
+{"candidate": "control", "scored": "test_multi_wording", "questions": 432}
+{"candidate": "control", "scored": "test_multi_signed_chain", "questions": 432}
+{"candidate": "control", "scored": "test_original", "questions": 900}
+{"candidate": "control", "scored": "test_counterfactual", "questions": 900}
+{"candidate": "control", "scored": "test_depth", "questions": 300}
+{"candidate": "control", "scored": "test_wording", "questions": 300}
+{"candidate": "control", "scored": "test_single_branch", "questions": 200}
+{"candidate": "treatment", "scored": "test_paired", "questions": 3024}
+{"candidate": "treatment", "scored": "test_multi", "questions": 1512}
+{"candidate": "treatment", "scored": "test_multi_transformations", "questions": 13608}
+{"candidate": "treatment", "scored": "test_multi_depth", "questions": 432}
+{"candidate": "treatment", "scored": "test_multi_wording", "questions": 432}
+{"candidate": "treatment", "scored": "test_multi_signed_chain", "questions": 432}
+{"candidate": "treatment", "scored": "test_original", "questions": 900}
+{"candidate": "treatment", "scored": "test_counterfactual", "questions": 900}
+{"candidate": "treatment", "scored": "test_depth", "questions": 300}
+{"candidate": "treatment", "scored": "test_wording", "questions": 300}
+{"candidate": "treatment", "scored": "test_single_branch", "questions": 200}
+{"repetition": "r1", "action": "test", "completed": true}
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/amandogra2016/main/ap-l9hBlwgUb9cqEB7pJvNa9c

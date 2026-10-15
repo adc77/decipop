@@ -1,0 +1,22 @@
+Note that running a local entrypoint in detached mode only keeps the last triggered Modal function alive after the parent process has been killed or disconnected.
+✓ Initialized. View run at 
+https://modal.com/apps/amandogra2016/main/ap-mnGhBMpmPD9BG5RVXepXhg
+✓ Created objects.
+├── ✓ Uploaded /Users/axon_dendrite/decision-model-lab/v8_auth_recovery_app.py
+├── ✓ Uploaded docs/V8_PROTOCOL.md
+├── ✓ Uploaded uv.lock
+├── ✓ Uploaded NOTICE
+├── ✓ Uploaded LICENSE
+├── ✓ Uploaded /Users/axon_dendrite/decision-model-lab/configs
+├── ✓ Uploaded PythonPackage:decision_lab, PythonPackage:v4_lab, 
+│   PythonPackage:v5_lab, PythonPackage:v6_lab, PythonPackage:v7_lab, 
+│   PythonPackage:v8_lab
+└── ✓ Created Function continue_exactly.
+{"arm": "treatment", "step": 800, "loss": 0.15115947602316737, "elapsed": 59.409917276}
+{"arm": "treatment", "step": 900, "loss": 0.11829851381480694, "elapsed": 242.2552966}
+{"arm": "treatment", "step": 1000, "loss": 0.1539142155670561, "elapsed": 369.392651581}
+{"arm": "treatment", "step": 1100, "loss": 0.13542288450844353, "elapsed": 497.57132064300004}
+{"arm": "treatment", "step": 1134, "loss": 0.37574866227805614, "elapsed": 593.697422795}
+{"arm": "treatment", "step": 1134, "epoch": 3, "cursor": 0, "presentations": 36288, "total_steps": 1134, "complete": true, "body_seconds": 593.69763906, "start_step": 756, "recovery": {"start_step": 756, "end_step": 1134, "presentations": 36288, "verified_checkpoint_hashes": true, "optimizer_scheduler_rng_restored": true, "prior_trajectory_prefix_unchanged": true, "protocol_identity": "9c843f1daa2333aae4bcafb9cc5b719adf484e3294b77199602b85308a3edc71", "originally_failed_call": "treatment-3", "no_completed_updates_repeated": true}, "protocol_identity": "9c843f1daa2333aae4bcafb9cc5b719adf484e3294b77199602b85308a3edc71"}
+✓ App completed. View run at 
+https://modal.com/apps/amandogra2016/main/ap-mnGhBMpmPD9BG5RVXepXhg

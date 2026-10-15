@@ -1,0 +1,44 @@
+{
+  "control": {
+    "repo_id": "axondendriteplus/decision-lab-v7-r1-smollm2-360m-control",
+    "protocol_identity": "f07e4f34618900fe4a571f47f380737efe7919897a5465704c92a138c3154c71",
+    "created_private_by_this_release": true,
+    "commit": "82620838100d55290e309e5c561d7827acd70507",
+    "url": "https://huggingface.co/axondendriteplus/decision-lab-v7-r1-smollm2-360m-control",
+    "artifact_manifest_sha256": "21e996aef63236d58dcf2777e47f1ed80d1450aa72afc677e2e98461d24b3015",
+    "remote_download_verification": {
+      "verified": true,
+      "inputs": 8,
+      "device": "cpu",
+      "artifact_identity": "f07e4f34618900fe4a571f47f380737efe7919897a5465704c92a138c3154c71"
+    },
+    "verified_download_directory": "/Users/axon_dendrite/decision-model-lab/artifacts/v7-hub-verification/r1/control",
+    "verified_weight_deduplication": {
+      "after_fresh_cpu_verification": true,
+      "sha256": "a65ae3147b2b41a3a0a33146194c555c2f2ee7c379176c8dca8af72845e6836e",
+      "hardlinked_to": "/Users/axon_dendrite/decision-model-lab/artifacts/v7-releases/r1/control/model.safetensors",
+      "contents_unchanged": true
+    }
+  },
+  "treatment": {
+    "repo_id": "axondendriteplus/decision-lab-v7-r1-smollm2-360m-multi-entity",
+    "protocol_identity": "f07e4f34618900fe4a571f47f380737efe7919897a5465704c92a138c3154c71",
+    "created_private_by_this_release": true,
+    "commit": "6aa3e01e41460dba7049c044906dc81fe4c7ba53",
+    "url": "https://huggingface.co/axondendriteplus/decision-lab-v7-r1-smollm2-360m-multi-entity",
+    "artifact_manifest_sha256": "dcbb097d6981cae2f50ce7423fd8780717fe197f19a67d16f03bd031f4f4390b",
+    "remote_download_verification": {
+      "verified": true,
+      "inputs": 8,
+      "device": "cpu",
+      "artifact_identity": "f07e4f34618900fe4a571f47f380737efe7919897a5465704c92a138c3154c71"
+    },
+    "verified_download_directory": "/Users/axon_dendrite/decision-model-lab/artifacts/v7-hub-verification/r1/treatment",
+    "verified_weight_deduplication": {
+      "after_fresh_cpu_verification": true,
+      "sha256": "875f353f76c256b581aff6560914b0968dccdabfe3ea9862cf38740a5ae7f479",
+      "hardlinked_to": "/Users/axon_dendrite/decision-model-lab/artifacts/v7-releases/r1/treatment/model.safetensors",
+      "contents_unchanged": true
+    }
+  }
+}

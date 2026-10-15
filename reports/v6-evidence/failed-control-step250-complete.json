@@ -1,0 +1,8 @@
+{
+  "identity": "e9bcc7639951e6b2f017b19e938e716d93b6975abb63e7165ee212fa3835b6c5",
+  "files": {
+    "model.safetensors": "33e55085ad60bc103bb9e04ec30b8b2f39e48bbcb42406a1d71ae34cfad2ce02",
+    "training.pt": "8d6fdf097df1366d71276aacfe2f7193e38d6aec83d13129ca7fbe096c19101e",
+    "progress.json": "bd575013f86ec3f8cc89fea6bbf3f717e181a60798a0c138d08b8842b0257c99"
+  }
+}

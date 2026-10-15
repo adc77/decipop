@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/axon_dendrite/decision-model-lab/v6_finish.py", line 99, in <module>
+    ),
+^^^^^^
+  File "/Users/axon_dendrite/decision-model-lab/v6_finish.py", line 60, in main
+    ledger = json.loads((ROOT / "allocation-ledger.json").read_text())
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: GPU call failed; preserve reservations and review before recovery

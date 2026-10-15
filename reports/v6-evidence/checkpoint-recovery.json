@@ -1,0 +1,25 @@
+{
+  "source_protocol_identity": "e9bcc7639951e6b2f017b19e938e716d93b6975abb63e7165ee212fa3835b6c5",
+  "active_protocol_identity": "099611c7f4eb70c9bc12f2fd44d0279c5bfc81e0cf0913b6e5d5e0035b3f44af",
+  "arm": "control",
+  "step": 250,
+  "presentations": 8000,
+  "checkpoint_marker": {
+    "identity": "e9bcc7639951e6b2f017b19e938e716d93b6975abb63e7165ee212fa3835b6c5",
+    "files": {
+      "model.safetensors": "33e55085ad60bc103bb9e04ec30b8b2f39e48bbcb42406a1d71ae34cfad2ce02",
+      "training.pt": "8d6fdf097df1366d71276aacfe2f7193e38d6aec83d13129ca7fbe096c19101e",
+      "progress.json": "bd575013f86ec3f8cc89fea6bbf3f717e181a60798a0c138d08b8842b0257c99"
+    }
+  },
+  "retained_partial_candidate_files": {
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "NOTICE": "dd232662e7484ce000e822044e188bda4a41419882586bdea3a955470e08f406",
+    "README.md": "d8b9c9d25ea395baae630710e519f423bb9e87969318dae9ff7b0cb33eb5eec5"
+  },
+  "partial_candidate_preserved_at": "failed-candidate-packaging/control-step250",
+  "checkpoint_hashes_verified": true,
+  "optimizer_and_rng_restoration_pending": false,
+  "resumed_through_step": 628,
+  "original_call": "control-1"
+}

@@ -1,0 +1,107 @@
+✓ Initialized. View run at 
+https://modal.com/apps/amandogra2016/main/ap-9gdczWwiUjEKBaNCTtTz5G
+✓ Created objects.
+├── ✓ Uploaded /Users/axon_dendrite/decision-model-lab/v6_app.py
+├── ✓ Uploaded NOTICE
+├── ✓ Uploaded LICENSE
+├── ✓ Uploaded /Users/axon_dendrite/decision-model-lab/configs
+├── ✓ Uploaded PythonPackage:decision_lab, PythonPackage:v4_lab, 
+│   PythonPackage:v5_lab, PythonPackage:v6_lab
+├── ✓ Created Function gpu_pilot.
+├── ✓ Created Function gpu_training.
+├── ✓ Created Function gpu_selection.
+└── ✓ Created Function gpu_test.
+{"arm": "control", "step": 100, "loss": 0.24568030424416065, "elapsed": 134.490488669}
+{"arm": "control", "step": 200, "loss": 0.2832838634494692, "elapsed": 263.333361684}
+Traceback (most recent call last):
+  File "/pkg/modal/_runtime/container_io_manager.py", line 987, in handle_input_exception
+    yield
+  File "/pkg/modal/_container_entrypoint.py", line 189, in run_input_sync
+    values = io_context.call_function_sync()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/pkg/modal/_runtime/container_io_manager.py", line 266, in call_function_sync
+    expected_value_or_values = self.finalized_function.callable(*args, **kwargs)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/v6_app.py", line 47, in gpu_training
+    return train_chunk(Path("/runs/study-v6"), arm, volume.commit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/v6_lab/study.py", line 239, in train_chunk
+    save_progress()
+  File "/root/v6_lab/study.py", line 182, in save_progress
+    shutil.copyfile(source, target / source.name)
+  File "/usr/local/lib/python3.12/shutil.py", line 260, in copyfile
+    with open(src, 'rb') as fsrc:
+         ^^^^^^^^^^^^^^^
+IsADirectoryError: [Errno 21] Is a directory: '/runs/study-v6/parent/code'
+Stopping app - uncaught exception raised locally: IsADirectoryError(21, 'Is a directory').
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /Users/axon_dendrite/decision-model-lab/v6_app.py:138 in main                │
+│                                                                              │
+│   137 │   │   │   for chunk in range(spec["max_training_calls_per_arm"]):    │
+│ ❱ 138 │   │   │   │   result = invoke(root, "training", f"{arm}-{chunk + 1}" │
+│   139 │   │   │   │   atomic_json(root / f"training-call-{arm}-{chunk + 1}.j │
+│                                                                              │
+│ /Users/axon_dendrite/decision-model-lab/v6_app.py:85 in invoke               │
+│                                                                              │
+│    84 │   try:                                                               │
+│ ❱  85 │   │   result = function.remote(*args)                                │
+│    86 │   except BaseException:                                              │
+│                                                                              │
+│ /Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/m │
+│ odal/_object.py:49 in wrapped                                                │
+│                                                                              │
+│    48 │   │   await self.hydrate()                                           │
+│ ❱  49 │   │   return await method(self, *args, **kwargs)                     │
+│    50                                                                        │
+│                                                                              │
+│ /Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/m │
+│ odal/_functions.py:2067 in remote                                            │
+│                                                                              │
+│   2066 │   │                                                                 │
+│ ❱ 2067 │   │   return await self._call_function(args, kwargs)                │
+│   2068                                                                       │
+│                                                                              │
+│ /Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/m │
+│ odal/_functions.py:2004 in _call_function                                    │
+│                                                                              │
+│   2003 │   │                                                                 │
+│ ❱ 2004 │   │   return await invocation.run_function()                        │
+│   2005                                                                       │
+│                                                                              │
+│ /Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/m │
+│ odal/_functions.py:515 in run_function                                       │
+│                                                                              │
+│    514 │   │   │   # No more retries left.                                   │
+│ ❱  515 │   │   │   return await _process_result(                             │
+│    516 │   │   │   │   await_response.output.result, await_response.output.d │
+│                                                                              │
+│ /Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/m │
+│ odal/_utils/function_utils.py:572 in _process_result                         │
+│                                                                              │
+│   571 │   │   │                                                              │
+│ ❱ 572 │   │   │   raise exc_with_hints(exc)                                  │
+│   573                                                                        │
+│                                                                              │
+│     ...Remote call to Modal Function (ta-01M4TXYEP7TMCE95SAGM88TT1R)...      │
+│                                                                              │
+│ /root/v6_app.py:47 in gpu_training                                           │
+│                                                                              │
+│ ❱ 47 return train_chunk(Path("/runs/study-v6"), arm, volume.commit)          │
+│                                                                              │
+│                                                                              │
+│ /root/v6_lab/study.py:239 in train_chunk                                     │
+│                                                                              │
+│ ❱ 239 save_progress()                                                        │
+│                                                                              │
+│                                                                              │
+│ /root/v6_lab/study.py:182 in save_progress                                   │
+│                                                                              │
+│ ❱ 182 shutil.copyfile(source, target / source.name)                          │
+│                                                                              │
+│                                                                              │
+│ /usr/local/lib/python3.12/shutil.py:260 in copyfile                          │
+│                                                                              │
+│ ❱ 260 with open(src, 'rb') as fsrc:                                          │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+IsADirectoryError: [Errno 21] Is a directory: '/runs/study-v6/parent/code'

@@ -1,0 +1,8 @@
+{
+  "snapshot_utc": "2026-10-14T10:02:42.579517+00:00",
+  "conservative_original_budget_remaining_usd": 16.60989549,
+  "workspace_billed_usd": "0E-8",
+  "joint_compute_allocation_usd": 8,
+  "joint_storage_reserve_usd": 1,
+  "pricing_url": "https://modal.com/pricing"
+}

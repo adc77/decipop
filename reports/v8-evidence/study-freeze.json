@@ -1,0 +1,14 @@
+{
+  "protocol_identities": {
+    "r1": "c3dd59fa24ec9c61658603eef1ed560b5b1094712936ed31fb4bc2354ea88b62",
+    "r2": "9c843f1daa2333aae4bcafb9cc5b719adf484e3294b77199602b85308a3edc71"
+  },
+  "joint_compute_allocation_usd": 8.0,
+  "joint_storage_reserve_usd": 1.0,
+  "maximum_compute_usd": 7.671815555555556,
+  "cross_repetition_world_overlap": 0,
+  "replication_check": "Both primary lower bounds exceed zero",
+  "engineering_replication_check": "Both repetitions pass all per-seed checks",
+  "uncertainty": "Per-seed world-sampling intervals; no pooled training-seed interval",
+  "identity": "c590e9b9727c5dfa81fce210a79b1be40b2783b01ce1dcb55393630a7858075d"
+}

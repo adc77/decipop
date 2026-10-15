@@ -1,0 +1,11 @@
+["uv", "run", "ruff", "check", "."]
+All checks passed!
+
+["uv", "run", "ruff", "format", "--check", "."]
+195 files already formatted
+
+["uv", "lock", "--check"]
+Resolved 95 packages in 2ms
+
+["git", "diff", "--check"]
+

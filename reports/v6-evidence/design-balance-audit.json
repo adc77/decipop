@@ -1,0 +1,453 @@
+{
+  "checked_at_utc": "2026-10-13T15:20:54.797950+00:00",
+  "valid": true,
+  "primary_name_label_counts": {
+    "Aman": {
+      "TRUE": 60,
+      "FALSE": 60,
+      "UNKNOWN": 60
+    },
+    "Bella": {
+      "TRUE": 60,
+      "FALSE": 60,
+      "UNKNOWN": 60
+    },
+    "Chen": {
+      "TRUE": 60,
+      "FALSE": 60,
+      "UNKNOWN": 60
+    },
+    "Dalia": {
+      "FALSE": 60,
+      "UNKNOWN": 60,
+      "TRUE": 60
+    },
+    "Evan": {
+      "TRUE": 60,
+      "FALSE": 60,
+      "UNKNOWN": 60
+    },
+    "Farah": {
+      "UNKNOWN": 60,
+      "TRUE": 60,
+      "FALSE": 60
+    },
+    "Gabe": {
+      "TRUE": 60,
+      "FALSE": 60,
+      "UNKNOWN": 60
+    },
+    "Hana": {
+      "UNKNOWN": 60,
+      "TRUE": 60,
+      "FALSE": 60
+    }
+  },
+  "primary_slot_label_counts": {
+    "0": {
+      "TRUE": 120,
+      "FALSE": 120,
+      "UNKNOWN": 120
+    },
+    "1": {
+      "TRUE": 120,
+      "FALSE": 120,
+      "UNKNOWN": 120
+    },
+    "2": {
+      "TRUE": 120,
+      "FALSE": 120,
+      "UNKNOWN": 120
+    },
+    "3": {
+      "TRUE": 80,
+      "FALSE": 80,
+      "UNKNOWN": 80
+    },
+    "4": {
+      "TRUE": 40,
+      "FALSE": 40,
+      "UNKNOWN": 40
+    }
+  },
+  "primary_world_label_compositions": [
+    {
+      "true_false_unknown_counts": [
+        0,
+        0,
+        3
+      ],
+      "worlds": 9
+    },
+    {
+      "true_false_unknown_counts": [
+        0,
+        0,
+        4
+      ],
+      "worlds": 8
+    },
+    {
+      "true_false_unknown_counts": [
+        0,
+        0,
+        5
+      ],
+      "worlds": 8
+    },
+    {
+      "true_false_unknown_counts": [
+        0,
+        1,
+        2
+      ],
+      "worlds": 14
+    },
+    {
+      "true_false_unknown_counts": [
+        0,
+        1,
+        3
+      ],
+      "worlds": 8
+    },
+    {
+      "true_false_unknown_counts": [
+        0,
+        1,
+        4
+      ],
+      "worlds": 1
+    },
+    {
+      "true_false_unknown_counts": [
+        0,
+        2,
+        1
+      ],
+      "worlds": 8
+    },
+    {
+      "true_false_unknown_counts": [
+        0,
+        2,
+        2
+      ],
+      "worlds": 9
+    },
+    {
+      "true_false_unknown_counts": [
+        0,
+        2,
+        3
+      ],
+      "worlds": 7
+    },
+    {
+      "true_false_unknown_counts": [
+        0,
+        3,
+        0
+      ],
+      "worlds": 9
+    },
+    {
+      "true_false_unknown_counts": [
+        0,
+        3,
+        1
+      ],
+      "worlds": 2
+    },
+    {
+      "true_false_unknown_counts": [
+        0,
+        3,
+        2
+      ],
+      "worlds": 7
+    },
+    {
+      "true_false_unknown_counts": [
+        0,
+        4,
+        0
+      ],
+      "worlds": 8
+    },
+    {
+      "true_false_unknown_counts": [
+        0,
+        4,
+        1
+      ],
+      "worlds": 3
+    },
+    {
+      "true_false_unknown_counts": [
+        0,
+        5,
+        0
+      ],
+      "worlds": 8
+    },
+    {
+      "true_false_unknown_counts": [
+        1,
+        0,
+        2
+      ],
+      "worlds": 8
+    },
+    {
+      "true_false_unknown_counts": [
+        1,
+        0,
+        3
+      ],
+      "worlds": 2
+    },
+    {
+      "true_false_unknown_counts": [
+        1,
+        0,
+        4
+      ],
+      "worlds": 3
+    },
+    {
+      "true_false_unknown_counts": [
+        1,
+        1,
+        1
+      ],
+      "worlds": 27
+    },
+    {
+      "true_false_unknown_counts": [
+        1,
+        1,
+        2
+      ],
+      "worlds": 13
+    },
+    {
+      "true_false_unknown_counts": [
+        1,
+        1,
+        3
+      ],
+      "worlds": 5
+    },
+    {
+      "true_false_unknown_counts": [
+        1,
+        2,
+        0
+      ],
+      "worlds": 14
+    },
+    {
+      "true_false_unknown_counts": [
+        1,
+        2,
+        1
+      ],
+      "worlds": 13
+    },
+    {
+      "true_false_unknown_counts": [
+        1,
+        2,
+        2
+      ],
+      "worlds": 9
+    },
+    {
+      "true_false_unknown_counts": [
+        1,
+        3,
+        0
+      ],
+      "worlds": 8
+    },
+    {
+      "true_false_unknown_counts": [
+        1,
+        3,
+        1
+      ],
+      "worlds": 5
+    },
+    {
+      "true_false_unknown_counts": [
+        1,
+        4,
+        0
+      ],
+      "worlds": 1
+    },
+    {
+      "true_false_unknown_counts": [
+        2,
+        0,
+        1
+      ],
+      "worlds": 14
+    },
+    {
+      "true_false_unknown_counts": [
+        2,
+        0,
+        2
+      ],
+      "worlds": 9
+    },
+    {
+      "true_false_unknown_counts": [
+        2,
+        0,
+        3
+      ],
+      "worlds": 7
+    },
+    {
+      "true_false_unknown_counts": [
+        2,
+        1,
+        0
+      ],
+      "worlds": 8
+    },
+    {
+      "true_false_unknown_counts": [
+        2,
+        1,
+        1
+      ],
+      "worlds": 13
+    },
+    {
+      "true_false_unknown_counts": [
+        2,
+        1,
+        2
+      ],
+      "worlds": 9
+    },
+    {
+      "true_false_unknown_counts": [
+        2,
+        2,
+        0
+      ],
+      "worlds": 9
+    },
+    {
+      "true_false_unknown_counts": [
+        2,
+        2,
+        1
+      ],
+      "worlds": 9
+    },
+    {
+      "true_false_unknown_counts": [
+        2,
+        3,
+        0
+      ],
+      "worlds": 7
+    },
+    {
+      "true_false_unknown_counts": [
+        3,
+        0,
+        0
+      ],
+      "worlds": 9
+    },
+    {
+      "true_false_unknown_counts": [
+        3,
+        0,
+        1
+      ],
+      "worlds": 8
+    },
+    {
+      "true_false_unknown_counts": [
+        3,
+        0,
+        2
+      ],
+      "worlds": 7
+    },
+    {
+      "true_false_unknown_counts": [
+        3,
+        1,
+        0
+      ],
+      "worlds": 2
+    },
+    {
+      "true_false_unknown_counts": [
+        3,
+        1,
+        1
+      ],
+      "worlds": 5
+    },
+    {
+      "true_false_unknown_counts": [
+        3,
+        2,
+        0
+      ],
+      "worlds": 7
+    },
+    {
+      "true_false_unknown_counts": [
+        4,
+        0,
+        0
+      ],
+      "worlds": 8
+    },
+    {
+      "true_false_unknown_counts": [
+        4,
+        0,
+        1
+      ],
+      "worlds": 1
+    },
+    {
+      "true_false_unknown_counts": [
+        4,
+        1,
+        0
+      ],
+      "worlds": 3
+    },
+    {
+      "true_false_unknown_counts": [
+        5,
+        0,
+        0
+      ],
+      "worlds": 8
+    }
+  ],
+  "training_control_labels": {
+    "TRUE": 4032,
+    "UNKNOWN": 4032,
+    "FALSE": 4032
+  },
+  "training_treatment_labels": {
+    "TRUE": 4032,
+    "UNKNOWN": 4032,
+    "FALSE": 4032
+  }
+}

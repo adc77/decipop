@@ -1,0 +1,355 @@
+{
+  "protocol_identity": "94550cc844cb3a116a64211bac4be473610aa0b835f8b493f70b2478ab9f808f",
+  "candidates": {
+    "control-step0": {
+      "arm": "control",
+      "step": 0,
+      "presentations": 0,
+      "weights_sha256": "417f2b856d0b117d9c8e532539d026654d4e28f40b34f3ddf62e0bf3660cc7b1",
+      "directory": "parent"
+    },
+    "control-step250": {
+      "arm": "control",
+      "step": 250,
+      "presentations": 8000,
+      "weights_sha256": "eb60e850d1758accf8bb79bcf17163078a95bba374b1b4b1d5fd55bcd4405f66",
+      "directory": "candidates/control-step250"
+    },
+    "control-step600": {
+      "arm": "control",
+      "step": 600,
+      "presentations": 19200,
+      "weights_sha256": "8bd71b2ec11bd95920decc0883ff82c84c60a2df4e4ffe235c9bba3b0af46088",
+      "directory": "candidates/control-step600"
+    },
+    "control-step900": {
+      "arm": "control",
+      "step": 900,
+      "presentations": 28800,
+      "weights_sha256": "481ada01e00f9bf2b07b21cba79d00df57bd587501aae68e48f470057c69b89f",
+      "directory": "candidates/control-step900"
+    },
+    "control-step1134": {
+      "arm": "control",
+      "step": 1134,
+      "presentations": 36288,
+      "weights_sha256": "9c5bbe8888548b99eb6378957711772879c365f3048f4414042c5176e259f1c2",
+      "directory": "candidates/control-step1134"
+    },
+    "treatment-step0": {
+      "arm": "treatment",
+      "step": 0,
+      "presentations": 0,
+      "weights_sha256": "417f2b856d0b117d9c8e532539d026654d4e28f40b34f3ddf62e0bf3660cc7b1",
+      "directory": "parent"
+    },
+    "treatment-step250": {
+      "arm": "treatment",
+      "step": 250,
+      "presentations": 8000,
+      "weights_sha256": "6c9e6731c63cfd2d5fd27bcba7585af79969b748b57315ab1c9fa13233ec2180",
+      "directory": "candidates/treatment-step250"
+    },
+    "treatment-step600": {
+      "arm": "treatment",
+      "step": 600,
+      "presentations": 19200,
+      "weights_sha256": "d289a2ad27cfdfe617fb65ff3644486c7b4a0db112eda98429219ed5eddf5369",
+      "directory": "candidates/treatment-step600"
+    },
+    "treatment-step900": {
+      "arm": "treatment",
+      "step": 900,
+      "presentations": 28800,
+      "weights_sha256": "c7e9e72a0b3f34f1316c9451cacb8de7a3e1c1eb610f65688e16bd1b4296f505",
+      "directory": "candidates/treatment-step900"
+    },
+    "treatment-step1134": {
+      "arm": "treatment",
+      "step": 1134,
+      "presentations": 36288,
+      "weights_sha256": "c377b7a19d0d1d1e1624a51896618ce765db4781f997d2ab59f069c31f9cae5f",
+      "directory": "candidates/treatment-step1134"
+    }
+  },
+  "selection_scores": {
+    "control-step0": {
+      "raw_nll": 2.7603692092599568,
+      "calibrated_nll": 0.9040270861825992,
+      "accuracy": 0.6458333333333334,
+      "development_accuracy": 0.6507936507936508
+    },
+    "control-step250": {
+      "raw_nll": 3.1714381557037976,
+      "calibrated_nll": 0.9663721263506735,
+      "accuracy": 0.6488095238095238,
+      "development_accuracy": 0.6507936507936508
+    },
+    "control-step600": {
+      "raw_nll": 3.2277153394706195,
+      "calibrated_nll": 0.9015573078643807,
+      "accuracy": 0.6537698412698413,
+      "development_accuracy": 0.6527777777777778
+    },
+    "control-step900": {
+      "raw_nll": 3.1244367494948406,
+      "calibrated_nll": 0.8969208707682276,
+      "accuracy": 0.6507936507936508,
+      "development_accuracy": 0.6577380952380952
+    },
+    "control-step1134": {
+      "raw_nll": 3.301299810639972,
+      "calibrated_nll": 0.9074350582153119,
+      "accuracy": 0.6537698412698413,
+      "development_accuracy": 0.6557539682539683
+    },
+    "treatment-step0": {
+      "raw_nll": 2.7603692092599568,
+      "calibrated_nll": 0.9040270861825992,
+      "accuracy": 0.6458333333333334,
+      "development_accuracy": 0.6507936507936508
+    },
+    "treatment-step250": {
+      "raw_nll": 0.430924353306952,
+      "calibrated_nll": 0.43122282777775994,
+      "accuracy": 0.7956349206349206,
+      "development_accuracy": 0.8134920634920635
+    },
+    "treatment-step600": {
+      "raw_nll": 0.29522985473467483,
+      "calibrated_nll": 0.2928908982490975,
+      "accuracy": 0.875,
+      "development_accuracy": 0.8938492063492064
+    },
+    "treatment-step900": {
+      "raw_nll": 0.18485269379918026,
+      "calibrated_nll": 0.1806759857723142,
+      "accuracy": 0.9275793650793651,
+      "development_accuracy": 0.935515873015873
+    },
+    "treatment-step1134": {
+      "raw_nll": 0.18937105896838105,
+      "calibrated_nll": 0.18487725381627068,
+      "accuracy": 0.9186507936507936,
+      "development_accuracy": 0.9365079365079365
+    }
+  },
+  "selection_fit_temperatures": {
+    "control-step0": {
+      "temperature": 6.723840414798836,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1008,
+      "raw_nll": 2.771700555054559,
+      "calibrated_nll": 0.9052537875706094,
+      "optimizer": "convex inverse-temperature derivative bisection"
+    },
+    "control-step250": {
+      "temperature": 7.673813060118394,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1008,
+      "raw_nll": 3.028119648477614,
+      "calibrated_nll": 0.9523706009552041,
+      "optimizer": "convex inverse-temperature derivative bisection"
+    },
+    "control-step600": {
+      "temperature": 7.4156016969536145,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1008,
+      "raw_nll": 3.230169854660099,
+      "calibrated_nll": 0.9015526015139185,
+      "optimizer": "convex inverse-temperature derivative bisection"
+    },
+    "control-step900": {
+      "temperature": 6.888406076175302,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1008,
+      "raw_nll": 3.0164475457726145,
+      "calibrated_nll": 0.8815385825395764,
+      "optimizer": "convex inverse-temperature derivative bisection"
+    },
+    "control-step1134": {
+      "temperature": 7.464770385910467,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1008,
+      "raw_nll": 3.2464624076911934,
+      "calibrated_nll": 0.8982927106174199,
+      "optimizer": "convex inverse-temperature derivative bisection"
+    },
+    "treatment-step0": {
+      "temperature": 6.723840414798836,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1008,
+      "raw_nll": 2.771700555054559,
+      "calibrated_nll": 0.9052537875706094,
+      "optimizer": "convex inverse-temperature derivative bisection"
+    },
+    "treatment-step250": {
+      "temperature": 0.9366052846228463,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1008,
+      "raw_nll": 0.4078221194080565,
+      "calibrated_nll": 0.40718671484829794,
+      "optimizer": "convex inverse-temperature derivative bisection"
+    },
+    "treatment-step600": {
+      "temperature": 1.064607796072163,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1008,
+      "raw_nll": 0.2502896693986739,
+      "calibrated_nll": 0.2497196901344997,
+      "optimizer": "convex inverse-temperature derivative bisection"
+    },
+    "treatment-step900": {
+      "temperature": 1.2469308992718289,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1008,
+      "raw_nll": 0.18419354089599702,
+      "calibrated_nll": 0.17881138820951123,
+      "optimizer": "convex inverse-temperature derivative bisection"
+    },
+    "treatment-step1134": {
+      "temperature": 1.2069437795606373,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1008,
+      "raw_nll": 0.16983153790214947,
+      "calibrated_nll": 0.16626782878714647,
+      "optimizer": "convex inverse-temperature derivative bisection"
+    }
+  },
+  "choices": {
+    "control": {
+      "calibrated_nll": "control-step900",
+      "accuracy": "control-step600"
+    },
+    "treatment": {
+      "calibrated_nll": "treatment-step900",
+      "accuracy": "treatment-step900"
+    }
+  },
+  "calibrations": {
+    "control-step900": {
+      "temperature": 7.127093829201319,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1008,
+      "raw_nll": 3.111604432491955,
+      "calibrated_nll": 0.8907131633519131,
+      "optimizer": "convex inverse-temperature derivative bisection",
+      "weights": "/runs/study-v7/r2/candidates/control-step900/model.safetensors",
+      "weights_sha256": "481ada01e00f9bf2b07b21cba79d00df57bd587501aae68e48f470057c69b89f"
+    },
+    "treatment-step900": {
+      "temperature": 1.2841391496362775,
+      "bounds": [
+        0.05,
+        1000.0
+      ],
+      "at_bound": false,
+      "calibration_questions": 1008,
+      "raw_nll": 0.1957515735161455,
+      "calibrated_nll": 0.1885668168245242,
+      "optimizer": "convex inverse-temperature derivative bisection",
+      "weights": "/runs/study-v7/r2/candidates/treatment-step900/model.safetensors",
+      "weights_sha256": "c7e9e72a0b3f34f1316c9451cacb8de7a3e1c1eb610f65688e16bd1b4296f505"
+    }
+  },
+  "prediction_files": {
+    "control-step0": {
+      "selection_fit": "433f9fc65f0b577e3a3ee7bcd45e18004b637b91d1f84a05a5400aa6ab5edead",
+      "selection": "398fa10291c2e77b3ee332960d53c8062921d66905cc86d87906f2098295f055",
+      "development": "64b8aea1ee6d46de8071a2196640b7fadf622f116062a9417328efd6316599df"
+    },
+    "control-step250": {
+      "selection_fit": "0fd4cd58c5b7df441736b12f2e460afde471b98567fcb03be530d4be6e2f212d",
+      "selection": "10370d48583978bd02b6469ab6278b98f9df5cae7d2448061c213f4306d7f9e7",
+      "development": "e9bd803522778de194df43c2168c59c367b0d5953b3e7cffa4b71122e95e8648"
+    },
+    "control-step600": {
+      "selection_fit": "599c209b1a8aaf130b90e1c93ec9f1cf25f1fd5fb3a7faff3a65b1c45bf3dd43",
+      "selection": "d30febfc54d9a33e72d235ada6ee0d7bb612e226c4a8cc70338050cd935889e2",
+      "development": "5313656e78f2eac37ad1e58cd8f177d331d1e309fe5b86a4fadbda437423661f"
+    },
+    "control-step900": {
+      "selection_fit": "2dd2e6918c7769a32e7e8b5645162244dcb6ed2eea5a82570c677241ad7a2ab8",
+      "selection": "58f944737cfd9fd1c441a1a002a11566cc6503ea3189b311907497be64b02121",
+      "development": "334aeb621262a3ccf6edca44d53fff0f20248df35d7fdbbe5090084e4ab44185",
+      "calibration": "217e537ae2b4725b23f429c86879e99f67032309d332b386c3f89d0de643cd20"
+    },
+    "control-step1134": {
+      "selection_fit": "f18b00509d3daddb163a2e87e0370a4803dd31a6adf9067420ede61149d8701f",
+      "selection": "1090634071bf93dd328a0d205d2808dc9d7324d4e46fa9ba5c731c132c0cff79",
+      "development": "f105bd58b4e7b2fea5d1e33607762b5b1f3a9fc138c71d5f2f361f429586e66f"
+    },
+    "treatment-step0": {
+      "selection_fit": "433f9fc65f0b577e3a3ee7bcd45e18004b637b91d1f84a05a5400aa6ab5edead",
+      "selection": "398fa10291c2e77b3ee332960d53c8062921d66905cc86d87906f2098295f055",
+      "development": "64b8aea1ee6d46de8071a2196640b7fadf622f116062a9417328efd6316599df"
+    },
+    "treatment-step250": {
+      "selection_fit": "677f4dcb13ad7fa4b52c814d3ad6e78344057c8647f4f3debf044d300df27d19",
+      "selection": "93cd2f465ad1b5ff9ea469d316efc3f36f37cd3474068b19a8dc4d7ef770bcdb",
+      "development": "4f5db2519aeac9fae53037c931afd609030441411bb292964261fa353bf1202f"
+    },
+    "treatment-step600": {
+      "selection_fit": "db58142fa801bf5cc571348e7340ee886b46246ec71d54cbb1f3f57349387915",
+      "selection": "f52e9c238f7ef0b10e159914eb7c60e8906867a7ada2f4c484805a912671989e",
+      "development": "c8dbe0f8841d66821752baa7c021da386452d0fbf884172b80180c4418cd661d"
+    },
+    "treatment-step900": {
+      "selection_fit": "ca0fb475a26e4bde3d2d5a68aa8688135b97434ba39ea38d36e9fc0fac093cef",
+      "selection": "bebf38fdca3c3db33039aef326aed71bfb045a6a9622588f11a841aa2c7c5dd1",
+      "development": "7898905a97a7e0d7b0eb2722c77bd3ca982d22aeaf34bff266efaf7b13bafac6",
+      "calibration": "7d2a203857e6c63ed303858d34817bdff466192a49b5a790c8e3b50ef09353e2"
+    },
+    "treatment-step1134": {
+      "selection_fit": "32cbf665df26ec4a0da864b5f6be173c15996029f48e476454de26690e852d46",
+      "selection": "effdd8819686ce15a97f1982e7434ddbda0c21ade2b23d2c7ccf1442bba64277",
+      "development": "0d16769a6b05fb8d24a010dfacb79a3bfde02e7aa0a4de1c5463857bd30b1cb6"
+    }
+  },
+  "test_predictions_inspected": false,
+  "identity": "a6d81855a856a370df162f26a78175a039eba56fc483e235097c6f75dc4a6edd"
+}

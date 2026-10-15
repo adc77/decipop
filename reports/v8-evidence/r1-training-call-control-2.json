@@ -1,0 +1,12 @@
+{
+  "arm": "control",
+  "step": 756,
+  "epoch": 2,
+  "cursor": 0,
+  "presentations": 24192,
+  "total_steps": 1134,
+  "complete": false,
+  "body_seconds": 596.421587659,
+  "start_step": 378,
+  "protocol_identity": "c3dd59fa24ec9c61658603eef1ed560b5b1094712936ed31fb4bc2354ea88b62"
+}

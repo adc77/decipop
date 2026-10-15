@@ -1,0 +1,4 @@
+Usage: modal run v6_app.py [OPTIONS]
+Try 'modal run v6_app.py --help' for help.
+
+Error: No such option '--profile'.

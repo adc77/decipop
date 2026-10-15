@@ -1,0 +1,12 @@
+{
+  "stage": "candidates",
+  "preserved_downloads": [
+    {
+      "source": "artifacts/v6-checkpoint-staging/treatment-step900/model.safetensors.partial",
+      "preserved": "runs/study-v6/failed-storage-downloads/treatment-step900.partial",
+      "bytes": 83886080
+    }
+  ],
+  "log": "finish-candidates.log",
+  "scientific_outputs_changed": false
+}

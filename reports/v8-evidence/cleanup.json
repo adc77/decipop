@@ -1,0 +1,119 @@
+{
+  "checked_at_utc": "2026-10-14T21:45:59.674272+00:00",
+  "owned_volume_absent": true,
+  "apps": [
+    {
+      "app_id": "ap-GXJlYIWtbTEbuFsjUh4UQg",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1791995321.576875
+    },
+    {
+      "app_id": "ap-cs96Kw1sWJJXbDBRS0xNWN",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1791995488.069138
+    },
+    {
+      "app_id": "ap-HMhjMYjalmRwb1SGyDe2gg",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1791999328.132269
+    },
+    {
+      "app_id": "ap-tTJpHj2vvsTxM8pKQmIhls",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1792000138.329383
+    },
+    {
+      "app_id": "ap-l9hBlwgUb9cqEB7pJvNa9c",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1792000777.461198
+    },
+    {
+      "app_id": "ap-ywM4hlC83LQyVK1Ie0PzSp",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1792004465.275033
+    },
+    {
+      "app_id": "ap-mnGhBMpmPD9BG5RVXepXhg",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1792008628.68986
+    },
+    {
+      "app_id": "ap-tVVUgWBlQVJgUpVZr2FNLh",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1792009195.781793
+    },
+    {
+      "app_id": "ap-UvXazh9P1DsMgPM9GSmc2W",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1792012351.163199
+    }
+  ],
+  "zero_owned_tasks": true,
+  "before_delete": [
+    {
+      "app_id": "ap-GXJlYIWtbTEbuFsjUh4UQg",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1791995321.576875
+    },
+    {
+      "app_id": "ap-cs96Kw1sWJJXbDBRS0xNWN",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1791995488.069138
+    },
+    {
+      "app_id": "ap-HMhjMYjalmRwb1SGyDe2gg",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1791999328.132269
+    },
+    {
+      "app_id": "ap-tTJpHj2vvsTxM8pKQmIhls",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1792000138.329383
+    },
+    {
+      "app_id": "ap-l9hBlwgUb9cqEB7pJvNa9c",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1792000777.461198
+    },
+    {
+      "app_id": "ap-ywM4hlC83LQyVK1Ie0PzSp",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1792004465.275033
+    },
+    {
+      "app_id": "ap-mnGhBMpmPD9BG5RVXepXhg",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1792008628.68986
+    },
+    {
+      "app_id": "ap-tVVUgWBlQVJgUpVZr2FNLh",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1792009195.781793
+    },
+    {
+      "app_id": "ap-UvXazh9P1DsMgPM9GSmc2W",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1792012351.163199
+    }
+  ],
+  "volume_delete_stdout": "",
+  "unrelated_resources_modified": false
+}

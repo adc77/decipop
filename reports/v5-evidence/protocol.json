@@ -1,0 +1,523 @@
+{
+  "study": "study-v5",
+  "settings": {
+    "study": "study-v5",
+    "dataset_seed": 521,
+    "model_seed": 521,
+    "bootstrap_seed": 521,
+    "bootstrap_repetitions": 2000,
+    "bootstrap_confidence": 0.95,
+    "pilot_families_per_suite": 12,
+    "families": {
+      "conjunction": 288,
+      "deeper": 96,
+      "signed_chain": 96
+    },
+    "max_attempts_per_family": 200,
+    "class_labels": [
+      "TRUE",
+      "FALSE",
+      "UNKNOWN"
+    ],
+    "max_length": 512,
+    "evaluation_batch": 32,
+    "cpu_threads": 2,
+    "ece_bins": 10,
+    "high_confidence_threshold": 0.9,
+    "gpu": "L4",
+    "cpu_cores": 4,
+    "memory_mib": 32768,
+    "pilot_timeout_seconds": 300,
+    "diagnostic_timeout_seconds": 1200,
+    "retry_timeout_seconds": 1200,
+    "max_retry_calls": 1,
+    "startup_timeout_seconds": 180,
+    "scaledown_seconds": 2,
+    "gpu_hourly_usd": 0.8,
+    "cpu_core_hourly_usd": 0.0473,
+    "memory_gib_hourly_usd": 0.008,
+    "compute_allocation_usd": 1.5,
+    "storage_reserve_usd": 0.5,
+    "profile": "amandogra2016",
+    "volume": "decision-model-lab-v5-runs",
+    "app_name": "decision-model-lab-v5-multi-entity",
+    "models": {
+      "v3_parent": {
+        "directory": "artifacts/v3-releases/treatment-final",
+        "repo_id": "axondendriteplus/decision-lab-v3-smollm2-360m-treatment-final",
+        "commit": "d165bf46ed93deee9697143204f78bdccdddb17d"
+      },
+      "v4_control": {
+        "directory": "artifacts/v4-releases/control",
+        "repo_id": "axondendriteplus/decision-lab-v4-smollm2-360m-control",
+        "commit": "f6fb417b7a7851fa3492412490ee7e39afa35815"
+      },
+      "v4_mixed": {
+        "directory": "artifacts/v4-releases/treatment",
+        "repo_id": "axondendriteplus/decision-lab-v4-smollm2-360m-mixed-unknown",
+        "commit": "c4ee886cd3a718036297edb56b0202b590457cf2"
+      }
+    }
+  },
+  "models": {
+    "v3_parent": {
+      "repo_id": "axondendriteplus/decision-lab-v3-smollm2-360m-treatment-final",
+      "commit": "d165bf46ed93deee9697143204f78bdccdddb17d",
+      "files": {
+        "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "NOTICE": "dd232662e7484ce000e822044e188bda4a41419882586bdea3a955470e08f406",
+        "README.md": "f012249b430f2bd13d664d97ce5882bd4af1d5849b9145e23203b8b1677044d1",
+        "artifact-manifest.json": "3ffca2d360f6424ce5fc0f4a04aeafbf1fadbc93e4fa64cf2d866d1389356bc3",
+        "calibration.json": "a7fc0dc4188e65f314b8d4a5af4a39d224f80d711ad072e9a78ea55c80f0f5a6",
+        "code/decision_lab/__init__.py": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+        "code/decision_lab/config.py": "29b30051d14b684cad639f1509243fcf709f3ea39bfa002876e0726c4d1b1be1",
+        "code/decision_lab/data/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "code/decision_lab/data/render.py": "07378b4a7243666e4399be7000cd3d8e67ad0b5374b195aaf7742596567adcb0",
+        "code/decision_lab/data/schema.py": "e54c5df39c2659e29f1c1a03361d80f0f99a2058e3fed0924aff8fed276c3aaa",
+        "code/decision_lab/model_config.py": "f4781f6881239170498fd4fedd06d2db59fde992969325fceca6064585395c2b",
+        "code/decision_lab/models/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "code/decision_lab/models/decision_head.py": "9fd465586b90bcad6b36d050751b2f8b4c9ea6201476573c7516588f10bcdf3d",
+        "code/decision_lab/models/scratch_transformer.py": "e16551ee7f9117c240faba489594a4643a5a0246215938d4693b6618e7fe98d8",
+        "code/decision_lab/models/token_model.py": "106ce581e428e4cc5e4ffa8e061bc3468dd8ed70623188d7d5e2d5e94bf9dbc7",
+        "code/decision_lab/release.py": "148cd56fc33111a719582301e551534d8d4bbcc04ba31aa22993935c5f172c70",
+        "code/decision_lab/training/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "code/decision_lab/training/checkpoint.py": "4a9524ff15d0752a7171066309d712db41817506efa28eaf8263c9f02b730878",
+        "config.json": "ec7f09788f9108e5d8509f8d5932d905fa32673c57ffcc7077c773dd6041c6aa",
+        "evaluation.json": "b68875a687985d6f6ca988866126f556088a4d1f78b94257f8b7cc3a9fd50b2e",
+        "infer.py": "a51efb294777dfaa2a554ea5c0d1bd6b0631fed92fe846aa07dd23d38fb88a14",
+        "model.safetensors": "d30e6273329639604b14ff4b08e52d6db2828aead67991f22308f9ecfe76f8a1",
+        "prompt-template.txt": "098ead6f8ed63d3e5ebb0f8848ceb72a1d2fcbc74e01f5cc54d28e5325684874",
+        "protocol.json": "a0fdd9a6e9d0de524d3570c70d34aa130087070e1e7989460018593d12d690a3",
+        "requirements.txt": "d0d672273f3284680e3d3453e8385cad0dde5aaf20f24adae22222d145fb6078",
+        "selection-freeze.json": "66a5c0c98527cee894a5f4ada97b469efca597d469b8ab008499076a4791e65c",
+        "special_tokens_map.json": "79c83a585c13ce3020b4cfb5078ddc460d49c61dac2b569b37ae5833bb702f8c",
+        "tokenizer.json": "7d27c493c729a66ecefc837280b05d948b1ed50d130eebdbf911b1b36cf38ed7",
+        "tokenizer_config.json": "d41dfb95492c56d0ad9b9a44b4860a5ccbf445951ac0fed7fbf735826937d246",
+        "verification.json": "8189593d36b07aed7afc35dccab5ba762f605f6cbd5c3e9ed303820599ff4aab"
+      },
+      "temperature": 4.792678949787822
+    },
+    "v4_control": {
+      "repo_id": "axondendriteplus/decision-lab-v4-smollm2-360m-control",
+      "commit": "f6fb417b7a7851fa3492412490ee7e39afa35815",
+      "files": {
+        "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "NOTICE": "dd232662e7484ce000e822044e188bda4a41419882586bdea3a955470e08f406",
+        "README.md": "d707835d91a10dc5260f5ace3be4497b2d77cd2581f73b4a55f4adeb50bbe3b2",
+        "artifact-manifest.json": "ca5b418357acfe9379c66a27f140622c081e4e4f8ea794909b7aaefa02737595",
+        "calibration.json": "69b96c5ccd3ab2b52a8c9efa2b4c51c0192b8811c61f5ed6bc289a5be9fe93cd",
+        "code/decision_lab/__init__.py": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+        "code/decision_lab/config.py": "29b30051d14b684cad639f1509243fcf709f3ea39bfa002876e0726c4d1b1be1",
+        "code/decision_lab/data/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "code/decision_lab/data/render.py": "07378b4a7243666e4399be7000cd3d8e67ad0b5374b195aaf7742596567adcb0",
+        "code/decision_lab/data/schema.py": "e54c5df39c2659e29f1c1a03361d80f0f99a2058e3fed0924aff8fed276c3aaa",
+        "code/decision_lab/model_config.py": "f4781f6881239170498fd4fedd06d2db59fde992969325fceca6064585395c2b",
+        "code/decision_lab/models/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "code/decision_lab/models/decision_head.py": "9fd465586b90bcad6b36d050751b2f8b4c9ea6201476573c7516588f10bcdf3d",
+        "code/decision_lab/models/scratch_transformer.py": "e16551ee7f9117c240faba489594a4643a5a0246215938d4693b6618e7fe98d8",
+        "code/decision_lab/models/token_model.py": "106ce581e428e4cc5e4ffa8e061bc3468dd8ed70623188d7d5e2d5e94bf9dbc7",
+        "code/decision_lab/release.py": "148cd56fc33111a719582301e551534d8d4bbcc04ba31aa22993935c5f172c70",
+        "code/decision_lab/training/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "code/decision_lab/training/checkpoint.py": "4a9524ff15d0752a7171066309d712db41817506efa28eaf8263c9f02b730878",
+        "config.json": "e35580a1cc1ead628fa640b7b725fa560593ac3cdcb37ce451e8b4cf1a898b7f",
+        "evaluation.json": "09366b0a4f512aedca6bf08520f975a852f8e7db3e87e5a0c5a92aafa66b2b4f",
+        "infer.py": "a51efb294777dfaa2a554ea5c0d1bd6b0631fed92fe846aa07dd23d38fb88a14",
+        "model.safetensors": "f4a54afed286c635de6606a8f770c23ea3e84a1d972d516598a3a11515262917",
+        "prompt-template.txt": "098ead6f8ed63d3e5ebb0f8848ceb72a1d2fcbc74e01f5cc54d28e5325684874",
+        "protocol.json": "c94e5a6ba511d971f9a5e14f7fd315706a2641be3cce2c67ce6ef7a3c6fd5c0e",
+        "requirements.txt": "d0d672273f3284680e3d3453e8385cad0dde5aaf20f24adae22222d145fb6078",
+        "selection-freeze.json": "a7f724abc5bf55eb8946346636ca15e8cd5351325822531af72ee155e82d96dc",
+        "special_tokens_map.json": "79c83a585c13ce3020b4cfb5078ddc460d49c61dac2b569b37ae5833bb702f8c",
+        "tokenizer.json": "7d27c493c729a66ecefc837280b05d948b1ed50d130eebdbf911b1b36cf38ed7",
+        "tokenizer_config.json": "d41dfb95492c56d0ad9b9a44b4860a5ccbf445951ac0fed7fbf735826937d246",
+        "verification.json": "fa8e3b12e763fb4f278a74b60d88b7248109c8bf9983b270809af3b239810608"
+      },
+      "temperature": 6.034315882573097
+    },
+    "v4_mixed": {
+      "repo_id": "axondendriteplus/decision-lab-v4-smollm2-360m-mixed-unknown",
+      "commit": "c4ee886cd3a718036297edb56b0202b590457cf2",
+      "files": {
+        "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "NOTICE": "dd232662e7484ce000e822044e188bda4a41419882586bdea3a955470e08f406",
+        "README.md": "d8b9c9d25ea395baae630710e519f423bb9e87969318dae9ff7b0cb33eb5eec5",
+        "artifact-manifest.json": "5a54b1dab9d5a7f2948acb5b996f2a2ff37b0db9a0ea7191fcab7d3a81c880d7",
+        "calibration.json": "d5214ed32b472446f6d7a215285803d1ab41aace3cdc82f2ae59ac9354f07331",
+        "code/decision_lab/__init__.py": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+        "code/decision_lab/config.py": "29b30051d14b684cad639f1509243fcf709f3ea39bfa002876e0726c4d1b1be1",
+        "code/decision_lab/data/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "code/decision_lab/data/render.py": "07378b4a7243666e4399be7000cd3d8e67ad0b5374b195aaf7742596567adcb0",
+        "code/decision_lab/data/schema.py": "e54c5df39c2659e29f1c1a03361d80f0f99a2058e3fed0924aff8fed276c3aaa",
+        "code/decision_lab/model_config.py": "f4781f6881239170498fd4fedd06d2db59fde992969325fceca6064585395c2b",
+        "code/decision_lab/models/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "code/decision_lab/models/decision_head.py": "9fd465586b90bcad6b36d050751b2f8b4c9ea6201476573c7516588f10bcdf3d",
+        "code/decision_lab/models/scratch_transformer.py": "e16551ee7f9117c240faba489594a4643a5a0246215938d4693b6618e7fe98d8",
+        "code/decision_lab/models/token_model.py": "106ce581e428e4cc5e4ffa8e061bc3468dd8ed70623188d7d5e2d5e94bf9dbc7",
+        "code/decision_lab/release.py": "148cd56fc33111a719582301e551534d8d4bbcc04ba31aa22993935c5f172c70",
+        "code/decision_lab/training/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "code/decision_lab/training/checkpoint.py": "4a9524ff15d0752a7171066309d712db41817506efa28eaf8263c9f02b730878",
+        "config.json": "e35580a1cc1ead628fa640b7b725fa560593ac3cdcb37ce451e8b4cf1a898b7f",
+        "evaluation.json": "65b0e285d043c8a1465779e08f578c45470693ad13bdd8c0f9dc441a6e561f91",
+        "infer.py": "a51efb294777dfaa2a554ea5c0d1bd6b0631fed92fe846aa07dd23d38fb88a14",
+        "model.safetensors": "417f2b856d0b117d9c8e532539d026654d4e28f40b34f3ddf62e0bf3660cc7b1",
+        "prompt-template.txt": "098ead6f8ed63d3e5ebb0f8848ceb72a1d2fcbc74e01f5cc54d28e5325684874",
+        "protocol.json": "c94e5a6ba511d971f9a5e14f7fd315706a2641be3cce2c67ce6ef7a3c6fd5c0e",
+        "requirements.txt": "d0d672273f3284680e3d3453e8385cad0dde5aaf20f24adae22222d145fb6078",
+        "selection-freeze.json": "a7f724abc5bf55eb8946346636ca15e8cd5351325822531af72ee155e82d96dc",
+        "special_tokens_map.json": "79c83a585c13ce3020b4cfb5078ddc460d49c61dac2b569b37ae5833bb702f8c",
+        "tokenizer.json": "7d27c493c729a66ecefc837280b05d948b1ed50d130eebdbf911b1b36cf38ed7",
+        "tokenizer_config.json": "d41dfb95492c56d0ad9b9a44b4860a5ccbf445951ac0fed7fbf735826937d246",
+        "verification.json": "2e8382dc0fdda15699ad0cb8dcc0e29650c68868190c5cd4e660ea4b04f090f5"
+      },
+      "temperature": 1.1300427719087858
+    }
+  },
+  "data_files": {
+    "audit.json": "4443a591b73e862ee22b6a3677a068f86b6250799fb2e2d73830413bd13d20d2",
+    "diagnostic.jsonl": "40f4b25feaa0980cd2a458ef650dc822375794e0befb474cf69d8e14ea803d01",
+    "families.jsonl": "27fa3adbdbb5192fac31263755d761ada825a5f53ed4d24c11fe956648c2bc1a",
+    "pilot.jsonl": "09b99f8b67a9c746b1b5cfed9f60483e3650d95d371cc5dd5dc510f29455844a"
+  },
+  "audit": {
+    "excluded_worlds": 83805,
+    "exclusion_files": {
+      "data/pilot-v3/calibration.jsonl": "f4fe9513ce84d49ca09f2bd3abb763c339bc87c92539a28c182538e1a758dddf",
+      "data/pilot-v3/development.jsonl": "89822945458c7652d9daa143224901ade591a6b9b3724b74bfd583b817e3cdea",
+      "data/pilot-v3/test_depth.jsonl": "cf825f3f48b50c868f0b400795648e724a239356f1b25135309b19ab00b37718",
+      "data/pilot-v3/test_id.jsonl": "186adf70fef3ec8a42cbaab221c374838979c936fcecc43340d3c7460b6aba87",
+      "data/pilot-v3/test_structure.jsonl": "e242154c0c0e57120c6f529748859d4a6f1239b98f53f772f13476950acda808",
+      "data/pilot-v3/test_wording.jsonl": "0d49676a5cbcf4963fc50b4dfb94c79e89a4bcb815c742d47c83bf0e9f057f0d",
+      "data/pilot-v3/train.jsonl": "c13ab0bea98f594aac6d99553b0cdfbe6840556e4bada5bfbcfdbfe605e93eed",
+      "runs/study-v1/test-inputs/flip_fact.jsonl": "39a111e0f7015b136e27dfde6cabd1fdf552da13c7e1aae530c0bb30afaff6d6",
+      "runs/study-v1/test-inputs/irrelevant.jsonl": "55e6a60998b45824fac24cb0c9c492681abe4d942d98e99ae0a393f3b116f219",
+      "runs/study-v1/test-inputs/paraphrase.jsonl": "2154fb016240bcf20e180ac326f3bbf7159eaba23b46487931974fce1c2b7b34",
+      "runs/study-v1/test-inputs/remove_premise.jsonl": "8037087ba59e2c8b713b3bff36a51d3dfe8d139d8ad2a76d11814d034df7cf44",
+      "runs/study-v1/test-inputs/rename.jsonl": "2d3667dabc9a8b16d1b7ff79ff2adffb66fcee57d93a5029d86cb4bdb25668a4",
+      "runs/study-v1/test-inputs/reorder.jsonl": "0fff378ade8b86d534a6103009583bb8313e3caa997dc61a4392f63867f42f0e",
+      "data/v2/control/calibration.jsonl": "5ad9e1723e2070062e82765b94f136fe53b7bae91529a5d6e416a7c13393dcf2",
+      "data/v2/control/development.jsonl": "8026630042839f44202aace250199fddd028f0dd45c918a0abe52b5d80f31c5c",
+      "data/v2/control/families.jsonl": "1c86773e9e19c4249ef346c62b5d6d6bfea64ff1a7a4e3df61aba65bd8b5c52f",
+      "data/v2/control/test_counterfactual.jsonl": "ca2d60dbc0966fec12a220396d3ce875bfd4aeec1b2563b2ebc82372774deae8",
+      "data/v2/control/test_depth.jsonl": "5d31d7c04f19000181fa826852e3f047b15adc022741ec53f0bbd878b18ceb9f",
+      "data/v2/control/test_original.jsonl": "dc4170ac42d7a6d38a86b050a1ff5f7321db5069077449ad89c3a3f22528833c",
+      "data/v2/control/test_single_branch.jsonl": "8ed6d94e46a89cb80e40f7deea315dbc8c6a485abff5803e1ac309481da65f17",
+      "data/v2/control/test_wording.jsonl": "0fca87f3888ac1e814736668ea4bb8522aca882b554311498468661b7f8818ab",
+      "data/v2/control/train.jsonl": "0f31d55ae347693dd21745ae07893dadb1e286fc888743ac9b25c5014eacb608",
+      "data/v2/treatment/calibration.jsonl": "5ad9e1723e2070062e82765b94f136fe53b7bae91529a5d6e416a7c13393dcf2",
+      "data/v2/treatment/development.jsonl": "8026630042839f44202aace250199fddd028f0dd45c918a0abe52b5d80f31c5c",
+      "data/v2/treatment/families.jsonl": "1c86773e9e19c4249ef346c62b5d6d6bfea64ff1a7a4e3df61aba65bd8b5c52f",
+      "data/v2/treatment/test_counterfactual.jsonl": "ca2d60dbc0966fec12a220396d3ce875bfd4aeec1b2563b2ebc82372774deae8",
+      "data/v2/treatment/test_depth.jsonl": "5d31d7c04f19000181fa826852e3f047b15adc022741ec53f0bbd878b18ceb9f",
+      "data/v2/treatment/test_original.jsonl": "dc4170ac42d7a6d38a86b050a1ff5f7321db5069077449ad89c3a3f22528833c",
+      "data/v2/treatment/test_single_branch.jsonl": "8ed6d94e46a89cb80e40f7deea315dbc8c6a485abff5803e1ac309481da65f17",
+      "data/v2/treatment/test_wording.jsonl": "0fca87f3888ac1e814736668ea4bb8522aca882b554311498468661b7f8818ab",
+      "data/v2/treatment/train.jsonl": "c008a0a7906ba56be85230907fc9de1d4177f4a9c8256bf2beb093a6fb5426c8",
+      "data/v2/families.jsonl": "1c86773e9e19c4249ef346c62b5d6d6bfea64ff1a7a4e3df61aba65bd8b5c52f",
+      "runs/study-v3/data/families.jsonl": "d939fbd5c98a4326547d8fead7b0a56ec3d6f208ccb1633602557d610904ae69",
+      "runs/study-v4/diagnostic/families.jsonl": "3904ebe4d5c2d8161f6276dc02466348ce09a6f19fdcf8531b6cad64adf333ed",
+      "runs/study-v4/training/families.jsonl": "fa19afb1379e632ef795ebc593299d9b590f9a6e90126bb5508154b9ce9a5559"
+    },
+    "partitions": {
+      "pilot": {
+        "questions": 972,
+        "families": 36
+      },
+      "diagnostic": {
+        "questions": 12960,
+        "families": 480
+      }
+    },
+    "rejections": {
+      "canonical_overlap": 5
+    },
+    "base_name_label_counts": {
+      "conjunction": {
+        "Aman": {
+          "TRUE": 36,
+          "UNKNOWN": 36,
+          "FALSE": 36
+        },
+        "Bella": {
+          "FALSE": 36,
+          "TRUE": 36,
+          "UNKNOWN": 36
+        },
+        "Chen": {
+          "UNKNOWN": 36,
+          "FALSE": 36,
+          "TRUE": 36
+        },
+        "Dalia": {
+          "UNKNOWN": 36,
+          "FALSE": 36,
+          "TRUE": 36
+        },
+        "Evan": {
+          "UNKNOWN": 36,
+          "FALSE": 36,
+          "TRUE": 36
+        },
+        "Farah": {
+          "UNKNOWN": 36,
+          "FALSE": 36,
+          "TRUE": 36
+        },
+        "Gabe": {
+          "UNKNOWN": 36,
+          "FALSE": 36,
+          "TRUE": 36
+        },
+        "Hana": {
+          "UNKNOWN": 36,
+          "FALSE": 36,
+          "TRUE": 36
+        }
+      },
+      "deeper": {
+        "Aman": {
+          "TRUE": 12,
+          "UNKNOWN": 12,
+          "FALSE": 12
+        },
+        "Bella": {
+          "FALSE": 12,
+          "TRUE": 12,
+          "UNKNOWN": 12
+        },
+        "Chen": {
+          "UNKNOWN": 12,
+          "FALSE": 12,
+          "TRUE": 12
+        },
+        "Dalia": {
+          "UNKNOWN": 12,
+          "FALSE": 12,
+          "TRUE": 12
+        },
+        "Evan": {
+          "UNKNOWN": 12,
+          "FALSE": 12,
+          "TRUE": 12
+        },
+        "Farah": {
+          "UNKNOWN": 12,
+          "FALSE": 12,
+          "TRUE": 12
+        },
+        "Gabe": {
+          "UNKNOWN": 12,
+          "FALSE": 12,
+          "TRUE": 12
+        },
+        "Hana": {
+          "UNKNOWN": 12,
+          "FALSE": 12,
+          "TRUE": 12
+        }
+      },
+      "signed_chain": {
+        "Aman": {
+          "TRUE": 12,
+          "UNKNOWN": 12,
+          "FALSE": 12
+        },
+        "Bella": {
+          "FALSE": 12,
+          "TRUE": 12,
+          "UNKNOWN": 12
+        },
+        "Chen": {
+          "UNKNOWN": 12,
+          "FALSE": 12,
+          "TRUE": 12
+        },
+        "Dalia": {
+          "UNKNOWN": 12,
+          "FALSE": 12,
+          "TRUE": 12
+        },
+        "Evan": {
+          "UNKNOWN": 12,
+          "FALSE": 12,
+          "TRUE": 12
+        },
+        "Farah": {
+          "UNKNOWN": 12,
+          "FALSE": 12,
+          "TRUE": 12
+        },
+        "Gabe": {
+          "UNKNOWN": 12,
+          "FALSE": 12,
+          "TRUE": 12
+        },
+        "Hana": {
+          "UNKNOWN": 12,
+          "FALSE": 12,
+          "TRUE": 12
+        }
+      }
+    },
+    "base_slot_label_counts": {
+      "conjunction": {
+        "0": {
+          "TRUE": 96,
+          "FALSE": 96,
+          "UNKNOWN": 96
+        },
+        "1": {
+          "FALSE": 96,
+          "UNKNOWN": 96,
+          "TRUE": 96
+        },
+        "2": {
+          "UNKNOWN": 96,
+          "FALSE": 96,
+          "TRUE": 96
+        }
+      },
+      "deeper": {
+        "0": {
+          "TRUE": 32,
+          "FALSE": 32,
+          "UNKNOWN": 32
+        },
+        "1": {
+          "FALSE": 32,
+          "UNKNOWN": 32,
+          "TRUE": 32
+        },
+        "2": {
+          "UNKNOWN": 32,
+          "FALSE": 32,
+          "TRUE": 32
+        }
+      },
+      "signed_chain": {
+        "0": {
+          "TRUE": 32,
+          "FALSE": 32,
+          "UNKNOWN": 32
+        },
+        "1": {
+          "FALSE": 32,
+          "UNKNOWN": 32,
+          "TRUE": 32
+        },
+        "2": {
+          "UNKNOWN": 32,
+          "FALSE": 32,
+          "TRUE": 32
+        }
+      }
+    },
+    "independent_serialized_data_audit": {
+      "valid": true,
+      "questions": 13932,
+      "families": 516,
+      "unique_canonical_worlds": 2580,
+      "prior_world_overlap": 0
+    },
+    "token_audit": {
+      "v3_parent/pilot": {
+        "maximum_tokens": 354,
+        "rows": 972
+      },
+      "v3_parent/diagnostic": {
+        "maximum_tokens": 355,
+        "rows": 12960
+      },
+      "v4_control/pilot": {
+        "maximum_tokens": 354,
+        "rows": 972
+      },
+      "v4_control/diagnostic": {
+        "maximum_tokens": 355,
+        "rows": 12960
+      },
+      "v4_mixed/pilot": {
+        "maximum_tokens": 354,
+        "rows": 972
+      },
+      "v4_mixed/diagnostic": {
+        "maximum_tokens": 355,
+        "rows": 12960
+      }
+    }
+  },
+  "scientific_files": {
+    "v5_lab/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "v5_lab/analysis.py": "e5b501730bd7cd2b023aa42462b0910a7b53381cd653e224338066c2262c7eda",
+    "v5_lab/data.py": "16be48f335775c39027dc31c2f171c2e8605fc994f0d1fccb1e5004b7d382504",
+    "v5_lab/protocol.py": "d5b99e48253f172c0c5b86bb9c205bf63497ca99721489ca2dd4ac1f15f7ff7d",
+    "v5_lab/study.py": "6f9d4803dcd53bfcf531459d71ed69386bab9a95be736129b28ca7d13aba0678",
+    "decision_lab/__init__.py": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+    "decision_lab/__main__.py": "b2cabffd6debed2e83f56947a2b4b799c4172886bca562077a7d6407db671f11",
+    "decision_lab/baseline.py": "dd71a9bb85d153abeeab20acdb4b612fbba17f30cfd35e6a1d0df6c8559d127e",
+    "decision_lab/budget.py": "482868f106e4477739d7b1cc1834ad7429b065f5651bbedd86eaa3b11718aa96",
+    "decision_lab/cli.py": "82288bfa6c7e3d5d57f2a5fd77c20da1467cf2a8f5568ca6c23c4476ce61a03d",
+    "decision_lab/config.py": "29b30051d14b684cad639f1509243fcf709f3ea39bfa002876e0726c4d1b1be1",
+    "decision_lab/data/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "decision_lab/data/generate.py": "5f9ae68bef5f416b76c737b1c8b7f0858bd82d508e0986abf1ea0f2dd9002f89",
+    "decision_lab/data/render.py": "07378b4a7243666e4399be7000cd3d8e67ad0b5374b195aaf7742596567adcb0",
+    "decision_lab/data/schema.py": "e54c5df39c2659e29f1c1a03361d80f0f99a2058e3fed0924aff8fed276c3aaa",
+    "decision_lab/data/solve.py": "d7d520c5843d578841149f02cd01fa497178bca07c6f4d2445976587265b7ab2",
+    "decision_lab/data/split.py": "1a7c3f5b81df2f5503fcfeabd916129706171f79a7e77c833cb9a604c76d7dfe",
+    "decision_lab/data/validate.py": "4159475118d38acbfdcd7c082b1769bf957e61c3769cdaadac0f099f1009981a",
+    "decision_lab/evaluation/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "decision_lab/evaluation/baselines.py": "5a422bbc013a211633adad4b2c5cdc50c8d41862dccc532d2e15ff9ff8c6f241",
+    "decision_lab/evaluation/config.py": "7d8f82812f20b48851c239a22763c87947661e38822751a2c0c7c180767b28ee",
+    "decision_lab/evaluation/export.py": "4f6ceec9eecdbd1d9950e1eadcaa58feff30c9c1f9fe8f78f5bfb58992b4c0f3",
+    "decision_lab/evaluation/learning.py": "870c1d08489c12df527860137c3d2eea07ca1ffedbb346bbc321cf2a8e94f7ad",
+    "decision_lab/evaluation/manifest.py": "016af5a65d5418e9b16e8c95387e93894adebde3f2e3a9ab050c2940d37fda85",
+    "decision_lab/evaluation/metrics.py": "647619de2e0ad80b8701fc995f0b8e5a7fed67a01b3266000a86bf4bbd3d07b4",
+    "decision_lab/evaluation/performance.py": "8d5e919f57015c739217ffacf95e801e7345275d2654306e73ab4572246d4016",
+    "decision_lab/evaluation/report.py": "f34af511ebfb21d0c1cbe58e67b6ae2dd4daefc1cf6c484245d36f65481059ac",
+    "decision_lab/evaluation/robustness.py": "a8c7c7e5229f55986edbc15bb7355548fb6928fe7099484ad71e5be12e978018",
+    "decision_lab/evaluation/study.py": "20dbbfe533d127612ca597df0c04b1d0df505c8c919a88dccd272f4e3215f743",
+    "decision_lab/model_config.py": "f4781f6881239170498fd4fedd06d2db59fde992969325fceca6064585395c2b",
+    "decision_lab/models/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "decision_lab/models/decision_head.py": "9fd465586b90bcad6b36d050751b2f8b4c9ea6201476573c7516588f10bcdf3d",
+    "decision_lab/models/scratch_transformer.py": "e16551ee7f9117c240faba489594a4643a5a0246215938d4693b6618e7fe98d8",
+    "decision_lab/models/token_model.py": "106ce581e428e4cc5e4ffa8e061bc3468dd8ed70623188d7d5e2d5e94bf9dbc7",
+    "decision_lab/publication.py": "264743e4f53186e0ba915d821c6d4e3a6b70ac1123c3ba933fc87e48372cb751",
+    "decision_lab/release.py": "148cd56fc33111a719582301e551534d8d4bbcc04ba31aa22993935c5f172c70",
+    "decision_lab/tokenization.py": "8e3097fe659615fc380acf05438c1d5d510515b386d5f55afaf2b06995ec600a",
+    "decision_lab/training/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "decision_lab/training/checkpoint.py": "4a9524ff15d0752a7171066309d712db41817506efa28eaf8263c9f02b730878",
+    "decision_lab/training/config.py": "e37b9187f57ea42afa645cd1a454684937c396718266e4d470454f6c03710a81",
+    "decision_lab/training/core.py": "a1e42e2bd2fa0c4412390592501ff6540a798611a07a790eb7ac1e565fdb0b6e",
+    "decision_lab/training/gate.py": "37a6663998d7dc146f4ac0442921ee96f4c797fcb4fa94aa1ac4b325ed99c9a9",
+    "decision_lab/training/ledger.py": "8281e20c048974d6281b899866f524b4ee414dbcbcfcf5cce8fedd2c87719350",
+    "decision_lab/training/pilot.py": "402613126a5afe6f9e31cbbd54bf8225bdc5a2801606838a2ad05742dc74fa8e",
+    "decision_lab/training/protocol.py": "6156e7abe2c8f48b869d3fb43623af27de1c932db35eddb695a484dc1bc7fef6",
+    "decision_lab/training/runner.py": "45d4d224fb2a5d1975df8cc2630b44c4a05f7bb55567b029f367e3d689701182",
+    "decision_lab/v2/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "decision_lab/v2/budget.py": "ffe3c39f8e9a1435db36fcf2edb4df92f4900a2748cf9a13b5d6874779b8ee70",
+    "decision_lab/v2/data.py": "1f50f8ed64ff9352b5ce11c004eb8bfa6d370d3af5cd6af40cef05b661bd1cd1",
+    "decision_lab/v2/protocol.py": "47b09ffbc2f7d563d5102757058ac623721c68b1df9d5c0dd718fe39f2daf804",
+    "decision_lab/v2/recovery.py": "8b5f8e2daaa8963e1cbc377e4c48ed84c724061f5e1613e06a97c497c900e1ac",
+    "decision_lab/v2/report.py": "0f3696164c4e06a5b7218396ef25ca7d5f5d886b3db5353237b8cdfdb9ffabd6",
+    "decision_lab/v2/study.py": "a0648f80cc063d71451f98c108a7a163bb4daec6608d342b4d5aeaddc638162a",
+    "decision_lab/v3/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "decision_lab/v3/data.py": "197b339daf9a8013e4f03f12f4e6133dfc4e43423c0ef2711ea8b98facd27dc1",
+    "decision_lab/v3/protocol.py": "a2701d627064b58acce4aca752b035dadf0fd88c4cba97a46cb8511945ac7766",
+    "decision_lab/v3/selection.py": "ceb0cfeed5e765573b4ddd653a4d213e130d5ea92b206617fba3128c04bd7421",
+    "decision_lab/v3/study.py": "6cc67fef72e47792de9ebf4bb34fa6727872a683b536f393cd3dd4184fc39717"
+  },
+  "budget": {
+    "hourly_requested_usd": 1.2452,
+    "call_ceiling_usd": {
+      "pilot": 0.16671844444444445,
+      "diagnostic": 0.47801844444444447,
+      "retry": 0.47801844444444447
+    },
+    "maximum_compute_usd": 1.1227553333333333
+  },
+  "lock_sha256": "7e57bf4c4a040908032b777dfbd1c18d2c567524528b512e987967a364792a76",
+  "protocol_markdown_sha256": "6980fc73e34e5a4467cf7d659e5ceb25aba7a2758dab4aec18da96402530e146",
+  "predictions_inspected": false,
+  "primary": "V4 mixed complete-base-world accuracy on conjunction suite",
+  "uncertainty": "parent-family sampling for fixed models; one training seed",
+  "identity": "6038ac97693f50a8392825714fe48978e0072a3cee5ad05747290fb01bb4d4d8"
+}

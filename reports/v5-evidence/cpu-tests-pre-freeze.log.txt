@@ -1,0 +1,24 @@
+........................................................................ [ 73%]
+.........................F                                               [100%]
+=================================== FAILURES ===================================
+______________ test_budget_and_family_bootstrap_are_deterministic ______________
+
+    def test_budget_and_family_bootstrap_are_deterministic():
+>       spec = settings()
+               ^^^^^^^^^^
+
+tests/test_v5.py:90: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+directory = PosixPath('configs')
+
+    def settings(directory=Path("configs")):
+        spec = yaml.safe_load((directory / "v5.yaml").read_text())
+        if spec["class_labels"] != ["TRUE", "FALSE", "UNKNOWN"]:
+>           raise ValueError("Explicit class ordering is required")
+E           ValueError: Explicit class ordering is required
+
+v5_lab/protocol.py:14: ValueError
+=========================== short test summary info ============================
+FAILED tests/test_v5.py::test_budget_and_family_bootstrap_are_deterministic
+1 failed, 97 passed in 28.50s

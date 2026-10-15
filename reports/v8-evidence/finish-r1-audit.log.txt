@@ -1,0 +1,1 @@
+{"action": "audit", "result": {"valid": true, "protocol_identity": "c3dd59fa24ec9c61658603eef1ed560b5b1094712936ed31fb4bc2354ea88b62", "prediction_rows_verified": 82672, "prediction_rows_expected": 82672, "prediction_files_verified": 58, "candidate_count": 10, "analysis_sha256": "00b6cc64c0ae880eae827db788e7cc318cd642e3c3597ec7db10e9000712df80"}}

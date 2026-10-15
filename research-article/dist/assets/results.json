@@ -1,0 +1,1094 @@
+{
+  "studies": {
+    "v7": [
+      {
+        "seed": 731,
+        "repetition": "r1",
+        "counts": {
+          "control": {
+            "test_counterfactual": {
+              "complete_families": 300,
+              "correct_questions": 900,
+              "families": 300,
+              "input_sha256": "928cea632dd6975b847d46a5973cdb52af7c7d23f4bed28f2069e7746a8d97c2",
+              "prediction_sha256": "3f47784519f28e8b5a631638b9241758816186fc91fb6f569bfd2d79772990cf",
+              "questions": 900,
+              "unknown_correct": 300,
+              "unknown_questions": 300
+            },
+            "test_multi": {
+              "complete_families": 25,
+              "correct_questions": 478,
+              "families": 360,
+              "input_sha256": "06c178f129cc37d3ac4cdb17f2c4bf93f5370a8dd04078926c1ee7c4b01796e2",
+              "prediction_sha256": "b4c636b92aa22e8b2bde6f8e2abdbd8c572b91cbffe39c0245640fb403125d5d",
+              "questions": 1440,
+              "unknown_correct": 472,
+              "unknown_questions": 480
+            },
+            "test_multi_transformations": {
+              "complete_families": 0,
+              "correct_questions": 3848,
+              "families": 360,
+              "input_sha256": "dcf88ab032056dc2b30605bc5cc50b9df81182bf7d390ca28f4ac8de61189b2e",
+              "prediction_sha256": "c19a6f7f13e4ee5273b1bb900a32d16179336526ccc0b6799e82b37dd5fed6a9",
+              "questions": 11520,
+              "unknown_correct": 3796,
+              "unknown_questions": 3840
+            },
+            "test_original": {
+              "complete_families": 242,
+              "correct_questions": 842,
+              "families": 300,
+              "input_sha256": "b9767f8288b8a7f0eab9268f67105a0382b5e97a013d9e2523f9b144d5797368",
+              "prediction_sha256": "8a4640ac584b7ce56538cf4a759f46074e296279f184a3f2b794e6b03daf8f59",
+              "questions": 900,
+              "unknown_correct": 242,
+              "unknown_questions": 300
+            }
+          },
+          "parent": {
+            "test_counterfactual": {
+              "complete_families": 300,
+              "correct_questions": 900,
+              "families": 300,
+              "input_sha256": "928cea632dd6975b847d46a5973cdb52af7c7d23f4bed28f2069e7746a8d97c2",
+              "prediction_sha256": "8cbc91855c8150c56be3f72ff662cc5b372c3c5b50e009657100cdefc2e00ccc",
+              "questions": 900,
+              "unknown_correct": 300,
+              "unknown_questions": 300
+            },
+            "test_multi": {
+              "complete_families": 25,
+              "correct_questions": 487,
+              "families": 360,
+              "input_sha256": "06c178f129cc37d3ac4cdb17f2c4bf93f5370a8dd04078926c1ee7c4b01796e2",
+              "prediction_sha256": "036478bed9eefd8988307534de5a6ab9367b357f3cacf74cf3cbb21be2de7854",
+              "questions": 1440,
+              "unknown_correct": 477,
+              "unknown_questions": 480
+            },
+            "test_original": {
+              "complete_families": 227,
+              "correct_questions": 827,
+              "families": 300,
+              "input_sha256": "b9767f8288b8a7f0eab9268f67105a0382b5e97a013d9e2523f9b144d5797368",
+              "prediction_sha256": "0a02010629e8d90371e24479109ee95c9832cf1ba344954af2ad2c0cb43f558c",
+              "questions": 900,
+              "unknown_correct": 227,
+              "unknown_questions": 300
+            }
+          },
+          "treatment": {
+            "test_counterfactual": {
+              "complete_families": 297,
+              "correct_questions": 897,
+              "families": 300,
+              "input_sha256": "928cea632dd6975b847d46a5973cdb52af7c7d23f4bed28f2069e7746a8d97c2",
+              "prediction_sha256": "13de88f2716aa7e1a2610b5c730349bc253be9c20f7b0554d138271bdd846eb9",
+              "questions": 900,
+              "unknown_correct": 300,
+              "unknown_questions": 300
+            },
+            "test_multi": {
+              "complete_families": 245,
+              "correct_questions": 1266,
+              "families": 360,
+              "input_sha256": "06c178f129cc37d3ac4cdb17f2c4bf93f5370a8dd04078926c1ee7c4b01796e2",
+              "prediction_sha256": "625e30e2c6c3aa4894630c7ad4c6ec4c1bbd51b5ce59c50096359b4ac2fe5ce1",
+              "questions": 1440,
+              "unknown_correct": 355,
+              "unknown_questions": 480
+            },
+            "test_multi_transformations": {
+              "complete_families": 43,
+              "correct_questions": 9635,
+              "families": 360,
+              "input_sha256": "dcf88ab032056dc2b30605bc5cc50b9df81182bf7d390ca28f4ac8de61189b2e",
+              "prediction_sha256": "ed00324beb230374c3fbdcf3a18384854afbad449b2730790c8ce8b28cb2332e",
+              "questions": 11520,
+              "unknown_correct": 2756,
+              "unknown_questions": 3840
+            },
+            "test_original": {
+              "complete_families": 238,
+              "correct_questions": 838,
+              "families": 300,
+              "input_sha256": "b9767f8288b8a7f0eab9268f67105a0382b5e97a013d9e2523f9b144d5797368",
+              "prediction_sha256": "26e1401c135c0b7cbf9b6dffdf3bee72c1e7ce5e0e87643c9df673df3ed092a2",
+              "questions": 900,
+              "unknown_correct": 241,
+              "unknown_questions": 300
+            }
+          }
+        },
+        "primary": {
+          "estimate": 0.6111111111111112,
+          "interval": [
+            0.5722222222222222,
+            0.6499999999999999
+          ],
+          "families": 360,
+          "blocks": 120,
+          "unit": "Three-world label-rotation block, stratified by entity count"
+        },
+        "selected_updates": {
+          "control": 900,
+          "treatment": 1134
+        }
+      },
+      {
+        "seed": 947,
+        "repetition": "r2",
+        "counts": {
+          "control": {
+            "test_counterfactual": {
+              "complete_families": 300,
+              "correct_questions": 900,
+              "families": 300,
+              "input_sha256": "6ef74b55f3e7ce58070c2e914c665100a6014ef0e89c1487ec3e1950840dfbe4",
+              "prediction_sha256": "50e5debe6810d3b22689e389b4789bc289e5f83f90aa56d76d0dfab0a8f0cb88",
+              "questions": 900,
+              "unknown_correct": 300,
+              "unknown_questions": 300
+            },
+            "test_multi": {
+              "complete_families": 19,
+              "correct_questions": 481,
+              "families": 360,
+              "input_sha256": "cb70aacf3180fbb572488a9a300293a47acffcbf95d7d4a11133e8e43680d0bc",
+              "prediction_sha256": "60dc2a3a53195cda72d3034ac7ca35c620213cd41ae660d3882767b66b54abe7",
+              "questions": 1440,
+              "unknown_correct": 465,
+              "unknown_questions": 480
+            },
+            "test_multi_transformations": {
+              "complete_families": 0,
+              "correct_questions": 3864,
+              "families": 360,
+              "input_sha256": "30bbab6f0f0aa586e60623051474601a807fe364b57260eeec5435185ca78295",
+              "prediction_sha256": "9259e460090508778476f7141bd802ba028ec650fff7c4aef02544279ce7f177",
+              "questions": 11520,
+              "unknown_correct": 3755,
+              "unknown_questions": 3840
+            },
+            "test_original": {
+              "complete_families": 245,
+              "correct_questions": 845,
+              "families": 300,
+              "input_sha256": "fd33829a77458845b2ada3f13ba6a179a84c96596d7ab9e535441d4008b537e6",
+              "prediction_sha256": "fad0b31bf70a662d1b49ffd83915068b06d65f2fe2d7e633e6b703da1e497a08",
+              "questions": 900,
+              "unknown_correct": 245,
+              "unknown_questions": 300
+            }
+          },
+          "parent": {
+            "test_counterfactual": {
+              "complete_families": 300,
+              "correct_questions": 900,
+              "families": 300,
+              "input_sha256": "6ef74b55f3e7ce58070c2e914c665100a6014ef0e89c1487ec3e1950840dfbe4",
+              "prediction_sha256": "2a998d13a923366e833cf8b141f43c1c009542d3b4e8e53eaa438f8439689088",
+              "questions": 900,
+              "unknown_correct": 300,
+              "unknown_questions": 300
+            },
+            "test_multi": {
+              "complete_families": 23,
+              "correct_questions": 487,
+              "families": 360,
+              "input_sha256": "cb70aacf3180fbb572488a9a300293a47acffcbf95d7d4a11133e8e43680d0bc",
+              "prediction_sha256": "28417fc3d40935c18675ea95c6c79dbe9e2d846bf8693226ae41f1ba7773a295",
+              "questions": 1440,
+              "unknown_correct": 472,
+              "unknown_questions": 480
+            },
+            "test_original": {
+              "complete_families": 228,
+              "correct_questions": 828,
+              "families": 300,
+              "input_sha256": "fd33829a77458845b2ada3f13ba6a179a84c96596d7ab9e535441d4008b537e6",
+              "prediction_sha256": "de312d5d4143e5aeb605858e3f06d0848276040c8bd406405e2a7e4612f99c25",
+              "questions": 900,
+              "unknown_correct": 228,
+              "unknown_questions": 300
+            }
+          },
+          "treatment": {
+            "test_counterfactual": {
+              "complete_families": 296,
+              "correct_questions": 896,
+              "families": 300,
+              "input_sha256": "6ef74b55f3e7ce58070c2e914c665100a6014ef0e89c1487ec3e1950840dfbe4",
+              "prediction_sha256": "b6e881343f6b4b28e6182abef79775e3fe244a7831862edbf490228e6400589b",
+              "questions": 900,
+              "unknown_correct": 299,
+              "unknown_questions": 300
+            },
+            "test_multi": {
+              "complete_families": 245,
+              "correct_questions": 1246,
+              "families": 360,
+              "input_sha256": "cb70aacf3180fbb572488a9a300293a47acffcbf95d7d4a11133e8e43680d0bc",
+              "prediction_sha256": "ce5f5fb4d65490e6b707c054564e8bca51046754f9aa5d53c1fa5c3b10783a10",
+              "questions": 1440,
+              "unknown_correct": 318,
+              "unknown_questions": 480
+            },
+            "test_multi_transformations": {
+              "complete_families": 36,
+              "correct_questions": 9557,
+              "families": 360,
+              "input_sha256": "30bbab6f0f0aa586e60623051474601a807fe364b57260eeec5435185ca78295",
+              "prediction_sha256": "2bbd5c6f49a2b4167ef32a001458bb1b942049ef7806ff878406d4bd9dd2dd9f",
+              "questions": 11520,
+              "unknown_correct": 2454,
+              "unknown_questions": 3840
+            },
+            "test_original": {
+              "complete_families": 245,
+              "correct_questions": 844,
+              "families": 300,
+              "input_sha256": "fd33829a77458845b2ada3f13ba6a179a84c96596d7ab9e535441d4008b537e6",
+              "prediction_sha256": "6ca8c63c3a2995b2912ae0e4951097495dc052036ae6d280d506a222f30a7422",
+              "questions": 900,
+              "unknown_correct": 247,
+              "unknown_questions": 300
+            }
+          }
+        },
+        "primary": {
+          "estimate": 0.6277777777777778,
+          "interval": [
+            0.5916666666666667,
+            0.6638888888888889
+          ],
+          "families": 360,
+          "blocks": 120,
+          "unit": "Three-world label-rotation block, stratified by entity count"
+        },
+        "selected_updates": {
+          "control": 900,
+          "treatment": 900
+        }
+      }
+    ],
+    "v8": [
+      {
+        "seed": 1601,
+        "repetition": "r1",
+        "counts": {
+          "control": {
+            "test_counterfactual": {
+              "complete_families": 295,
+              "correct_questions": 895,
+              "families": 300,
+              "input_sha256": "25211a7875ccf7f08cab9dc94cf788123f300701efff2888064ecb77ec8a78e1",
+              "prediction_sha256": "1d9eb85c2168903d5c34100085c7692e8f33f84a0e36642b48f07a9d59cbecdc",
+              "questions": 900,
+              "unknown_correct": 299,
+              "unknown_questions": 300
+            },
+            "test_multi": {
+              "complete_families": 253,
+              "correct_questions": 1339,
+              "families": 378,
+              "input_sha256": "14bb1c3bb625e08c42d25d82c46dc6d1a667f09a9233d8c9fcd6d5cc0a2ad0be",
+              "prediction_sha256": "02294cf2ad63336e1982c634d9956da29d8222242bc407829a25207803e3483a",
+              "questions": 1512,
+              "unknown_correct": 408,
+              "unknown_questions": 504
+            },
+            "test_multi_transformations": {
+              "complete_families": 48,
+              "correct_questions": 11560,
+              "families": 378,
+              "input_sha256": "5696b16e69a2f06a848743d33c47d6e1c8d3245832ed22c789c4e97aa1d87615",
+              "prediction_sha256": "438fca5ca71fb5fe352826e18dce01d06e7499ead6404f8713e82403ab4c588e",
+              "questions": 13608,
+              "unknown_correct": 3737,
+              "unknown_questions": 4788
+            },
+            "test_original": {
+              "complete_families": 253,
+              "correct_questions": 853,
+              "families": 300,
+              "input_sha256": "b10f63ab338cb3ca8a2c1daf2cab59d09705339f8f2c136bfeea2c77b83d17e0",
+              "prediction_sha256": "1a1c96fb7816b523a457b5c7b79d8763e5825bad7a49169e847e8cf3e77feb86",
+              "questions": 900,
+              "unknown_correct": 256,
+              "unknown_questions": 300
+            },
+            "test_paired": {
+              "complete_families": 205,
+              "correct_questions": 2648,
+              "families": 378,
+              "input_sha256": "3ee20491e53499468489d0c75deae332d10fe288bd0d664d6887dada066d708e",
+              "prediction_sha256": "2bd1e11aa737243239c6d6a5cfe1dfaa896e437c62815483905adccd86bed85c",
+              "questions": 3024,
+              "unknown_correct": 880,
+              "unknown_questions": 1092
+            }
+          },
+          "parent": {
+            "test_counterfactual": {
+              "complete_families": 297,
+              "correct_questions": 897,
+              "families": 300,
+              "input_sha256": "25211a7875ccf7f08cab9dc94cf788123f300701efff2888064ecb77ec8a78e1",
+              "prediction_sha256": "a4dbf58b752d1601b249ef630c6eb91416ff4b224c5934cd97a73126d57062ab",
+              "questions": 900,
+              "unknown_correct": 297,
+              "unknown_questions": 300
+            },
+            "test_multi": {
+              "complete_families": 242,
+              "correct_questions": 1320,
+              "families": 378,
+              "input_sha256": "14bb1c3bb625e08c42d25d82c46dc6d1a667f09a9233d8c9fcd6d5cc0a2ad0be",
+              "prediction_sha256": "6aab42ddb97f67e1607e83b6f5610fde17b072578d8511515653a3b2b5aa9189",
+              "questions": 1512,
+              "unknown_correct": 364,
+              "unknown_questions": 504
+            },
+            "test_original": {
+              "complete_families": 256,
+              "correct_questions": 856,
+              "families": 300,
+              "input_sha256": "b10f63ab338cb3ca8a2c1daf2cab59d09705339f8f2c136bfeea2c77b83d17e0",
+              "prediction_sha256": "893ad28b2bab3382e4bc088f96ba2ca6dbe210bc7b2fea0b31fb1c09145639ee",
+              "questions": 900,
+              "unknown_correct": 256,
+              "unknown_questions": 300
+            },
+            "test_paired": {
+              "complete_families": 188,
+              "correct_questions": 2587,
+              "families": 378,
+              "input_sha256": "3ee20491e53499468489d0c75deae332d10fe288bd0d664d6887dada066d708e",
+              "prediction_sha256": "8bc17cc71ddb042bede2e8249e6af3ca45e778f8b42c27acf2ff129707fca24c",
+              "questions": 3024,
+              "unknown_correct": 767,
+              "unknown_questions": 1092
+            }
+          },
+          "treatment": {
+            "test_counterfactual": {
+              "complete_families": 295,
+              "correct_questions": 895,
+              "families": 300,
+              "input_sha256": "25211a7875ccf7f08cab9dc94cf788123f300701efff2888064ecb77ec8a78e1",
+              "prediction_sha256": "7adc0bf42d7ee171ead67a455a105947e871c976b28567f1028c441b7759bff9",
+              "questions": 900,
+              "unknown_correct": 297,
+              "unknown_questions": 300
+            },
+            "test_multi": {
+              "complete_families": 258,
+              "correct_questions": 1339,
+              "families": 378,
+              "input_sha256": "14bb1c3bb625e08c42d25d82c46dc6d1a667f09a9233d8c9fcd6d5cc0a2ad0be",
+              "prediction_sha256": "e55fb909613a564f6ddf17bed2017431daa296afac23c851be497bb2a34e07b0",
+              "questions": 1512,
+              "unknown_correct": 411,
+              "unknown_questions": 504
+            },
+            "test_multi_transformations": {
+              "complete_families": 50,
+              "correct_questions": 11545,
+              "families": 378,
+              "input_sha256": "5696b16e69a2f06a848743d33c47d6e1c8d3245832ed22c789c4e97aa1d87615",
+              "prediction_sha256": "50670154097de658b8c1448359ffa796a99b7d56e50a041393a258845b63dfaa",
+              "questions": 13608,
+              "unknown_correct": 3758,
+              "unknown_questions": 4788
+            },
+            "test_original": {
+              "complete_families": 254,
+              "correct_questions": 854,
+              "families": 300,
+              "input_sha256": "b10f63ab338cb3ca8a2c1daf2cab59d09705339f8f2c136bfeea2c77b83d17e0",
+              "prediction_sha256": "ba62e1f239b52f3510ffb19679e12a50755dc6ed7a68e225e65aa853fa13f2bd",
+              "questions": 900,
+              "unknown_correct": 256,
+              "unknown_questions": 300
+            },
+            "test_paired": {
+              "complete_families": 208,
+              "correct_questions": 2645,
+              "families": 378,
+              "input_sha256": "3ee20491e53499468489d0c75deae332d10fe288bd0d664d6887dada066d708e",
+              "prediction_sha256": "a90ba15d3a70e00441ea75ba15dc45c63e7755d31ad8600c0598868ae5179aed",
+              "questions": 3024,
+              "unknown_correct": 880,
+              "unknown_questions": 1092
+            }
+          }
+        },
+        "primary": {
+          "estimate": 0.007936507936507936,
+          "interval": [
+            -0.01851851851851852,
+            0.037037037037037035
+          ],
+          "families": 378,
+          "blocks": 126,
+          "unit": "Three-world label-rotation block, stratified by entity count and edit type"
+        },
+        "selected_updates": {
+          "control": 1134,
+          "treatment": 1134
+        }
+      },
+      {
+        "seed": 1801,
+        "repetition": "r2",
+        "counts": {
+          "control": {
+            "test_counterfactual": {
+              "complete_families": 300,
+              "correct_questions": 900,
+              "families": 300,
+              "input_sha256": "d283066de31d7737ecef5512ca8fc2cbf005ead5838480391d7229e548fba3ac",
+              "prediction_sha256": "ead52300d7ed8ebd57e355146c4ac6b586ffc0e1df99e7aaaf9ca380faeae1aa",
+              "questions": 900,
+              "unknown_correct": 300,
+              "unknown_questions": 300
+            },
+            "test_multi": {
+              "complete_families": 271,
+              "correct_questions": 1348,
+              "families": 378,
+              "input_sha256": "6d9d35941b2ced7d35493deed53085bf81eea5bd61df02780bab3f52ca0572bc",
+              "prediction_sha256": "3f23fbd6bd2b6706447fc7738d726bffebd3aa3be18aad5d84d52ddb8f345b2e",
+              "questions": 1512,
+              "unknown_correct": 405,
+              "unknown_questions": 504
+            },
+            "test_multi_transformations": {
+              "complete_families": 44,
+              "correct_questions": 11589,
+              "families": 378,
+              "input_sha256": "bb1fb1fde4b06cc9359e44aa5f80b5fe5e6acba25ddada769dae803531375b03",
+              "prediction_sha256": "329585090c66c8f38e4dfb48bb67c166c6035f6d722e300e823496a491dc5d2f",
+              "questions": 13608,
+              "unknown_correct": 3701,
+              "unknown_questions": 4788
+            },
+            "test_original": {
+              "complete_families": 247,
+              "correct_questions": 847,
+              "families": 300,
+              "input_sha256": "1d3b8bf4277e85043b373a66f256a74d85c6a9d1ab7c439b81f733127d89c821",
+              "prediction_sha256": "ac64f5426991600d92e87f073bafabe3694b1425ce304e7261af4599dc90bcd9",
+              "questions": 900,
+              "unknown_correct": 247,
+              "unknown_questions": 300
+            },
+            "test_paired": {
+              "complete_families": 221,
+              "correct_questions": 2671,
+              "families": 378,
+              "input_sha256": "8c3045f208b6ca272e9368bc2fa367e012e5836690861d93f7c7eafe09101f5c",
+              "prediction_sha256": "b434dd6540a96e177684f8b91aca911d6423ee2abf4cc63ddfcec09478f0943b",
+              "questions": 3024,
+              "unknown_correct": 874,
+              "unknown_questions": 1092
+            }
+          },
+          "parent": {
+            "test_counterfactual": {
+              "complete_families": 297,
+              "correct_questions": 897,
+              "families": 300,
+              "input_sha256": "d283066de31d7737ecef5512ca8fc2cbf005ead5838480391d7229e548fba3ac",
+              "prediction_sha256": "0e67c5b0cc98e8d3e139d00483778c7793198baaf512b711e9f695998b93c9d2",
+              "questions": 900,
+              "unknown_correct": 297,
+              "unknown_questions": 300
+            },
+            "test_multi": {
+              "complete_families": 268,
+              "correct_questions": 1353,
+              "families": 378,
+              "input_sha256": "6d9d35941b2ced7d35493deed53085bf81eea5bd61df02780bab3f52ca0572bc",
+              "prediction_sha256": "7e25b1457a7c52cd08cadad810be4d3a48d530e1c8163c731fb2928d924c79c9",
+              "questions": 1512,
+              "unknown_correct": 391,
+              "unknown_questions": 504
+            },
+            "test_original": {
+              "complete_families": 248,
+              "correct_questions": 848,
+              "families": 300,
+              "input_sha256": "1d3b8bf4277e85043b373a66f256a74d85c6a9d1ab7c439b81f733127d89c821",
+              "prediction_sha256": "2df06f3aec1e6ffcb034ab5f9c2ef2fcd591ee2b8c5ce3dc992d4165c200cee1",
+              "questions": 900,
+              "unknown_correct": 248,
+              "unknown_questions": 300
+            },
+            "test_paired": {
+              "complete_families": 218,
+              "correct_questions": 2669,
+              "families": 378,
+              "input_sha256": "8c3045f208b6ca272e9368bc2fa367e012e5836690861d93f7c7eafe09101f5c",
+              "prediction_sha256": "2f48fbfeabfd3767a4da088cdc787ea90fb01c1cefb8c8883cc09f6f8c887885",
+              "questions": 3024,
+              "unknown_correct": 830,
+              "unknown_questions": 1092
+            }
+          },
+          "treatment": {
+            "test_counterfactual": {
+              "complete_families": 296,
+              "correct_questions": 896,
+              "families": 300,
+              "input_sha256": "d283066de31d7737ecef5512ca8fc2cbf005ead5838480391d7229e548fba3ac",
+              "prediction_sha256": "96d30c8f32f0bc55cd1bc69dfbbf1913f71b609692985cabd99c6e5db78b8e61",
+              "questions": 900,
+              "unknown_correct": 296,
+              "unknown_questions": 300
+            },
+            "test_multi": {
+              "complete_families": 275,
+              "correct_questions": 1362,
+              "families": 378,
+              "input_sha256": "6d9d35941b2ced7d35493deed53085bf81eea5bd61df02780bab3f52ca0572bc",
+              "prediction_sha256": "b856ccf27ce6b72c0c4c7c98198a9faea2f45a5057040e55ecba295313af50b9",
+              "questions": 1512,
+              "unknown_correct": 410,
+              "unknown_questions": 504
+            },
+            "test_multi_transformations": {
+              "complete_families": 46,
+              "correct_questions": 11624,
+              "families": 378,
+              "input_sha256": "bb1fb1fde4b06cc9359e44aa5f80b5fe5e6acba25ddada769dae803531375b03",
+              "prediction_sha256": "157d41bf918d4b428910a57c75149ebf7e535da46aa64dc9c4bbc56e27a5c568",
+              "questions": 13608,
+              "unknown_correct": 3717,
+              "unknown_questions": 4788
+            },
+            "test_original": {
+              "complete_families": 246,
+              "correct_questions": 846,
+              "families": 300,
+              "input_sha256": "1d3b8bf4277e85043b373a66f256a74d85c6a9d1ab7c439b81f733127d89c821",
+              "prediction_sha256": "068c05425ef468b1cd6111815aeba5f444daeefd666a18839543609c895cad1d",
+              "questions": 900,
+              "unknown_correct": 247,
+              "unknown_questions": 300
+            },
+            "test_paired": {
+              "complete_families": 235,
+              "correct_questions": 2708,
+              "families": 378,
+              "input_sha256": "8c3045f208b6ca272e9368bc2fa367e012e5836690861d93f7c7eafe09101f5c",
+              "prediction_sha256": "466693830a93aa52ef6b6f452e9eeaaa765b2d43817d556f25aa1cae0b336ae4",
+              "questions": 3024,
+              "unknown_correct": 889,
+              "unknown_questions": 1092
+            }
+          }
+        },
+        "primary": {
+          "estimate": 0.037037037037037035,
+          "interval": [
+            0.010582010582010583,
+            0.06349206349206349
+          ],
+          "families": 378,
+          "blocks": 126,
+          "unit": "Three-world label-rotation block, stratified by entity count and edit type"
+        },
+        "selected_updates": {
+          "control": 1134,
+          "treatment": 1134
+        }
+      }
+    ]
+  },
+  "examples": {
+    "r2": {
+      "family_id": "v8-r2-balanced-test_multi-multi-3-0012-0",
+      "selection": "Post hoc illustration selected after evaluation; not a preselected audit example.",
+      "source_split": "test_paired",
+      "study": "v8",
+      "repetition": "r2",
+      "question": "Farah is authorized.",
+      "base_facts": [
+        "Evan is trusted.",
+        "Gabe is verified.",
+        "Evan is verified.",
+        "Gabe is approved.",
+        "Farah is verified.",
+        "Gabe is trusted.",
+        "Evan is approved.",
+        "Farah is registered.",
+        "Farah is trusted."
+      ],
+      "rules": [
+        "For every person mentioned: if person 1 is trusted and person 1 is not verified, then person 1 is not active.",
+        "For every person mentioned: if person 1 is trusted and person 1 is verified, then person 1 is active.",
+        "For every person mentioned: if person 1 is not active, then person 1 is not authorized.",
+        "For every person mentioned: if person 1 is active, then person 1 is authorized."
+      ],
+      "removed_facts": [
+        "Farah is verified."
+      ],
+      "added_facts": [
+        "Farah is approved."
+      ],
+      "outputs": {
+        "parent": {
+          "base": {
+            "gold": "TRUE",
+            "prediction": "TRUE",
+            "confidence": 0.6940562523558292,
+            "example_id": "v8-r2-balanced-test_multi-multi-3-0012-0-multi-base-1"
+          },
+          "support_removal": {
+            "gold": "UNKNOWN",
+            "prediction": "TRUE",
+            "confidence": 0.7455180130079585,
+            "example_id": "v8-r2-balanced-test_multi-multi-3-0012-0-multi-support_removal-1"
+          }
+        },
+        "control": {
+          "base": {
+            "gold": "TRUE",
+            "prediction": "TRUE",
+            "confidence": 0.8011721715769801,
+            "example_id": "v8-r2-balanced-test_multi-multi-3-0012-0-multi-base-1"
+          },
+          "support_removal": {
+            "gold": "UNKNOWN",
+            "prediction": "TRUE",
+            "confidence": 0.7746261476462891,
+            "example_id": "v8-r2-balanced-test_multi-multi-3-0012-0-multi-support_removal-1"
+          }
+        },
+        "treatment": {
+          "base": {
+            "gold": "TRUE",
+            "prediction": "TRUE",
+            "confidence": 0.7206859901966642,
+            "example_id": "v8-r2-balanced-test_multi-multi-3-0012-0-multi-base-1"
+          },
+          "support_removal": {
+            "gold": "UNKNOWN",
+            "prediction": "TRUE",
+            "confidence": 0.7189415442244211,
+            "example_id": "v8-r2-balanced-test_multi-multi-3-0012-0-multi-support_removal-1"
+          }
+        }
+      },
+      "rows": [
+        {
+          "example_id": "v8-r2-balanced-test_multi-multi-3-0012-0-multi-base-1",
+          "family_id": "v8-r2-balanced-test_multi-multi-3-0012-0",
+          "split": "test_paired",
+          "theory": {
+            "entities": [
+              "Evan",
+              "Farah",
+              "Gabe"
+            ],
+            "facts": [
+              {
+                "predicate": "verified",
+                "arguments": [
+                  "Gabe"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "trusted",
+                "arguments": [
+                  "Evan"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "registered",
+                "arguments": [
+                  "Farah"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "approved",
+                "arguments": [
+                  "Evan"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "trusted",
+                "arguments": [
+                  "Gabe"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "verified",
+                "arguments": [
+                  "Farah"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "verified",
+                "arguments": [
+                  "Evan"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "approved",
+                "arguments": [
+                  "Gabe"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "trusted",
+                "arguments": [
+                  "Farah"
+                ],
+                "negative": false
+              }
+            ],
+            "rules": [
+              {
+                "conditions": [
+                  {
+                    "predicate": "trusted",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": false
+                  },
+                  {
+                    "predicate": "verified",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": false
+                  }
+                ],
+                "conclusion": {
+                  "predicate": "active",
+                  "arguments": [
+                    "?x"
+                  ],
+                  "negative": false
+                }
+              },
+              {
+                "conditions": [
+                  {
+                    "predicate": "active",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": false
+                  }
+                ],
+                "conclusion": {
+                  "predicate": "authorized",
+                  "arguments": [
+                    "?x"
+                  ],
+                  "negative": false
+                }
+              },
+              {
+                "conditions": [
+                  {
+                    "predicate": "active",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": true
+                  }
+                ],
+                "conclusion": {
+                  "predicate": "authorized",
+                  "arguments": [
+                    "?x"
+                  ],
+                  "negative": true
+                }
+              },
+              {
+                "conditions": [
+                  {
+                    "predicate": "trusted",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": false
+                  },
+                  {
+                    "predicate": "verified",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": true
+                  }
+                ],
+                "conclusion": {
+                  "predicate": "active",
+                  "arguments": [
+                    "?x"
+                  ],
+                  "negative": true
+                }
+              }
+            ]
+          },
+          "query": {
+            "predicate": "authorized",
+            "arguments": [
+              "Farah"
+            ],
+            "negative": false
+          },
+          "label": "TRUE",
+          "proof_depth": 2,
+          "theory_depth": 2,
+          "motif": "conjunction",
+          "renderer_id": "canonical",
+          "theory_hash": "aaa7467e59111d855a3317e0137529095c1a9201fb9a3477437259e7ceb5c7f6",
+          "structure_hash": "706cae65cedc1b3d33cb62d3f2a295e30222a06f05857cad6e0a0711fd327dd7",
+          "facts": [
+            "Evan is trusted.",
+            "Gabe is verified.",
+            "Evan is verified.",
+            "Gabe is approved.",
+            "Farah is verified.",
+            "Gabe is trusted.",
+            "Evan is approved.",
+            "Farah is registered.",
+            "Farah is trusted."
+          ],
+          "rules": [
+            "For every person mentioned: if person 1 is trusted and person 1 is not verified, then person 1 is not active.",
+            "For every person mentioned: if person 1 is trusted and person 1 is verified, then person 1 is active.",
+            "For every person mentioned: if person 1 is not active, then person 1 is not authorized.",
+            "For every person mentioned: if person 1 is active, then person 1 is authorized."
+          ],
+          "question": "Farah is authorized.",
+          "prompt": "Decide using only these facts and rules. TRUE means the statement follows; FALSE means its explicit negation follows; UNKNOWN means neither follows. Absence is not negation. Answer A for TRUE, B for FALSE, or C for UNKNOWN.\n\nFacts:\nEvan is trusted.\nGabe is verified.\nEvan is verified.\nGabe is approved.\nFarah is verified.\nGabe is trusted.\nEvan is approved.\nFarah is registered.\nFarah is trusted.\n\nRules:\nFor every person mentioned: if person 1 is trusted and person 1 is not verified, then person 1 is not active.\nFor every person mentioned: if person 1 is trusted and person 1 is verified, then person 1 is active.\nFor every person mentioned: if person 1 is not active, then person 1 is not authorized.\nFor every person mentioned: if person 1 is active, then person 1 is authorized.\n\nStatement: Farah is authorized.\n\nAnswer:"
+        },
+        {
+          "example_id": "v8-r2-balanced-test_multi-multi-3-0012-0-multi-support_removal-1",
+          "family_id": "v8-r2-balanced-test_multi-multi-3-0012-0",
+          "split": "test_paired",
+          "theory": {
+            "entities": [
+              "Evan",
+              "Farah",
+              "Gabe"
+            ],
+            "facts": [
+              {
+                "predicate": "verified",
+                "arguments": [
+                  "Gabe"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "trusted",
+                "arguments": [
+                  "Evan"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "registered",
+                "arguments": [
+                  "Farah"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "approved",
+                "arguments": [
+                  "Evan"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "trusted",
+                "arguments": [
+                  "Gabe"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "verified",
+                "arguments": [
+                  "Evan"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "approved",
+                "arguments": [
+                  "Gabe"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "trusted",
+                "arguments": [
+                  "Farah"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "approved",
+                "arguments": [
+                  "Farah"
+                ],
+                "negative": false
+              }
+            ],
+            "rules": [
+              {
+                "conditions": [
+                  {
+                    "predicate": "trusted",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": false
+                  },
+                  {
+                    "predicate": "verified",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": false
+                  }
+                ],
+                "conclusion": {
+                  "predicate": "active",
+                  "arguments": [
+                    "?x"
+                  ],
+                  "negative": false
+                }
+              },
+              {
+                "conditions": [
+                  {
+                    "predicate": "active",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": false
+                  }
+                ],
+                "conclusion": {
+                  "predicate": "authorized",
+                  "arguments": [
+                    "?x"
+                  ],
+                  "negative": false
+                }
+              },
+              {
+                "conditions": [
+                  {
+                    "predicate": "active",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": true
+                  }
+                ],
+                "conclusion": {
+                  "predicate": "authorized",
+                  "arguments": [
+                    "?x"
+                  ],
+                  "negative": true
+                }
+              },
+              {
+                "conditions": [
+                  {
+                    "predicate": "trusted",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": false
+                  },
+                  {
+                    "predicate": "verified",
+                    "arguments": [
+                      "?x"
+                    ],
+                    "negative": true
+                  }
+                ],
+                "conclusion": {
+                  "predicate": "active",
+                  "arguments": [
+                    "?x"
+                  ],
+                  "negative": true
+                }
+              }
+            ]
+          },
+          "query": {
+            "predicate": "authorized",
+            "arguments": [
+              "Farah"
+            ],
+            "negative": false
+          },
+          "label": "UNKNOWN",
+          "proof_depth": null,
+          "theory_depth": 2,
+          "motif": "conjunction",
+          "renderer_id": "canonical",
+          "theory_hash": "9bc89be9bbc2156c95bfb2067873182cc52f7cb6c26a7a6a975cd4c2c1075651",
+          "structure_hash": "b9e4d0d1df2e155485fe046c7c8ffccaeac8b4300ebcd3a6c2c416f934842044",
+          "facts": [
+            "Evan is trusted.",
+            "Gabe is verified.",
+            "Gabe is approved.",
+            "Farah is trusted.",
+            "Evan is verified.",
+            "Gabe is trusted.",
+            "Evan is approved.",
+            "Farah is registered.",
+            "Farah is approved."
+          ],
+          "rules": [
+            "For every person mentioned: if person 1 is trusted and person 1 is not verified, then person 1 is not active.",
+            "For every person mentioned: if person 1 is trusted and person 1 is verified, then person 1 is active.",
+            "For every person mentioned: if person 1 is not active, then person 1 is not authorized.",
+            "For every person mentioned: if person 1 is active, then person 1 is authorized."
+          ],
+          "question": "Farah is authorized.",
+          "prompt": "Decide using only these facts and rules. TRUE means the statement follows; FALSE means its explicit negation follows; UNKNOWN means neither follows. Absence is not negation. Answer A for TRUE, B for FALSE, or C for UNKNOWN.\n\nFacts:\nEvan is trusted.\nGabe is verified.\nGabe is approved.\nFarah is trusted.\nEvan is verified.\nGabe is trusted.\nEvan is approved.\nFarah is registered.\nFarah is approved.\n\nRules:\nFor every person mentioned: if person 1 is trusted and person 1 is not verified, then person 1 is not active.\nFor every person mentioned: if person 1 is trusted and person 1 is verified, then person 1 is active.\nFor every person mentioned: if person 1 is not active, then person 1 is not authorized.\nFor every person mentioned: if person 1 is active, then person 1 is authorized.\n\nStatement: Farah is authorized.\n\nAnswer:"
+        }
+      ],
+      "additional_model_inference": false
+    }
+  },
+  "verification": {
+    "prediction_rows": 165344,
+    "test_metric_sets": 44,
+    "cpu_tests": 126
+  },
+  "provenance": "Recorded study outputs; no live model inference or new experiments."
+}

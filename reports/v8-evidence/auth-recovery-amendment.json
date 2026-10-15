@@ -1,0 +1,30 @@
+{
+  "study_identity": "c590e9b9727c5dfa81fce210a79b1be40b2783b01ce1dcb55393630a7858075d",
+  "at_utc": "2026-10-14T19:51:22.871143+00:00",
+  "failure": {
+    "repetition": "r2",
+    "name": "treatment-3",
+    "stage": "training",
+    "allocation_usd": 0.42613511111111113,
+    "app_id": "ap-ywM4hlC83LQyVK1Ie0PzSp",
+    "protocol_identity": "9c843f1daa2333aae4bcafb9cc5b719adf484e3294b77199602b85308a3edc71",
+    "status": "failed",
+    "submitted_at_utc": "2026-10-14T19:44:44.600871+00:00",
+    "client_seconds": 1.1887955418787897
+  },
+  "inspection_sha256": "159dc38f7bd654c07527280b289016ff43a9224e946a0a3d83952ae15291c38a",
+  "document_sha256": "baf78e844390a0fdf32aaaa74aadcd1c8bf59ff5b1c872c1f51f55fa260f08c8",
+  "compute_allocation_usd": 8.5,
+  "storage_reserve_usd": 0.5,
+  "per_repetition_allocation_usd": {
+    "r1": 4,
+    "r2": 4.5
+  },
+  "original_total_allocation_usd": 9,
+  "maximum_compute_usd": 8.097950666666668,
+  "additional_call_ceiling_usd": 0.42613511111111113,
+  "maximum_additional_calls": 1,
+  "scientific_settings_changed": false,
+  "first_seed_predictions_inspected": true,
+  "identity": "2c357dabeaf6fab1efb8d2715132087fa1567ee3480d5cc0bfafc51ef7eacb3f"
+}

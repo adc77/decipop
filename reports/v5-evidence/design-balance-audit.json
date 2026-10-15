@@ -1,0 +1,18 @@
+{
+  "base_query_polarity": {
+    "conjunction": {
+      "positive_queries": 432,
+      "negative_queries": 432
+    },
+    "deeper": {
+      "positive_queries": 144,
+      "negative_queries": 144
+    },
+    "signed_chain": {
+      "positive_queries": 144,
+      "negative_queries": 144
+    }
+  },
+  "base_facts_per_entity": 3,
+  "checks_passed": true
+}

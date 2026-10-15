@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/axon_dendrite/decision-model-lab/v5_prepare.py", line 123, in <module>
+    main()
+  File "/Users/axon_dendrite/decision-model-lab/v5_prepare.py", line 78, in main
+    audit["independent_serialized_data_audit"] = validate_dataset(root / "data", excluded)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/axon_dendrite/decision-model-lab/v5_lab/data.py", line 272, in validate_dataset
+    raise ValueError("Saved oracle label differs")
+ValueError: Saved oracle label differs

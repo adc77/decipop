@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "synthetic_logits": true,
+  "additional_model_inference": false,
+  "checked_repetitions": [
+    "r1",
+    "r2"
+  ]
+}

@@ -1,0 +1,95 @@
+✓ Initialized. View run at 
+https://modal.com/apps/amandogra2016/main/ap-ywM4hlC83LQyVK1Ie0PzSp
+✓ Created objects.
+├── ✓ Uploaded /Users/axon_dendrite/decision-model-lab/v8_app.py
+├── ✓ Uploaded docs/V8_PROTOCOL.md
+├── ✓ Uploaded uv.lock
+├── ✓ Uploaded NOTICE
+├── ✓ Uploaded LICENSE
+├── ✓ Uploaded /Users/axon_dendrite/decision-model-lab/configs
+├── ✓ Uploaded PythonPackage:decision_lab, PythonPackage:v4_lab, 
+│   PythonPackage:v5_lab, PythonPackage:v6_lab, PythonPackage:v7_lab, 
+│   PythonPackage:v8_lab
+├── ✓ Created Function gpu_pilot.
+├── ✓ Created Function gpu_training.
+├── ✓ Created Function gpu_selection.
+├── ✓ Created Function gpu_recovery.
+└── ✓ Created Function gpu_test.
+{"arm": "control", "step": 100, "loss": 0.9353407211601734, "elapsed": 139.772673989}
+{"arm": "control", "step": 200, "loss": 0.16892742505297065, "elapsed": 272.64714222699996}
+{"arm": "control", "step": 300, "loss": 0.4613555520772934, "elapsed": 471.109747578}
+{"arm": "control", "step": 378, "epoch": 1, "cursor": 0, "presentations": 12096, "total_steps": 1134, "complete": false, "body_seconds": 632.1606165009999, "start_step": 0, "protocol_identity": "9c843f1daa2333aae4bcafb9cc5b719adf484e3294b77199602b85308a3edc71"}
+{"arm": "control", "step": 400, "loss": 0.07260946184396744, "elapsed": 29.306667610999966}
+{"arm": "control", "step": 500, "loss": 0.057066303270403296, "elapsed": 164.37275762699994}
+{"arm": "control", "step": 600, "loss": 0.5074592834571376, "elapsed": 364.98325319699995}
+{"arm": "control", "step": 700, "loss": 0.2828736294177361, "elapsed": 498.33738483600007}
+{"arm": "control", "step": 756, "epoch": 2, "cursor": 0, "presentations": 24192, "total_steps": 1134, "complete": false, "body_seconds": 630.1275431319999, "start_step": 378, "protocol_identity": "9c843f1daa2333aae4bcafb9cc5b719adf484e3294b77199602b85308a3edc71"}
+{"arm": "control", "step": 800, "loss": 0.11232948489487171, "elapsed": 58.771729052999945}
+{"arm": "control", "step": 900, "loss": 0.0966598333325237, "elapsed": 251.58575568399988}
+{"arm": "control", "step": 1000, "loss": 0.1358168101287447, "elapsed": 385.570809909}
+{"arm": "control", "step": 1100, "loss": 0.13518043376825517, "elapsed": 519.4847790609999}
+{"arm": "control", "step": 1134, "loss": 0.3248649728484452, "elapsed": 626.3704169749999}
+{"arm": "control", "step": 1134, "epoch": 3, "cursor": 0, "presentations": 36288, "total_steps": 1134, "complete": true, "body_seconds": 626.3706392940001, "start_step": 756, "protocol_identity": "9c843f1daa2333aae4bcafb9cc5b719adf484e3294b77199602b85308a3edc71"}
+{"arm": "treatment", "step": 100, "loss": 0.4452439472079277, "elapsed": 133.55130430500003}
+{"arm": "treatment", "step": 200, "loss": 0.16808655764907598, "elapsed": 268.87895813199975}
+{"arm": "treatment", "step": 300, "loss": 0.4633280709385872, "elapsed": 469.0626930409999}
+{"arm": "treatment", "step": 378, "epoch": 1, "cursor": 0, "presentations": 12096, "total_steps": 1134, "complete": false, "body_seconds": 633.4718665719997, "start_step": 0, "protocol_identity": "9c843f1daa2333aae4bcafb9cc5b719adf484e3294b77199602b85308a3edc71"}
+{"arm": "treatment", "step": 400, "loss": 0.08711952459998429, "elapsed": 29.748337769000045}
+{"arm": "treatment", "step": 500, "loss": 0.05590290165855549, "elapsed": 162.30330513499985}
+{"arm": "treatment", "step": 600, "loss": 0.5913689695298672, "elapsed": 363.369546936}
+{"arm": "treatment", "step": 700, "loss": 0.1337788786040619, "elapsed": 497.0479552269999}
+Stopping app - local client disconnected. Use `modal run --detach` to keep apps running even if your local client disconnects.
+[modal-client] 2026-10-15T01:04:19+0530 Loop attempt for _run_app.<locals>.heartbeat failed
+Traceback (most recent call last):
+  File "/Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/modal/_utils/async_utils.py", line 588, in loop_coro
+    await asyncio.wait_for(async_f(), timeout=timeout)
+  File "/Users/axon_dendrite/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/modal/runner.py", line 66, in _heartbeat
+    await client._stub.AppHeartbeat(request, retry=Retry(attempt_timeout=HEARTBEAT_TIMEOUT))
+modal.exception.ConflictError: App state is APP_STATE_STOPPED
+{"arm": "treatment", "step": 756, "epoch": 2, "cursor": 0, "presentations": 24192, "total_steps": 1134, "complete": false, "body_seconds": 625.932352666, "start_step": 378, "protocol_identity": "9c843f1daa2333aae4bcafb9cc5b719adf484e3294b77199602b85308a3edc71"}
+[modal-client] 2026-10-15T01:14:45+0530 Auth token refresh failed; falling back to cached token: Connection lost
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /Users/axon_dendrite/decision-model-lab/v8_app.py:233 in main                │
+│                                                                              │
+│   232 │   │   │   │   else:                                                  │
+│ ❱ 233 │   │   │   │   │   result = invoke(repetition, "training", f"{arm}-{c │
+│   234 │   │   │   │   │   result["protocol_identity"] = verify(root)["identi │
+│                                                                              │
+│ /Users/axon_dendrite/decision-model-lab/v8_app.py:112 in invoke              │
+│                                                                              │
+│   111 │   try:                                                               │
+│ ❱ 112 │   │   result = function.remote(repetition, *args)                    │
+│   113 │   except BaseException:                                              │
+│                                                                              │
+│ /Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/m │
+│ odal/_object.py:49 in wrapped                                                │
+│                                                                              │
+│    48 │   │   await self.hydrate()                                           │
+│ ❱  49 │   │   return await method(self, *args, **kwargs)                     │
+│    50                                                                        │
+│                                                                              │
+│ /Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/m │
+│ odal/_functions.py:2067 in remote                                            │
+│                                                                              │
+│   2066 │   │                                                                 │
+│ ❱ 2067 │   │   return await self._call_function(args, kwargs)                │
+│   2068                                                                       │
+│                                                                              │
+│ /Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/m │
+│ odal/_functions.py:1986 in _call_function                                    │
+│                                                                              │
+│   1985 │   │   if self._input_plane_url:                                     │
+│ ❱ 1986 │   │   │   invocation = await _InputPlaneInvocation.create(          │
+│   1987 │   │   │   │   self,                                                 │
+│                                                                              │
+│ /Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/m │
+│ odal/_functions.py:464 in create                                             │
+│                                                                              │
+│    463 │   │   metadata = await client.get_input_plane_metadata(input_plane_ │
+│ ❱  464 │   │   response = await stub.AttemptStart(request, metadata=metadata │
+│    465 │   │   attempt_token = response.attempt_token                        │
+╰──────────────────────────────────────────────────────────────────────────────╯
+AuthError: Jwt is expired

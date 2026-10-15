@@ -1,0 +1,72 @@
+{
+  "state": {
+    "arm": "treatment",
+    "step": 756,
+    "epoch": 2,
+    "cursor": 0,
+    "presentations": 24192,
+    "total_steps": 1134,
+    "complete": false,
+    "resume": "recovery/treatment/step-756",
+    "protocol_identity": "9c843f1daa2333aae4bcafb9cc5b719adf484e3294b77199602b85308a3edc71",
+    "checkpoint_protocol_identity": "9c843f1daa2333aae4bcafb9cc5b719adf484e3294b77199602b85308a3edc71"
+  },
+  "checkpoint_manifest": {
+    "identity": "9c843f1daa2333aae4bcafb9cc5b719adf484e3294b77199602b85308a3edc71",
+    "files": {
+      "model.safetensors": "df6016d6bc120abdd1eaa0f4cdd74ada1925d2187f4b5baf6a39b5fd95847c91",
+      "training.pt": "727d2bd51b34769bac4dbc9bab5607efcf29a069e30e221064f31f4664abd847",
+      "progress.json": "6bc35be99b5e4dbf6cb83d1efbb334a529e910c27ef614f0107622ec3b384807"
+    }
+  },
+  "progress_step": 756,
+  "progress_updates": 756,
+  "owned_apps": [
+    {
+      "app_id": "ap-GXJlYIWtbTEbuFsjUh4UQg",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1791995321.576875
+    },
+    {
+      "app_id": "ap-cs96Kw1sWJJXbDBRS0xNWN",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1791995488.069138
+    },
+    {
+      "app_id": "ap-HMhjMYjalmRwb1SGyDe2gg",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1791999328.132269
+    },
+    {
+      "app_id": "ap-tTJpHj2vvsTxM8pKQmIhls",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1792000138.329383
+    },
+    {
+      "app_id": "ap-l9hBlwgUb9cqEB7pJvNa9c",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1792000777.461198
+    },
+    {
+      "app_id": "ap-ywM4hlC83LQyVK1Ie0PzSp",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1792004465.275033
+    }
+  ],
+  "volume_identity_verified": true,
+  "candidate_records": [
+    "study-v8/r2/candidate-records/treatment-step600.json",
+    "study-v8/r2/candidate-records/treatment-step250.json",
+    "study-v8/r2/candidate-records/control-step1134.json",
+    "study-v8/r2/candidate-records/control-step900.json",
+    "study-v8/r2/candidate-records/control-step600.json",
+    "study-v8/r2/candidate-records/control-step250.json"
+  ],
+  "new_gpu_calls": 0
+}

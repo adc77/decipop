@@ -1,0 +1,12 @@
+{
+  "study_identity": "c590e9b9727c5dfa81fce210a79b1be40b2783b01ce1dcb55393630a7858075d",
+  "auth_amendment_identity": "2c357dabeaf6fab1efb8d2715132087fa1567ee3480d5cc0bfafc51ef7eacb3f",
+  "cache_sha256": "9053e71ea312526c201ef241d5335d96518cf18c34336af7b852d59509c4e879",
+  "inspection_sha256": "8d4b76afe5a69c642887997769924736d7bec9ce8a3f90d0be5cd879028c5595",
+  "document_sha256": "70c34c4e0c87e089f4a639af52bead9c6e28b8a3188fcf4b7ae877a172be6698",
+  "scientific_settings_changed": false,
+  "additional_gpu_calls": 0,
+  "additional_allocation_usd": 0,
+  "r2_final_tests_inspected": false,
+  "identity": "846affde549b12193262d98418d91d846b70de1887eb983d9d5d6ea9fe39c829"
+}

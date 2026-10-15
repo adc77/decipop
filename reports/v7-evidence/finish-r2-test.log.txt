@@ -1,0 +1,44 @@
+✓ Initialized. View run at 
+https://modal.com/apps/amandogra2016/main/ap-esUno0h83vuEtUBFTSAi3y
+✓ Created objects.
+├── ✓ Uploaded /Users/axon_dendrite/decision-model-lab/v7_app.py
+├── ✓ Uploaded docs/V7_PROTOCOL.md
+├── ✓ Uploaded uv.lock
+├── ✓ Uploaded NOTICE
+├── ✓ Uploaded LICENSE
+├── ✓ Uploaded /Users/axon_dendrite/decision-model-lab/configs
+├── ✓ Uploaded PythonPackage:decision_lab, PythonPackage:v4_lab, 
+│   PythonPackage:v5_lab, PythonPackage:v6_lab, PythonPackage:v7_lab
+├── ✓ Created Function gpu_pilot.
+├── ✓ Created Function gpu_training.
+├── ✓ Created Function gpu_selection.
+├── ✓ Created Function gpu_recovery.
+└── ✓ Created Function gpu_test.
+{"candidate": "parent", "scored": "test_multi", "questions": 1440}
+{"candidate": "parent", "scored": "test_original", "questions": 900}
+{"candidate": "parent", "scored": "test_counterfactual", "questions": 900}
+{"candidate": "control", "scored": "test_multi", "questions": 1440}
+{"candidate": "control", "scored": "test_multi_transformations", "questions": 11520}
+{"candidate": "control", "scored": "test_multi_depth", "questions": 432}
+{"candidate": "control", "scored": "test_multi_wording", "questions": 432}
+{"candidate": "control", "scored": "test_multi_signed_chain", "questions": 432}
+{"candidate": "control", "scored": "test_original", "questions": 900}
+{"candidate": "control", "scored": "test_counterfactual", "questions": 900}
+{"candidate": "control", "scored": "test_depth", "questions": 300}
+{"candidate": "control", "scored": "test_wording", "questions": 300}
+{"candidate": "control", "scored": "test_single_branch", "questions": 200}
+{"candidate": "treatment", "scored": "test_multi", "questions": 1440}
+{"candidate": "treatment", "scored": "test_multi_transformations", "questions": 11520}
+{"candidate": "treatment", "scored": "test_multi_depth", "questions": 432}
+{"candidate": "treatment", "scored": "test_multi_wording", "questions": 432}
+{"candidate": "treatment", "scored": "test_multi_signed_chain", "questions": 432}
+{"candidate": "treatment", "scored": "test_original", "questions": 900}
+{"candidate": "treatment", "scored": "test_counterfactual", "questions": 900}
+{"candidate": "treatment", "scored": "test_depth", "questions": 300}
+{"candidate": "treatment", "scored": "test_wording", "questions": 300}
+{"candidate": "treatment", "scored": "test_single_branch", "questions": 200}
+{"repetition": "r2", "action": "test", "completed": true}
+Stopping app - local entrypoint completed.
+Runner terminated.
+✓ App completed. View run at 
+https://modal.com/apps/amandogra2016/main/ap-esUno0h83vuEtUBFTSAi3y

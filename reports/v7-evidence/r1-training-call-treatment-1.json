@@ -1,0 +1,12 @@
+{
+  "arm": "treatment",
+  "step": 378,
+  "epoch": 1,
+  "cursor": 0,
+  "presentations": 12096,
+  "total_steps": 1134,
+  "complete": false,
+  "body_seconds": 642.4824206829999,
+  "start_step": 0,
+  "protocol_identity": "f07e4f34618900fe4a571f47f380737efe7919897a5465704c92a138c3154c71"
+}

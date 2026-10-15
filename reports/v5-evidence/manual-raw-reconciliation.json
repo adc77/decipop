@@ -1,0 +1,267 @@
+{
+  "valid": true,
+  "scope": "Independent NumPy aggregation of base-world raw logits and saved oracle labels",
+  "models": {
+    "v3_parent": {
+      "conjunction": {
+        "worlds": {
+          "families": 288,
+          "complete": 0,
+          "constant": 285
+        },
+        "confusion": [
+          [
+            134,
+            27,
+            127
+          ],
+          [
+            133,
+            27,
+            128
+          ],
+          [
+            132,
+            29,
+            127
+          ]
+        ],
+        "predicted_counts": {
+          "UNKNOWN": 382,
+          "TRUE": 399,
+          "FALSE": 83
+        }
+      },
+      "deeper": {
+        "worlds": {
+          "families": 96,
+          "complete": 0,
+          "constant": 94
+        },
+        "confusion": [
+          [
+            9,
+            2,
+            85
+          ],
+          [
+            9,
+            2,
+            85
+          ],
+          [
+            9,
+            2,
+            85
+          ]
+        ],
+        "predicted_counts": {
+          "UNKNOWN": 255,
+          "FALSE": 6,
+          "TRUE": 27
+        }
+      },
+      "signed_chain": {
+        "worlds": {
+          "families": 96,
+          "complete": 0,
+          "constant": 95
+        },
+        "confusion": [
+          [
+            49,
+            2,
+            45
+          ],
+          [
+            48,
+            2,
+            46
+          ],
+          [
+            48,
+            2,
+            46
+          ]
+        ],
+        "predicted_counts": {
+          "TRUE": 145,
+          "UNKNOWN": 137,
+          "FALSE": 6
+        }
+      }
+    },
+    "v4_control": {
+      "conjunction": {
+        "worlds": {
+          "families": 288,
+          "complete": 0,
+          "constant": 287
+        },
+        "confusion": [
+          [
+            115,
+            67,
+            106
+          ],
+          [
+            114,
+            68,
+            106
+          ],
+          [
+            115,
+            67,
+            106
+          ]
+        ],
+        "predicted_counts": {
+          "UNKNOWN": 318,
+          "TRUE": 344,
+          "FALSE": 202
+        }
+      },
+      "deeper": {
+        "worlds": {
+          "families": 96,
+          "complete": 0,
+          "constant": 96
+        },
+        "confusion": [
+          [
+            8,
+            5,
+            83
+          ],
+          [
+            8,
+            5,
+            83
+          ],
+          [
+            8,
+            5,
+            83
+          ]
+        ],
+        "predicted_counts": {
+          "UNKNOWN": 249,
+          "FALSE": 15,
+          "TRUE": 24
+        }
+      },
+      "signed_chain": {
+        "worlds": {
+          "families": 96,
+          "complete": 0,
+          "constant": 95
+        },
+        "confusion": [
+          [
+            34,
+            0,
+            62
+          ],
+          [
+            33,
+            0,
+            63
+          ],
+          [
+            33,
+            0,
+            63
+          ]
+        ],
+        "predicted_counts": {
+          "UNKNOWN": 188,
+          "TRUE": 100
+        }
+      }
+    },
+    "v4_mixed": {
+      "conjunction": {
+        "worlds": {
+          "families": 288,
+          "complete": 0,
+          "constant": 284
+        },
+        "confusion": [
+          [
+            3,
+            0,
+            285
+          ],
+          [
+            1,
+            0,
+            287
+          ],
+          [
+            0,
+            0,
+            288
+          ]
+        ],
+        "predicted_counts": {
+          "UNKNOWN": 860,
+          "TRUE": 4
+        }
+      },
+      "deeper": {
+        "worlds": {
+          "families": 96,
+          "complete": 0,
+          "constant": 96
+        },
+        "confusion": [
+          [
+            0,
+            0,
+            96
+          ],
+          [
+            0,
+            0,
+            96
+          ],
+          [
+            0,
+            0,
+            96
+          ]
+        ],
+        "predicted_counts": {
+          "UNKNOWN": 288
+        }
+      },
+      "signed_chain": {
+        "worlds": {
+          "families": 96,
+          "complete": 0,
+          "constant": 96
+        },
+        "confusion": [
+          [
+            0,
+            0,
+            96
+          ],
+          [
+            0,
+            0,
+            96
+          ],
+          [
+            0,
+            0,
+            96
+          ]
+        ],
+        "predicted_counts": {
+          "UNKNOWN": 288
+        }
+      }
+    }
+  }
+}

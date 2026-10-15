@@ -1,0 +1,99 @@
+Note that running a local entrypoint in detached mode only keeps the last triggered Modal function alive after the parent process has been killed or disconnected.
+✓ Initialized. View run at 
+https://modal.com/apps/amandogra2016/main/ap-tVVUgWBlQVJgUpVZr2FNLh
+✓ Created objects.
+├── ✓ Uploaded /Users/axon_dendrite/decision-model-lab/v8_app.py
+├── ✓ Uploaded docs/V8_PROTOCOL.md
+├── ✓ Uploaded uv.lock
+├── ✓ Uploaded NOTICE
+├── ✓ Uploaded LICENSE
+├── ✓ Uploaded /Users/axon_dendrite/decision-model-lab/configs
+├── ✓ Uploaded PythonPackage:decision_lab, PythonPackage:v4_lab, 
+│   PythonPackage:v5_lab, PythonPackage:v6_lab, PythonPackage:v7_lab, 
+│   PythonPackage:v8_lab, PythonPackage:v8_permit
+├── ✓ Created Function gpu_pilot.
+├── ✓ Created Function gpu_training.
+├── ✓ Created Function gpu_selection.
+├── ✓ Created Function gpu_recovery.
+└── ✓ Created Function gpu_test.
+{"candidate": "control-step0", "scored": "selection_fit", "questions": 1008}
+{"candidate": "control-step0", "scored": "selection", "questions": 1008}
+{"candidate": "control-step0", "scored": "development", "questions": 1008}
+{"candidate": "control-step250", "scored": "selection_fit", "questions": 1008}
+{"candidate": "control-step250", "scored": "selection", "questions": 1008}
+{"candidate": "control-step250", "scored": "development", "questions": 1008}
+{"candidate": "control-step600", "scored": "selection_fit", "questions": 1008}
+{"candidate": "control-step600", "scored": "selection", "questions": 1008}
+{"candidate": "control-step600", "scored": "development", "questions": 1008}
+{"candidate": "control-step900", "scored": "selection_fit", "questions": 1008}
+{"candidate": "control-step900", "scored": "selection", "questions": 1008}
+{"candidate": "control-step900", "scored": "development", "questions": 1008}
+{"candidate": "control-step1134", "scored": "selection_fit", "questions": 1008}
+{"candidate": "control-step1134", "scored": "selection", "questions": 1008}
+{"candidate": "control-step1134", "scored": "development", "questions": 1008}
+{"candidate": "treatment-step0", "scored": "selection_fit", "questions": 1008}
+{"candidate": "treatment-step0", "scored": "selection", "questions": 1008}
+{"candidate": "treatment-step0", "scored": "development", "questions": 1008}
+{"candidate": "treatment-step250", "scored": "selection_fit", "questions": 1008}
+{"candidate": "treatment-step250", "scored": "selection", "questions": 1008}
+{"candidate": "treatment-step250", "scored": "development", "questions": 1008}
+{"candidate": "treatment-step600", "scored": "selection_fit", "questions": 1008}
+{"candidate": "treatment-step600", "scored": "selection", "questions": 1008}
+{"candidate": "treatment-step600", "scored": "development", "questions": 1008}
+{"candidate": "treatment-step900", "scored": "selection_fit", "questions": 1008}
+{"candidate": "treatment-step900", "scored": "selection", "questions": 1008}
+{"candidate": "treatment-step900", "scored": "development", "questions": 1008}
+{"candidate": "treatment-step1134", "scored": "selection_fit", "questions": 1008}
+[modal-client] 2026-10-14T20:18:28+0000 Received a cancellation signal while processing input ('in-01M4Y0KSJ8R7NNAMEDDNTPN4RF:1792008644170-0',)
+{"candidate": "treatment-step1134", "scored": "selection", "questions": 1008}
+{"candidate": "treatment-step1134", "scored": "development", "questions": 1008}
+Input in-01M4Y0KSJ8R7NNAMEDDNTPN4RF:1792008644170-0 failed to respond to cancellation for too long: 30 seconds - killing task
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /Users/axon_dendrite/decision-model-lab/v8_app.py:249 in main                │
+│                                                                              │
+│   248 │   elif action == "selection":                                        │
+│ ❱ 249 │   │   result = invoke(repetition, "selection", "selection", gpu_sele │
+│   250 │   │   atomic_json(root / "selection-freeze.json", result)            │
+│                                                                              │
+│ /Users/axon_dendrite/decision-model-lab/v8_app.py:115 in invoke              │
+│                                                                              │
+│   114 │   try:                                                               │
+│ ❱ 115 │   │   result = function.remote(repetition, *args)                    │
+│   116 │   except BaseException:                                              │
+│                                                                              │
+│ /Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/m │
+│ odal/_object.py:49 in wrapped                                                │
+│                                                                              │
+│    48 │   │   await self.hydrate()                                           │
+│ ❱  49 │   │   return await method(self, *args, **kwargs)                     │
+│    50                                                                        │
+│                                                                              │
+│ /Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/m │
+│ odal/_functions.py:2067 in remote                                            │
+│                                                                              │
+│   2066 │   │                                                                 │
+│ ❱ 2067 │   │   return await self._call_function(args, kwargs)                │
+│   2068                                                                       │
+│                                                                              │
+│ /Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/m │
+│ odal/_functions.py:2004 in _call_function                                    │
+│                                                                              │
+│   2003 │   │                                                                 │
+│ ❱ 2004 │   │   return await invocation.run_function()                        │
+│   2005                                                                       │
+│                                                                              │
+│ /Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/m │
+│ odal/_functions.py:496 in run_function                                       │
+│                                                                              │
+│    495 │   │   │   if await_response.output.result.status in TERMINAL_STATUS │
+│ ❱  496 │   │   │   │   return await _process_result(                         │
+│    497 │   │   │   │   │   await_response.output.result, await_response.outp │
+│                                                                              │
+│ /Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/m │
+│ odal/_utils/function_utils.py:574 in _process_result                         │
+│                                                                              │
+│   573 │   │                                                                  │
+│ ❱ 574 │   │   raise RemoteError(result.exception)                            │
+│   575                                                                        │
+╰──────────────────────────────────────────────────────────────────────────────╯
+RemoteError: Function call was cancelled by user or a failure.

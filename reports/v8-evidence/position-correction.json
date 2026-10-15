@@ -1,0 +1,44 @@
+{
+  "at_utc": "2026-10-14T16:11:18.673508+00:00",
+  "original_study_identity": "3fa930f6fe0b839da45bb28b670dc899c0d4f97aa64f6a5820e4f0a6c6651ac2",
+  "original_protocol_identities": {
+    "r1": "363c1013fc628f78a4f2c23af1b377dd9f8960a0382660ab144c4c8ef81cb5ec",
+    "r2": "990a97ce8cde764abe0b24da5196352608d669c5a0c567476983f9e86a065917"
+  },
+  "reason": "Edit type correlated with target position at three entities",
+  "correction": "Rotate target independently using integer group division by three",
+  "original_source_archive_sha256": "3aa04401377d3c876aa04ec67fe234709b262574b7e6af60d416f99ec844e540",
+  "original_resource_ids": [
+    "ap-EG8X4zwgnSn0TPgAnrJAD4",
+    "ap-LEv5UyLAcDdBJdzzJOXckz",
+    "ap-rM2OnxcnbiDgaCutzHCY8c",
+    "vo-FuxyGRVYLJodjYVnfsXgnp"
+  ],
+  "original_calls": [
+    {
+      "repetition": "r1",
+      "name": "pilot",
+      "stage": "pilot",
+      "allocation_usd": 0.2082251111111111,
+      "app_id": "ap-EG8X4zwgnSn0TPgAnrJAD4",
+      "protocol_identity": "363c1013fc628f78a4f2c23af1b377dd9f8960a0382660ab144c4c8ef81cb5ec",
+      "status": "complete",
+      "submitted_at_utc": "2026-10-14T16:03:41.285951+00:00",
+      "client_seconds": 133.64457541704178
+    },
+    {
+      "repetition": "r2",
+      "name": "pilot",
+      "stage": "pilot",
+      "allocation_usd": 0.2082251111111111,
+      "app_id": "ap-LEv5UyLAcDdBJdzzJOXckz",
+      "protocol_identity": "990a97ce8cde764abe0b24da5196352608d669c5a0c567476983f9e86a065917",
+      "status": "complete",
+      "submitted_at_utc": "2026-10-14T16:06:26.352715+00:00",
+      "client_seconds": 132.9665146660991
+    }
+  ],
+  "original_cleanup_sha256": "ba7d79fdb9759a7ba8d66e5225ad2ab4ebc11c80a29d663e6e06db4ec6d83b7c",
+  "new_pilots_consume_reserved_retry_allowance": true,
+  "further_recovery_calls_available": 0
+}

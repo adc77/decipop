@@ -1,0 +1,7 @@
+{"stage": "candidates-resumed", "status": "started"}
+{"stage": "releases", "status": "started"}
+{"stage": "audit", "status": "started"}
+{"stage": "private-releases", "status": "started"}
+{"stage": "cleanup", "status": "started"}
+{"stage": "billing", "status": "started"}
+V6 verified storage, publication and cleanup completed; final archive pending

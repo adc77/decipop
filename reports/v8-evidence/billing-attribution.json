@@ -1,0 +1,340 @@
+{
+  "snapshot_utc": "2026-10-14T21:46:09.644358+00:00",
+  "owned_resource_metered_usd": "3.70114067",
+  "resources_usd": {
+    "CPU": "0.56237378",
+    "Memory": "0.76091278",
+    "L4": "2.37785243",
+    "Network Egress": "0.00000168"
+  },
+  "workspace_billed_usd": "0E-8",
+  "scoped_rows": [
+    {
+      "object_id": "ap-EG8X4zwgnSn0TPgAnrJAD4",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T16:00:00",
+      "resource": "CPU",
+      "cost": "0.00683225"
+    },
+    {
+      "object_id": "ap-EG8X4zwgnSn0TPgAnrJAD4",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T16:00:00",
+      "resource": "Memory",
+      "cost": "0.00924448"
+    },
+    {
+      "object_id": "ap-EG8X4zwgnSn0TPgAnrJAD4",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T16:00:00",
+      "resource": "L4",
+      "cost": "0.02888899"
+    },
+    {
+      "object_id": "ap-GXJlYIWtbTEbuFsjUh4UQg",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T16:00:00",
+      "resource": "CPU",
+      "cost": "0.00862304"
+    },
+    {
+      "object_id": "ap-GXJlYIWtbTEbuFsjUh4UQg",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T16:00:00",
+      "resource": "Memory",
+      "cost": "0.01166225"
+    },
+    {
+      "object_id": "ap-GXJlYIWtbTEbuFsjUh4UQg",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T16:00:00",
+      "resource": "L4",
+      "cost": "0.03644453"
+    },
+    {
+      "object_id": "ap-HMhjMYjalmRwb1SGyDe2gg",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T16:00:00",
+      "resource": "CPU",
+      "cost": "0.08913518"
+    },
+    {
+      "object_id": "ap-HMhjMYjalmRwb1SGyDe2gg",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T16:00:00",
+      "resource": "Memory",
+      "cost": "0.12060574"
+    },
+    {
+      "object_id": "ap-HMhjMYjalmRwb1SGyDe2gg",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T16:00:00",
+      "resource": "L4",
+      "cost": "0.37689294"
+    },
+    {
+      "object_id": "ap-HMhjMYjalmRwb1SGyDe2gg",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T17:00:00",
+      "resource": "CPU",
+      "cost": "0.11148773"
+    },
+    {
+      "object_id": "ap-HMhjMYjalmRwb1SGyDe2gg",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T17:00:00",
+      "resource": "Memory",
+      "cost": "0.15084751"
+    },
+    {
+      "object_id": "ap-HMhjMYjalmRwb1SGyDe2gg",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T17:00:00",
+      "resource": "L4",
+      "cost": "0.47139846"
+    },
+    {
+      "object_id": "ap-LEv5UyLAcDdBJdzzJOXckz",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T16:00:00",
+      "resource": "CPU",
+      "cost": "0.00683226"
+    },
+    {
+      "object_id": "ap-LEv5UyLAcDdBJdzzJOXckz",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T16:00:00",
+      "resource": "Memory",
+      "cost": "0.00924450"
+    },
+    {
+      "object_id": "ap-LEv5UyLAcDdBJdzzJOXckz",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T16:00:00",
+      "resource": "L4",
+      "cost": "0.02888905"
+    },
+    {
+      "object_id": "ap-UvXazh9P1DsMgPM9GSmc2W",
+      "description": "decision-model-lab-v8-final-evaluation",
+      "environment": "main",
+      "interval_start": "2026-10-14T21:00:00",
+      "resource": "Network Egress",
+      "cost": "0.00000168"
+    },
+    {
+      "object_id": "ap-UvXazh9P1DsMgPM9GSmc2W",
+      "description": "decision-model-lab-v8-final-evaluation",
+      "environment": "main",
+      "interval_start": "2026-10-14T21:00:00",
+      "resource": "CPU",
+      "cost": "0.03729299"
+    },
+    {
+      "object_id": "ap-UvXazh9P1DsMgPM9GSmc2W",
+      "description": "decision-model-lab-v8-final-evaluation",
+      "environment": "main",
+      "interval_start": "2026-10-14T21:00:00",
+      "resource": "Memory",
+      "cost": "0.05045985"
+    },
+    {
+      "object_id": "ap-UvXazh9P1DsMgPM9GSmc2W",
+      "description": "decision-model-lab-v8-final-evaluation",
+      "environment": "main",
+      "interval_start": "2026-10-14T21:00:00",
+      "resource": "L4",
+      "cost": "0.15768704"
+    },
+    {
+      "object_id": "ap-cs96Kw1sWJJXbDBRS0xNWN",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T16:00:00",
+      "resource": "CPU",
+      "cost": "0.00714756"
+    },
+    {
+      "object_id": "ap-cs96Kw1sWJJXbDBRS0xNWN",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T16:00:00",
+      "resource": "Memory",
+      "cost": "0.00967112"
+    },
+    {
+      "object_id": "ap-cs96Kw1sWJJXbDBRS0xNWN",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T16:00:00",
+      "resource": "L4",
+      "cost": "0.03022225"
+    },
+    {
+      "object_id": "ap-l9hBlwgUb9cqEB7pJvNa9c",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T17:00:00",
+      "resource": "CPU",
+      "cost": "0.03185444"
+    },
+    {
+      "object_id": "ap-l9hBlwgUb9cqEB7pJvNa9c",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T17:00:00",
+      "resource": "Memory",
+      "cost": "0.04309335"
+    },
+    {
+      "object_id": "ap-l9hBlwgUb9cqEB7pJvNa9c",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T17:00:00",
+      "resource": "L4",
+      "cost": "0.13466672"
+    },
+    {
+      "object_id": "ap-mnGhBMpmPD9BG5RVXepXhg",
+      "description": "decision-model-lab-v8-auth-recovery",
+      "environment": "main",
+      "interval_start": "2026-10-14T19:00:00",
+      "resource": "CPU",
+      "cost": "0.00220730"
+    },
+    {
+      "object_id": "ap-mnGhBMpmPD9BG5RVXepXhg",
+      "description": "decision-model-lab-v8-auth-recovery",
+      "environment": "main",
+      "interval_start": "2026-10-14T19:00:00",
+      "resource": "Memory",
+      "cost": "0.00298662"
+    },
+    {
+      "object_id": "ap-mnGhBMpmPD9BG5RVXepXhg",
+      "description": "decision-model-lab-v8-auth-recovery",
+      "environment": "main",
+      "interval_start": "2026-10-14T19:00:00",
+      "resource": "L4",
+      "cost": "0.00933318"
+    },
+    {
+      "object_id": "ap-mnGhBMpmPD9BG5RVXepXhg",
+      "description": "decision-model-lab-v8-auth-recovery",
+      "environment": "main",
+      "interval_start": "2026-10-14T20:00:00",
+      "resource": "CPU",
+      "cost": "0.03294877"
+    },
+    {
+      "object_id": "ap-mnGhBMpmPD9BG5RVXepXhg",
+      "description": "decision-model-lab-v8-auth-recovery",
+      "environment": "main",
+      "interval_start": "2026-10-14T20:00:00",
+      "resource": "Memory",
+      "cost": "0.04458184"
+    },
+    {
+      "object_id": "ap-mnGhBMpmPD9BG5RVXepXhg",
+      "description": "decision-model-lab-v8-auth-recovery",
+      "environment": "main",
+      "interval_start": "2026-10-14T20:00:00",
+      "resource": "L4",
+      "cost": "0.13931826"
+    },
+    {
+      "object_id": "ap-tTJpHj2vvsTxM8pKQmIhls",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T17:00:00",
+      "resource": "CPU",
+      "cost": "0.02795956"
+    },
+    {
+      "object_id": "ap-tTJpHj2vvsTxM8pKQmIhls",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T17:00:00",
+      "resource": "Memory",
+      "cost": "0.03783112"
+    },
+    {
+      "object_id": "ap-tTJpHj2vvsTxM8pKQmIhls",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T17:00:00",
+      "resource": "L4",
+      "cost": "0.11822225"
+    },
+    {
+      "object_id": "ap-tVVUgWBlQVJgUpVZr2FNLh",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T20:00:00",
+      "resource": "CPU",
+      "cost": "0.02575300"
+    },
+    {
+      "object_id": "ap-tVVUgWBlQVJgUpVZr2FNLh",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T20:00:00",
+      "resource": "Memory",
+      "cost": "0.03484549"
+    },
+    {
+      "object_id": "ap-tVVUgWBlQVJgUpVZr2FNLh",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T20:00:00",
+      "resource": "L4",
+      "cost": "0.10889216"
+    },
+    {
+      "object_id": "ap-ywM4hlC83LQyVK1Ie0PzSp",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T18:00:00",
+      "resource": "CPU",
+      "cost": "0.17429970"
+    },
+    {
+      "object_id": "ap-ywM4hlC83LQyVK1Ie0PzSp",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T18:00:00",
+      "resource": "Memory",
+      "cost": "0.23583891"
+    },
+    {
+      "object_id": "ap-ywM4hlC83LQyVK1Ie0PzSp",
+      "description": "decision-model-lab-v8-paired-loss",
+      "environment": "main",
+      "interval_start": "2026-10-14T18:00:00",
+      "resource": "L4",
+      "cost": "0.73699660"
+    }
+  ],
+  "requested_interval_utc": {
+    "start": "2026-10-14",
+    "end": "2026-10-15"
+  },
+  "resolution": "h",
+  "scope": "Owned V8 resources only; observed snapshot, not invoice",
+  "raw_report_sha256": "abfd630a3b633434af7e9fd73527071f7e94be30d3014e1cce496ce7488972d8"
+}

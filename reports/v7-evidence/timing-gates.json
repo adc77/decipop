@@ -1,0 +1,37 @@
+{
+  "valid": true,
+  "repetitions": {
+    "r1": {
+      "references": {
+        "verified": true,
+        "inputs": 8,
+        "device": "cuda",
+        "artifact_identity": "2ab1532953c1f8b4c2dfaab8d1b3a49ddc39a32cbeeff5e5413e6ed55a631650"
+      },
+      "seconds_per_update": {
+        "control": 1.2829524965000005,
+        "treatment": 1.3549980611250012
+      },
+      "projected_seconds": {
+        "control": 657.6994502285502,
+        "treatment": 689.017657171038
+      }
+    },
+    "r2": {
+      "references": {
+        "verified": true,
+        "inputs": 8,
+        "device": "cuda",
+        "artifact_identity": "2ab1532953c1f8b4c2dfaab8d1b3a49ddc39a32cbeeff5e5413e6ed55a631650"
+      },
+      "seconds_per_update": {
+        "control": 1.3115105271250007,
+        "treatment": 1.3792282800625006
+      },
+      "projected_seconds": {
+        "control": 670.1136261412378,
+        "treatment": 699.550533343169
+      }
+    }
+  }
+}

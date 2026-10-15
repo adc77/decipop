@@ -1,0 +1,11 @@
+{
+  "files": {
+    "reports/V7_RESULTS.png": "12d01903fb827f7b08838603ff12ce6181feb93f8eeb48d67244e2dd868ef95e",
+    "reports/V7_RESULTS.pdf": "b4a5aa0224eebad4c38f65fc0076721ecd6a0cab5865e36103c4a503cb38b03c"
+  },
+  "input_receipts": {
+    "r1": "3a1e3678d9c42a06ae5192970ad5591f663c3b6d7e811c9e71bcc28ceea19fc9",
+    "r2": "2731d5ca51d0fee69feb494fadaa58f0fb6c154e824dd3d0c3c2c750c6caa170"
+  },
+  "additional_model_inference": false
+}

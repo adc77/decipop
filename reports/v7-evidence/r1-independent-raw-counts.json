@@ -1,0 +1,121 @@
+{
+  "counts": {
+    "control": {
+      "test_counterfactual": {
+        "complete_families": 300,
+        "correct_questions": 900,
+        "families": 300,
+        "input_sha256": "928cea632dd6975b847d46a5973cdb52af7c7d23f4bed28f2069e7746a8d97c2",
+        "prediction_sha256": "3f47784519f28e8b5a631638b9241758816186fc91fb6f569bfd2d79772990cf",
+        "questions": 900,
+        "unknown_correct": 300,
+        "unknown_questions": 300
+      },
+      "test_multi": {
+        "complete_families": 25,
+        "correct_questions": 478,
+        "families": 360,
+        "input_sha256": "06c178f129cc37d3ac4cdb17f2c4bf93f5370a8dd04078926c1ee7c4b01796e2",
+        "prediction_sha256": "b4c636b92aa22e8b2bde6f8e2abdbd8c572b91cbffe39c0245640fb403125d5d",
+        "questions": 1440,
+        "unknown_correct": 472,
+        "unknown_questions": 480
+      },
+      "test_multi_transformations": {
+        "complete_families": 0,
+        "correct_questions": 3848,
+        "families": 360,
+        "input_sha256": "dcf88ab032056dc2b30605bc5cc50b9df81182bf7d390ca28f4ac8de61189b2e",
+        "prediction_sha256": "c19a6f7f13e4ee5273b1bb900a32d16179336526ccc0b6799e82b37dd5fed6a9",
+        "questions": 11520,
+        "unknown_correct": 3796,
+        "unknown_questions": 3840
+      },
+      "test_original": {
+        "complete_families": 242,
+        "correct_questions": 842,
+        "families": 300,
+        "input_sha256": "b9767f8288b8a7f0eab9268f67105a0382b5e97a013d9e2523f9b144d5797368",
+        "prediction_sha256": "8a4640ac584b7ce56538cf4a759f46074e296279f184a3f2b794e6b03daf8f59",
+        "questions": 900,
+        "unknown_correct": 242,
+        "unknown_questions": 300
+      }
+    },
+    "parent": {
+      "test_counterfactual": {
+        "complete_families": 300,
+        "correct_questions": 900,
+        "families": 300,
+        "input_sha256": "928cea632dd6975b847d46a5973cdb52af7c7d23f4bed28f2069e7746a8d97c2",
+        "prediction_sha256": "8cbc91855c8150c56be3f72ff662cc5b372c3c5b50e009657100cdefc2e00ccc",
+        "questions": 900,
+        "unknown_correct": 300,
+        "unknown_questions": 300
+      },
+      "test_multi": {
+        "complete_families": 25,
+        "correct_questions": 487,
+        "families": 360,
+        "input_sha256": "06c178f129cc37d3ac4cdb17f2c4bf93f5370a8dd04078926c1ee7c4b01796e2",
+        "prediction_sha256": "036478bed9eefd8988307534de5a6ab9367b357f3cacf74cf3cbb21be2de7854",
+        "questions": 1440,
+        "unknown_correct": 477,
+        "unknown_questions": 480
+      },
+      "test_original": {
+        "complete_families": 227,
+        "correct_questions": 827,
+        "families": 300,
+        "input_sha256": "b9767f8288b8a7f0eab9268f67105a0382b5e97a013d9e2523f9b144d5797368",
+        "prediction_sha256": "0a02010629e8d90371e24479109ee95c9832cf1ba344954af2ad2c0cb43f558c",
+        "questions": 900,
+        "unknown_correct": 227,
+        "unknown_questions": 300
+      }
+    },
+    "treatment": {
+      "test_counterfactual": {
+        "complete_families": 297,
+        "correct_questions": 897,
+        "families": 300,
+        "input_sha256": "928cea632dd6975b847d46a5973cdb52af7c7d23f4bed28f2069e7746a8d97c2",
+        "prediction_sha256": "13de88f2716aa7e1a2610b5c730349bc253be9c20f7b0554d138271bdd846eb9",
+        "questions": 900,
+        "unknown_correct": 300,
+        "unknown_questions": 300
+      },
+      "test_multi": {
+        "complete_families": 245,
+        "correct_questions": 1266,
+        "families": 360,
+        "input_sha256": "06c178f129cc37d3ac4cdb17f2c4bf93f5370a8dd04078926c1ee7c4b01796e2",
+        "prediction_sha256": "625e30e2c6c3aa4894630c7ad4c6ec4c1bbd51b5ce59c50096359b4ac2fe5ce1",
+        "questions": 1440,
+        "unknown_correct": 355,
+        "unknown_questions": 480
+      },
+      "test_multi_transformations": {
+        "complete_families": 43,
+        "correct_questions": 9635,
+        "families": 360,
+        "input_sha256": "dcf88ab032056dc2b30605bc5cc50b9df81182bf7d390ca28f4ac8de61189b2e",
+        "prediction_sha256": "ed00324beb230374c3fbdcf3a18384854afbad449b2730790c8ce8b28cb2332e",
+        "questions": 11520,
+        "unknown_correct": 2756,
+        "unknown_questions": 3840
+      },
+      "test_original": {
+        "complete_families": 238,
+        "correct_questions": 838,
+        "families": 300,
+        "input_sha256": "b9767f8288b8a7f0eab9268f67105a0382b5e97a013d9e2523f9b144d5797368",
+        "prediction_sha256": "26e1401c135c0b7cbf9b6dffdf3bee72c1e7ce5e0e87643c9df673df3ed092a2",
+        "questions": 900,
+        "unknown_correct": 241,
+        "unknown_questions": 300
+      }
+    }
+  },
+  "valid": true
+}

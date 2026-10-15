@@ -1,0 +1,1 @@
+[modal-client] 2026-10-13T19:57:02+0530 RPC request to /modal.client.ModalClient/AppGetLifecycle made outside of task context

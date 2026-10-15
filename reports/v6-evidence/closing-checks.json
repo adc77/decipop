@@ -1,0 +1,19 @@
+{
+  "lint-closing": {
+    "exit_code": 0,
+    "stdout": "All checks passed!\n"
+  },
+  "format-closing": {
+    "exit_code": 0,
+    "stdout": "176 files already formatted\n"
+  },
+  "lock-closing": {
+    "exit_code": 0,
+    "stdout": "Resolved 95 packages in 3ms\n"
+  },
+  "git-whitespace-closing": {
+    "exit_code": 0,
+    "stdout": ""
+  },
+  "checked_at_utc": "2026-10-13 18:11:42 UTC"
+}

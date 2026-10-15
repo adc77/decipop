@@ -1,3 +1,5 @@
+> Historical V1–V4 private publication record. For the current Premise public release, see [PUBLIC_RELEASE.md](../docs/PUBLIC_RELEASE.md). Historical revision pins below remain unchanged.
+
 # Remote publication
 
 Completed on 2026-10-13 at the owner's request. Both destinations are private.

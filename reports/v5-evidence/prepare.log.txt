@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/Users/axon_dendrite/decision-model-lab/v5_prepare.py", line 104, in <module>
+    main()
+  File "/Users/axon_dendrite/decision-model-lab/v5_prepare.py", line 59, in main
+    audit["independent_serialized_data_audit"] = validate_dataset(root / "data", excluded)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/axon_dendrite/decision-model-lab/v5_lab/data.py", line 261, in validate_dataset
+    theory = Theory.model_validate(row["theory"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/pydantic/main.py", line 790, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for Theory
+entities
+  Input should be a valid tuple [type=tuple_type, input_value=['Aman', 'Bella', 'Chen'], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.14/v/tuple_type
+facts
+  Input should be a valid tuple [type=tuple_type, input_value=[{'predicate': 'authorize...la'], 'negative': True}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.14/v/tuple_type
+rules
+  Input should be a valid tuple [type=tuple_type, input_value=[{'conditions': [{'predic...'], 'negative': False}}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.14/v/tuple_type

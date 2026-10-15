@@ -1,0 +1,50 @@
+✓ Initialized. View run at 
+https://modal.com/apps/amandogra2016/main/ap-QSWHQBhQWISy4JyNeM5KK3
+✓ Created objects.
+├── ✓ Uploaded /Users/axon_dendrite/decision-model-lab/v7_app.py
+├── ✓ Uploaded docs/V7_PROTOCOL.md
+├── ✓ Uploaded uv.lock
+├── ✓ Uploaded NOTICE
+├── ✓ Uploaded LICENSE
+├── ✓ Uploaded /Users/axon_dendrite/decision-model-lab/configs
+├── ✓ Uploaded PythonPackage:decision_lab, PythonPackage:v4_lab, 
+│   PythonPackage:v5_lab, PythonPackage:v6_lab, PythonPackage:v7_lab
+├── ✓ Created Function gpu_pilot.
+├── ✓ Created Function gpu_training.
+├── ✓ Created Function gpu_selection.
+├── ✓ Created Function gpu_recovery.
+└── ✓ Created Function gpu_test.
+{"arm": "control", "step": 100, "loss": 0.008211054373532534, "elapsed": 133.841384458}
+{"arm": "control", "step": 200, "loss": 0.20470954524353147, "elapsed": 262.922404143}
+{"arm": "control", "step": 300, "loss": 0.13656418584287167, "elapsed": 458.527747304}
+{"arm": "control", "step": 378, "epoch": 1, "cursor": 0, "presentations": 12096, "total_steps": 1134, "complete": false, "body_seconds": 617.377085475, "start_step": 0, "protocol_identity": "94550cc844cb3a116a64211bac4be473610aa0b835f8b493f70b2478ab9f808f"}
+{"arm": "control", "step": 400, "loss": 0.020650142105296254, "elapsed": 28.540696956000033}
+{"arm": "control", "step": 500, "loss": 0.0015937851276248693, "elapsed": 158.9659692350001}
+{"arm": "control", "step": 600, "loss": 0.1309410803951323, "elapsed": 353.700995285}
+{"arm": "control", "step": 700, "loss": 0.014877020148560405, "elapsed": 484.3390982940001}
+{"arm": "control", "step": 756, "epoch": 2, "cursor": 0, "presentations": 24192, "total_steps": 1134, "complete": false, "body_seconds": 616.0118545200002, "start_step": 378, "protocol_identity": "94550cc844cb3a116a64211bac4be473610aa0b835f8b493f70b2478ab9f808f"}
+{"arm": "control", "step": 800, "loss": 0.01075614313594997, "elapsed": 56.8495696949999}
+{"arm": "control", "step": 900, "loss": 0.004072539581102319, "elapsed": 255.29722693600002}
+{"arm": "control", "step": 1000, "loss": 0.005217077792622149, "elapsed": 385.43416705999994}
+{"arm": "control", "step": 1100, "loss": 0.2728764843195677, "elapsed": 515.114921551}
+{"arm": "control", "step": 1134, "loss": 0.007421710586640984, "elapsed": 622.524654262}
+{"arm": "control", "step": 1134, "epoch": 3, "cursor": 0, "presentations": 36288, "total_steps": 1134, "complete": true, "body_seconds": 622.524919409, "start_step": 756, "protocol_identity": "94550cc844cb3a116a64211bac4be473610aa0b835f8b493f70b2478ab9f808f"}
+{"arm": "treatment", "step": 100, "loss": 0.5113770142197609, "elapsed": 133.32592826299992}
+{"arm": "treatment", "step": 200, "loss": 0.32076428830623627, "elapsed": 265.592375295}
+{"arm": "treatment", "step": 300, "loss": 0.5160782560706139, "elapsed": 458.24562512499983}
+{"arm": "treatment", "step": 378, "epoch": 1, "cursor": 0, "presentations": 12096, "total_steps": 1134, "complete": false, "body_seconds": 623.195120957, "start_step": 0, "protocol_identity": "94550cc844cb3a116a64211bac4be473610aa0b835f8b493f70b2478ab9f808f"}
+{"arm": "treatment", "step": 400, "loss": 0.2780570350587368, "elapsed": 30.175317145999998}
+{"arm": "treatment", "step": 500, "loss": 0.19755499437451363, "elapsed": 162.98862279800005}
+{"arm": "treatment", "step": 600, "loss": 0.23108427226543427, "elapsed": 362.9112740360001}
+{"arm": "treatment", "step": 700, "loss": 0.18165861116722226, "elapsed": 495.87612075000015}
+{"arm": "treatment", "step": 756, "epoch": 2, "cursor": 0, "presentations": 24192, "total_steps": 1134, "complete": false, "body_seconds": 626.1386128940003, "start_step": 378, "protocol_identity": "94550cc844cb3a116a64211bac4be473610aa0b835f8b493f70b2478ab9f808f"}
+{"arm": "treatment", "step": 800, "loss": 0.15217010397464037, "elapsed": 58.46573690900004}
+{"arm": "treatment", "step": 900, "loss": 0.12030396517366171, "elapsed": 250.87268176099997}
+{"arm": "treatment", "step": 1000, "loss": 0.07947817479725927, "elapsed": 385.25778556800014}
+{"arm": "treatment", "step": 1100, "loss": 0.16567470971494913, "elapsed": 518.823519475}
+{"arm": "treatment", "step": 1134, "loss": 0.07263930165208876, "elapsed": 628.5580342069998}
+{"arm": "treatment", "step": 1134, "epoch": 3, "cursor": 0, "presentations": 36288, "total_steps": 1134, "complete": true, "body_seconds": 628.5582741469998, "start_step": 756, "protocol_identity": "94550cc844cb3a116a64211bac4be473610aa0b835f8b493f70b2478ab9f808f"}
+{"repetition": "r2", "action": "train", "completed": true}
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/amandogra2016/main/ap-QSWHQBhQWISy4JyNeM5KK3

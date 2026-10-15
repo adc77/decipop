@@ -1,0 +1,63 @@
+........................................................................ [ 72%]
+..........................F                                              [100%]
+=================================== FAILURES ===================================
+_________________ test_json_roundtrip_audit_and_corrupt_prompt _________________
+
+tmp_path = PosixPath('/private/var/folders/cy/1qsdkxgs6xb73zct7_549zgr0000gn/T/pytest-of-axon_dendrite/pytest-154/test_json_roundtrip_audit_and_0')
+
+    def test_json_roundtrip_audit_and_corrupt_prompt(tmp_path):
+        config = load_dataset_config(Path("configs/dataset.yaml"))
+        rows, record = make_family(config, random.Random(77), 0, "world", "conjunction")
+        record["partition"] = "pilot"
+        (tmp_path / "families.jsonl").write_text(json.dumps(record) + "\n")
+        (tmp_path / "pilot.jsonl").write_text("".join(json.dumps(r) + "\n" for r in rows))
+        (tmp_path / "diagnostic.jsonl").write_text("")
+>       assert validate_dataset(tmp_path, set())["questions"] == 27
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_v5.py:111: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+directory = PosixPath('/private/var/folders/cy/1qsdkxgs6xb73zct7_549zgr0000gn/T/pytest-of-axon_dendrite/pytest-154/test_json_roundtrip_audit_and_0')
+excluded = set()
+
+    def validate_dataset(directory, excluded):
+        records = [json.loads(line) for line in (directory / "families.jsonl").read_text().splitlines()]
+        families = {record["family_id"]: record for record in records}
+        if len(families) != len(records):
+            raise ValueError("Duplicate family identity")
+        owners, total = {}, 0
+        for partition in ("pilot", "diagnostic"):
+            grouped = defaultdict(list)
+            rows = [
+                json.loads(line) for line in (directory / f"{partition}.jsonl").read_text().splitlines()
+            ]
+            if len({r["example_id"] for r in rows}) != len(rows):
+                raise ValueError("Duplicate example identity")
+            for row in rows:
+                grouped[row["family_id"]].append(row)
+            for name, bundle in grouped.items():
+                record = families[name]
+                if record["partition"] != partition:
+                    raise ValueError("A parent family crossed partitions")
+                audit_family(bundle, record)
+                hashes, known = set(), {}
+                for row in bundle:
+                    theory = Theory.model_validate_json(json.dumps(row["theory"]))
+                    query = Atom.model_validate_json(json.dumps(row["query"]))
+                    digest = canonical_hash(theory)
+                    if digest != row["world_hash"]:
+                        raise ValueError("Recorded world hash differs")
+                    hashes.add(digest)
+                    if digest not in known:
+                        known[digest] = independent_closure(theory)
+                        if known[digest] != set(solve(theory).depths):
+                            raise ValueError("Independent closure mismatch")
+                    if reference_label(known[digest], query).value != row["label"]:
+>                       raise ValueError("Saved oracle label differs")
+E                       ValueError: Saved oracle label differs
+
+v5_lab/data.py:272: ValueError
+=========================== short test summary info ============================
+FAILED tests/test_v5.py::test_json_roundtrip_audit_and_corrupt_prompt - Value...
+1 failed, 98 passed in 31.54s

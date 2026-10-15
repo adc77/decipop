@@ -1,0 +1,18 @@
+[
+  {
+    "stage": "pilot",
+    "allocation_usd": 0.16671844444444445,
+    "app_id": "ap-FOFkYK0qefMDfnRu3w8HM4",
+    "status": "complete",
+    "protocol_identity": "6038ac97693f50a8392825714fe48978e0072a3cee5ad05747290fb01bb4d4d8",
+    "client_seconds": 160.7757270410657
+  },
+  {
+    "stage": "diagnostic",
+    "allocation_usd": 0.47801844444444447,
+    "app_id": "ap-aBLUIfWgZGT494imqfyB7J",
+    "status": "complete",
+    "protocol_identity": "6038ac97693f50a8392825714fe48978e0072a3cee5ad05747290fb01bb4d4d8",
+    "client_seconds": 485.2100766659714
+  }
+]

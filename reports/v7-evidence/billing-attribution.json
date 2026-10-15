@@ -1,0 +1,307 @@
+{
+  "snapshot_utc": "2026-10-14T14:50:37.324652+00:00",
+  "owned_resource_metered_usd": "3.53624060",
+  "resources_usd": {
+    "L4": "2.27191716",
+    "Memory": "0.72701351",
+    "CPU": "0.53730993"
+  },
+  "workspace_billed_usd": "0E-8",
+  "scoped_rows": [
+    {
+      "object_id": "ap-2QsEyZLcvMlRGHbgYWLm5y",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T10:00:00",
+      "resource": "L4",
+      "cost": "0.42355568"
+    },
+    {
+      "object_id": "ap-2QsEyZLcvMlRGHbgYWLm5y",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T10:00:00",
+      "resource": "Memory",
+      "cost": "0.13553782"
+    },
+    {
+      "object_id": "ap-2QsEyZLcvMlRGHbgYWLm5y",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T10:00:00",
+      "resource": "CPU",
+      "cost": "0.10017092"
+    },
+    {
+      "object_id": "ap-2QsEyZLcvMlRGHbgYWLm5y",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T11:00:00",
+      "resource": "L4",
+      "cost": "0.46690407"
+    },
+    {
+      "object_id": "ap-2QsEyZLcvMlRGHbgYWLm5y",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T11:00:00",
+      "resource": "Memory",
+      "cost": "0.14940930"
+    },
+    {
+      "object_id": "ap-2QsEyZLcvMlRGHbgYWLm5y",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T11:00:00",
+      "resource": "CPU",
+      "cost": "0.11042281"
+    },
+    {
+      "object_id": "ap-3zV0L5bbDR6mFxtmlDDcSl",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T10:00:00",
+      "resource": "L4",
+      "cost": "0.02799986"
+    },
+    {
+      "object_id": "ap-3zV0L5bbDR6mFxtmlDDcSl",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T10:00:00",
+      "resource": "Memory",
+      "cost": "0.00895996"
+    },
+    {
+      "object_id": "ap-3zV0L5bbDR6mFxtmlDDcSl",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T10:00:00",
+      "resource": "CPU",
+      "cost": "0.00662197"
+    },
+    {
+      "object_id": "ap-7zNYy5uofIjZ7TK8jqT5CJ",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T10:00:00",
+      "resource": "L4",
+      "cost": "0.02488890"
+    },
+    {
+      "object_id": "ap-7zNYy5uofIjZ7TK8jqT5CJ",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T10:00:00",
+      "resource": "Memory",
+      "cost": "0.00796445"
+    },
+    {
+      "object_id": "ap-7zNYy5uofIjZ7TK8jqT5CJ",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T10:00:00",
+      "resource": "CPU",
+      "cost": "0.00588623"
+    },
+    {
+      "object_id": "ap-AhM4HRd7fxfLXI98kkiJsn",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T13:00:00",
+      "resource": "L4",
+      "cost": "0.11575509"
+    },
+    {
+      "object_id": "ap-AhM4HRd7fxfLXI98kkiJsn",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T13:00:00",
+      "resource": "Memory",
+      "cost": "0.03704163"
+    },
+    {
+      "object_id": "ap-AhM4HRd7fxfLXI98kkiJsn",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T13:00:00",
+      "resource": "CPU",
+      "cost": "0.02737608"
+    },
+    {
+      "object_id": "ap-QSWHQBhQWISy4JyNeM5KK3",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T11:00:00",
+      "resource": "L4",
+      "cost": "0.04222231"
+    },
+    {
+      "object_id": "ap-QSWHQBhQWISy4JyNeM5KK3",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T11:00:00",
+      "resource": "Memory",
+      "cost": "0.01351114"
+    },
+    {
+      "object_id": "ap-QSWHQBhQWISy4JyNeM5KK3",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T11:00:00",
+      "resource": "CPU",
+      "cost": "0.00998558"
+    },
+    {
+      "object_id": "ap-QSWHQBhQWISy4JyNeM5KK3",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T12:00:00",
+      "resource": "L4",
+      "cost": "0.80000545"
+    },
+    {
+      "object_id": "ap-QSWHQBhQWISy4JyNeM5KK3",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T12:00:00",
+      "resource": "Memory",
+      "cost": "0.25600175"
+    },
+    {
+      "object_id": "ap-QSWHQBhQWISy4JyNeM5KK3",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T12:00:00",
+      "resource": "CPU",
+      "cost": "0.18920280"
+    },
+    {
+      "object_id": "ap-QSWHQBhQWISy4JyNeM5KK3",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T13:00:00",
+      "resource": "L4",
+      "cost": "0.03280916"
+    },
+    {
+      "object_id": "ap-QSWHQBhQWISy4JyNeM5KK3",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T13:00:00",
+      "resource": "Memory",
+      "cost": "0.01049893"
+    },
+    {
+      "object_id": "ap-QSWHQBhQWISy4JyNeM5KK3",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T13:00:00",
+      "resource": "CPU",
+      "cost": "0.00775937"
+    },
+    {
+      "object_id": "ap-VgYt8zzmPKJz2k5gqIrrQG",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T11:00:00",
+      "resource": "L4",
+      "cost": "0.11131434"
+    },
+    {
+      "object_id": "ap-VgYt8zzmPKJz2k5gqIrrQG",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T11:00:00",
+      "resource": "Memory",
+      "cost": "0.03562059"
+    },
+    {
+      "object_id": "ap-VgYt8zzmPKJz2k5gqIrrQG",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T11:00:00",
+      "resource": "CPU",
+      "cost": "0.02632584"
+    },
+    {
+      "object_id": "ap-cvLsZcFHKetETMKP0sDSHq",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T11:00:00",
+      "resource": "L4",
+      "cost": "0.11062073"
+    },
+    {
+      "object_id": "ap-cvLsZcFHKetETMKP0sDSHq",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T11:00:00",
+      "resource": "Memory",
+      "cost": "0.03539863"
+    },
+    {
+      "object_id": "ap-cvLsZcFHKetETMKP0sDSHq",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T11:00:00",
+      "resource": "CPU",
+      "cost": "0.02616180"
+    },
+    {
+      "object_id": "ap-esUno0h83vuEtUBFTSAi3y",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T13:00:00",
+      "resource": "L4",
+      "cost": "0.10917514"
+    },
+    {
+      "object_id": "ap-esUno0h83vuEtUBFTSAi3y",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T13:00:00",
+      "resource": "Memory",
+      "cost": "0.03493605"
+    },
+    {
+      "object_id": "ap-esUno0h83vuEtUBFTSAi3y",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T13:00:00",
+      "resource": "CPU",
+      "cost": "0.02581992"
+    },
+    {
+      "object_id": "ap-wLqgN7dIzd0qGn03hhEjHJ",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T10:00:00",
+      "resource": "L4",
+      "cost": "0.00666643"
+    },
+    {
+      "object_id": "ap-wLqgN7dIzd0qGn03hhEjHJ",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T10:00:00",
+      "resource": "Memory",
+      "cost": "0.00213326"
+    },
+    {
+      "object_id": "ap-wLqgN7dIzd0qGn03hhEjHJ",
+      "description": "decision-model-lab-v7-replication",
+      "environment": "main",
+      "interval_start": "2026-10-14T10:00:00",
+      "resource": "CPU",
+      "cost": "0.00157661"
+    }
+  ],
+  "requested_interval_utc": {
+    "start": "2026-10-14",
+    "end": "2026-10-15"
+  },
+  "resolution": "h",
+  "scope": "Owned V7 resources only; observed snapshot, not invoice",
+  "raw_report_sha256": "225fd10f87e9706319bee96acf1815eb027e0867b64026b36856eac90ea2e7ed"
+}

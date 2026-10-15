@@ -1,0 +1,9 @@
+{
+  "pilot_identity": "e9bcc7639951e6b2f017b19e938e716d93b6975abb63e7165ee212fa3835b6c5",
+  "projected_chunk_seconds": {
+    "control": 658.1504463708251,
+    "treatment": 647.4163109180495
+  },
+  "margin": 1.15,
+  "overhead_seconds": 100
+}

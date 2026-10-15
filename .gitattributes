@@ -1,2 +1,4 @@
 # Preserve exact generated SVG evidence, including path whitespace.
 *.svg -whitespace
+# Preserve original captured logs and their evidence hashes.
+*.log.txt -whitespace

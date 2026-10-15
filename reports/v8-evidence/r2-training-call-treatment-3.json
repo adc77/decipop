@@ -1,0 +1,23 @@
+{
+  "arm": "treatment",
+  "step": 1134,
+  "epoch": 3,
+  "cursor": 0,
+  "presentations": 36288,
+  "total_steps": 1134,
+  "complete": true,
+  "body_seconds": 593.69763906,
+  "start_step": 756,
+  "recovery": {
+    "start_step": 756,
+    "end_step": 1134,
+    "presentations": 36288,
+    "verified_checkpoint_hashes": true,
+    "optimizer_scheduler_rng_restored": true,
+    "prior_trajectory_prefix_unchanged": true,
+    "protocol_identity": "9c843f1daa2333aae4bcafb9cc5b719adf484e3294b77199602b85308a3edc71",
+    "originally_failed_call": "treatment-3",
+    "no_completed_updates_repeated": true
+  },
+  "protocol_identity": "9c843f1daa2333aae4bcafb9cc5b719adf484e3294b77199602b85308a3edc71"
+}

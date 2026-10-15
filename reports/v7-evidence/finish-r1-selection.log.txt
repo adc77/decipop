@@ -1,0 +1,52 @@
+✓ Initialized. View run at 
+https://modal.com/apps/amandogra2016/main/ap-cvLsZcFHKetETMKP0sDSHq
+✓ Created objects.
+├── ✓ Uploaded /Users/axon_dendrite/decision-model-lab/v7_app.py
+├── ✓ Uploaded docs/V7_PROTOCOL.md
+├── ✓ Uploaded uv.lock
+├── ✓ Uploaded LICENSE
+├── ✓ Uploaded NOTICE
+├── ✓ Uploaded /Users/axon_dendrite/decision-model-lab/configs
+├── ✓ Uploaded PythonPackage:decision_lab, PythonPackage:v4_lab, 
+│   PythonPackage:v5_lab, PythonPackage:v6_lab, PythonPackage:v7_lab
+├── ✓ Created Function gpu_pilot.
+├── ✓ Created Function gpu_training.
+├── ✓ Created Function gpu_selection.
+├── ✓ Created Function gpu_recovery.
+└── ✓ Created Function gpu_test.
+{"candidate": "control-step0", "scored": "selection_fit", "questions": 1008}
+{"candidate": "control-step0", "scored": "selection", "questions": 1008}
+{"candidate": "control-step0", "scored": "development", "questions": 1008}
+{"candidate": "control-step250", "scored": "selection_fit", "questions": 1008}
+{"candidate": "control-step250", "scored": "selection", "questions": 1008}
+{"candidate": "control-step250", "scored": "development", "questions": 1008}
+{"candidate": "control-step600", "scored": "selection_fit", "questions": 1008}
+{"candidate": "control-step600", "scored": "selection", "questions": 1008}
+{"candidate": "control-step600", "scored": "development", "questions": 1008}
+{"candidate": "control-step900", "scored": "selection_fit", "questions": 1008}
+{"candidate": "control-step900", "scored": "selection", "questions": 1008}
+{"candidate": "control-step900", "scored": "development", "questions": 1008}
+{"candidate": "control-step1134", "scored": "selection_fit", "questions": 1008}
+{"candidate": "control-step1134", "scored": "selection", "questions": 1008}
+{"candidate": "control-step1134", "scored": "development", "questions": 1008}
+{"candidate": "treatment-step0", "scored": "selection_fit", "questions": 1008}
+{"candidate": "treatment-step0", "scored": "selection", "questions": 1008}
+{"candidate": "treatment-step0", "scored": "development", "questions": 1008}
+{"candidate": "treatment-step250", "scored": "selection_fit", "questions": 1008}
+{"candidate": "treatment-step250", "scored": "selection", "questions": 1008}
+{"candidate": "treatment-step250", "scored": "development", "questions": 1008}
+{"candidate": "treatment-step600", "scored": "selection_fit", "questions": 1008}
+{"candidate": "treatment-step600", "scored": "selection", "questions": 1008}
+{"candidate": "treatment-step600", "scored": "development", "questions": 1008}
+{"candidate": "treatment-step900", "scored": "selection_fit", "questions": 1008}
+{"candidate": "treatment-step900", "scored": "selection", "questions": 1008}
+{"candidate": "treatment-step900", "scored": "development", "questions": 1008}
+{"candidate": "treatment-step1134", "scored": "selection_fit", "questions": 1008}
+{"candidate": "treatment-step1134", "scored": "selection", "questions": 1008}
+{"candidate": "treatment-step1134", "scored": "development", "questions": 1008}
+{"candidate": "control-step900", "scored": "calibration", "questions": 1008}
+{"candidate": "treatment-step1134", "scored": "calibration", "questions": 1008}
+{"repetition": "r1", "action": "selection", "completed": true}
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/amandogra2016/main/ap-cvLsZcFHKetETMKP0sDSHq

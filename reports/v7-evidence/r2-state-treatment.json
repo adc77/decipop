@@ -1,0 +1,12 @@
+{
+  "arm": "treatment",
+  "step": 1134,
+  "epoch": 3,
+  "cursor": 0,
+  "presentations": 36288,
+  "total_steps": 1134,
+  "complete": true,
+  "resume": "recovery/treatment/step-1134",
+  "protocol_identity": "94550cc844cb3a116a64211bac4be473610aa0b835f8b493f70b2478ab9f808f",
+  "checkpoint_protocol_identity": "94550cc844cb3a116a64211bac4be473610aa0b835f8b493f70b2478ab9f808f"
+}

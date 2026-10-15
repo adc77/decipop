@@ -1,0 +1,14 @@
+{
+  "control": {
+    "verified": true,
+    "inputs": 8,
+    "device": "cuda",
+    "artifact_identity": "f07e4f34618900fe4a571f47f380737efe7919897a5465704c92a138c3154c71"
+  },
+  "treatment": {
+    "verified": true,
+    "inputs": 8,
+    "device": "cuda",
+    "artifact_identity": "f07e4f34618900fe4a571f47f380737efe7919897a5465704c92a138c3154c71"
+  }
+}

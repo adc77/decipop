@@ -1,0 +1,211 @@
+[
+  {
+    "repetition": "r1",
+    "name": "pilot",
+    "stage": "pilot",
+    "allocation_usd": 0.2082251111111111,
+    "app_id": "ap-wLqgN7dIzd0qGn03hhEjHJ",
+    "protocol_identity": "f07e4f34618900fe4a571f47f380737efe7919897a5465704c92a138c3154c71",
+    "status": "failed",
+    "submitted_at_utc": "2026-10-14T10:14:32.453337+00:00",
+    "client_seconds": 37.93020374979824
+  },
+  {
+    "repetition": "r1",
+    "name": "pilot-recovery",
+    "stage": "retry",
+    "allocation_usd": 0.42613511111111113,
+    "app_id": "ap-7zNYy5uofIjZ7TK8jqT5CJ",
+    "protocol_identity": "f07e4f34618900fe4a571f47f380737efe7919897a5465704c92a138c3154c71",
+    "status": "complete",
+    "submitted_at_utc": "2026-10-14T10:21:20.674087+00:00",
+    "client_seconds": 116.7643072498031
+  },
+  {
+    "repetition": "r2",
+    "name": "pilot",
+    "stage": "pilot",
+    "allocation_usd": 0.2082251111111111,
+    "app_id": "ap-3zV0L5bbDR6mFxtmlDDcSl",
+    "protocol_identity": "94550cc844cb3a116a64211bac4be473610aa0b835f8b493f70b2478ab9f808f",
+    "status": "complete",
+    "submitted_at_utc": "2026-10-14T10:25:44.247317+00:00",
+    "client_seconds": 130.414142542053
+  },
+  {
+    "repetition": "r1",
+    "name": "control-1",
+    "stage": "training",
+    "allocation_usd": 0.42613511111111113,
+    "app_id": "ap-2QsEyZLcvMlRGHbgYWLm5y",
+    "protocol_identity": "f07e4f34618900fe4a571f47f380737efe7919897a5465704c92a138c3154c71",
+    "status": "complete",
+    "submitted_at_utc": "2026-10-14T10:28:09.090504+00:00",
+    "client_seconds": 663.2906313329004
+  },
+  {
+    "repetition": "r1",
+    "name": "control-2",
+    "stage": "training",
+    "allocation_usd": 0.42613511111111113,
+    "app_id": "ap-2QsEyZLcvMlRGHbgYWLm5y",
+    "protocol_identity": "f07e4f34618900fe4a571f47f380737efe7919897a5465704c92a138c3154c71",
+    "status": "complete",
+    "submitted_at_utc": "2026-10-14T10:39:14.096026+00:00",
+    "client_seconds": 649.0309851248749
+  },
+  {
+    "repetition": "r1",
+    "name": "control-3",
+    "stage": "training",
+    "allocation_usd": 0.42613511111111113,
+    "app_id": "ap-2QsEyZLcvMlRGHbgYWLm5y",
+    "protocol_identity": "f07e4f34618900fe4a571f47f380737efe7919897a5465704c92a138c3154c71",
+    "status": "complete",
+    "submitted_at_utc": "2026-10-14T10:50:04.770257+00:00",
+    "client_seconds": 661.8917562090792
+  },
+  {
+    "repetition": "r1",
+    "name": "treatment-1",
+    "stage": "training",
+    "allocation_usd": 0.42613511111111113,
+    "app_id": "ap-2QsEyZLcvMlRGHbgYWLm5y",
+    "protocol_identity": "f07e4f34618900fe4a571f47f380737efe7919897a5465704c92a138c3154c71",
+    "status": "complete",
+    "submitted_at_utc": "2026-10-14T11:01:08.334193+00:00",
+    "client_seconds": 659.0742469583638
+  },
+  {
+    "repetition": "r1",
+    "name": "treatment-2",
+    "stage": "training",
+    "allocation_usd": 0.42613511111111113,
+    "app_id": "ap-2QsEyZLcvMlRGHbgYWLm5y",
+    "protocol_identity": "f07e4f34618900fe4a571f47f380737efe7919897a5465704c92a138c3154c71",
+    "status": "complete",
+    "submitted_at_utc": "2026-10-14T11:12:09.016743+00:00",
+    "client_seconds": 672.3091697497293
+  },
+  {
+    "repetition": "r1",
+    "name": "treatment-3",
+    "stage": "training",
+    "allocation_usd": 0.42613511111111113,
+    "app_id": "ap-2QsEyZLcvMlRGHbgYWLm5y",
+    "protocol_identity": "f07e4f34618900fe4a571f47f380737efe7919897a5465704c92a138c3154c71",
+    "status": "complete",
+    "submitted_at_utc": "2026-10-14T11:23:23.122317+00:00",
+    "client_seconds": 700.4350229580887
+  },
+  {
+    "repetition": "r1",
+    "name": "selection",
+    "stage": "selection",
+    "allocation_usd": 0.2704851111111111,
+    "app_id": "ap-cvLsZcFHKetETMKP0sDSHq",
+    "protocol_identity": "f07e4f34618900fe4a571f47f380737efe7919897a5465704c92a138c3154c71",
+    "status": "complete",
+    "submitted_at_utc": "2026-10-14T11:35:25.428994+00:00",
+    "client_seconds": 507.1370455827564
+  },
+  {
+    "repetition": "r1",
+    "name": "test",
+    "stage": "test",
+    "allocation_usd": 0.37425177777777785,
+    "app_id": "ap-VgYt8zzmPKJz2k5gqIrrQG",
+    "protocol_identity": "f07e4f34618900fe4a571f47f380737efe7919897a5465704c92a138c3154c71",
+    "status": "complete",
+    "submitted_at_utc": "2026-10-14T11:44:10.444175+00:00",
+    "client_seconds": 506.1493212082423
+  },
+  {
+    "repetition": "r2",
+    "name": "control-1",
+    "stage": "training",
+    "allocation_usd": 0.42613511111111113,
+    "app_id": "ap-QSWHQBhQWISy4JyNeM5KK3",
+    "protocol_identity": "94550cc844cb3a116a64211bac4be473610aa0b835f8b493f70b2478ab9f808f",
+    "status": "complete",
+    "submitted_at_utc": "2026-10-14T11:56:45.403558+00:00",
+    "client_seconds": 670.9991846662015
+  },
+  {
+    "repetition": "r2",
+    "name": "control-2",
+    "stage": "training",
+    "allocation_usd": 0.42613511111111113,
+    "app_id": "ap-QSWHQBhQWISy4JyNeM5KK3",
+    "protocol_identity": "94550cc844cb3a116a64211bac4be473610aa0b835f8b493f70b2478ab9f808f",
+    "status": "complete",
+    "submitted_at_utc": "2026-10-14T12:07:58.057843+00:00",
+    "client_seconds": 647.9433314166963
+  },
+  {
+    "repetition": "r2",
+    "name": "control-3",
+    "stage": "training",
+    "allocation_usd": 0.42613511111111113,
+    "app_id": "ap-QSWHQBhQWISy4JyNeM5KK3",
+    "protocol_identity": "94550cc844cb3a116a64211bac4be473610aa0b835f8b493f70b2478ab9f808f",
+    "status": "complete",
+    "submitted_at_utc": "2026-10-14T12:18:47.775963+00:00",
+    "client_seconds": 653.4149411250837
+  },
+  {
+    "repetition": "r2",
+    "name": "treatment-1",
+    "stage": "training",
+    "allocation_usd": 0.42613511111111113,
+    "app_id": "ap-QSWHQBhQWISy4JyNeM5KK3",
+    "protocol_identity": "94550cc844cb3a116a64211bac4be473610aa0b835f8b493f70b2478ab9f808f",
+    "status": "complete",
+    "submitted_at_utc": "2026-10-14T12:29:43.065788+00:00",
+    "client_seconds": 639.9802735000849
+  },
+  {
+    "repetition": "r2",
+    "name": "treatment-2",
+    "stage": "training",
+    "allocation_usd": 0.42613511111111113,
+    "app_id": "ap-QSWHQBhQWISy4JyNeM5KK3",
+    "protocol_identity": "94550cc844cb3a116a64211bac4be473610aa0b835f8b493f70b2478ab9f808f",
+    "status": "complete",
+    "submitted_at_utc": "2026-10-14T12:40:24.742307+00:00",
+    "client_seconds": 657.6574577083811
+  },
+  {
+    "repetition": "r2",
+    "name": "treatment-3",
+    "stage": "training",
+    "allocation_usd": 0.42613511111111113,
+    "app_id": "ap-QSWHQBhQWISy4JyNeM5KK3",
+    "protocol_identity": "94550cc844cb3a116a64211bac4be473610aa0b835f8b493f70b2478ab9f808f",
+    "status": "complete",
+    "submitted_at_utc": "2026-10-14T12:51:23.953450+00:00",
+    "client_seconds": 662.0150173343718
+  },
+  {
+    "repetition": "r2",
+    "name": "selection",
+    "stage": "selection",
+    "allocation_usd": 0.2704851111111111,
+    "app_id": "ap-AhM4HRd7fxfLXI98kkiJsn",
+    "protocol_identity": "94550cc844cb3a116a64211bac4be473610aa0b835f8b493f70b2478ab9f808f",
+    "status": "complete",
+    "submitted_at_utc": "2026-10-14T13:02:42.927506+00:00",
+    "client_seconds": 575.863854332827
+  },
+  {
+    "repetition": "r2",
+    "name": "test",
+    "stage": "test",
+    "allocation_usd": 0.37425177777777785,
+    "app_id": "ap-esUno0h83vuEtUBFTSAi3y",
+    "protocol_identity": "94550cc844cb3a116a64211bac4be473610aa0b835f8b493f70b2478ab9f808f",
+    "status": "complete",
+    "submitted_at_utc": "2026-10-14T13:12:35.441968+00:00",
+    "client_seconds": 506.85971658304334
+  }
+]

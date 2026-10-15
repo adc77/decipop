@@ -1,0 +1,59 @@
+F....                                                                    [100%]
+=================================== FAILURES ===================================
+_______________ test_accepts_only_the_tied_confidence_aurc_range _______________
+
+    def test_accepts_only_the_tied_confidence_aurc_range():
+        logits = torch.tensor([[2.0, 0.0, 1.0], [0.0, 1.0, 2.0]], dtype=torch.float64)
+        expected, labels = recorded(logits)
+        changed = deepcopy(expected)
+        changed["raw"]["aurc"] = 0.75 if expected["raw"]["aurc"] == 0.25 else 0.25
+>       receipt = verify_metrics(expected, changed, logits, labels, 1.0)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_v6_metric_audit.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+v6_metric_audit.py:75: in verify_metrics
+    compare(recomputed, recorded, ())
+v6_metric_audit.py:50: in compare
+    compare(left[key], right[key], (*path, key))
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+left = nan, right = nan, path = ('unknown_accuracy',)
+
+    def compare(left, right, path):
+        if type(left) is not type(right):
+            raise ValueError(f"Metric type differs: {path}")
+        if isinstance(left, dict):
+            if left.keys() != right.keys():
+                raise ValueError(f"Metric keys differ: {path}")
+            for key in left:
+                compare(left[key], right[key], (*path, key))
+        elif isinstance(left, list):
+            if len(left) != len(right):
+                raise ValueError(f"Metric lengths differ: {path}")
+            for index, (a, b) in enumerate(zip(left, right, strict=True)):
+                compare(a, b, (*path, str(index)))
+        elif left == right:
+            return
+        elif isinstance(left, float) and math.isclose(
+            left, right, rel_tol=0, abs_tol=FLOAT_TOLERANCE
+        ):
+            receipt["float_roundoff_differences"].append(
+                {"field": "/".join(path), "recomputed": left, "recorded": right}
+            )
+        elif path[-1] == "aurc":
+            scale = 1.0 if path[0] == "raw" else temperature
+            bounds = aurc_tie_bounds(logits, labels, scale)
+            if not bounds["lower"] - FLOAT_TOLERANCE <= right <= bounds["upper"] + FLOAT_TOLERANCE:
+                raise ValueError(f"Recorded AURC exceeds near-tie order bounds: {path}")
+            receipt["aurc_near_tie_checks"].append(
+                {"field": "/".join(path), "recomputed": left, "recorded": right, **bounds}
+            )
+        else:
+>           raise ValueError(f"Recomputed metric differs: {path}")
+E           ValueError: Recomputed metric differs: ('unknown_accuracy',)
+
+v6_metric_audit.py:73: ValueError
+=========================== short test summary info ============================
+FAILED tests/test_v6_metric_audit.py::test_accepts_only_the_tied_confidence_aurc_range
+1 failed, 4 passed in 3.21s

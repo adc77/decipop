@@ -1,0 +1,24 @@
+{
+  "recorded_at_utc": "2026-10-13T15:46:50.279291+00:00",
+  "reason": "Candidate packaging attempted file-copy on bundled directory after update-250 checkpoint save",
+  "changed_files": {
+    "v6_lab/protocol.py": {
+      "before": "0b7a1439e7799be53198bb853c8d88fca45bc1cfd2266103bd3e8b10c06af815",
+      "after": "b4e2c726b55b92d9a8dca103950527d6a590d9d76ed6a21fdcae5c4a2e5b8b63"
+    },
+    "v6_lab/study.py": {
+      "before": "c676b8671686a45ebe9e0375c93c19c931e1f8011255f186987f09f1195fde40",
+      "after": "5403a78263ea3edb877030f9659168bccbab00c7fa327f93ca9e93239eb9f4b4"
+    }
+  },
+  "preserved_original_source_archive_sha256": "82b26c0d92d7db3ecd7806e2825ee5811cd7529584aeb98e2dbd0c7519f61f20",
+  "failed_call_name": "control-1",
+  "resume_step": 250,
+  "resume_presentations": 8000,
+  "numerical_training_update_and_data_unchanged": true,
+  "failed_call_reservation_retained": true,
+  "recovery_test_log_sha256": "2f404943da67d49eeb27c31558e9fb4e123d1e1e1df09eb44413bee085c2c80d",
+  "amendment_markdown_sha256": "15496cd836edb9f133bd75cd635a7c1b35d00d07d61c34c452c9eba4f7fc80bf",
+  "original_protocol_identity": "e9bcc7639951e6b2f017b19e938e716d93b6975abb63e7165ee212fa3835b6c5",
+  "amended_protocol_identity": "099611c7f4eb70c9bc12f2fd44d0279c5bfc81e0cf0913b6e5d5e0035b3f44af"
+}

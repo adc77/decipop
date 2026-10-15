@@ -1,0 +1,56 @@
+{
+  "recorded_at_utc": "2026-10-13T14:40:33.427350+00:00",
+  "issues": [
+    {
+      "phase": "pre-inference preparation",
+      "issue": "Unquoted YAML TRUE/FALSE parsed as booleans",
+      "correction": "Quoted class labels before freeze; regression caught ordering mismatch"
+    },
+    {
+      "phase": "pre-inference preparation",
+      "issue": "Strict tuple schema rejected saved JSON lists",
+      "correction": "Use JSON-aware schema validation for retained records before freeze"
+    },
+    {
+      "phase": "pre-inference preparation",
+      "issue": "Canonical hash cached closure names across renamed worlds",
+      "correction": "Use concrete serialized theory as closure-cache identity; resume identical data before freeze"
+    },
+    {
+      "phase": "post-inference cleanup",
+      "issue": "CLI stop returned exit 1 for an already-completed app",
+      "correction": "Check owned app lifecycle/tasks directly; no Volume deletion occurred on that failed invocation"
+    },
+    {
+      "phase": "post-inference cleanup",
+      "issue": "SDK async call crossed event loops and hung",
+      "correction": "Only identified local cleanup Python PID 199 received SIGTERM; checks now execute on SDK loop; no Volume deletion occurred in the hung invocation"
+    },
+    {
+      "phase": "billing observation",
+      "issue": "Default end=now omitted the current-hour bucket and returned zero owned rows",
+      "correction": "Preserve incomplete observation; request explicit complete UTC-day interval and attribute only recorded owned IDs"
+    }
+  ],
+  "preserved_records_sha256": {
+    "cpu-tests-pre-freeze.log": "8caa6edc6df63bb962033bbd4471416a6cbadfc89c07c8b94a3f532268198849",
+    "cpu-tests-final.log": "0f02065e0855b58899a24bac5f3a53466d60114a4753e397424c024befbac294",
+    "prepare.log": "6a49d7d91616088b5be599e22031b48f113ac671b9bd598a5a67bc41bd3cbfe4",
+    "prepare-resume.log": "5bee11d8d6dc4ae2ce7e5e784b55d48bb054c6e4a09a7de2f60a160aad9b8745",
+    "prepare-initial-source.py": "cb2d38bef0ac06a5ec6ed1e75ece528a12b8da38ae00db5f2b24b00ed5284987",
+    "data-before-json-fix.py": "a01c339df27df3bc331195da66e7fddcddc6441669ba841b151d3f1e3c7163e5",
+    "cleanup.log": "b44cddd3378b89957be935bf74b0f9009750ae061d7fcf0c39d08e8a2f761b68",
+    "cleanup-verified.log": "0608aca8c3fb10cea60d531ca4bd1230dc7288b755c4072b18ae197d19562bf1",
+    "finish-before-cleanup-fix.py": "de657ece16161d2d8529aa6451a66c7999ca633cf2cdbe7939dcea1a7649075c",
+    "finish-before-loop-fix.py": "590bb4a858b3d208a376aedb23d759634370a7559363c3c707be376a5b588b6e",
+    "costs.log": "b349b0fcfa3e24c1623ac906ee53c0b93ae1fd70424a321507bd014182efdc46",
+    "billing-before-cleanup-resources.json": "3f35c0f816de778e49f6d83d697e506998683e421fa7889d0cf2a87885d99cce",
+    "billing-before-cleanup-summary.json": "95e2f412fd76599ac6151bce6bbc1e51894cc19c824ff46da4e4e4a8d16d7e67",
+    "billing-before-cleanup-attribution.json": "1fea77b656b763f8ae47087d9db8e66570d914edb01ff2d0c8c2c6712c0d9603"
+  },
+  "failed_gpu_calls": 0,
+  "gpu_retries": 0,
+  "scientific_reruns_or_freeze_changes_from_operational_corrections": false,
+  "local_process_termination_record_source": "Observed task-scoped tool output; exact Python command checked before SIGTERM",
+  "raw_workspace_billing_report_exported_to_compact_evidence": false
+}

@@ -1,0 +1,1 @@
+{"repetition": "r2", "valid": true, "primary_gain": 0.037037037037037035}

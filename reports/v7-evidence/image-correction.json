@@ -1,0 +1,11 @@
+{
+  "at_utc": "2026-10-14T10:18:32.801123+00:00",
+  "failure": "r1 pilot failed before model scoring because uv.lock and frozen protocol markdown were absent from the image",
+  "source_before_image_fix_sha256": "52ba6b40ac8187d978d7e3856f3bb01a3009b8d8a6ed6fedbd1972f86f76105f",
+  "source_after_image_fix_sha256": "5710d8a19d04a1e83254af2081d501ff7f5a8300b5523b9d0457e073bdac5f52",
+  "study_identity_unchanged": "46afd8ff9cb9dcb48fe3adb4de3203b56a3af92a11a40cb432c924434b0aff73",
+  "scientific_code_and_data_changed": false,
+  "reserved_recovery_consumed_for_pilot": true,
+  "further_r1_gpu_retries_permitted": false,
+  "original_failed_reservation_retained": true
+}

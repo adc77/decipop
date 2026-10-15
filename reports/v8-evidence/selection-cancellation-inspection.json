@@ -1,0 +1,186 @@
+{
+  "predictions": [
+    {
+      "path": "study-v8/r2/predictions/treatment-step1134/development.jsonl",
+      "size": 189466
+    },
+    {
+      "path": "study-v8/r2/predictions/treatment-step1134/selection.jsonl",
+      "size": 184476
+    },
+    {
+      "path": "study-v8/r2/predictions/treatment-step1134/selection_fit.jsonl",
+      "size": 194550
+    },
+    {
+      "path": "study-v8/r2/predictions/treatment-step900/development.jsonl",
+      "size": 189703
+    },
+    {
+      "path": "study-v8/r2/predictions/treatment-step900/selection.jsonl",
+      "size": 184488
+    },
+    {
+      "path": "study-v8/r2/predictions/treatment-step900/selection_fit.jsonl",
+      "size": 194733
+    },
+    {
+      "path": "study-v8/r2/predictions/treatment-step600/development.jsonl",
+      "size": 190529
+    },
+    {
+      "path": "study-v8/r2/predictions/treatment-step600/selection.jsonl",
+      "size": 185225
+    },
+    {
+      "path": "study-v8/r2/predictions/treatment-step600/selection_fit.jsonl",
+      "size": 195197
+    },
+    {
+      "path": "study-v8/r2/predictions/treatment-step250/development.jsonl",
+      "size": 190024
+    },
+    {
+      "path": "study-v8/r2/predictions/treatment-step250/selection.jsonl",
+      "size": 185001
+    },
+    {
+      "path": "study-v8/r2/predictions/treatment-step250/selection_fit.jsonl",
+      "size": 195240
+    },
+    {
+      "path": "study-v8/r2/predictions/treatment-step0/development.jsonl",
+      "size": 189578
+    },
+    {
+      "path": "study-v8/r2/predictions/treatment-step0/selection.jsonl",
+      "size": 184607
+    },
+    {
+      "path": "study-v8/r2/predictions/treatment-step0/selection_fit.jsonl",
+      "size": 194834
+    },
+    {
+      "path": "study-v8/r2/predictions/control-step1134/development.jsonl",
+      "size": 189672
+    },
+    {
+      "path": "study-v8/r2/predictions/control-step1134/selection.jsonl",
+      "size": 184498
+    },
+    {
+      "path": "study-v8/r2/predictions/control-step1134/selection_fit.jsonl",
+      "size": 194565
+    },
+    {
+      "path": "study-v8/r2/predictions/control-step900/development.jsonl",
+      "size": 189512
+    },
+    {
+      "path": "study-v8/r2/predictions/control-step900/selection.jsonl",
+      "size": 184569
+    },
+    {
+      "path": "study-v8/r2/predictions/control-step900/selection_fit.jsonl",
+      "size": 194634
+    },
+    {
+      "path": "study-v8/r2/predictions/control-step600/development.jsonl",
+      "size": 190170
+    },
+    {
+      "path": "study-v8/r2/predictions/control-step600/selection.jsonl",
+      "size": 185025
+    },
+    {
+      "path": "study-v8/r2/predictions/control-step600/selection_fit.jsonl",
+      "size": 195197
+    },
+    {
+      "path": "study-v8/r2/predictions/control-step250/development.jsonl",
+      "size": 190285
+    },
+    {
+      "path": "study-v8/r2/predictions/control-step250/selection.jsonl",
+      "size": 185282
+    },
+    {
+      "path": "study-v8/r2/predictions/control-step250/selection_fit.jsonl",
+      "size": 195393
+    },
+    {
+      "path": "study-v8/r2/predictions/control-step0/development.jsonl",
+      "size": 189578
+    },
+    {
+      "path": "study-v8/r2/predictions/control-step0/selection.jsonl",
+      "size": 184607
+    },
+    {
+      "path": "study-v8/r2/predictions/control-step0/selection_fit.jsonl",
+      "size": 194834
+    }
+  ],
+  "selection_freeze_paths": [
+    "study-v8/r2/candidates/treatment-step1134/selection-freeze.json",
+    "study-v8/r2/candidates/treatment-step900/selection-freeze.json",
+    "study-v8/r2/candidates/treatment-step600/selection-freeze.json",
+    "study-v8/r2/candidates/treatment-step250/selection-freeze.json",
+    "study-v8/r2/candidates/control-step1134/selection-freeze.json",
+    "study-v8/r2/candidates/control-step900/selection-freeze.json",
+    "study-v8/r2/candidates/control-step600/selection-freeze.json",
+    "study-v8/r2/candidates/control-step250/selection-freeze.json",
+    "study-v8/r2/parent/selection-freeze.json"
+  ],
+  "apps": [
+    {
+      "app_id": "ap-GXJlYIWtbTEbuFsjUh4UQg",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1791995321.576875
+    },
+    {
+      "app_id": "ap-cs96Kw1sWJJXbDBRS0xNWN",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1791995488.069138
+    },
+    {
+      "app_id": "ap-HMhjMYjalmRwb1SGyDe2gg",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1791999328.132269
+    },
+    {
+      "app_id": "ap-tTJpHj2vvsTxM8pKQmIhls",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1792000138.329383
+    },
+    {
+      "app_id": "ap-l9hBlwgUb9cqEB7pJvNa9c",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1792000777.461198
+    },
+    {
+      "app_id": "ap-ywM4hlC83LQyVK1Ie0PzSp",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1792004465.275033
+    },
+    {
+      "app_id": "ap-mnGhBMpmPD9BG5RVXepXhg",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1792008628.68986
+    },
+    {
+      "app_id": "ap-tVVUgWBlQVJgUpVZr2FNLh",
+      "state": "stopped",
+      "tasks": 0,
+      "stopped_at": 1792009195.781793
+    }
+  ],
+  "new_gpu_calls": 0
+}

@@ -1,0 +1,22 @@
+{
+  "protocol_identity": "c3dd59fa24ec9c61658603eef1ed560b5b1094712936ed31fb4bc2354ea88b62",
+  "gpu_calls_added": 0,
+  "stages": {
+    "candidates": {
+      "status": "complete",
+      "at_utc": "2026-10-14T18:42:47.127262+00:00"
+    },
+    "releases": {
+      "status": "complete",
+      "at_utc": "2026-10-14T18:44:01.967154+00:00"
+    },
+    "audit": {
+      "status": "complete",
+      "at_utc": "2026-10-14T18:44:18.533630+00:00"
+    },
+    "publish": {
+      "status": "complete",
+      "at_utc": "2026-10-14T18:46:32.569677+00:00"
+    }
+  }
+}

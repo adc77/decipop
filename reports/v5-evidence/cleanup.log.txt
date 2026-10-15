@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/axon_dendrite/decision-model-lab/v5_finish.py", line 423, in <module>
+    print(json.dumps({"action": action, "result": globals()[action]()}))
+                                                  ^^^^^^^^^^^^^^^^^^^
+  File "/Users/axon_dendrite/decision-model-lab/v5_finish.py", line 314, in cleanup
+    stopped = cli(["app", "stop", app_id, "--yes"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/axon_dendrite/decision-model-lab/v5_finish.py", line 25, in cli
+    return subprocess.run(
+           ^^^^^^^^^^^^^^^
+  File "/Users/axon_dendrite/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['uv', 'run', '--extra', 'cloud', 'modal', 'app', 'stop', 'ap-FOFkYK0qefMDfnRu3w8HM4', '--yes', '--profile', 'amandogra2016']' returned non-zero exit status 1.

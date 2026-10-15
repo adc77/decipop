@@ -1,0 +1,116 @@
+✓ Initialized. View run at 
+https://modal.com/apps/amandogra2016/main/ap-wLqgN7dIzd0qGn03hhEjHJ
+✓ Created objects.
+├── ✓ Uploaded /Users/axon_dendrite/decision-model-lab/v7_app.py
+├── ✓ Uploaded NOTICE
+├── ✓ Uploaded LICENSE
+├── ✓ Uploaded /Users/axon_dendrite/decision-model-lab/configs
+├── ✓ Uploaded PythonPackage:decision_lab, PythonPackage:v4_lab, 
+│   PythonPackage:v5_lab, PythonPackage:v6_lab, PythonPackage:v7_lab
+├── ✓ Created Function gpu_pilot.
+├── ✓ Created Function gpu_training.
+├── ✓ Created Function gpu_selection.
+├── ✓ Created Function gpu_recovery.
+└── ✓ Created Function gpu_test.
+Traceback (most recent call last):
+  File "/pkg/modal/_runtime/container_io_manager.py", line 987, in handle_input_exception
+    yield
+  File "/pkg/modal/_container_entrypoint.py", line 189, in run_input_sync
+    values = io_context.call_function_sync()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/pkg/modal/_runtime/container_io_manager.py", line 266, in call_function_sync
+    expected_value_or_values = self.finalized_function.callable(*args, **kwargs)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/v7_app.py", line 41, in gpu_pilot
+    return pilot(Path("/runs/study-v7") / repetition, volume.commit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/v7_lab/study.py", line 84, in pilot
+    protocol = verify(root)
+               ^^^^^^^^^^^^
+  File "/root/v7_lab/protocol.py", line 109, in verify
+    if file_hash(Path(name)) != record[field]:
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/decision_lab/training/checkpoint.py", line 15, in file_hash
+    with path.open("rb") as stream:
+         ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'uv.lock'
+Stopping app - uncaught exception raised locally: FileNotFoundError(2, 'No such file or directory').
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /Users/axon_dendrite/decision-model-lab/v7_app.py:181 in main                │
+│                                                                              │
+│   180 │   │   │   upload.put_file(root / "protocol.json", f"/study-v7/{repet │
+│ ❱ 181 │   │   result = invoke(repetition, "pilot", "pilot", gpu_pilot)       │
+│   182 │   │   atomic_json(root / "pilot.json", result)                       │
+│                                                                              │
+│ /Users/axon_dendrite/decision-model-lab/v7_app.py:110 in invoke              │
+│                                                                              │
+│   109 │   try:                                                               │
+│ ❱ 110 │   │   result = function.remote(repetition, *args)                    │
+│   111 │   except BaseException:                                              │
+│                                                                              │
+│ /Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/m │
+│ odal/_object.py:49 in wrapped                                                │
+│                                                                              │
+│    48 │   │   await self.hydrate()                                           │
+│ ❱  49 │   │   return await method(self, *args, **kwargs)                     │
+│    50                                                                        │
+│                                                                              │
+│ /Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/m │
+│ odal/_functions.py:2067 in remote                                            │
+│                                                                              │
+│   2066 │   │                                                                 │
+│ ❱ 2067 │   │   return await self._call_function(args, kwargs)                │
+│   2068                                                                       │
+│                                                                              │
+│ /Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/m │
+│ odal/_functions.py:2004 in _call_function                                    │
+│                                                                              │
+│   2003 │   │                                                                 │
+│ ❱ 2004 │   │   return await invocation.run_function()                        │
+│   2005                                                                       │
+│                                                                              │
+│ /Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/m │
+│ odal/_functions.py:515 in run_function                                       │
+│                                                                              │
+│    514 │   │   │   # No more retries left.                                   │
+│ ❱  515 │   │   │   return await _process_result(                             │
+│    516 │   │   │   │   await_response.output.result, await_response.output.d │
+│                                                                              │
+│ /Users/axon_dendrite/decision-model-lab/.venv/lib/python3.12/site-packages/m │
+│ odal/_utils/function_utils.py:572 in _process_result                         │
+│                                                                              │
+│   571 │   │   │                                                              │
+│ ❱ 572 │   │   │   raise exc_with_hints(exc)                                  │
+│   573                                                                        │
+│                                                                              │
+│     ...Remote call to Modal Function (ta-01M4WYG6SWTK1DG9K32D66GKNR)...      │
+│                                                                              │
+│ /root/v7_app.py:41 in gpu_pilot                                              │
+│                                                                              │
+│ ❱ 41 return pilot(Path("/runs/study-v7") / repetition, volume.commit)        │
+│                                                                              │
+│                                                                              │
+│ /root/v7_lab/study.py:84 in pilot                                            │
+│                                                                              │
+│ ❱ 84 protocol = verify(root)                                                 │
+│                                                                              │
+│                                                                              │
+│ /root/v7_lab/protocol.py:109 in verify                                       │
+│                                                                              │
+│ ❱ 109 if file_hash(Path(name)) != record[field]:                             │
+│                                                                              │
+│                                                                              │
+│ /root/decision_lab/training/checkpoint.py:15 in file_hash                    │
+│                                                                              │
+│ ❱ 15 with path.open("rb") as stream:                                         │
+│                                                                              │
+│                                                                              │
+│ /usr/local/lib/python3.12/pathlib.py:1013 in open                            │
+│                                                                              │
+│ ❱ 1013 return io.open(self, mode, buffering, encoding, errors, newline)      │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+FileNotFoundError: [Errno 2] No such file or directory: 'uv.lock'

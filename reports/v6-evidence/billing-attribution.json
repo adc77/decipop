@@ -1,0 +1,212 @@
+{
+  "snapshot_utc": "2026-10-13T18:16:58.148492+00:00",
+  "owned_resource_metered_usd": "1.75521017",
+  "resources_usd": {
+    "L4": "1.12766473",
+    "CPU": "0.26669272",
+    "Memory": "0.36085272"
+  },
+  "workspace_billed_usd": "0E-8",
+  "scoped_rows": [
+    {
+      "object_id": "ap-7wZTkDyHcF421G32QL2eeq",
+      "description": "decision-model-lab-v6-multi-entity-training",
+      "environment": "main",
+      "interval_start": "2026-10-13T15:00:00",
+      "resource": "L4",
+      "cost": "0.14044762"
+    },
+    {
+      "object_id": "ap-7wZTkDyHcF421G32QL2eeq",
+      "description": "decision-model-lab-v6-multi-entity-training",
+      "environment": "main",
+      "interval_start": "2026-10-13T15:00:00",
+      "resource": "CPU",
+      "cost": "0.03321586"
+    },
+    {
+      "object_id": "ap-7wZTkDyHcF421G32QL2eeq",
+      "description": "decision-model-lab-v6-multi-entity-training",
+      "environment": "main",
+      "interval_start": "2026-10-13T15:00:00",
+      "resource": "Memory",
+      "cost": "0.04494324"
+    },
+    {
+      "object_id": "ap-7wZTkDyHcF421G32QL2eeq",
+      "description": "decision-model-lab-v6-multi-entity-training",
+      "environment": "main",
+      "interval_start": "2026-10-13T16:00:00",
+      "resource": "L4",
+      "cost": "0.01822233"
+    },
+    {
+      "object_id": "ap-7wZTkDyHcF421G32QL2eeq",
+      "description": "decision-model-lab-v6-multi-entity-training",
+      "environment": "main",
+      "interval_start": "2026-10-13T16:00:00",
+      "resource": "CPU",
+      "cost": "0.00430958"
+    },
+    {
+      "object_id": "ap-7wZTkDyHcF421G32QL2eeq",
+      "description": "decision-model-lab-v6-multi-entity-training",
+      "environment": "main",
+      "interval_start": "2026-10-13T16:00:00",
+      "resource": "Memory",
+      "cost": "0.00583115"
+    },
+    {
+      "object_id": "ap-9gdczWwiUjEKBaNCTtTz5G",
+      "description": "decision-model-lab-v6-multi-entity-training",
+      "environment": "main",
+      "interval_start": "2026-10-13T15:00:00",
+      "resource": "L4",
+      "cost": "0.09066674"
+    },
+    {
+      "object_id": "ap-9gdczWwiUjEKBaNCTtTz5G",
+      "description": "decision-model-lab-v6-multi-entity-training",
+      "environment": "main",
+      "interval_start": "2026-10-13T15:00:00",
+      "resource": "CPU",
+      "cost": "0.02144269"
+    },
+    {
+      "object_id": "ap-9gdczWwiUjEKBaNCTtTz5G",
+      "description": "decision-model-lab-v6-multi-entity-training",
+      "environment": "main",
+      "interval_start": "2026-10-13T15:00:00",
+      "resource": "Memory",
+      "cost": "0.02901336"
+    },
+    {
+      "object_id": "ap-JzY0txKUaVKof6JUej7AfU",
+      "description": "decision-model-lab-v6-multi-entity-training",
+      "environment": "main",
+      "interval_start": "2026-10-13T16:00:00",
+      "resource": "L4",
+      "cost": "0.11693800"
+    },
+    {
+      "object_id": "ap-JzY0txKUaVKof6JUej7AfU",
+      "description": "decision-model-lab-v6-multi-entity-training",
+      "environment": "main",
+      "interval_start": "2026-10-13T16:00:00",
+      "resource": "CPU",
+      "cost": "0.02765584"
+    },
+    {
+      "object_id": "ap-JzY0txKUaVKof6JUej7AfU",
+      "description": "decision-model-lab-v6-multi-entity-training",
+      "environment": "main",
+      "interval_start": "2026-10-13T16:00:00",
+      "resource": "Memory",
+      "cost": "0.03742016"
+    },
+    {
+      "object_id": "ap-W7iVjF969Bf1VHkhrcfNKA",
+      "description": "decision-model-lab-v6-multi-entity-training",
+      "environment": "main",
+      "interval_start": "2026-10-13T16:00:00",
+      "resource": "L4",
+      "cost": "0.01644432"
+    },
+    {
+      "object_id": "ap-W7iVjF969Bf1VHkhrcfNKA",
+      "description": "decision-model-lab-v6-multi-entity-training",
+      "environment": "main",
+      "interval_start": "2026-10-13T16:00:00",
+      "resource": "CPU",
+      "cost": "0.00388908"
+    },
+    {
+      "object_id": "ap-W7iVjF969Bf1VHkhrcfNKA",
+      "description": "decision-model-lab-v6-multi-entity-training",
+      "environment": "main",
+      "interval_start": "2026-10-13T16:00:00",
+      "resource": "Memory",
+      "cost": "0.00526218"
+    },
+    {
+      "object_id": "ap-W7iVjF969Bf1VHkhrcfNKA",
+      "description": "decision-model-lab-v6-multi-entity-training",
+      "environment": "main",
+      "interval_start": "2026-10-13T17:00:00",
+      "resource": "L4",
+      "cost": "0.08533331"
+    },
+    {
+      "object_id": "ap-W7iVjF969Bf1VHkhrcfNKA",
+      "description": "decision-model-lab-v6-multi-entity-training",
+      "environment": "main",
+      "interval_start": "2026-10-13T17:00:00",
+      "resource": "CPU",
+      "cost": "0.02018133"
+    },
+    {
+      "object_id": "ap-W7iVjF969Bf1VHkhrcfNKA",
+      "description": "decision-model-lab-v6-multi-entity-training",
+      "environment": "main",
+      "interval_start": "2026-10-13T17:00:00",
+      "resource": "Memory",
+      "cost": "0.02730666"
+    },
+    {
+      "object_id": "ap-jJvCVoUuFnQj6eBdHXAlHi",
+      "description": "decision-model-lab-v6-multi-entity-training",
+      "environment": "main",
+      "interval_start": "2026-10-13T16:00:00",
+      "resource": "L4",
+      "cost": "0.63561238"
+    },
+    {
+      "object_id": "ap-jJvCVoUuFnQj6eBdHXAlHi",
+      "description": "decision-model-lab-v6-multi-entity-training",
+      "environment": "main",
+      "interval_start": "2026-10-13T16:00:00",
+      "resource": "CPU",
+      "cost": "0.15032233"
+    },
+    {
+      "object_id": "ap-jJvCVoUuFnQj6eBdHXAlHi",
+      "description": "decision-model-lab-v6-multi-entity-training",
+      "environment": "main",
+      "interval_start": "2026-10-13T16:00:00",
+      "resource": "Memory",
+      "cost": "0.20339596"
+    },
+    {
+      "object_id": "ap-vyuVWtpW4DrEZCfK1bRkfx",
+      "description": "decision-model-lab-v6-multi-entity-training",
+      "environment": "main",
+      "interval_start": "2026-10-13T15:00:00",
+      "resource": "L4",
+      "cost": "0.02400003"
+    },
+    {
+      "object_id": "ap-vyuVWtpW4DrEZCfK1bRkfx",
+      "description": "decision-model-lab-v6-multi-entity-training",
+      "environment": "main",
+      "interval_start": "2026-10-13T15:00:00",
+      "resource": "CPU",
+      "cost": "0.00567601"
+    },
+    {
+      "object_id": "ap-vyuVWtpW4DrEZCfK1bRkfx",
+      "description": "decision-model-lab-v6-multi-entity-training",
+      "environment": "main",
+      "interval_start": "2026-10-13T15:00:00",
+      "resource": "Memory",
+      "cost": "0.00768001"
+    }
+  ],
+  "scope": "Owned V6 app/Volume rows only; observed snapshot, not a final invoice.",
+  "requested_interval_utc": {
+    "start": "2026-10-13",
+    "end": "2026-10-14"
+  },
+  "resolution": "h",
+  "interval_note": "Explicit complete-day range includes the current UTC hour; metering may lag.",
+  "raw_report_sha256": "6d7a87ea9237a9dc778e0dc5747bdc2d7c51622608fc8cfe5bac531fb3078e80"
+}

@@ -1,0 +1,142 @@
+{
+  "r1": {
+    "family_id": "v8-r1-balanced-test_multi-multi-3-0000-0",
+    "question": "Aman is authorized.",
+    "base_facts": [
+      "Chen is enabled.",
+      "Aman is enabled.",
+      "Bella is registered.",
+      "Chen is active.",
+      "Bella is enabled.",
+      "Aman is verified.",
+      "Aman is registered.",
+      "Chen is registered.",
+      "Bella is active."
+    ],
+    "rules": [
+      "For every person mentioned: if person 1 is registered and person 1 is enabled, then person 1 is authorized.",
+      "For every person mentioned: if person 1 is registered and person 1 is not enabled, then person 1 is not authorized."
+    ],
+    "removed_facts": [
+      "Aman is enabled."
+    ],
+    "added_facts": [
+      "Aman is active."
+    ],
+    "outputs": {
+      "parent": {
+        "base": {
+          "gold": "TRUE",
+          "prediction": "TRUE",
+          "confidence": 0.8091876694831309
+        },
+        "support_removal": {
+          "gold": "UNKNOWN",
+          "prediction": "TRUE",
+          "confidence": 0.7629681182229698
+        }
+      },
+      "control": {
+        "base": {
+          "gold": "TRUE",
+          "prediction": "TRUE",
+          "confidence": 0.7032513881671233
+        },
+        "support_removal": {
+          "gold": "UNKNOWN",
+          "prediction": "UNKNOWN",
+          "confidence": 0.560973224356121
+        }
+      },
+      "treatment": {
+        "base": {
+          "gold": "TRUE",
+          "prediction": "TRUE",
+          "confidence": 0.5664806680728114
+        },
+        "support_removal": {
+          "gold": "UNKNOWN",
+          "prediction": "UNKNOWN",
+          "confidence": 0.5883900724325078
+        }
+      }
+    },
+    "input_sha256": "3ee20491e53499468489d0c75deae332d10fe288bd0d664d6887dada066d708e",
+    "prediction_sha256": {
+      "parent": "8bc17cc71ddb042bede2e8249e6af3ca45e778f8b42c27acf2ff129707fca24c",
+      "control": "2bd1e11aa737243239c6d6a5cfe1dfaa896e437c62815483905adccd86bed85c",
+      "treatment": "a90ba15d3a70e00441ea75ba15dc45c63e7755d31ad8600c0598868ae5179aed"
+    },
+    "additional_model_inference": false
+  },
+  "r2": {
+    "family_id": "v8-r2-balanced-test_multi-multi-3-0000-0",
+    "question": "Aman is verified.",
+    "base_facts": [
+      "Aman is ready.",
+      "Bella is ready.",
+      "Bella is active.",
+      "Chen is enabled.",
+      "Chen is registered.",
+      "Aman is registered.",
+      "Chen is ready.",
+      "Bella is enabled.",
+      "Aman is enabled."
+    ],
+    "rules": [
+      "For every person mentioned: if person 1 is ready and person 1 is not enabled, then person 1 is not verified.",
+      "For every person mentioned: if person 1 is ready and person 1 is enabled, then person 1 is verified."
+    ],
+    "removed_facts": [
+      "Aman is enabled."
+    ],
+    "added_facts": [
+      "Aman is active."
+    ],
+    "outputs": {
+      "parent": {
+        "base": {
+          "gold": "TRUE",
+          "prediction": "TRUE",
+          "confidence": 0.7270310264069458
+        },
+        "support_removal": {
+          "gold": "UNKNOWN",
+          "prediction": "TRUE",
+          "confidence": 0.6116250782300233
+        }
+      },
+      "control": {
+        "base": {
+          "gold": "TRUE",
+          "prediction": "TRUE",
+          "confidence": 0.7224480093481469
+        },
+        "support_removal": {
+          "gold": "UNKNOWN",
+          "prediction": "TRUE",
+          "confidence": 0.6505690647488087
+        }
+      },
+      "treatment": {
+        "base": {
+          "gold": "TRUE",
+          "prediction": "TRUE",
+          "confidence": 0.708130432431857
+        },
+        "support_removal": {
+          "gold": "UNKNOWN",
+          "prediction": "TRUE",
+          "confidence": 0.7233074785563379
+        }
+      }
+    },
+    "input_sha256": "8c3045f208b6ca272e9368bc2fa367e012e5836690861d93f7c7eafe09101f5c",
+    "prediction_sha256": {
+      "parent": "2f48fbfeabfd3767a4da088cdc787ea90fb01c1cefb8c8883cc09f6f8c887885",
+      "control": "b434dd6540a96e177684f8b91aca911d6423ee2abf4cc63ddfcec09478f0943b",
+      "treatment": "466693830a93aa52ef6b6f452e9eeaaa765b2d43817d556f25aa1cae0b336ae4"
+    },
+    "additional_model_inference": false
+  }
+}

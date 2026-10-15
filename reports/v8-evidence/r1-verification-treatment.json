@@ -1,0 +1,17 @@
+{
+  "treatment": {
+    "repo_id": "axondendriteplus/decision-lab-v8-r1-smollm2-360m-paired-consistency",
+    "protocol_identity": "c3dd59fa24ec9c61658603eef1ed560b5b1094712936ed31fb4bc2354ea88b62",
+    "created_private_by_this_release": true,
+    "commit": "23dfd410a8ba486e543a178fd9039a06943e2aae",
+    "url": "https://huggingface.co/axondendriteplus/decision-lab-v8-r1-smollm2-360m-paired-consistency",
+    "artifact_manifest_sha256": "c48f80efff98ee14c18489560b505ba68eba4d582457adc2adfa1ff5160ee705",
+    "remote_download_verification": {
+      "verified": true,
+      "inputs": 8,
+      "device": "cpu",
+      "artifact_identity": "c3dd59fa24ec9c61658603eef1ed560b5b1094712936ed31fb4bc2354ea88b62"
+    },
+    "verified_download_directory": "/Users/axon_dendrite/decision-model-lab/artifacts/v8-hub-verification/r1/treatment"
+  }
+}

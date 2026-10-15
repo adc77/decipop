@@ -1,0 +1,48 @@
+study: study-v5
+dataset_seed: 521
+model_seed: 521
+bootstrap_seed: 521
+bootstrap_repetitions: 2000
+bootstrap_confidence: 0.95
+pilot_families_per_suite: 12
+families:
+  conjunction: 288
+  deeper: 96
+  signed_chain: 96
+max_attempts_per_family: 200
+class_labels: ["TRUE", "FALSE", "UNKNOWN"]
+max_length: 512
+evaluation_batch: 32
+cpu_threads: 2
+ece_bins: 10
+high_confidence_threshold: 0.9
+gpu: L4
+cpu_cores: 4
+memory_mib: 32768
+pilot_timeout_seconds: 300
+diagnostic_timeout_seconds: 1200
+retry_timeout_seconds: 1200
+max_retry_calls: 1
+startup_timeout_seconds: 180
+scaledown_seconds: 2
+gpu_hourly_usd: 0.8
+cpu_core_hourly_usd: 0.0473
+memory_gib_hourly_usd: 0.008
+compute_allocation_usd: 1.5
+storage_reserve_usd: 0.5
+profile: amandogra2016
+volume: decision-model-lab-v5-runs
+app_name: decision-model-lab-v5-multi-entity
+models:
+  v3_parent:
+    directory: artifacts/v3-releases/treatment-final
+    repo_id: axondendriteplus/decision-lab-v3-smollm2-360m-treatment-final
+    commit: d165bf46ed93deee9697143204f78bdccdddb17d
+  v4_control:
+    directory: artifacts/v4-releases/control
+    repo_id: axondendriteplus/decision-lab-v4-smollm2-360m-control
+    commit: f6fb417b7a7851fa3492412490ee7e39afa35815
+  v4_mixed:
+    directory: artifacts/v4-releases/treatment
+    repo_id: axondendriteplus/decision-lab-v4-smollm2-360m-mixed-unknown
+    commit: c4ee886cd3a718036297edb56b0202b590457cf2

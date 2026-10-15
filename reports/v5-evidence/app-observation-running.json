@@ -1,0 +1,21 @@
+{
+  "source": "Modal app list, scoped to recorded V5 app IDs",
+  "owned_apps": [
+    {
+      "app_id": "ap-aBLUIfWgZGT494imqfyB7J",
+      "description": "decision-model-lab-v5-multi-entity",
+      "state": "ephemeral (detached)",
+      "tasks": "1",
+      "created_at": "2026-10-13 19:42:43+05:30",
+      "stopped_at": null
+    },
+    {
+      "app_id": "ap-FOFkYK0qefMDfnRu3w8HM4",
+      "description": "decision-model-lab-v5-multi-entity",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-10-13 19:38:34+05:30",
+      "stopped_at": "2026-10-13 19:42:03+05:30"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "valid": true,
+  "at_utc": "2026-10-14T13:38:47.163583+00:00",
+  "storage_source_sha256": "6bd4accc95e9ec14152c5457b2952248b29c7da4516ebf503d21bc8a77caeb32",
+  "private_revision_before": "844f06b3c2f06891b16dfc31fd43f2a9136d2ea5",
+  "private_revision_after": "844f06b3c2f06891b16dfc31fd43f2a9136d2ea5",
+  "inventory_sha256": "5bd9bbafa9c88aee6f398c19ab6d072f3b81bd61339b2e925ea95362d954f2e7",
+  "candidate_count": 10,
+  "additional_weight_uploads": false
+}

@@ -1,0 +1,37 @@
+{
+  "checked_at_utc": "2026-10-13T14:40:33.426053+00:00",
+  "new_python_lint_passed": true,
+  "new_python_format_passed": true,
+  "dependency_lock_check_passed": true,
+  "tracked_diff_whitespace_check_passed": true,
+  "successful_command_exit_codes_observed": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "logs": {
+    "lint-final.log": {
+      "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+      "output": "All checks passed!\n"
+    },
+    "format-final.log": {
+      "sha256": "5b9f70ad96522f492ef846065642c069b5627379aff2ab3f74acd2e3b9ecfe34",
+      "output": "10 files already formatted\n"
+    },
+    "lock-final.log": {
+      "sha256": "69715d687d671059dc48f451b682737ee98cda25e8754cfdd44d52e05911fe41",
+      "output": "Resolved 95 packages in 3ms\n"
+    },
+    "whitespace-final.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output": ""
+    }
+  },
+  "cpu_tests": {
+    "count": 99,
+    "raw_log_sha256": "b8eb03a5c3ffec25cceddd68007b43e547a0bc762e14938c779c5da57ea38763",
+    "rerun_after_documentation_edits": false
+  },
+  "scope": "Frozen scientific code unchanged; operational cleanup, billing, plotting and archival verified by execution."
+}

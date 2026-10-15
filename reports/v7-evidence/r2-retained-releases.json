@@ -1,0 +1,12 @@
+{
+  "control": {
+    "directory": "artifacts/v7-releases/r2/control",
+    "manifest_sha256": "b844d45f92ace84361fc2c044b4cb4f19b619ba4979d5298cd3f5bb4fb5912ff",
+    "weights_sha256": "481ada01e00f9bf2b07b21cba79d00df57bd587501aae68e48f470057c69b89f"
+  },
+  "treatment": {
+    "directory": "artifacts/v7-releases/r2/treatment",
+    "manifest_sha256": "8f345e1ee24f28906188c18d3c1a88cd2674841afb4d40aeef11d79bba23c456",
+    "weights_sha256": "c7e9e72a0b3f34f1316c9451cacb8de7a3e1c1eb610f65688e16bd1b4296f505"
+  }
+}

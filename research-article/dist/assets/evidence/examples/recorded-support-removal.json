@@ -1,0 +1,474 @@
+{
+  "family_id": "v8-r2-balanced-test_multi-multi-3-0012-0",
+  "selection": "Post hoc illustration selected after evaluation; not a preselected audit example.",
+  "source_split": "test_paired",
+  "study": "v8",
+  "repetition": "r2",
+  "question": "Farah is authorized.",
+  "base_facts": [
+    "Evan is trusted.",
+    "Gabe is verified.",
+    "Evan is verified.",
+    "Gabe is approved.",
+    "Farah is verified.",
+    "Gabe is trusted.",
+    "Evan is approved.",
+    "Farah is registered.",
+    "Farah is trusted."
+  ],
+  "rules": [
+    "For every person mentioned: if person 1 is trusted and person 1 is not verified, then person 1 is not active.",
+    "For every person mentioned: if person 1 is trusted and person 1 is verified, then person 1 is active.",
+    "For every person mentioned: if person 1 is not active, then person 1 is not authorized.",
+    "For every person mentioned: if person 1 is active, then person 1 is authorized."
+  ],
+  "removed_facts": [
+    "Farah is verified."
+  ],
+  "added_facts": [
+    "Farah is approved."
+  ],
+  "outputs": {
+    "parent": {
+      "base": {
+        "gold": "TRUE",
+        "prediction": "TRUE",
+        "confidence": 0.6940562523558292,
+        "example_id": "v8-r2-balanced-test_multi-multi-3-0012-0-multi-base-1"
+      },
+      "support_removal": {
+        "gold": "UNKNOWN",
+        "prediction": "TRUE",
+        "confidence": 0.7455180130079585,
+        "example_id": "v8-r2-balanced-test_multi-multi-3-0012-0-multi-support_removal-1"
+      }
+    },
+    "control": {
+      "base": {
+        "gold": "TRUE",
+        "prediction": "TRUE",
+        "confidence": 0.8011721715769801,
+        "example_id": "v8-r2-balanced-test_multi-multi-3-0012-0-multi-base-1"
+      },
+      "support_removal": {
+        "gold": "UNKNOWN",
+        "prediction": "TRUE",
+        "confidence": 0.7746261476462891,
+        "example_id": "v8-r2-balanced-test_multi-multi-3-0012-0-multi-support_removal-1"
+      }
+    },
+    "treatment": {
+      "base": {
+        "gold": "TRUE",
+        "prediction": "TRUE",
+        "confidence": 0.7206859901966642,
+        "example_id": "v8-r2-balanced-test_multi-multi-3-0012-0-multi-base-1"
+      },
+      "support_removal": {
+        "gold": "UNKNOWN",
+        "prediction": "TRUE",
+        "confidence": 0.7189415442244211,
+        "example_id": "v8-r2-balanced-test_multi-multi-3-0012-0-multi-support_removal-1"
+      }
+    }
+  },
+  "rows": [
+    {
+      "example_id": "v8-r2-balanced-test_multi-multi-3-0012-0-multi-base-1",
+      "family_id": "v8-r2-balanced-test_multi-multi-3-0012-0",
+      "split": "test_paired",
+      "theory": {
+        "entities": [
+          "Evan",
+          "Farah",
+          "Gabe"
+        ],
+        "facts": [
+          {
+            "predicate": "verified",
+            "arguments": [
+              "Gabe"
+            ],
+            "negative": false
+          },
+          {
+            "predicate": "trusted",
+            "arguments": [
+              "Evan"
+            ],
+            "negative": false
+          },
+          {
+            "predicate": "registered",
+            "arguments": [
+              "Farah"
+            ],
+            "negative": false
+          },
+          {
+            "predicate": "approved",
+            "arguments": [
+              "Evan"
+            ],
+            "negative": false
+          },
+          {
+            "predicate": "trusted",
+            "arguments": [
+              "Gabe"
+            ],
+            "negative": false
+          },
+          {
+            "predicate": "verified",
+            "arguments": [
+              "Farah"
+            ],
+            "negative": false
+          },
+          {
+            "predicate": "verified",
+            "arguments": [
+              "Evan"
+            ],
+            "negative": false
+          },
+          {
+            "predicate": "approved",
+            "arguments": [
+              "Gabe"
+            ],
+            "negative": false
+          },
+          {
+            "predicate": "trusted",
+            "arguments": [
+              "Farah"
+            ],
+            "negative": false
+          }
+        ],
+        "rules": [
+          {
+            "conditions": [
+              {
+                "predicate": "trusted",
+                "arguments": [
+                  "?x"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "verified",
+                "arguments": [
+                  "?x"
+                ],
+                "negative": false
+              }
+            ],
+            "conclusion": {
+              "predicate": "active",
+              "arguments": [
+                "?x"
+              ],
+              "negative": false
+            }
+          },
+          {
+            "conditions": [
+              {
+                "predicate": "active",
+                "arguments": [
+                  "?x"
+                ],
+                "negative": false
+              }
+            ],
+            "conclusion": {
+              "predicate": "authorized",
+              "arguments": [
+                "?x"
+              ],
+              "negative": false
+            }
+          },
+          {
+            "conditions": [
+              {
+                "predicate": "active",
+                "arguments": [
+                  "?x"
+                ],
+                "negative": true
+              }
+            ],
+            "conclusion": {
+              "predicate": "authorized",
+              "arguments": [
+                "?x"
+              ],
+              "negative": true
+            }
+          },
+          {
+            "conditions": [
+              {
+                "predicate": "trusted",
+                "arguments": [
+                  "?x"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "verified",
+                "arguments": [
+                  "?x"
+                ],
+                "negative": true
+              }
+            ],
+            "conclusion": {
+              "predicate": "active",
+              "arguments": [
+                "?x"
+              ],
+              "negative": true
+            }
+          }
+        ]
+      },
+      "query": {
+        "predicate": "authorized",
+        "arguments": [
+          "Farah"
+        ],
+        "negative": false
+      },
+      "label": "TRUE",
+      "proof_depth": 2,
+      "theory_depth": 2,
+      "motif": "conjunction",
+      "renderer_id": "canonical",
+      "theory_hash": "aaa7467e59111d855a3317e0137529095c1a9201fb9a3477437259e7ceb5c7f6",
+      "structure_hash": "706cae65cedc1b3d33cb62d3f2a295e30222a06f05857cad6e0a0711fd327dd7",
+      "facts": [
+        "Evan is trusted.",
+        "Gabe is verified.",
+        "Evan is verified.",
+        "Gabe is approved.",
+        "Farah is verified.",
+        "Gabe is trusted.",
+        "Evan is approved.",
+        "Farah is registered.",
+        "Farah is trusted."
+      ],
+      "rules": [
+        "For every person mentioned: if person 1 is trusted and person 1 is not verified, then person 1 is not active.",
+        "For every person mentioned: if person 1 is trusted and person 1 is verified, then person 1 is active.",
+        "For every person mentioned: if person 1 is not active, then person 1 is not authorized.",
+        "For every person mentioned: if person 1 is active, then person 1 is authorized."
+      ],
+      "question": "Farah is authorized.",
+      "prompt": "Decide using only these facts and rules. TRUE means the statement follows; FALSE means its explicit negation follows; UNKNOWN means neither follows. Absence is not negation. Answer A for TRUE, B for FALSE, or C for UNKNOWN.\n\nFacts:\nEvan is trusted.\nGabe is verified.\nEvan is verified.\nGabe is approved.\nFarah is verified.\nGabe is trusted.\nEvan is approved.\nFarah is registered.\nFarah is trusted.\n\nRules:\nFor every person mentioned: if person 1 is trusted and person 1 is not verified, then person 1 is not active.\nFor every person mentioned: if person 1 is trusted and person 1 is verified, then person 1 is active.\nFor every person mentioned: if person 1 is not active, then person 1 is not authorized.\nFor every person mentioned: if person 1 is active, then person 1 is authorized.\n\nStatement: Farah is authorized.\n\nAnswer:"
+    },
+    {
+      "example_id": "v8-r2-balanced-test_multi-multi-3-0012-0-multi-support_removal-1",
+      "family_id": "v8-r2-balanced-test_multi-multi-3-0012-0",
+      "split": "test_paired",
+      "theory": {
+        "entities": [
+          "Evan",
+          "Farah",
+          "Gabe"
+        ],
+        "facts": [
+          {
+            "predicate": "verified",
+            "arguments": [
+              "Gabe"
+            ],
+            "negative": false
+          },
+          {
+            "predicate": "trusted",
+            "arguments": [
+              "Evan"
+            ],
+            "negative": false
+          },
+          {
+            "predicate": "registered",
+            "arguments": [
+              "Farah"
+            ],
+            "negative": false
+          },
+          {
+            "predicate": "approved",
+            "arguments": [
+              "Evan"
+            ],
+            "negative": false
+          },
+          {
+            "predicate": "trusted",
+            "arguments": [
+              "Gabe"
+            ],
+            "negative": false
+          },
+          {
+            "predicate": "verified",
+            "arguments": [
+              "Evan"
+            ],
+            "negative": false
+          },
+          {
+            "predicate": "approved",
+            "arguments": [
+              "Gabe"
+            ],
+            "negative": false
+          },
+          {
+            "predicate": "trusted",
+            "arguments": [
+              "Farah"
+            ],
+            "negative": false
+          },
+          {
+            "predicate": "approved",
+            "arguments": [
+              "Farah"
+            ],
+            "negative": false
+          }
+        ],
+        "rules": [
+          {
+            "conditions": [
+              {
+                "predicate": "trusted",
+                "arguments": [
+                  "?x"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "verified",
+                "arguments": [
+                  "?x"
+                ],
+                "negative": false
+              }
+            ],
+            "conclusion": {
+              "predicate": "active",
+              "arguments": [
+                "?x"
+              ],
+              "negative": false
+            }
+          },
+          {
+            "conditions": [
+              {
+                "predicate": "active",
+                "arguments": [
+                  "?x"
+                ],
+                "negative": false
+              }
+            ],
+            "conclusion": {
+              "predicate": "authorized",
+              "arguments": [
+                "?x"
+              ],
+              "negative": false
+            }
+          },
+          {
+            "conditions": [
+              {
+                "predicate": "active",
+                "arguments": [
+                  "?x"
+                ],
+                "negative": true
+              }
+            ],
+            "conclusion": {
+              "predicate": "authorized",
+              "arguments": [
+                "?x"
+              ],
+              "negative": true
+            }
+          },
+          {
+            "conditions": [
+              {
+                "predicate": "trusted",
+                "arguments": [
+                  "?x"
+                ],
+                "negative": false
+              },
+              {
+                "predicate": "verified",
+                "arguments": [
+                  "?x"
+                ],
+                "negative": true
+              }
+            ],
+            "conclusion": {
+              "predicate": "active",
+              "arguments": [
+                "?x"
+              ],
+              "negative": true
+            }
+          }
+        ]
+      },
+      "query": {
+        "predicate": "authorized",
+        "arguments": [
+          "Farah"
+        ],
+        "negative": false
+      },
+      "label": "UNKNOWN",
+      "proof_depth": null,
+      "theory_depth": 2,
+      "motif": "conjunction",
+      "renderer_id": "canonical",
+      "theory_hash": "9bc89be9bbc2156c95bfb2067873182cc52f7cb6c26a7a6a975cd4c2c1075651",
+      "structure_hash": "b9e4d0d1df2e155485fe046c7c8ffccaeac8b4300ebcd3a6c2c416f934842044",
+      "facts": [
+        "Evan is trusted.",
+        "Gabe is verified.",
+        "Gabe is approved.",
+        "Farah is trusted.",
+        "Evan is verified.",
+        "Gabe is trusted.",
+        "Evan is approved.",
+        "Farah is registered.",
+        "Farah is approved."
+      ],
+      "rules": [
+        "For every person mentioned: if person 1 is trusted and person 1 is not verified, then person 1 is not active.",
+        "For every person mentioned: if person 1 is trusted and person 1 is verified, then person 1 is active.",
+        "For every person mentioned: if person 1 is not active, then person 1 is not authorized.",
+        "For every person mentioned: if person 1 is active, then person 1 is authorized."
+      ],
+      "question": "Farah is authorized.",
+      "prompt": "Decide using only these facts and rules. TRUE means the statement follows; FALSE means its explicit negation follows; UNKNOWN means neither follows. Absence is not negation. Answer A for TRUE, B for FALSE, or C for UNKNOWN.\n\nFacts:\nEvan is trusted.\nGabe is verified.\nGabe is approved.\nFarah is trusted.\nEvan is verified.\nGabe is trusted.\nEvan is approved.\nFarah is registered.\nFarah is approved.\n\nRules:\nFor every person mentioned: if person 1 is trusted and person 1 is not verified, then person 1 is not active.\nFor every person mentioned: if person 1 is trusted and person 1 is verified, then person 1 is active.\nFor every person mentioned: if person 1 is not active, then person 1 is not authorized.\nFor every person mentioned: if person 1 is active, then person 1 is authorized.\n\nStatement: Farah is authorized.\n\nAnswer:"
+    }
+  ],
+  "additional_model_inference": false
+}

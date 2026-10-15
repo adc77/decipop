@@ -1,0 +1,14 @@
+{
+  "control": {
+    "worlds": 360,
+    "complete": 21,
+    "questions_correct": 481
+  },
+  "treatment": {
+    "worlds": 360,
+    "complete": 214,
+    "questions_correct": 1231
+  },
+  "shared_parent_control_predictions_identical": true,
+  "contrast_from_raw_counts": 0.5361111111111111
+}

@@ -1,0 +1,13 @@
+# V6 checkpoint packaging and verified recovery
+
+The first control call failed at update 250. Its complete checkpoint had been written, but candidate export attempted `shutil.copyfile` on the parent's bundled `code/` directory. The failure occurred before writing the progress pointer. The initial CPU fixture had a flat bundle and missed this layout; the fixture now includes a nested directory.
+
+Preserve the original frozen protocol and source archive. A separate `amended-protocol.json` has its own sealed identity and links the unchanged original protocol by identity and file SHA-256. Its only changed scientific source files are `v6_lab/study.py` and `v6_lab/protocol.py`: package flat candidate assets while skipping bundled directories, record the source checkpoint identity when restoring state, and verify the explicit amendment chain. Training data, settings, initialization, update math, optimizer schedule, exposure, selection, calibration and endpoints are unchanged.
+
+The remote complete checkpoint records step 250, epoch zero, cursor 8,000 and 8,000 presentations. Verify all three checkpoint file hashes on the worker before resuming: weights, optimizer/RNG state, and progress. Preserve the incomplete candidate directory under `failed-candidate-packaging`, then package the saved update-250 weights and create an explicit progress pointer. The unchanged checkpoint loader restores the original optimizer, scheduler and Python/Torch/CUDA RNG state. Subsequent checkpoints use the amended identity; the first 250 updates retain their original provenance.
+
+The expanded CPU suite includes nested-bundle export and a deliberately interrupted candidate export after checkpoint save. Recovery through the new identity reproduces uninterrupted training's final weights exactly, with the partial directory retained. Original and amended test logs remain separate.
+
+Use the one reserved recovery call, recording it separately from failed `control-1`; never change that failed ledger entry to success. Successful recovery fills the first continuation receipt, then the two remaining control chunks and all three treatment chunks follow. All planned exposure and checkpoint steps remain required. The failed call plus recovery remain within the original $3.835907777777778 compute ceiling and $4 allocation. No additional unreserved GPU retries are permitted.
+
+Raw failure logs, original source copies, checkpoint marker/progress, amended source archive, amendment receipt and recovery receipt are retained under `runs/study-v6` and `artifacts/v6-source-snapshot`. This is an operational correction with an explicit source change, not a claim that the initial frozen source ran successfully unchanged.

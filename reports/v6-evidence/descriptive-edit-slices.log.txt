@@ -1,0 +1,94 @@
+{
+  "status": "Post hoc descriptive slicing of existing logits; no new inference or selection",
+  "analysis_sha256": "ebf7b269a182b6870ea7ee48437d7e788a9420448916b198fb9407a80e7799a2",
+  "arms": {
+    "control": {
+      "support_edit/FALSE->TRUE": {
+        "pairs": 120,
+        "base_correct": 2,
+        "edited_correct": 0,
+        "both_correct": 0,
+        "expected_response": 1
+      },
+      "support_edit/TRUE->UNKNOWN": {
+        "pairs": 120,
+        "base_correct": 2,
+        "edited_correct": 119,
+        "both_correct": 2,
+        "expected_response": 2
+      },
+      "support_edit/UNKNOWN->FALSE": {
+        "pairs": 120,
+        "base_correct": 119,
+        "edited_correct": 0,
+        "both_correct": 0,
+        "expected_response": 0
+      },
+      "support_edit_inverse/FALSE->UNKNOWN": {
+        "pairs": 120,
+        "base_correct": 2,
+        "edited_correct": 119,
+        "both_correct": 2,
+        "expected_response": 2
+      },
+      "support_edit_inverse/TRUE->FALSE": {
+        "pairs": 120,
+        "base_correct": 2,
+        "edited_correct": 2,
+        "both_correct": 0,
+        "expected_response": 0
+      },
+      "support_edit_inverse/UNKNOWN->TRUE": {
+        "pairs": 120,
+        "base_correct": 119,
+        "edited_correct": 1,
+        "both_correct": 0,
+        "expected_response": 0
+      }
+    },
+    "treatment": {
+      "support_edit/FALSE->TRUE": {
+        "pairs": 120,
+        "base_correct": 94,
+        "edited_correct": 105,
+        "both_correct": 83,
+        "expected_response": 83
+      },
+      "support_edit/TRUE->UNKNOWN": {
+        "pairs": 120,
+        "base_correct": 107,
+        "edited_correct": 80,
+        "both_correct": 68,
+        "expected_response": 69
+      },
+      "support_edit/UNKNOWN->FALSE": {
+        "pairs": 120,
+        "base_correct": 94,
+        "edited_correct": 87,
+        "both_correct": 62,
+        "expected_response": 63
+      },
+      "support_edit_inverse/FALSE->UNKNOWN": {
+        "pairs": 120,
+        "base_correct": 94,
+        "edited_correct": 93,
+        "both_correct": 68,
+        "expected_response": 68
+      },
+      "support_edit_inverse/TRUE->FALSE": {
+        "pairs": 120,
+        "base_correct": 107,
+        "edited_correct": 94,
+        "both_correct": 84,
+        "expected_response": 84
+      },
+      "support_edit_inverse/UNKNOWN->TRUE": {
+        "pairs": 120,
+        "base_correct": 94,
+        "edited_correct": 97,
+        "both_correct": 73,
+        "expected_response": 74
+      }
+    }
+  }
+}

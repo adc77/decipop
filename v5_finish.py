@@ -1,0 +1,474 @@
+import argparse
+import json
+import shutil
+import subprocess
+from collections import defaultdict
+from datetime import UTC, datetime, timedelta
+from decimal import Decimal
+from pathlib import Path
+
+import modal
+from modal._utils.async_utils import synchronize_api
+
+from decision_lab.publication import atomic_json
+from decision_lab.training.checkpoint import file_hash
+from v4_cleanup import inspect_apps
+from v4_retain import download
+from v5_lab.analysis import analyse, summarise
+from v5_lab.data import VARIANTS, exclusions, validate_dataset
+from v5_lab.protocol import verify
+
+ROOT = Path("runs/study-v5")
+inspect_owned_apps = synchronize_api(inspect_apps)
+
+
+def cli(arguments):
+    return subprocess.run(
+        ["uv", "run", "--extra", "cloud", "modal", *arguments, "--profile", "amandogra2016"],
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+
+
+def retain():
+    ownership = json.loads((ROOT / "modal-ownership.json").read_text())
+    volume = modal.Volume.from_name(ownership["volume"], create_if_missing=False)
+    volume.hydrate()
+    if volume.object_id != ownership["volume_id"]:
+        raise ValueError("Owned Volume identity differs")
+    execution = json.loads((ROOT / "diagnostic-execution.json").read_text())
+    retained = {}
+    for name, record in execution["models"].items():
+        path = ROOT / "predictions" / f"{name}.jsonl"
+        download(volume, f"/study-v5/predictions/{name}.jsonl", path, record["predictions_sha256"])
+        retained[str(path)] = file_hash(path)
+    atomic_json(ROOT / "retained-predictions.json", retained)
+    return {"prediction_files_retained": len(retained)}
+
+
+def report():
+    result = json.loads((ROOT / "analysis.json").read_text())
+    destination = Path("reports/V5_RESULTS.md")
+    if destination.exists():
+        raise FileExistsError(destination)
+    lines = [
+        "# V5: multi-entity diagnostic results",
+        "",
+        "Inference-only study of three retained "
+        "fixed heads. No training, model selection, temperature fitting, or new model release.",
+        "",
+        f"Protocol identity: `{result['protocol_identity']}`. "
+        "480 diagnostic families, 12,960 questions per model, 38,880 prediction rows.",
+        "",
+        "## Same world, different entities",
+        "",
+        "Every base world contains one TRUE, one FALSE, and one UNKNOWN statement about "
+        "the same predicate. Each query uses identical premises. Names, query slots, polarity "
+        "and explicit fact counts are controlled. A constant predictor scores 33.33% accuracy "
+        "and zero complete worlds.",
+        "",
+        "| Model | Suite | Base correct / questions | Complete worlds | Constant predictions |",
+        "| --- | --- | ---: | ---: | ---: |",
+    ]
+    for name, model in result["models"].items():
+        for suite, values in model["suites"].items():
+            metric = values["metrics"]["base"]["raw"]
+            world = values["worlds"]["base"]
+            count = sum(metric["confusion_matrix_actual_rows"][i][i] for i in range(3))
+            lines.append(
+                f"| {name} | {suite} | {count}/{metric['questions']} "
+                f"({metric['accuracy']:.2%}) | {world['complete_world_correct']}/"
+                f"{world['families']} | {world['constant_prediction_worlds']}/"
+                f"{world['families']} |"
+            )
+    primary = result["primary"]
+    lines += [
+        "",
+        f"Primary: V4 mixed complete-base-world accuracy on conjunction families is "
+        f"**{primary['estimate']:.2%}**, parent-family bootstrap 95% interval "
+        f"[{primary['interval'][0]:.2%}, {primary['interval'][1]:.2%}]. "
+        "This describes fixed models and sampled generated families; there is no "
+        "training-seed replication or pass/fail gate.",
+        "",
+        "## Matched transformations",
+        "",
+        "The table reports the V4 mixed model. Full model/suite/variant confusion matrices, "
+        "confidence metrics, world counts and pair counts are in `runs/study-v5/analysis.json` "
+        "and its compact evidence copy.",
+        "",
+        "| Suite | Variant | Accuracy | Complete worlds | "
+        ">=90% confidence errors after saved temperature |",
+        "| --- | --- | ---: | ---: | ---: |",
+    ]
+    for suite, values in result["models"]["v4_mixed"]["suites"].items():
+        for variant in VARIANTS:
+            metric = values["metrics"][variant]["saved_temperature"]
+            world = values["worlds"][variant]
+            lines.append(
+                f"| {suite} | {variant} | {metric['accuracy']:.2%} | "
+                f"{world['complete_world_correct']}/{world['families']} | "
+                f"{metric['high_confidence_wrong']}/{metric['questions']} |"
+            )
+    lines += [
+        "",
+        "## Changes to one entity",
+        "",
+        "Rates below separate response changes from correctness. Unaffected consistency "
+        "can be high when both answers are wrong.",
+        "",
+        "| Suite | Pair | Expected change/invariance | Both correct |",
+        "| --- | --- | ---: | ---: |",
+    ]
+    for suite, values in result["models"]["v4_mixed"]["suites"].items():
+        for name, pair in values["pairs"].items():
+            lines.append(
+                f"| {suite} | {name} | {pair['expected_change_or_invariance']}/"
+                f"{pair['pairs']} | {pair['both_correct']}/{pair['pairs']} |"
+            )
+    lines += [
+        "",
+        "## Preselected numerical example",
+        "",
+        "The first conjunction family was selected before inference. Its base and support "
+        "edits are shown even if they fail.",
+        "",
+    ]
+    base_example = next(
+        row
+        for row in result["preselected_examples"]["v4_mixed"]
+        if "conjunction-000000-base-" in row["example_id"]
+    )
+    lines += ["Facts: " + " ".join(base_example["facts"]), "", "Rules:", ""]
+    lines += ["- " + rule for rule in base_example["rules"]]
+    lines += [
+        "",
+        "| Variant | Statement | Oracle | V4 mixed | Confidence with saved temperature |",
+        "| --- | --- | --- | --- | ---: |",
+    ]
+    for row in result["preselected_examples"]["v4_mixed"]:
+        if "conjunction" in row["example_id"] and any(
+            f"-{variant}-" in row["example_id"]
+            for variant in ("base", "remove_support", "reverse_support", "repair_unknown")
+        ):
+            variant = row["example_id"].split("000000-", 1)[1].rsplit("-", 1)[0]
+            lines.append(
+                f"| {variant} | {row['question']} | {row['oracle']} | "
+                f"{row['prediction']} | {row['saved_temperature_confidence']:.2%} |"
+            )
+    lines += [
+        "",
+        "## Interpretation and next experiment",
+        "",
+        "These are behavioral tests, not evidence of an internal reasoning mechanism. "
+        "The generator remains small, unary, and templated; all three labels co-occur, "
+        "and fillers or missing branch facts can provide cues. Deeper/signed-chain results "
+        "do not reproduce the earlier transfer generators. Removal/repair conditions have "
+        "different class proportions. Stored temperatures are transferred without fitting "
+        "and need not calibrate this distribution. Paired contrasts are descriptive and "
+        "not adjusted for multiple comparisons. Collapsed bootstrap intervals do not "
+        "prove population perfection.",
+        "",
+    ]
+    if primary["estimate"] < 0.9:
+        lines += [
+            "The mixed head does not establish reliable complete-world decisions here. "
+            "The next justified training experiment is a matched continuation comparing "
+            "the existing curriculum with a mixture of independently answerable multi-entity "
+            "worlds. Use fresh training/selection/test families, keep initialization and "
+            "exposure matched, and retain earlier transfer checks. V5 diagnostic labels "
+            "must not become a reused confirmatory test after training on these examples. "
+            "An architecture change needs a separate concrete hypothesis and baseline."
+        ]
+    else:
+        lines += [
+            "Complete-world decisions are strong on the primary generated condition. "
+            "Use the weakest held-out transformation or rule suite to motivate the next "
+            "controlled data experiment before an architecture change. A broader generator "
+            "and fresh families are required before generalization claims."
+        ]
+    lines += [
+        "",
+        "## Evidence and operations",
+        "",
+        "Read [the frozen protocol](../docs/V5_PROTOCOL.md), "
+        "[the running journal](../RESEARCH_LOG.md), and "
+        "[operation receipts](v5-evidence/inventory.json). "
+        "Raw inputs, proof closures, logits and logs remain in `runs/study-v5`; "
+        "source archives are in `artifacts/v5-source-snapshot`. Costs and cleanup are "
+        "reported by separate timestamped receipts. New V5 work is local, uncommitted "
+        "and unpushed; earlier V1–V4 remote backups remain intact.",
+        "",
+    ]
+    destination.write_text("\n".join(lines))
+    plot()
+    return {"report": str(destination)}
+
+
+def plot():
+    import matplotlib
+
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+    from matplotlib.ticker import PercentFormatter
+
+    result = json.loads((ROOT / "analysis.json").read_text())
+    figures = Path("reports/v5-figures")
+    figures.mkdir(exist_ok=True)
+    fig, axes = plt.subplots(1, 2, figsize=(10, 4), layout="constrained")
+    names = list(result["models"])
+    for axis, field, title in [
+        (axes[0], "accuracy", "Base question accuracy"),
+        (axes[1], "complete", "All three entities correct"),
+    ]:
+        for offset, name in enumerate(names):
+            values = []
+            for suite in ("conjunction", "deeper", "signed_chain"):
+                record = result["models"][name]["suites"][suite]
+                world = record["worlds"]["base"]
+                values.append(
+                    record["metrics"]["base"]["raw"]["accuracy"]
+                    if field == "accuracy"
+                    else world["complete_world_correct"] / world["families"]
+                )
+            axis.bar([x + (offset - 1) * 0.25 for x in range(3)], values, width=0.25, label=name)
+        axis.set_xticks(range(3), ["Conjunction", "Deeper", "Signed chain"])
+        axis.set_ylim(0, 1)
+        axis.set_title(title)
+        axis.set_ylabel("Fraction correct")
+        axis.yaxis.set_major_formatter(PercentFormatter(1))
+    axes[0].axhline(1 / 3, linestyle="--", color="black", linewidth=0.8)
+    for position, suite in enumerate(("conjunction", "deeper", "signed_chain")):
+        worlds = [result["models"][name]["suites"][suite]["worlds"]["base"] for name in names]
+        if all(world["complete_world_correct"] == 0 for world in worlds):
+            axes[1].text(
+                position,
+                0.06,
+                f"0 / {worlds[0]['families']}\n(all three models)",
+                ha="center",
+                fontsize=8,
+            )
+    axes[0].legend(fontsize=8)
+    fig.savefig(figures / "entity-decisions.png", dpi=170)
+    fig.savefig(figures / "entity-decisions.svg")
+    plt.close(fig)
+    return {"figures": str(figures)}
+
+
+def audit():
+    protocol = verify(ROOT)
+    excluded, files = exclusions()
+    if files != protocol["audit"]["exclusion_files"]:
+        raise ValueError("Historical input records changed")
+    validation = validate_dataset(ROOT / "data", excluded)
+    analysis = json.loads((ROOT / "analysis.json").read_text())
+    rows = [json.loads(line) for line in (ROOT / "data/diagnostic.jsonl").read_text().splitlines()]
+    families = {
+        record["family_id"]: record
+        for record in [
+            json.loads(line) for line in (ROOT / "data/families.jsonl").read_text().splitlines()
+        ]
+    }
+    total = 0
+    for name, candidate in protocol["models"].items():
+        path = ROOT / "predictions" / f"{name}.jsonl"
+        records = [json.loads(line) for line in path.read_text().splitlines()]
+        summary, _, _ = summarise(
+            rows, records, families, candidate["temperature"], protocol["settings"]
+        )
+        if summary != analysis["models"][name]["suites"]:
+            raise ValueError("Recorded analysis differs from raw logits")
+        if file_hash(path) != analysis["models"][name]["predictions_sha256"]:
+            raise ValueError("Prediction checksum differs")
+        total += len(records)
+    historic = json.loads(
+        Path("artifacts/v4-source-snapshot/manifest-final-with-reports.json").read_text()
+    )["files"]
+    preserved = 0
+    for name, digest in historic.items():
+        if (
+            name.endswith(".py")
+            or name.startswith("configs/")
+            or name
+            in {
+                "uv.lock",
+                "pyproject.toml",
+                "docs/V2_PROTOCOL.md",
+                "docs/V3_PROTOCOL.md",
+                "docs/V4_PROTOCOL.md",
+            }
+        ):
+            if file_hash(Path(name)) != digest:
+                raise ValueError(f"Historical scientific file changed: {name}")
+            preserved += 1
+    result = {
+        "valid": True,
+        "protocol_identity": protocol["identity"],
+        "serialized_data_audit": validation,
+        "prediction_rows_verified": total,
+        "historical_scientific_build_files_unchanged": preserved,
+        "analysis_sha256": file_hash(ROOT / "analysis.json"),
+    }
+    atomic_json(ROOT / "final-audit.json", result)
+    return result
+
+
+def cleanup():
+    if not json.loads((ROOT / "final-audit.json").read_text())["valid"]:
+        raise ValueError("Final audit is incomplete")
+    retained = json.loads((ROOT / "retained-predictions.json").read_text())
+    for name, digest in retained.items():
+        if file_hash(Path(name)) != digest:
+            raise ValueError("Retained prediction checksum differs")
+    ownership = json.loads((ROOT / "modal-ownership.json").read_text())
+    if ownership["volume"] != "decision-model-lab-v5-runs":
+        raise ValueError("Unexpected owned Volume")
+    volume = modal.Volume.from_name(ownership["volume"], create_if_missing=False)
+    volume.hydrate()
+    if volume.object_id != ownership["volume_id"]:
+        raise ValueError("Owned Volume ID differs")
+    for app_id in ownership["app_ids"]:
+        if not app_id.startswith("ap-"):
+            raise ValueError("Invalid owned app ID")
+    stopped = inspect_owned_apps(ownership["app_ids"])
+    receipts = [
+        {
+            "app_id": row["app_id"],
+            "action": "verified already stopped; no stop requested",
+            "lifecycle": row,
+        }
+        for row in stopped
+    ]
+    deleted = cli(["volume", "delete", ownership["volume"], "--yes"])
+    actions = {"stop_receipts": receipts, "volume_delete_stdout": deleted.stdout}
+    atomic_json(ROOT / "cleanup-actions.json", actions)
+    volumes = json.loads(cli(["volume", "list", "--json"]).stdout)
+    if any(row["name"] == ownership["volume"] for row in volumes):
+        raise ValueError("Owned Volume still exists")
+    result = {
+        "checked_at_utc": datetime.now(UTC).isoformat(),
+        "owned_volume_absent": True,
+        "apps": inspect_owned_apps(ownership["app_ids"]),
+        "actions": actions,
+        "zero_owned_tasks": True,
+        "unrelated_resources_modified": False,
+    }
+    atomic_json(ROOT / "cleanup.json", result)
+    return result
+
+
+def costs():
+    if any(
+        (ROOT / name).exists()
+        for name in (
+            "billing-final-resources.json",
+            "billing-final.json",
+            "billing-attribution.json",
+        )
+    ):
+        raise FileExistsError("Preserve the prior billing observation before taking another")
+    start = datetime.fromisoformat(
+        json.loads((ROOT / "preflight.json").read_text())["snapshot_utc"]
+    )
+    resolution = "h" if (datetime.now(UTC) - start).total_seconds() <= 7 * 86400 else "d"
+    end = datetime.now(UTC).date() + timedelta(days=1)
+    rows = json.loads(
+        cli(
+            [
+                "billing",
+                "report",
+                "--start",
+                start.date().isoformat(),
+                "--end",
+                end.isoformat(),
+                "--resolution",
+                resolution,
+                "--show-resources",
+                "--json",
+            ]
+        ).stdout
+    )
+    summary = json.loads(cli(["billing", "summary", "--json"]).stdout)
+    atomic_json(ROOT / "billing-final-resources.json", rows)
+    atomic_json(ROOT / "billing-final.json", summary)
+    ownership = json.loads((ROOT / "modal-ownership.json").read_text())
+    ids = set(ownership["app_ids"]) | {ownership["volume_id"]}
+    selected = [r for r in rows if r["object_id"] in ids]
+    grouped = defaultdict(Decimal)
+    for row in selected:
+        grouped[row["resource"]] += Decimal(row["cost"])
+    result = {
+        "snapshot_utc": datetime.now(UTC).isoformat(),
+        "owned_resource_metered_usd": str(sum(grouped.values(), Decimal(0))),
+        "resources_usd": {k: str(v) for k, v in grouped.items()},
+        "workspace_billed_usd": summary["billed_cost"],
+        "scoped_rows": selected,
+        "scope": "Owned V5 app/Volume rows only; observed snapshot, not a final invoice.",
+        "requested_interval_utc": {"start": start.date().isoformat(), "end": end.isoformat()},
+        "resolution": resolution,
+        "interval_note": (
+            "Explicit complete-day range includes the current UTC hour; metering may lag."
+        ),
+        "raw_report_sha256": file_hash(ROOT / "billing-final-resources.json"),
+    }
+    atomic_json(ROOT / "billing-attribution.json", result)
+    return {k: v for k, v in result.items() if k != "scoped_rows"}
+
+
+def evidence():
+    destination = Path("reports/v5-evidence")
+    if destination.exists():
+        raise FileExistsError(destination)
+    destination.mkdir()
+    for path in ROOT.glob("*.json"):
+        if path.name in {"billing-final-resources.json", "billing-before-cleanup-resources.json"}:
+            continue
+        shutil.copyfile(path, destination / path.name)
+    shutil.copyfile(
+        Path("artifacts/v5-source-snapshot/manifest-before-inference.json"),
+        destination / "source-before-inference-manifest.json",
+    )
+    tests = ROOT / "cpu-tests-validated.log"
+    if "99 passed" not in tests.read_text():
+        raise ValueError("Final CPU test evidence is missing")
+    atomic_json(
+        destination / "cpu-tests.json",
+        {"tests_passed": 99, "summary": tests.read_text(), "raw_log_sha256": file_hash(tests)},
+    )
+    for name in (
+        "prepare.log",
+        "prepare-resume.log",
+        "cpu-tests-pre-freeze.log",
+        "cpu-tests-final.log",
+        "cleanup.log",
+        "cleanup-verified.log",
+        "cleanup-final.log",
+        "costs.log",
+        "costs-final.log",
+        "prepare-initial-source.py",
+        "data-before-json-fix.py",
+        "finish-before-cleanup-fix.py",
+        "finish-before-loop-fix.py",
+    ):
+        shutil.copyfile(ROOT / name, destination / f"{name}.txt")
+    hashes = {p.name: file_hash(p) for p in sorted(destination.iterdir())}
+    atomic_json(destination / "inventory.json", hashes)
+    return {"compact_evidence_files": len(hashes) + 1}
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "action",
+        choices=("retain", "analyse", "report", "plot", "audit", "cleanup", "costs", "evidence"),
+    )
+    action = parser.parse_args().action
+    if action == "analyse":
+        if (ROOT / "analysis.json").exists():
+            raise FileExistsError("Analysis already recorded")
+        value = analyse(ROOT)
+        print(
+            json.dumps({"prediction_rows": value["prediction_rows"], "primary": value["primary"]})
+        )
+    else:
+        print(json.dumps({"action": action, "result": globals()[action]()}))

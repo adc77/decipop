@@ -1,0 +1,18 @@
+{
+  "snapshot_utc": "2026-10-13T15:18:15.821315+00:00",
+  "conservative_original_budget_remaining_usd": 18.33989549,
+  "workspace_billed_usd": "0E-8",
+  "budget": {
+    "hourly_requested_usd": 1.2452,
+    "call_ceiling_usd": {
+      "pilot": 0.2082251111111111,
+      "training": 0.42613511111111113,
+      "selection": 0.2704851111111111,
+      "test": 0.37425177777777785,
+      "retry": 0.42613511111111113
+    },
+    "maximum_compute_usd": 3.835907777777778
+  },
+  "rates_source": "Modal billing API",
+  "pricing_url": "https://modal.com/pricing"
+}

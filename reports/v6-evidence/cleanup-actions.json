@@ -1,0 +1,65 @@
+{
+  "stop_receipts": [
+    {
+      "app_id": "ap-vyuVWtpW4DrEZCfK1bRkfx",
+      "action": "verified already stopped; no stop requested",
+      "lifecycle": {
+        "app_id": "ap-vyuVWtpW4DrEZCfK1bRkfx",
+        "state": "stopped",
+        "tasks": 0,
+        "stopped_at": 1791905024.660028
+      }
+    },
+    {
+      "app_id": "ap-9gdczWwiUjEKBaNCTtTz5G",
+      "action": "verified already stopped; no stop requested",
+      "lifecycle": {
+        "app_id": "ap-9gdczWwiUjEKBaNCTtTz5G",
+        "state": "stopped",
+        "tasks": 0,
+        "stopped_at": 1791905628.562174
+      }
+    },
+    {
+      "app_id": "ap-7wZTkDyHcF421G32QL2eeq",
+      "action": "verified already stopped; no stop requested",
+      "lifecycle": {
+        "app_id": "ap-7wZTkDyHcF421G32QL2eeq",
+        "state": "stopped",
+        "tasks": 0,
+        "stopped_at": 1791907283.820077
+      }
+    },
+    {
+      "app_id": "ap-jJvCVoUuFnQj6eBdHXAlHi",
+      "action": "verified already stopped; no stop requested",
+      "lifecycle": {
+        "app_id": "ap-jJvCVoUuFnQj6eBdHXAlHi",
+        "state": "stopped",
+        "tasks": 0,
+        "stopped_at": 1791910168.687431
+      }
+    },
+    {
+      "app_id": "ap-JzY0txKUaVKof6JUej7AfU",
+      "action": "verified already stopped; no stop requested",
+      "lifecycle": {
+        "app_id": "ap-JzY0txKUaVKof6JUej7AfU",
+        "state": "stopped",
+        "tasks": 0,
+        "stopped_at": 1791910707.804456
+      }
+    },
+    {
+      "app_id": "ap-W7iVjF969Bf1VHkhrcfNKA",
+      "action": "verified already stopped; no stop requested",
+      "lifecycle": {
+        "app_id": "ap-W7iVjF969Bf1VHkhrcfNKA",
+        "state": "stopped",
+        "tasks": 0,
+        "stopped_at": 1791911188.312693
+      }
+    }
+  ],
+  "volume_delete_stdout": ""
+}

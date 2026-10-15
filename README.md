@@ -1,25 +1,78 @@
-# Decision Model Lab
+# Premise
 
-A research project comparing a fine-tuned small language model, direct decision prediction, and a tiny transformer trained from scratch.
+Can a small model follow changing evidence?
 
-**Status: V1–V4 are complete.** Implementation, reports, and the research journal are pushed to the private `feat/data-foundation` branch; see [the publication record](reports/PUBLICATION.md). Eleven selected research model bundles are stored in private Hugging Face repositories. Raw study records, historical source archives, and the entire retained V4 candidate pool also have a verified private Hugging Face backup. Owned temporary Modal storage has been deleted after verification.
+Premise is a reproducible study of three-way decisions over explicit facts and rules. It includes an exact symbolic oracle, synthetic data generators, matched training comparisons, strict intervention tests, and research checkpoints based on SmolLM2-360M.
 
-Read [RESEARCH_LOG.md](RESEARCH_LOG.md) for the running decision history, completed experiments, failed results, costs, and artifact index. V4's [frozen protocol](docs/V4_PROTOCOL.md) tested a matched training mixture after [controlled diagnostics](reports/V4_DIAGNOSTICS.md) exposed a query-entity generalization gap.
+[Dataset](https://huggingface.co/datasets/axondendriteplus/premise-worlds) · [Models](docs/MODELS.md) · [Research article](research-article/README.md) · [Results](reports/V8_RESULTS.md)
 
-Read [PLAN.md](PLAN.md) for the research questions, data specification, experiments, evaluation protocol, budget, implementation sequence, and credential requirements.
+## What the experiments found
 
-The initial study tests reasoning over supplied facts and rules. It measures generalization, confidence calibration, abstention, and inference cost. It does not establish unrestricted general-purpose decision ability.
+| Comparison | Run 1 | Run 2 |
+| --- | --- | --- |
+| Multi-entity curriculum vs. old curriculum, complete base worlds | **245/360 vs. 25/360** | **245/360 vs. 19/360** |
+| Added consistency vs. paired cross-entropy, complete paired worlds | **208/378 vs. 205/378** | **235/378 vs. 221/378** |
+| Latest consistency models, complete families across all nine variants | **50/378** | **46/378** |
 
-The central result is a limitation: both fine-tuned models score above 96% on the original held-out distribution, yet get **0 of 142** fact-flip questions correct when the changed premise removes support for a derived answer. The scratch model stays at 33.33% accuracy. These are research checkpoints, not reliable general decision engines.
+The curriculum gain replicated. The added-loss advantage failed its declared replication check: its first 95% world-sampling interval includes zero. Transformation reliability remains weak. These are different endpoints on fresh datasets, not a single leaderboard. See [V7](reports/V7_RESULTS.md) and [V8](reports/V8_RESULTS.md) for counts, intervals, selection, deviations, and limitations.
 
-Start with [the results](reports/RESULTS.md), [the counterfactual failure analysis](reports/FAILURE_ANALYSIS.md), and [the numerical walkthrough](reports/LEARNING.md). See [costs and verified releases](reports/COSTS_AND_RELEASES.md) for billing and pinned model versions.
+A correct individual answer is a lower bar than getting every person right. A complete paired world additionally requires correctness after an assigned edit. A complete transformation family requires every included query and variant correct. Intervals condition on fixed trained models; they do not estimate a population of training seeds.
 
-Use [docs/SETUP.md](docs/SETUP.md) for reproducibility commands and [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for the model and experiment diagrams. [reports/LOCAL_PROGRESS.md](reports/LOCAL_PROGRESS.md) records the historical V1 scope and verification; the research journal tracks later studies. The earlier pilot measurements remain in [reports/GPU_PILOT.md](reports/GPU_PILOT.md).
+## Try an actual recorded case
 
-V2 completed a matched two-arm data experiment. Both selected heads answer TRUE on every counterfactual test question, with 0% UNKNOWN and complete-family accuracy. The late treatment reached 83.26% development accuracy, but raw-NLL selection retained an early chance-level head. Read [the v2 results](reports/V2_RESULTS.md), [the development walkthrough](reports/V2_LEARNING.md), and [verified releases and costs](reports/V2_RELEASES.md). The [frozen protocol](docs/V2_PROTOCOL.md), v1 artifacts, and all model revisions remain preserved.
+Use Python 3.12 and [uv](https://docs.astral.sh/uv/):
 
-V3 compared raw-NLL, calibrated-NLL, and accuracy selection over the two retained checkpoints per V2 arm, using fresh, separate families for temperature fitting, selection, calibration, and tests. Calibrated-NLL and accuracy selection chose the final treatment head: changed-premise accuracy improved from 33.33% to **99.93%**, with **100% UNKNOWN accuracy** and **99.8% complete-family accuracy** on 1,000 fresh parents. Wording accuracy remains 43.4%, single-branch accuracy 51.0%, and original-style UNKNOWN accuracy 0%. Calibration also worsens confidence metrics on the already accurate counterfactual subdistribution. Read [the v3 results](reports/V3_RESULTS.md), [the numerical walkthrough](reports/V3_LEARNING.md), [verified artifacts and cost](reports/V3_RELEASES.md), and [the frozen protocol](docs/V3_PROTOCOL.md).
+```sh
+git clone https://github.com/adc77/premise.git
+cd premise
+uv sync --extra train --extra analysis --extra baseline
+uv run python examples/predict.py --model axondendriteplus/premise-v8-r2-consistency
+```
 
-V4 completed matched additional training from the V3 treatment-final head. Mixed data improves original-query UNKNOWN from **0/1,000 to 815/1,000** while retaining **1,000/1,000** changed-premise UNKNOWN; both declared engineering gates pass. Overall original-query accuracy rises from 66.67% to **93.73%**, but depth drops from 92.33% to **80.00%**, wording remains **42.53%**, and single-branch supported statements score only **59/500**. Read [V4 results](reports/V4_RESULTS.md), [the preselected failure example](reports/V4_LEARNING.md), and [private verified releases, costs, and cleanup](reports/V4_RELEASES.md). All 69 final CPU tests passed; the observed owned cost is **$2.32520053**, with **$0 billed**. The next proposed diagnostic removes the generator's distinguished-target cue; no new GPU study is running.
+The example uses the exact held-out prompts in [examples/prompts.json](examples/prompts.json). Farah is trusted and verified; those facts imply active, which implies authorized. Removing her verification prevents that derivation. The correct answer becomes UNKNOWN. The recorded consistency model still answers TRUE. [Full case and original saved outputs](examples/recorded-support-removal.json).
 
-Read [the next experiment proposal](docs/NEXT_EXPERIMENT.md): test whether the retained models answer about the right entity in worlds with independently supported TRUE, FALSE, and UNKNOWN statements. No new study has been frozen or submitted.
+This illustration was chosen after evaluation; the original preselected cases remain in the [V8 report](reports/V8_RESULTS.md). Names are symbols in generated data, not real people or operational access decisions. CPU FP32 inference can differ slightly from the original BF16 aggregate inference; fixed reference checks have recorded tolerances.
+
+The weights require the included custom decision-head loader. They are not stock chat checkpoints. Pass `--revision <commit>` to pin a model. The example verifies the downloaded artifact's SHA-256 inventory before inference.
+
+## Dataset
+
+```python
+from datasets import load_dataset
+
+rows = load_dataset("axondendriteplus/premise-worlds", "v8-r2", split="test_paired")
+print(rows[0]["prompt"], rows[0]["label"])
+```
+
+Install `datasets` separately to use this optional Hub example. Four configurations preserve exact frozen V7/V8 files, IDs, symbolic theories, prompts, labels, splits and manifests. The release has **190,688 serialized rows**; repeated training rows and related transformations are not independent worlds. Do not combine configurations into one train/test split. The [dataset card](https://huggingface.co/datasets/axondendriteplus/premise-worlds) explains composition, overlap, licensing, and evaluation units.
+
+TRUE means the statement follows. FALSE means its explicit negation follows. UNKNOWN means neither follows. Missing evidence is not negative evidence; UNKNOWN is not confidence-based deferral.
+
+## Inspect and reproduce
+
+```sh
+uv run --extra train --extra analysis --extra baseline python -m pytest -q
+python3 research-article/build.py
+python3 -m http.server 8765 --bind 127.0.0.1 --directory research-article/dist
+```
+
+Open http://localhost:8765 for the research article. Its figures and examples read recorded results; no live model inference occurs in the page.
+
+- [Reproduction guide](docs/REPRODUCING.md): fresh checkout, artifacts, inference, metrics, and training scope.
+- [Model index](docs/MODELS.md): all eight public matched-comparison checkpoints and revision pins.
+- [V7 methods](docs/V7_PROTOCOL.md) and [V8 methods](docs/V8_PROTOCOL.md): frozen scientific specifications.
+- [Research journal](RESEARCH_LOG.md): successful results, negative results, corrections, and historical publication states.
+- [V1–V8 reports](reports): original outcomes, figures and compact evidence.
+- [Original architecture](docs/ARCHITECTURE.md): token head, classification head, and scratch baseline.
+
+The final study passed **126 CPU tests**, two independent raw-count audits and **44 metric recomputations**, covering **165,344 prediction rows**. Public model bundles have separate publication verification. Historical private-release receipts and archived source hashes describe their original versions; subsequent naming and documentation changes do not rewrite them.
+
+## Scope
+
+This is controlled research on one pretrained model family and narrow synthetic distributions. Shared templates, vocabulary, and rule skeletons remain. The experiments do not establish unrestricted logical reasoning, architecture novelty, or reliable business decisions. The original scratch baseline differs in size, tokenizer and attention, so its chance-level result does not isolate the effect of pretraining.
+
+The public code retains the historical `decision_lab` Python package and study file names to preserve reproducibility. The project was previously called Decision Model Lab. Selected V7/V8 bundles are public; earlier private archives and intermediate training checkpoints are not part of this public model release. Full optimizer/RNG recovery states were temporary and are not included.
+
+## License and related work
+
+Project-authored code and generated data: [Apache 2.0](LICENSE). Retain [NOTICE](NOTICE). Pretrained model and dependencies retain their own attribution. RuleTaker, ProofWriter, temperature scaling, and consistency regularization are prior work; this project does not claim to invent those methods. See the article references and frozen protocols.

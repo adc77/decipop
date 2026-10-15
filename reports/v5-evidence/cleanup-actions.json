@@ -1,0 +1,25 @@
+{
+  "stop_receipts": [
+    {
+      "app_id": "ap-FOFkYK0qefMDfnRu3w8HM4",
+      "action": "verified already stopped; no stop requested",
+      "lifecycle": {
+        "app_id": "ap-FOFkYK0qefMDfnRu3w8HM4",
+        "state": "stopped",
+        "tasks": 0,
+        "stopped_at": 1791900723.426397
+      }
+    },
+    {
+      "app_id": "ap-aBLUIfWgZGT494imqfyB7J",
+      "action": "verified already stopped; no stop requested",
+      "lifecycle": {
+        "app_id": "ap-aBLUIfWgZGT494imqfyB7J",
+        "state": "stopped",
+        "tasks": 0,
+        "stopped_at": 1791901257.088354
+      }
+    }
+  ],
+  "volume_delete_stdout": ""
+}

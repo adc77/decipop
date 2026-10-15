@@ -1,0 +1,36 @@
+{
+  "study_identity": "c590e9b9727c5dfa81fce210a79b1be40b2783b01ce1dcb55393630a7858075d",
+  "counts": {
+    "r1": {
+      "parent": 188,
+      "control": 205,
+      "treatment": 208
+    },
+    "r2": {
+      "parent": 218,
+      "control": 221,
+      "treatment": 235
+    }
+  },
+  "declared_checks": {
+    "r1": {
+      "primary_gain_interval_excludes_zero": false,
+      "retention_unknown_margin": 0.02,
+      "base_world_retention_within_margin": true,
+      "both_parent_unknown_retention_intervals_within_margin": true
+    },
+    "r2": {
+      "primary_gain_interval_excludes_zero": true,
+      "retention_unknown_margin": 0.02,
+      "base_world_retention_within_margin": true,
+      "both_parent_unknown_retention_intervals_within_margin": true
+    }
+  },
+  "replicated_parent_improvements": {
+    "control": false,
+    "treatment": true
+  },
+  "decision": "Added consistency does not pass the full declared replicated decision rule. Treatment improves over the unchanged parent in both repetitions, but the control comparison remains mixed and transfer remains weak. Close this bounded loss experiment; any architecture study needs a separate scope.",
+  "additional_training_submitted": false,
+  "report_sha256": "b3cf48bbbe4303e059a29cdb5bfc4fc7c3e907f9d12fe1c1cdd484eb8fe3850f"
+}
