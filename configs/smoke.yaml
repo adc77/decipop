@@ -8,7 +8,7 @@ extra_facts_max: 8
 max_text_characters: 2400
 train_templates: [canonical, conditional]
 heldout_template: paraphrase
-train_entities: [Aman, Bella, Chen, Dalia, Evan, Farah, Gabe, Hana]
+train_entities: [EntityA, Bella, Chen, Dalia, Evan, Farah, Gabe, Hana]
 heldout_entities: [Inez, Jules, Kiran, Leila, Marco, Nia, Omar, Pia]
 predicates:
   - ["verified", "registered", "authorized", "active", "trusted", "ready", "enabled", "approved"]

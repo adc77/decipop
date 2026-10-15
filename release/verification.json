@@ -1,8 +1,8 @@
 {
-  "checked_at_utc": "2026-10-15T10:23:14.255341+00:00",
+  "checked_at_utc": "2026-10-15T10:27:21.860736+00:00",
   "github_repository": "https://github.com/adc77/decipop",
   "public_article": "https://adc77.github.io/decipop/",
-  "deployment_status": "Configured; awaiting main push and deployment verification.",
+  "deployment_status": "Live and verified",
   "cpu_tests_passed": 128,
   "ruff_check": "passed",
   "credential_scan_files": 334,
@@ -46,5 +46,20 @@
     "historical_v8_archive_sha256": "d6ea6c4f5c8f34caa89ea0374c71a636dde9054b457604c17181873e180e99af",
     "new_training_or_gpu_jobs": false
   },
-  "dataset_configurations_loaded_anonymously": 4
+  "dataset_configurations_loaded_anonymously": 4,
+  "pages_workflow_run": "https://github.com/adc77/decipop/actions/runs/38719962870",
+  "pages_deployed_commit": "afa74f302fcbaa28b2dda1679838bb36c1b7514b",
+  "deployed_assets_byte_identical": 5,
+  "anonymous_github_article_links_verified": 20,
+  "clean_checkout_article_rebuild_verified": true,
+  "clean_checkout_inference_cli_verified": true,
+  "clean_checkout_inference_precision": "FP32",
+  "clean_checkout_fresh_model_download": true,
+  "cli_implicit_token_disabled": true,
+  "cli_fixed_case_decisions": [
+    "TRUE",
+    "TRUE"
+  ],
+  "smoke_config_followup_tests_passed": 11,
+  "final_publication_source_revision": "v0.2.0"
 }
