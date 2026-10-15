@@ -33,3 +33,18 @@ Public packaging preserves original weights, tokenizer and inference code. READM
 All V7/V8 models must be compared on the matching config of [Premise Worlds](https://huggingface.co/datasets/axondendriteplus/premise-worlds). V7 complete base worlds and V8 complete paired worlds are distinct endpoints. The highest opened test score is not a new universal model-selection rule.
 
 See [V7 results](../reports/V7_RESULTS.md), [V8 results](../reports/V8_RESULTS.md), and [reproduction](REPRODUCING.md).
+
+## Pinned public revisions
+
+| Repository | Public commit |
+| --- | --- |
+| [axondendriteplus/premise-v7-r1-control](https://huggingface.co/axondendriteplus/premise-v7-r1-control) | [`157e587e557b1ce2b11ef7920ad24817b10c8f86`](https://huggingface.co/axondendriteplus/premise-v7-r1-control/tree/157e587e557b1ce2b11ef7920ad24817b10c8f86) |
+| [axondendriteplus/premise-v7-r1-multi-entity](https://huggingface.co/axondendriteplus/premise-v7-r1-multi-entity) | [`42f6df7804d334757a81d39ac960acd3d022c5fc`](https://huggingface.co/axondendriteplus/premise-v7-r1-multi-entity/tree/42f6df7804d334757a81d39ac960acd3d022c5fc) |
+| [axondendriteplus/premise-v7-r2-control](https://huggingface.co/axondendriteplus/premise-v7-r2-control) | [`e4deb9a42b91c369cdc27b911f7e16fa4bd32fcc`](https://huggingface.co/axondendriteplus/premise-v7-r2-control/tree/e4deb9a42b91c369cdc27b911f7e16fa4bd32fcc) |
+| [axondendriteplus/premise-v7-r2-multi-entity](https://huggingface.co/axondendriteplus/premise-v7-r2-multi-entity) | [`94f8868b00aed4388243fe43b4531772939a4776`](https://huggingface.co/axondendriteplus/premise-v7-r2-multi-entity/tree/94f8868b00aed4388243fe43b4531772939a4776) |
+| [axondendriteplus/premise-v8-r1-paired-ce](https://huggingface.co/axondendriteplus/premise-v8-r1-paired-ce) | [`e6577327150614975fd4dc5f6967234e2a1d254e`](https://huggingface.co/axondendriteplus/premise-v8-r1-paired-ce/tree/e6577327150614975fd4dc5f6967234e2a1d254e) |
+| [axondendriteplus/premise-v8-r1-consistency](https://huggingface.co/axondendriteplus/premise-v8-r1-consistency) | [`61ad5248c6330d07a87b3e83b2abe4c38eb6c888`](https://huggingface.co/axondendriteplus/premise-v8-r1-consistency/tree/61ad5248c6330d07a87b3e83b2abe4c38eb6c888) |
+| [axondendriteplus/premise-v8-r2-paired-ce](https://huggingface.co/axondendriteplus/premise-v8-r2-paired-ce) | [`441fe30d022e0b2ffa9c7ae32a7507369745db31`](https://huggingface.co/axondendriteplus/premise-v8-r2-paired-ce/tree/441fe30d022e0b2ffa9c7ae32a7507369745db31) |
+| [axondendriteplus/premise-v8-r2-consistency](https://huggingface.co/axondendriteplus/premise-v8-r2-consistency) | [`fd52d3fc0bd81504b72cb174d36d6f8613de6ebb`](https://huggingface.co/axondendriteplus/premise-v8-r2-consistency/tree/fd52d3fc0bd81504b72cb174d36d6f8613de6ebb) |
+
+Dataset pin: `f5d6c9458e0331dbe21a0a2888dc9aa39d5bd24b`. Machine-readable pins and eight-input CPU verification receipts: [release/manifest.json](../release/manifest.json). All nine Hub repositories were checked anonymously at these revisions.

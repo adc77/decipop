@@ -11,7 +11,7 @@ The owner authorized the project rename, public GitHub repository, selected publ
 
 ## State and verification
 
-Repository and artifact preparation are complete; final transfer/visibility verification and pinned publication receipts are being recorded. Historical scientific studies, model weights, tokenizer, inference source, selection and evaluation outcomes remain unchanged. The public packaging adds new model cards and provenance manifests with their own identities.
+All eight selected models and the dataset are public, verified at pinned revisions, and readable anonymously. The representative GitHub source is prepared for the final main-branch push and visibility check. Machine-readable model/data pins are in [release/manifest.json](../release/manifest.json). Historical scientific studies, model weights, tokenizer, inference source, selection and evaluation outcomes remain unchanged. The public packaging adds new model cards and provenance manifests with their own identities.
 
 The release re-ran all 126 CPU tests. The dataset's four configurations load through the Hugging Face datasets interface. Model releases are freshly downloaded and checked on their eight FP32 reference inputs before visibility changes. An initial read connection interruption and later private-storage-limit rejection are retained locally; verified releases are made public individually so no paid storage upgrade is needed.
 

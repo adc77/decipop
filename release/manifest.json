@@ -1,0 +1,127 @@
+{
+  "name": "Premise",
+  "source_repository": "https://github.com/adc77/premise",
+  "source_revision": "v0.1.0",
+  "dataset": {
+    "repo_type": "dataset",
+    "commit": "f5d6c9458e0331dbe21a0a2888dc9aa39d5bd24b",
+    "verified": true,
+    "public": true,
+    "repo_id": "axondendriteplus/premise-worlds",
+    "serialized_rows": 190688
+  },
+  "models": [
+    {
+      "repo_type": "model",
+      "commit": "157e587e557b1ce2b11ef7920ad24817b10c8f86",
+      "verified": true,
+      "public": true,
+      "repo_id": "axondendriteplus/premise-v7-r1-control",
+      "weight_sha256": "a65ae3147b2b41a3a0a33146194c555c2f2ee7c379176c8dca8af72845e6836e",
+      "fresh_download_cpu": {
+        "verified": true,
+        "inputs": 8,
+        "device": "cpu",
+        "artifact_identity": "f07e4f34618900fe4a571f47f380737efe7919897a5465704c92a138c3154c71"
+      }
+    },
+    {
+      "repo_type": "model",
+      "commit": "42f6df7804d334757a81d39ac960acd3d022c5fc",
+      "verified": true,
+      "public": true,
+      "repo_id": "axondendriteplus/premise-v7-r1-multi-entity",
+      "weight_sha256": "875f353f76c256b581aff6560914b0968dccdabfe3ea9862cf38740a5ae7f479",
+      "fresh_download_cpu": {
+        "verified": true,
+        "inputs": 8,
+        "device": "cpu",
+        "artifact_identity": "f07e4f34618900fe4a571f47f380737efe7919897a5465704c92a138c3154c71"
+      }
+    },
+    {
+      "repo_type": "model",
+      "commit": "e4deb9a42b91c369cdc27b911f7e16fa4bd32fcc",
+      "verified": true,
+      "public": true,
+      "repo_id": "axondendriteplus/premise-v7-r2-control",
+      "weight_sha256": "481ada01e00f9bf2b07b21cba79d00df57bd587501aae68e48f470057c69b89f",
+      "fresh_download_cpu": {
+        "verified": true,
+        "inputs": 8,
+        "device": "cpu",
+        "artifact_identity": "94550cc844cb3a116a64211bac4be473610aa0b835f8b493f70b2478ab9f808f"
+      }
+    },
+    {
+      "repo_type": "model",
+      "commit": "94f8868b00aed4388243fe43b4531772939a4776",
+      "verified": true,
+      "public": true,
+      "repo_id": "axondendriteplus/premise-v7-r2-multi-entity",
+      "weight_sha256": "c7e9e72a0b3f34f1316c9451cacb8de7a3e1c1eb610f65688e16bd1b4296f505",
+      "fresh_download_cpu": {
+        "verified": true,
+        "inputs": 8,
+        "device": "cpu",
+        "artifact_identity": "94550cc844cb3a116a64211bac4be473610aa0b835f8b493f70b2478ab9f808f"
+      }
+    },
+    {
+      "repo_type": "model",
+      "commit": "e6577327150614975fd4dc5f6967234e2a1d254e",
+      "verified": true,
+      "public": true,
+      "repo_id": "axondendriteplus/premise-v8-r1-paired-ce",
+      "weight_sha256": "c396ea746c7daa7000acd75657d3235d28f4049b3f2b2e2b1c44cd00ca1d10fa",
+      "fresh_download_cpu": {
+        "verified": true,
+        "inputs": 8,
+        "device": "cpu",
+        "artifact_identity": "c3dd59fa24ec9c61658603eef1ed560b5b1094712936ed31fb4bc2354ea88b62"
+      }
+    },
+    {
+      "repo_type": "model",
+      "commit": "61ad5248c6330d07a87b3e83b2abe4c38eb6c888",
+      "verified": true,
+      "public": true,
+      "repo_id": "axondendriteplus/premise-v8-r1-consistency",
+      "weight_sha256": "d0f26df3677d194209e26eff6d44b16589a5b6d6de80231340467c2f24768c69",
+      "fresh_download_cpu": {
+        "verified": true,
+        "inputs": 8,
+        "device": "cpu",
+        "artifact_identity": "c3dd59fa24ec9c61658603eef1ed560b5b1094712936ed31fb4bc2354ea88b62"
+      }
+    },
+    {
+      "repo_type": "model",
+      "commit": "441fe30d022e0b2ffa9c7ae32a7507369745db31",
+      "verified": true,
+      "public": true,
+      "repo_id": "axondendriteplus/premise-v8-r2-paired-ce",
+      "weight_sha256": "5309be175ec26b0a51fb5177049a34e014fdf47f3d75516da6a2a0add64c1ac8",
+      "fresh_download_cpu": {
+        "verified": true,
+        "inputs": 8,
+        "device": "cpu",
+        "artifact_identity": "9c843f1daa2333aae4bcafb9cc5b719adf484e3294b77199602b85308a3edc71"
+      }
+    },
+    {
+      "repo_type": "model",
+      "commit": "fd52d3fc0bd81504b72cb174d36d6f8613de6ebb",
+      "verified": true,
+      "public": true,
+      "repo_id": "axondendriteplus/premise-v8-r2-consistency",
+      "weight_sha256": "8a547e893a7e44d69a7c0491de1f73fa7064898f2483b35c2aec433cb6c60cbc",
+      "fresh_download_cpu": {
+        "verified": true,
+        "inputs": 8,
+        "device": "cpu",
+        "artifact_identity": "9c843f1daa2333aae4bcafb9cc5b719adf484e3294b77199602b85308a3edc71"
+      }
+    }
+  ]
+}
