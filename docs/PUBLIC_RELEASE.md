@@ -1,24 +1,24 @@
-# Premise public release
+# decipop public release
 
-The owner authorized the project rename, public GitHub repository, selected public models, dataset release, model cards, and article links on 2026-10-15.
+- [Research article](https://adc77.github.io/decipop/): hosted publicly; no installation required.
+- [Source](https://github.com/adc77/decipop): modular Python implementation and V1–V8 records.
+- [Models](MODELS.md): eight selected V7/V8 checkpoints with pinned cards and custom inference bundles.
+- [Dataset](https://huggingface.co/datasets/axondendriteplus/decipop-worlds): four normalized configs, 190,688 serialized rows.
 
-## Scope
+The dataset replaces one entity symbol consistently with EntityA. Labels and proof
+depths were checked with two oracles. The original text is retained privately.
+Historical model scores apply to the original inputs, not this normalized release;
+renaming can change tokenization and predictions. Related rows are not independent
+worlds. Model weights, tokenizer and inference bytes are unchanged.
 
-- Repository: [adc77/premise](https://github.com/adc77/premise), previously `decision-model-lab`.
-- Dataset: [Premise Worlds](https://huggingface.co/datasets/axondendriteplus/premise-worlds), four exact frozen V7/V8 configurations, 190,688 serialized rows. Rows are not independent worlds.
-- Models: all eight selected V7/V8 checkpoints, including both control/treatment arms and both fresh repetitions. See [MODELS.md](MODELS.md).
-- Article: revised local preview in the owner's axondendrite.com style, with readable result definitions, a genuine held-out example, GitHub source links, and HF dataset/model links. No budget framing.
+[Release pins](../release/manifest.json) identify every public artifact.
+[Verification](../release/verification.json) records the 128-pass CPU suite, 11
+follow-up smoke-config tests, anonymous dataset loads, model checks, fresh-checkout
+inference, deployed assets and public evidence links. [CPU example output](../release/example-cpu.json)
+is a publication check, not a new aggregate evaluation.
 
-## State and verification
-
-All eight selected models and the dataset are public, verified at pinned revisions, and readable anonymously. The representative source is on public GitHub `main`; all 20 GitHub links in the article returned 200 without authentication. The documented inference command also passed from a clean checkout with implicit HF authentication disabled. Machine-readable model/data pins are in [release/manifest.json](../release/manifest.json). Historical scientific studies, model weights, tokenizer, inference source, selection and evaluation outcomes remain unchanged. The public packaging adds new model cards and provenance manifests with their own identities.
-
-The release re-ran all 126 CPU tests. The dataset's four configurations load through the Hugging Face datasets interface. Model releases are freshly downloaded and checked on their eight FP32 reference inputs before visibility changes. An initial read connection interruption and later private-storage-limit rejection are retained locally; verified releases are made public individually so no paid storage upgrade is needed.
-
-The original 21 historical selected bundles, private archives and intermediate candidate storage remain separate from these eight public packaging copies. Temporary optimizer/RNG states are not released. Earlier historical publication notes describe their original state and are not rewritten to claim they were public then.
-
-No new training, seeds, model architecture experiment, GPU jobs, or public deployment of the personal website is part of this publication.
-
-## Release verification
-
-[Machine-readable checks](../release/verification.json) record all nine anonymous Hub checks, 64 fresh reference predictions, the 126-pass CPU suite, four dataset configurations, the clean-checkout article rebuild and documented CPU inference. [The CPU example output](../release/example-cpu.json) is separately labeled: it is a publication smoke check, not a replacement for original BF16 aggregate scores.
+The original scientific source and publication are preserved at `v0.1.0`. The
+modular source release is tagged `v0.2.0`; later documentation cleanup on main
+removes duplicate card copies in favor of their pinned Hugging Face originals.
+The [journal](../RESEARCH_LOG.md) records the full sequence. No new training or GPU
+job is part of this publication. Earlier private archives remain private.
